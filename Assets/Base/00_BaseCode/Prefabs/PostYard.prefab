@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3672699670007443005}
   - component: {fileID: 2258300546924152904}
   - component: {fileID: 5060978397246357614}
+  - component: {fileID: 3885222825762329765}
   m_Layer: 0
   m_Name: PostYard
   m_TagString: Untagged
@@ -98,8 +99,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a62292008251740ac37048574ef290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
+  lsNearYard: []
   post: {fileID: 3672699670007443005}
   outLine: {fileID: 7711760056884215557}
+--- !u!58 &3885222825762329765
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7173148643855681683}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.37
 --- !u!1 &7711760056884215557
 GameObject:
   m_ObjectHideFlags: 0

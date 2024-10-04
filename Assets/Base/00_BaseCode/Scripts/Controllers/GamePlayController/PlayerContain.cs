@@ -54,11 +54,11 @@ public class LevelConfig
 
 public class PlayerContain : MonoBehaviour
 {
-    [SerializeField] private LevelConfig levelConfig;
-    [SerializeField] private AnimalController animalController;
-    [SerializeField] private PostYardController postYardController;
-    [SerializeField] private CardController cardController;
-    [SerializeField] private ItemController itemController;
+    public LevelConfig levelConfig;
+    public AnimalController animalController;
+    public PostYardController postYardController;
+    public CardController cardController;
+    public ItemController itemController;
     public void Init()
     { 
     }
