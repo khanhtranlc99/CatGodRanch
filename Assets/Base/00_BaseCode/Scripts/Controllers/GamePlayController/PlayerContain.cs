@@ -36,6 +36,7 @@ public class DataDifficulty
 [System.Serializable]
 public class DataLevel
 {
+    public bool wasPassDay = false;
     public int day;
     public DataDay dayType;
 
@@ -59,8 +60,14 @@ public class PlayerContain : MonoBehaviour
     public PostYardController postYardController;
     public CardController cardController;
     public ItemController itemController;
+    public DayController dayController;
+    public CoinController coinController;
     public void Init()
-    { 
+    {
+        dayController.Init(this);
+   
+        animalController.Init(this);
+        cardController.Init(this);
     }
 
    

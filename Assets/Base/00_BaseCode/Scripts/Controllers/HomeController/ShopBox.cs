@@ -54,7 +54,7 @@ public class ShopBox : BaseBox
         
         coinHeartBar.Init();
         btnClose.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); Close(); });
-        EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.SHOP_CHECK, CheckOffPack);
+        
     }
     private void InitState()
     {
@@ -141,6 +141,6 @@ public class ShopBox : BaseBox
     }
     private void OnDestroy()
     {
-        EventDispatcher.EventDispatcher.Instance.RemoveListener(EventID.SHOP_CHECK, CheckOffPack);
+    
     }
 }

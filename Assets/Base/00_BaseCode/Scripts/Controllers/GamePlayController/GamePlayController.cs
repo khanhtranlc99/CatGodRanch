@@ -19,7 +19,7 @@ public class GamePlayController : Singleton<GamePlayController>
     public StateGame stateGame;
     public PlayerContain playerContain;
     public GameScene gameScene;
- 
+    public ItemInGameVfx itemInGameVfx;
  
  
     
@@ -35,12 +35,22 @@ public class GamePlayController : Singleton<GamePlayController>
     public void Init()
     {
 
-   
+        SimplePool2.ClearPool();
+        SimplePool2.Preload(itemInGameVfx.gameObject);
         playerContain.Init();
- 
-     
-     
-      
+        gameScene.Init(playerContain);
+
+
+
+    }
+
+
+    public IEnumerator SpawnItemInGameVfx(int paramCoin, Vector3 post)
+    {
+        var temp =  SimplePool2.Spawn(itemInGameVfx);
+        temp.transform.position = new Vector3(post.x, post.y+1, post.z);
+        yield return StartCoroutine(temp.Init(paramCoin));
+        playerContain.coinController.HandlePlusCoin(paramCoin);
     }
    
 }

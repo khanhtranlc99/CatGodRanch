@@ -28,12 +28,16 @@ public class GameController : MonoBehaviour
  
     public StartLoading startLoading;
 
+  
+
     protected void Awake()
     {
         Instance = this;
         Init();
 
         DontDestroyOnLoad(this);
+        
+
 
         //GameController.Instance.useProfile.IsRemoveAds = true;
 
@@ -66,7 +70,7 @@ public class GameController : MonoBehaviour
 
     public void SetUp()
     {
-        admobAds.Init();
+       // admobAds.Init();
         musicManager.Init();
         iapController.Init();
         MMVibrationManager.SetHapticsActive(useProfile.OnVibration);

@@ -27,7 +27,7 @@ public class BackHomeBox : BaseBox
     {
         if (instance == null)
         {
-            instance = Instantiate(Resources.Load<BackHomeBox>(PathPrefabs.BACK_HOME_BOX));
+        
             instance.Init();
         }
         instance.InitState( typeParam);

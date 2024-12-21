@@ -131,9 +131,13 @@ public class PathPrefabs
  
     public const string INFO_LEVEL_BOX = "UI/Popups/InfoLevelBox";
 
-    public const string BACK_HOME_BOX = "UI/Popups/BackHomeBox";
+    public const string CARD_ANIMALS_BOX = "UI/Popups/CardAnimalsBox";
     public const string SHOP_COIN_BOX = "UI/Popups/ShopCoinBox";
     public const string HEART_BOX = "UI/Popups/HeartBox";
+
+    public const string PAY_BILL_BOX = "UI/Popups/PayBillBox";
+
+    public const string CARD_ITEM_BOX = "UI/Popups/CardItemBox";
 }
 
 public class SceneName

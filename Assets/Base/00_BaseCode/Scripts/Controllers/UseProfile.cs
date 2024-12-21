@@ -294,59 +294,7 @@ public class UseProfile : MonoBehaviour
 
         }
     }
-    public static int TNT_Booster
-    {
-        get
-        {
-            return PlayerPrefs.GetInt(StringHelper.TNT_BOOSTER, 3);
-        }
-        set
-        {
-            PlayerPrefs.SetInt(StringHelper.TNT_BOOSTER, value);
-            PlayerPrefs.Save();
-            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_TNT_BOOSTER);
-        }
-    }
-    public static int Roket_Booster
-    {
-        get
-        {
-            return PlayerPrefs.GetInt(StringHelper.ROCKET_BOOSTER, 3);
-        }
-        set
-        {
-            PlayerPrefs.SetInt(StringHelper.ROCKET_BOOSTER, value);
-            PlayerPrefs.Save();
-            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_ROCKET_BOOSTER);
-        }
-    }
-    public static int Freeze_Booster
-    {
-        get
-        {
-            return PlayerPrefs.GetInt(StringHelper.FREE_BOOSTER, 3);
-        }
-        set
-        {
-            PlayerPrefs.SetInt(StringHelper.FREE_BOOSTER, value);
-            PlayerPrefs.Save();
-            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_FREEZE_BOOSTER);
-
-        }
-    }
-    public static int Atom_Booster
-    {
-        get
-        {
-            return PlayerPrefs.GetInt(StringHelper.ATOM_BOOSTER, 3);
-        }
-        set
-        {
-            PlayerPrefs.SetInt(StringHelper.ATOM_BOOSTER, value);
-            PlayerPrefs.Save();
-            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.CHANGE_ATOM_BOOSTER);
-        }
-    }
+  
     public static int WinStreak
     {
         get
@@ -364,50 +312,8 @@ public class UseProfile : MonoBehaviour
         
         }
     }
-    public static int FlameUp_Item
-    {
-        get
-        {
-            if(PlayerPrefs.GetInt(StringHelper.FLAMEUP_ITEM, 0) >= 2)
-            {
-                return 2;
-            }
-            return PlayerPrefs.GetInt(StringHelper.FLAMEUP_ITEM, 0);
-        }
-        set
-        {
-            PlayerPrefs.SetInt(StringHelper.FLAMEUP_ITEM, value);
-            PlayerPrefs.Save();
-            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.FLAMEUP_ITEM);
-        }
-    }
-    public static int FastBoom_Item
-    {
-        get
-        {
-            return PlayerPrefs.GetInt(StringHelper.FASTBOOM_ITEM, 0);
-        }
-        set
-        {
-            PlayerPrefs.SetInt(StringHelper.FASTBOOM_ITEM, value);
-            PlayerPrefs.Save();
-            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.FASTBOOM_ITEM);
-        }
-    }
-    public static int TimeBoom_Item
-    {
-        get
-        {
-            return PlayerPrefs.GetInt(StringHelper.TIMEBOOM_ITEM, 0);
-        }
-        set
-        {
-            PlayerPrefs.SetInt(StringHelper.TIMEBOOM_ITEM, value);
-            PlayerPrefs.Save();
-            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.TIMEBOOM_ITEM);
-        }
-    }
-
+    
+   
     public static bool Fire_Start
     {
         get

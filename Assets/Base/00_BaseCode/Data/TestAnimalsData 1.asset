@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 397e1f5f0e21e7b4d8b5a7b501f6df05, type: 3}
+  m_Name: TestAnimalsData 1
+  m_EditorClassIdentifier: 
+  lsAnimalsData:
+  - animalsRank: 0
+    animalsDataProperty:
+    - name: Calf
+      content: After 4 day, grow into Cow or WaterBuffalo
+      animalsName: 10
+      spriteAvatar: {fileID: 21300000, guid: 7886d7660fda5a8438dc1a0c0cf0ac60, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+      price: 1
+      coinPlus: -1
+      prefabAnimals: {fileID: 377433775854885734, guid: 5db92bea3ccd3ce4ba1f69a88df710d9, type: 3}
+    - name: Chicken
+      content: After 3 day, 50% probability to Breeding 1 Egg
+      animalsName: 1
+      spriteAvatar: {fileID: 21300000, guid: db21ed64e5fb9e04887812c7d194e80d, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+      price: 2
+      coinPlus: 1
+      prefabAnimals: {fileID: 274297737607697692, guid: 8c07bf1eb5612ae4f853ede87e693916, type: 3}
+    - name: Dog
+      content: Protect adjacent Lamp, Sheep, Goat, and Acapela
+      animalsName: 14
+      spriteAvatar: {fileID: 21300000, guid: 9d99cda2094893a489d9f56d703eb744, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+      price: 2
+      coinPlus: 1
+      prefabAnimals: {fileID: 4641220579974034981, guid: 398e1dc53331ae6468b53a9d9b4aaf14, type: 3}
+  lsAnimalsBases:
+  - {fileID: 2430640531346007099, guid: 9f683f3a639932d458982de89350c84c, type: 3}
+  - {fileID: 307963586679060811, guid: 5db92bea3ccd3ce4ba1f69a88df710d9, type: 3}
+  - {fileID: 7838524542934611118, guid: 8c07bf1eb5612ae4f853ede87e693916, type: 3}
+  - {fileID: 6618285223994206199, guid: db0efdd1c73ec5e48a7a48eff25ad8ec, type: 3}
+  - {fileID: 8776624849756413466, guid: 398e1dc53331ae6468b53a9d9b4aaf14, type: 3}
+  - {fileID: 8093694605011734741, guid: cd6ca47843fed1f4392d0dd96b9ce2d9, type: 3}
+  - {fileID: 5948609140609001071, guid: 432b491ce6ef8bc43b5b8004259c5d54, type: 3}
+  - {fileID: 4375491995855188663, guid: 03db14b2f76fd3f439098fea848fdca0, type: 3}
+  - {fileID: 4390359538881202036, guid: 7f6a3427ddfb0d04c884fae85a37c28d, type: 3}
+  - {fileID: 316959273602353551, guid: 2703e57d57b5b0b44a86f09d21216f7e, type: 3}
+  - {fileID: 3361603888351922007, guid: 677a6a99583254743a796e0470736b53, type: 3}
+  - {fileID: 6455332545607615594, guid: 2086c974385bd9a44a29305e273bd65f, type: 3}
+  - {fileID: 7420841477925072337, guid: 7935d78bf27405341b8e56d4628fc11f, type: 3}
+  - {fileID: 8553884798064867418, guid: cd7ae6e12e31e9c4eb42bb45f3d3f3e7, type: 3}
+  - {fileID: 2909139358822565225, guid: c056a8822fff77046a90d15f453ab4c4, type: 3}
+  - {fileID: 6541188677307994632, guid: 54c3086217738be40aca71f1864f76fc, type: 3}
+  - {fileID: 1479675594035744526, guid: 86f344cdb6309a5409bd093b8b2a432b, type: 3}
+  - {fileID: 4727237957222405624, guid: 134452b951391f34fa26170ec97452b0, type: 3}
+  - {fileID: 7429517413614050180, guid: fb7feb6defaf2a948b7b5ddc78dfdd63, type: 3}

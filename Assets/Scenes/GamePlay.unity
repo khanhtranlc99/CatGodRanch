@@ -123,6 +123,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &17439898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 17439899}
+  - component: {fileID: 17439900}
+  m_Layer: 0
+  m_Name: CrowCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &17439899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17439898}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &17439900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17439898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b4ede40187ff34ba4bcac531b0089d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 2
+  animalsDataProperty:
+    name: Crow
+    content: Hunt 1 adjacent normal animal succes +1 Crow
+    animalsName: 24
+    spriteAvatar: {fileID: 21300000, guid: ce85d4ea312dfe3449a397d179079c20, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+    price: 1
+    coinPlus: 3
+    prefabAnimals: {fileID: 7360503255695831552, guid: 537a153fa58bc1b49aa08e0c79c25fb6, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &26644334
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,6 +219,225 @@ Transform:
   - {fileID: 3672699670737830949}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &30463626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 30463627}
+  - component: {fileID: 30463628}
+  m_Layer: 0
+  m_Name: FemaleLionCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &30463627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30463626}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &30463628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30463626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f273485dace2041980857c905fcf8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: FemaleLion
+    content: 'Hunt 1 adjacent Hoofed, Succes : +3<sprite name="Coin">'
+    animalsName: 35
+    spriteAvatar: {fileID: 21300000, guid: afeca496f19f92e438f13e6323cf25ac, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+    price: 1
+    coinPlus: 2
+    prefabAnimals: {fileID: 839695976463938174, guid: cae12aba1722d784e9914e1806e3dca2, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &35124218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 35124219}
+  - component: {fileID: 35124221}
+  - component: {fileID: 35124220}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &35124219
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35124218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1398444222}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.25, y: -1.9}
+  m_SizeDelta: {x: 80.89, y: 77.77}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &35124220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35124218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0c4e212f8fab6734e9f642e1abb0e081, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &35124221
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35124218}
+  m_CullTransparentMesh: 1
+--- !u!1 &37748785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 37748786}
+  - component: {fileID: 37748787}
+  m_Layer: 0
+  m_Name: HomeBG (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &37748786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37748785}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00031, y: 0.2994, z: 0}
+  m_LocalScale: {x: 0.4079786, y: 0.13063335, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 256801167}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!331 &37748787
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37748785}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a6ae458264a4a8e42a10f166c8becc96, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &39208331
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,20 +470,89 @@ MonoBehaviour:
   levelConfig:
     dataDifficulty:
       difficultyType: 1
-      numb: 0
+      numb: 300
     lsDataLevel:
-    - day: 0
+    - wasPassDay: 0
+      day: 1
       dayType:
         dayType: 0
         numb: 0
-    - day: 1
+    - wasPassDay: 0
+      day: 2
       dayType:
         dayType: 0
         numb: 0
+    - wasPassDay: 0
+      day: 3
+      dayType:
+        dayType: 0
+        numb: 0
+    - wasPassDay: 0
+      day: 4
+      dayType:
+        dayType: 0
+        numb: 0
+    - wasPassDay: 0
+      day: 5
+      dayType:
+        dayType: 1
+        numb: 10
+    - wasPassDay: 0
+      day: 6
+      dayType:
+        dayType: 0
+        numb: 0
+    - wasPassDay: 0
+      day: 7
+      dayType:
+        dayType: 0
+        numb: 0
+    - wasPassDay: 0
+      day: 8
+      dayType:
+        dayType: 1
+        numb: 10
+    - wasPassDay: 0
+      day: 9
+      dayType:
+        dayType: 0
+        numb: 0
+    - wasPassDay: 0
+      day: 10
+      dayType:
+        dayType: 1
+        numb: 10
+    - wasPassDay: 0
+      day: 11
+      dayType:
+        dayType: 0
+        numb: 0
+    - wasPassDay: 0
+      day: 12
+      dayType:
+        dayType: 0
+        numb: 0
+    - wasPassDay: 0
+      day: 13
+      dayType:
+        dayType: 0
+        numb: 0
+    - wasPassDay: 0
+      day: 14
+      dayType:
+        dayType: 0
+        numb: 0
+    - wasPassDay: 0
+      day: 15
+      dayType:
+        dayType: 1
+        numb: 150
   animalController: {fileID: 1216079275}
   postYardController: {fileID: 1709128799}
   cardController: {fileID: 1909996556}
   itemController: {fileID: 691290641}
+  dayController: {fileID: 250791455}
+  coinController: {fileID: 1404584609}
 --- !u!4 &39208333
 Transform:
   m_ObjectHideFlags: 0
@@ -221,8 +570,260 @@ Transform:
   - {fileID: 1709128798}
   - {fileID: 1909996557}
   - {fileID: 691290642}
+  - {fileID: 1404584608}
+  - {fileID: 250791454}
+  - {fileID: 932648228}
   m_Father: {fileID: 274261229}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &77803466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 77803467}
+  - component: {fileID: 77803468}
+  m_Layer: 0
+  m_Name: WaterBuffaloCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &77803467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77803466}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &77803468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77803466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1470aea8f1eabcd48a70022984081fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: WaterBuffalo
+    content: Survive on a Grassland +3<sprite name="Coin">, on a Puddle +5<sprite
+      name="Coin">
+    animalsName: 11
+    spriteAvatar: {fileID: 21300000, guid: 11c0f417ef3f68e4cbefa2cf6cc2df92, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 3
+    coinPlus: 3
+    prefabAnimals: {fileID: 2599561179293894768, guid: 134452b951391f34fa26170ec97452b0, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &79871847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 79871848}
+  - component: {fileID: 79871849}
+  m_Layer: 0
+  m_Name: OstrichCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &79871848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79871847}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &79871849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79871847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf95ab0fc038354989e5b49071fee0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: Ostrich
+    content: Move to an adjacent emty spot and +1 Daily Coin when adjacent Carnivore
+    animalsName: 21
+    spriteAvatar: {fileID: 21300000, guid: c8db0d5157e1498479a8cf10d3438d41, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+    price: 1
+    coinPlus: 1
+    prefabAnimals: {fileID: 6568869119595730781, guid: 9d5192f6b12322b4daddf4e9abc4da3c, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &93096812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 93096813}
+  - component: {fileID: 93096816}
+  - component: {fileID: 93096815}
+  - component: {fileID: 93096814}
+  m_Layer: 5
+  m_Name: Scrollbar Horizontal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &93096813
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93096812}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1543862448}
+  m_Father: {fileID: 1691006439}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: 20}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &93096814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93096812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 343900810}
+  m_HandleRect: {fileID: 343900809}
+  m_Direction: 0
+  m_Value: 0
+  m_Size: 1
+  m_NumberOfSteps: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &93096815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93096812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &93096816
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93096812}
+  m_CullTransparentMesh: 1
 --- !u!1 &133367825
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,13 +835,14 @@ GameObject:
   - component: {fileID: 133367826}
   - component: {fileID: 133367828}
   - component: {fileID: 133367827}
+  - component: {fileID: 133367829}
   m_Layer: 5
   m_Name: NextDayBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &133367826
 RectTransform:
   m_ObjectHideFlags: 0
@@ -299,6 +901,186 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133367825}
   m_CullTransparentMesh: 1
+--- !u!114 &133367829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133367825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 133367827}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &186737929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 186737930}
+  - component: {fileID: 186737931}
+  m_Layer: 0
+  m_Name: PenguinCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &186737930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186737929}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &186737931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186737929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f5fcc3ee752ee4f8d2b413f366171f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 2
+  animalsDataProperty:
+    name: Penguin
+    content: After 3 days take 1 item
+    animalsName: 22
+    spriteAvatar: {fileID: 21300000, guid: a73f308ce03b7d84e80cc1cf05e23bd2, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+    price: 5
+    coinPlus: 0
+    prefabAnimals: {fileID: 7684717052104629309, guid: 55c15df9ab799974cb0452402ef96d93, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &246141737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246141738}
+  - component: {fileID: 246141740}
+  - component: {fileID: 246141739}
+  m_Layer: 5
+  m_Name: Bg (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &246141738
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246141737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2057317535}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0000019073, y: -0.000056922}
+  m_SizeDelta: {x: 69, y: 39.79}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &246141739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246141737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d804e15effc909b4483b9f9852e9949a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &246141740
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246141737}
+  m_CullTransparentMesh: 1
 --- !u!1 &250791453
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +1111,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1395710099}
+  m_Father: {fileID: 39208333}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &250791455
 MonoBehaviour:
@@ -343,6 +1125,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf73a614d30be245b7dd500e9d75925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tvDay: {fileID: 1419310094}
+  lsDaybars:
+  - {fileID: 252024431}
+  - {fileID: 1565891356}
+  - {fileID: 2057317538}
+  - {fileID: 1816518172}
+  - {fileID: 1969548513}
+  lsCurrentData: []
+  currentDay: 0
+  countDayBar: 0
+  endDay: 0
+  panelDay: {fileID: 1818723981}
+  lsTempBill: []
+  currentDayType: 0
 --- !u!1 &252024427
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +1150,7 @@ GameObject:
   - component: {fileID: 252024428}
   - component: {fileID: 252024430}
   - component: {fileID: 252024429}
+  - component: {fileID: 252024431}
   m_Layer: 5
   m_Name: DayBar_1
   m_TagString: Untagged
@@ -373,7 +1170,9 @@ RectTransform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 533204077}
   - {fileID: 311645193}
+  - {fileID: 1336589356}
   m_Father: {fileID: 1080185418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -419,6 +1218,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252024427}
   m_CullTransparentMesh: 1
+--- !u!114 &252024431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252024427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e95b869d9a6dcc4e9e64420474aedbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 311645194}
+  bg: {fileID: 533204076}
+  iconWork: {fileID: 21300000, guid: 2a16a289400d55749818db6f8c05a7d0, type: 3}
+  iconPay: {fileID: 21300000, guid: 11afe4dd6864d7847afa3e14922b5b3e, type: 3}
+  tvNumb: {fileID: 1336589358}
 --- !u!1 &256801165
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,8 +1319,70 @@ Transform:
   m_Children:
   - {fileID: 602299575}
   - {fileID: 1572035755}
+  - {fileID: 37748786}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &267810264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 267810265}
+  - component: {fileID: 267810266}
+  m_Layer: 0
+  m_Name: ChickenCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &267810265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267810264}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &267810266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267810264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4c0b630f729e94db48ffaca5c603e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Chicken
+    content: After 3 day, 50% probability to Breeding 1 Egg
+    animalsName: 1
+    spriteAvatar: {fileID: 21300000, guid: db21ed64e5fb9e04887812c7d194e80d, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+    price: 2
+    coinPlus: 1
+    prefabAnimals: {fileID: 274297737607697692, guid: 8c07bf1eb5612ae4f853ede87e693916, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &274261227
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,6 +1416,7 @@ MonoBehaviour:
   stateGame: 0
   playerContain: {fileID: 39208332}
   gameScene: {fileID: 1395710098}
+  itemInGameVfx: {fileID: 273658356442769112, guid: 2b6e1ccf934af3c4a8b376a7f0bad534, type: 3}
 --- !u!4 &274261229
 Transform:
   m_ObjectHideFlags: 0
@@ -662,7 +1541,7 @@ GameObject:
   - component: {fileID: 311645195}
   - component: {fileID: 311645194}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -725,6 +1604,246 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311645192}
   m_CullTransparentMesh: 1
+--- !u!1 &335374134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 335374135}
+  - component: {fileID: 335374138}
+  - component: {fileID: 335374137}
+  - component: {fileID: 335374136}
+  m_Layer: 5
+  m_Name: Viewport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &335374135
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335374134}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2080297220}
+  m_Father: {fileID: 1691006439}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &335374136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335374134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
+--- !u!114 &335374137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335374134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &335374138
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335374134}
+  m_CullTransparentMesh: 1
+--- !u!1 &343900808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 343900809}
+  - component: {fileID: 343900811}
+  - component: {fileID: 343900810}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &343900809
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343900808}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1543862448}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &343900810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343900808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &343900811
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343900808}
+  m_CullTransparentMesh: 1
+--- !u!1 &378407922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 378407923}
+  - component: {fileID: 378407925}
+  - component: {fileID: 378407924}
+  m_Layer: 5
+  m_Name: Bg (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &378407923
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378407922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1969548510}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.08, y: -0.000056922}
+  m_SizeDelta: {x: 69.16, y: 39.79}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &378407924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378407922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c1d01c56f7223634f8959398e4e63464, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &378407925
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378407922}
+  m_CullTransparentMesh: 1
 --- !u!1 &405352217
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,6 +1879,67 @@ Transform:
   - {fileID: 3672699670140058979}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &420883776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 420883777}
+  - component: {fileID: 420883778}
+  m_Layer: 0
+  m_Name: RhinoCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &420883777
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420883776}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &420883778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420883776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e4574d28d7a449aa410e89806a663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 2
+  animalsDataProperty:
+    name: Rhino
+    content: Random add 1 Hoofed and make them +2 DailyCoin
+    animalsName: 30
+    spriteAvatar: {fileID: 21300000, guid: 312a8f1e7d257de4483059bdf2ae35a5, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 1
+    coinPlus: 1
+    prefabAnimals: {fileID: 1276581206445478464, guid: 1ad588bbb90e89d428657b189548b0a7, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &445098680
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,7 +1969,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 133367826}
-  - {fileID: 459447957}
+  - {fileID: 7623916670721915444}
   - {fileID: 762396302}
   m_Father: {fileID: 1374725408}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -830,12 +2010,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1912730465}
-  m_Father: {fileID: 445098681}
+  m_Father: {fileID: 1307720846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 399, y: -570.4}
-  m_SizeDelta: {x: 132.88, y: 132.29}
+  m_AnchoredPosition: {x: 427.2, y: 927.56006}
+  m_SizeDelta: {x: 106.49, y: 107.16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &459447958
 MonoBehaviour:
@@ -919,6 +2099,203 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &532767344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 532767345}
+  - component: {fileID: 532767346}
+  m_Layer: 0
+  m_Name: DogCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &532767345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532767344}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &532767346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532767344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e37e318fb2c54d740b0c78b8699a46c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Dog
+    content: Protect adjacent Lamp, Sheep, Goat, and Acapela
+    animalsName: 14
+    spriteAvatar: {fileID: 21300000, guid: 9d99cda2094893a489d9f56d703eb744, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+    price: 2
+    coinPlus: 1
+    prefabAnimals: {fileID: 4641220579974034981, guid: 398e1dc53331ae6468b53a9d9b4aaf14, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &533204076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 533204077}
+  - component: {fileID: 533204079}
+  - component: {fileID: 533204078}
+  m_Layer: 5
+  m_Name: Bg (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &533204077
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533204076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 252024428}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000005722, y: 0.0000050668}
+  m_SizeDelta: {x: 63, y: 39.79}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &533204078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533204076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c1d01c56f7223634f8959398e4e63464, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &533204079
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533204076}
+  m_CullTransparentMesh: 1
+--- !u!1 &565372440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 565372441}
+  - component: {fileID: 565372442}
+  m_Layer: 0
+  m_Name: MaleLionCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &565372441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565372440}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &565372442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565372440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41a2da088651a847b957cd3e58f4771, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: MaleLion
+    content: When Female Lion is on the field and hunt succes +2<sprite name="Coin">
+    animalsName: 34
+    spriteAvatar: {fileID: 21300000, guid: acc211425e04dca458439b01a7a363af, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+    price: 1
+    coinPlus: 2
+    prefabAnimals: {fileID: 808138249478664284, guid: abf86971d4efa0349b557c71303c0756, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &602299574
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,8 +2322,8 @@ Transform:
   m_GameObject: {fileID: 602299574}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.001, y: -0.124, z: 0}
-  m_LocalScale: {x: 0.05607308, y: 0.07142701, z: 1}
+  m_LocalPosition: {x: -0.00115, y: -0.13679, z: 0}
+  m_LocalScale: {x: 0.052341517, y: 0.073446095, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256801167}
@@ -1003,6 +2380,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &630542125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 630542126}
+  - component: {fileID: 630542127}
+  m_Layer: 0
+  m_Name: HorseCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &630542126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630542125}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &630542127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630542125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a2b6db9f3ea994e812fe1ac0766891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Horse
+    content: Move to an adjacent emty spot ahead, +2<sprite name="Coin"> each time
+    animalsName: 0
+    spriteAvatar: {fileID: 21300000, guid: 9d1284d28adb5814da6e20c199e639ee, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 1
+    coinPlus: 1
+    prefabAnimals: {fileID: 2049143034296793722, guid: 9a3a6016fbac0614fa69faf6c5ead0a2, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &644931000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,6 +2476,129 @@ Transform:
   - {fileID: 3672699671455313706}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &660425991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 660425992}
+  - component: {fileID: 660425993}
+  m_Layer: 0
+  m_Name: PuddleCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &660425992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660425991}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &660425993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660425991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1eb223f1ad21841b5cb83658b24d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: 
+    content: 
+    animalsName: 0
+    spriteAvatar: {fileID: 0}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 1
+    name: Puddle
+    content: Animals on the plot +2<sprite name="Coin"> when Hunting successfully
+    spriteAvatar: {fileID: 21300000, guid: d8ea5482b28fddf40b274f70f12fc6ee, type: 3}
+    price: 5
+    objCard: {fileID: 299457070835289469, guid: 2e2bf5d56ff2c334c8b64106caf73440, type: 3}
+--- !u!1 &675376030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 675376031}
+  - component: {fileID: 675376032}
+  m_Layer: 0
+  m_Name: SkunkCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &675376031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675376030}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &675376032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675376030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45321f18803ca054ab41339a9681934e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Skunk
+    content: If there are emty plots around  +2<sprite name="Coin">, ortherwise -1<sprite
+      name="Coin">
+    animalsName: 32
+    spriteAvatar: {fileID: 21300000, guid: 7fd0e074e998aae4dbb6cec3566d7bfa, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+    price: 1
+    coinPlus: 1
+    prefabAnimals: {fileID: 5663886227436397316, guid: f22d5648b5533374ebd28e0275ef53a6, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &691290640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,6 +2628,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a147a7a6f9d25478a1ddfd1d4d947e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lsCardBase:
+  - {fileID: 1497915660}
+  - {fileID: 660425993}
+  - {fileID: 1557436500}
+  - {fileID: 901143264}
+  - {fileID: 1832024887}
+  - {fileID: 1993454693}
+  - {fileID: 1781561191}
+  - {fileID: 882743359}
+  - {fileID: 930451895}
+  - {fileID: 698788725}
+  - {fileID: 1919259347}
+  - {fileID: 1548477460}
+  - {fileID: 1440313986}
+  - {fileID: 1319282499}
+  lsCurrentItem: []
+  lsItemNamesPostYard: 00000000010000000200000003000000
+  cardParent: {fileID: 2080297220}
+  postYardParent: {fileID: 932648228}
 --- !u!4 &691290642
 Transform:
   m_ObjectHideFlags: 0
@@ -1079,9 +2659,206 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1497915659}
+  - {fileID: 660425992}
+  - {fileID: 1557436499}
+  - {fileID: 901143263}
+  - {fileID: 1832024886}
+  - {fileID: 1993454692}
+  - {fileID: 1781561190}
+  - {fileID: 882743358}
+  - {fileID: 930451894}
+  - {fileID: 698788724}
+  - {fileID: 1919259346}
+  - {fileID: 1548477459}
+  - {fileID: 1440313985}
+  - {fileID: 1319282498}
   m_Father: {fileID: 39208333}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &697947544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 697947545}
+  - component: {fileID: 697947546}
+  m_Layer: 0
+  m_Name: PigeonCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &697947545
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697947544}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &697947546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697947544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7b76e6183e406e448561191e7bdd511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Pigeon
+    content: For every 1 Pigeon around +2<sprite name="Coin">
+    animalsName: 19
+    spriteAvatar: {fileID: 21300000, guid: 119ed72aec3a3a74092ed1ebc80f2bc4, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+    price: 2
+    coinPlus: 1
+    prefabAnimals: {fileID: 3145998522282484757, guid: cd7ae6e12e31e9c4eb42bb45f3d3f3e7, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &698788723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 698788724}
+  - component: {fileID: 698788725}
+  m_Layer: 0
+  m_Name: GrowTalentCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &698788724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698788723}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &698788725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698788723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8953ae7644d8fbf42abf045c6b235dea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 2
+  animalsDataProperty:
+    name: 
+    content: 
+    animalsName: 0
+    spriteAvatar: {fileID: 0}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 9
+    name: Grow talent
+    content: Hoofed grows every 6 day, Daily Coin +1
+    spriteAvatar: {fileID: 21300000, guid: 5e094c2cb56cd0043a79608020e58346, type: 3}
+    price: 15
+    objCard: {fileID: 7308340019459638219, guid: 5a9005c4b7b367947bac55a7a760d508, type: 3}
+--- !u!1 &711785747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 711785748}
+  - component: {fileID: 711785749}
+  m_Layer: 0
+  m_Name: GoatCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &711785748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711785747}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &711785749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711785747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fefe5da3e0e14444ac5cf7537d84419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: Goat
+    content: Add 1 Lamp when eaten
+    animalsName: 7
+    spriteAvatar: {fileID: 21300000, guid: 4071bd351beb1834daa6e629ca4bb5ea, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 3
+    coinPlus: 3
+    prefabAnimals: {fileID: 7214779199474979420, guid: 7f6a3427ddfb0d04c884fae85a37c28d, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &732503998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,7 +2968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &762396302
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1249,6 +3026,129 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762396301}
   m_CullTransparentMesh: 1
+--- !u!1 &790797466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 790797467}
+  - component: {fileID: 790797468}
+  m_Layer: 0
+  m_Name: CoyoteCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &790797467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790797466}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &790797468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790797466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee7e3b348bfc8b042939ee6a1af64e91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Coyote
+    content: When there are 3 or more Carnivore on the field +1 , ortherwise -1
+    animalsName: 31
+    spriteAvatar: {fileID: 21300000, guid: 4763a8316928e984693680b8e8d1edd1, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+    price: 1
+    coinPlus: 1
+    prefabAnimals: {fileID: 6554456267142829804, guid: 6da91711223e8a84aad6f5c1e455da79, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &811384671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 811384672}
+  - component: {fileID: 811384673}
+  m_Layer: 0
+  m_Name: HyenaCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &811384672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811384671}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &811384673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811384671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aab1a98f72da564792396fae562d570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Hyena
+    content: +3<sprite name="Coin"> when adjacent  animals are  eaten. If exactly
+      one square behind Carnivore, 50% Probability to eat and +20<sprite name="Coin">
+    animalsName: 16
+    spriteAvatar: {fileID: 21300000, guid: 7bc0553fb2bed6045baa6460e9ac8a5f, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+    price: 3
+    coinPlus: 2
+    prefabAnimals: {fileID: 3885773974964815361, guid: 677a6a99583254743a796e0470736b53, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &811752194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,7 +3161,7 @@ GameObject:
   - component: {fileID: 811752197}
   - component: {fileID: 811752196}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1324,6 +3224,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811752194}
   m_CullTransparentMesh: 1
+--- !u!1 &868219173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868219174}
+  - component: {fileID: 868219175}
+  m_Layer: 0
+  m_Name: AcapelaCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &868219174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868219173}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &868219175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868219173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05705994f5562e0408033add0898d6c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: Acapela
+    content: Increases the extra <sprite name="Coin"> gained by adjacent animals
+      by 1 times
+    animalsName: 9
+    spriteAvatar: {fileID: 21300000, guid: 4fb385af0097268479845148a295e943, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 3
+    coinPlus: 2
+    prefabAnimals: {fileID: 4615804035571882315, guid: 9f683f3a639932d458982de89350c84c, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &871966574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,7 +3298,7 @@ GameObject:
   - component: {fileID: 871966577}
   - component: {fileID: 871966576}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1359,7 +3321,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 2.54, y: 1.1}
-  m_SizeDelta: {x: 40.56, y: 29.83}
+  m_SizeDelta: {x: 69, y: 29.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &871966576
 MonoBehaviour:
@@ -1399,6 +3361,220 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871966574}
   m_CullTransparentMesh: 1
+--- !u!1 &882743357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 882743358}
+  - component: {fileID: 882743359}
+  m_Layer: 0
+  m_Name: GoatHornCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &882743358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882743357}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &882743359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882743357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14deb751cdee39d4c85e0604997a4796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: 
+    content: 
+    animalsName: 0
+    spriteAvatar: {fileID: 0}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 7
+    name: Goat Horn
+    content: Lamp can only grow into Goat, and after Goat is removed +2<sprite name="Coin">
+    spriteAvatar: {fileID: 21300000, guid: 57fd931f8b4626b4385268dde2932fa8, type: 3}
+    price: 10
+    objCard: {fileID: 6294436193077084, guid: 269304ffd6f976e40892bac0515828dc, type: 3}
+--- !u!1 &901143262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 901143263}
+  - component: {fileID: 901143264}
+  m_Layer: 0
+  m_Name: GrassCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &901143263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901143262}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &901143264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901143262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23b0c3ff04bf914a97b51b904d602f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: 
+    content: 
+    animalsName: 0
+    spriteAvatar: {fileID: 0}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 3
+    name: Grass
+    content: Animals on this Plot will not be eaten, +1<sprite name="Coin">
+    spriteAvatar: {fileID: 21300000, guid: c2892d9de5d7bd34ea1db6bba5a477cd, type: 3}
+    price: 5
+    objCard: {fileID: 6245197404863927180, guid: 5bbeb8b371afd254c99c672e3c0ee593, type: 3}
+--- !u!1 &930451893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 930451894}
+  - component: {fileID: 930451895}
+  m_Layer: 0
+  m_Name: NutritionalSupplementCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &930451894
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930451893}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &930451895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930451893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f42cf4a2963f954cbcd5e0312ea7ec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: 
+    content: 
+    animalsName: 0
+    spriteAvatar: {fileID: 0}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 8
+    name: Nutritional Supplement
+    content: Carnivore hunt successfully +2<sprite name="Coin">
+    spriteAvatar: {fileID: 21300000, guid: 98a59789466bf68429942bfcfc195a0c, type: 3}
+    price: 10
+    objCard: {fileID: 784553231198790439, guid: ba58ccd4eb8e5ba49a8d674994e9e794, type: 3}
+--- !u!1 &932648227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 932648228}
+  m_Layer: 0
+  m_Name: PostYard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &932648228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932648227}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.31, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 39208333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &977971341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,6 +3666,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977971341}
   m_CullTransparentMesh: 1
+--- !u!1 &1045837611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1045837612}
+  - component: {fileID: 1045837613}
+  m_Layer: 0
+  m_Name: TigerCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1045837612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045837611}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1045837613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045837611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0412d7cd3330b04a9f1910e7a547cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 2
+  animalsDataProperty:
+    name: Tiger
+    content: Hunt all adjacent Carnivore , Sugget +5<sprite name="Coin"> foreach
+    animalsName: 18
+    spriteAvatar: {fileID: 21300000, guid: dd407c55bbca9334e910bd632b31d3f8, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+    price: 5
+    coinPlus: 3
+    prefabAnimals: {fileID: 4619693253205957194, guid: 54c3086217738be40aca71f1864f76fc, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &1080185417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,6 +3765,7 @@ RectTransform:
   - {fileID: 291621851}
   - {fileID: 1419310092}
   - {fileID: 977971342}
+  - {fileID: 1691006439}
   m_Father: {fileID: 1307720846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
@@ -1572,6 +3810,204 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080185417}
+  m_CullTransparentMesh: 1
+--- !u!1 &1096635403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1096635404}
+  - component: {fileID: 1096635405}
+  m_Layer: 0
+  m_Name: DuckCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1096635404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096635403}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1096635405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096635403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6341e58f588b61c478b7eccfa717abde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Duck
+    content: When there are 3 or more Duck on the field +1<sprite name="Coin">, and
+      +2<sprite name="Coin"> when adjacent to Puddle
+    animalsName: 3
+    spriteAvatar: {fileID: 21300000, guid: c13f569dba3c0634687b90c4b0ea4129, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+    price: 2
+    coinPlus: 2
+    prefabAnimals: {fileID: 99400945898884003, guid: cd6ca47843fed1f4392d0dd96b9ce2d9, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1130391599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1130391600}
+  - component: {fileID: 1130391601}
+  m_Layer: 0
+  m_Name: CrocodileCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1130391600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130391599}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1130391601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130391599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073b8566430c00240ad2ea6f8c3b237e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 2
+  animalsDataProperty:
+    name: Crocodile
+    content: Hunt 1 adjacent  animals, Succes +5 Daily Coin
+    animalsName: 37
+    spriteAvatar: {fileID: 21300000, guid: 825c7c3958a88234cb8623a3697a9179, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+    price: 1
+    coinPlus: 4
+    prefabAnimals: {fileID: 119012246445378915, guid: 4b573dfc6c6426a4199e04c15da5ffda, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1134069399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1134069400}
+  - component: {fileID: 1134069402}
+  - component: {fileID: 1134069401}
+  m_Layer: 5
+  m_Name: Bg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1134069400
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134069399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1565891353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0000019073, y: -0.000056922}
+  m_SizeDelta: {x: 69, y: 39.79}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1134069401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134069399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d804e15effc909b4483b9f9852e9949a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1134069402
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134069399}
   m_CullTransparentMesh: 1
 --- !u!1 &1137774572
 GameObject:
@@ -1675,6 +4111,252 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1154385764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1154385765}
+  - component: {fileID: 1154385766}
+  m_Layer: 0
+  m_Name: TurkeyCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1154385765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154385764}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1154385766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154385764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66459337b6f332a41963a6c3ae69970a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Turkey
+    content: +5<sprite name="Coin"> when eaten
+    animalsName: 2
+    spriteAvatar: {fileID: 21300000, guid: 9abbd83548c89104988083ea6fd9619e, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+    price: 2
+    coinPlus: 2
+    prefabAnimals: {fileID: 6670804836121204970, guid: 86f344cdb6309a5409bd093b8b2a432b, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1159476473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159476474}
+  - component: {fileID: 1159476475}
+  m_Layer: 0
+  m_Name: ReinDeerCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1159476474
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159476473}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1159476475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159476473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 721d52cb23b387b4885da6cc0b9c25d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 2
+  animalsDataProperty:
+    name: ReinDeer
+    content: 'Random sell non-SuperRare animals on 1 adjacent plot, gaining 3-7 time
+      their Daily coin '
+    animalsName: 28
+    spriteAvatar: {fileID: 21300000, guid: b54a062edd9b73d43a0c80ce93eb2e6d, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 1
+    coinPlus: 3
+    prefabAnimals: {fileID: 6495256812154342828, guid: 16055289d1614a6498e53a40f1bd3bc3, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1184314186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1184314187}
+  - component: {fileID: 1184314188}
+  m_Layer: 0
+  m_Name: LampCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1184314187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184314186}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1184314188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184314186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92cea14b2b610ab49b0e7bc99a71b958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Lamp
+    content: After 3 day, grow into Sheep, Goat, or Acapela
+    animalsName: 6
+    spriteAvatar: {fileID: 21300000, guid: 7faeca919f1749d4ab1a9ffc26ad9efd, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 1
+    coinPlus: -1
+    prefabAnimals: {fileID: 9060786830282739334, guid: 2086c974385bd9a44a29305e273bd65f, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1212307352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1212307353}
+  - component: {fileID: 1212307354}
+  m_Layer: 0
+  m_Name: WolfCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1212307353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212307352}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1212307354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212307352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c7cc0a6083a0140b08df98d52045ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Wolf
+    content: Hunt 1 adjacent Lamp, Calf, Sheep, Acapela or Goat Succes +5<sprite
+      name="Coin">
+    animalsName: 15
+    spriteAvatar: {fileID: 21300000, guid: 7d492ba4e9fdc874e8a1730ab5f0bc26, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+    price: 1
+    coinPlus: 1
+    prefabAnimals: {fileID: 7129943512840412722, guid: fb7feb6defaf2a948b7b5ddc78dfdd63, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &1216079273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,8 +4401,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c32820c80687444b92d890ed329e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerContain: {fileID: 39208332}
-  lsPrefabAnimals: []
+  lsAnimalsBases: []
+  lsTempAnimalsBases: []
+  postHome: {fileID: 37748786}
+  btnNextDay: {fileID: 133367829}
+--- !u!1 &1240971824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1240971825}
+  - component: {fileID: 1240971826}
+  m_Layer: 0
+  m_Name: PigCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1240971825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240971824}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1240971826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240971824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 965e0e66f9f7c334c8164d0627378868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Pig
+    content: Automatically sold after 4 day, +12<sprite name="Coin">
+    animalsName: 13
+    spriteAvatar: {fileID: 21300000, guid: 8a4fef9265d2f6445ae4f46be84e4d7d, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 3
+    coinPlus: -1
+    prefabAnimals: {fileID: 6597746934910106839, guid: 7935d78bf27405341b8e56d4628fc11f, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &1307720845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,6 +4494,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 459447957}
+  - {fileID: 1398444222}
+  - {fileID: 1818723980}
   - {fileID: 1080185418}
   m_Father: {fileID: 1374725408}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1757,6 +4505,237 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -980, y: -1820}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1319282497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1319282498}
+  - component: {fileID: 1319282499}
+  m_Layer: 0
+  m_Name: SheepPenCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1319282498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319282497}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1319282499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319282497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d029a5f3b63d948a87642050eed95b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 2
+  animalsDataProperty:
+    name: 
+    content: 
+    animalsName: 0
+    spriteAvatar: {fileID: 0}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 13
+    name: Sheep Pen
+    content: Add 1 Lamp on empty plots every 3 days
+    spriteAvatar: {fileID: 21300000, guid: c03a634705e92294b87c16918f984ccd, type: 3}
+    price: 15
+    objCard: {fileID: 6638466171806534472, guid: 079709c47632e5a42876f150fce23899, type: 3}
+--- !u!1 &1336589355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1336589356}
+  - component: {fileID: 1336589359}
+  - component: {fileID: 1336589358}
+  - component: {fileID: 1336589357}
+  m_Layer: 5
+  m_Name: tvNumb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1336589356
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336589355}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 252024428}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 3.7999992, y: 0.5}
+  m_SizeDelta: {x: 32.910004, y: 27.88}
+  m_Pivot: {x: 1.2220778, y: 0.15239556}
+--- !u!114 &1336589357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336589355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1336589358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336589355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 31163bd21f29352498642f0c1c5c6b5e, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 150
+--- !u!222 &1336589359
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336589355}
+  m_CullTransparentMesh: 1
+--- !u!1 &1353404034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1353404035}
+  - component: {fileID: 1353404037}
+  - component: {fileID: 1353404036}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1353404035
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353404034}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7623916670721915444}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1353404036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353404034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5698112, g: 0.52358127, b: 0.52358127, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1353404037
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353404034}
+  m_CullTransparentMesh: 1
 --- !u!1 &1374725407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1823,7 +4802,7 @@ GameObject:
   - component: {fileID: 1375253794}
   - component: {fileID: 1375253793}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1918,8 +4897,7 @@ MonoBehaviour:
   tvLevel: {fileID: 291621853}
   settinBtn: {fileID: 459447960}
   canvas: {fileID: 1137774576}
-  dayController: {fileID: 250791455}
-  coinController: {fileID: 1404584609}
+  resetBtn: {fileID: 1398444223}
 --- !u!4 &1395710099
 Transform:
   m_ObjectHideFlags: 0
@@ -1932,11 +4910,130 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 250791454}
-  - {fileID: 1404584608}
+  m_Children: []
   m_Father: {fileID: 274261229}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1398444221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1398444222}
+  - component: {fileID: 1398444225}
+  - component: {fileID: 1398444224}
+  - component: {fileID: 1398444223}
+  m_Layer: 5
+  m_Name: ResetBtn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1398444222
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398444221}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 35124219}
+  m_Father: {fileID: 1307720846}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 427.2, y: 796}
+  m_SizeDelta: {x: 106.49, y: 107.16}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1398444223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398444221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1398444224}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1398444224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398444221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a26ac9e74cefdc348bd112605b4abbce, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1.82
+--- !u!222 &1398444225
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398444221}
+  m_CullTransparentMesh: 1
 --- !u!1 &1404584607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,7 +5064,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1395710099}
+  m_Father: {fileID: 39208333}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1404584609
 MonoBehaviour:
@@ -1981,6 +5078,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52fccfcf06c78e44b97788c240c90b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coin: 0
+  tvCoin: {fileID: 2080647560}
+  coinBar: {fileID: 1436679134}
+  targetCoin: 0
 --- !u!1 &1419310091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2110,8 +5211,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.69, y: 0}
-  m_SizeDelta: {x: 381.13, y: 67.67}
+  m_AnchoredPosition: {x: 0.000030994, y: 1.3825}
+  m_SizeDelta: {x: 358.07, y: 64.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1436679134
 MonoBehaviour:
@@ -2133,7 +5234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2151,6 +5252,410 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436679132}
   m_CullTransparentMesh: 1
+--- !u!1 &1440313984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1440313985}
+  - component: {fileID: 1440313986}
+  m_Layer: 0
+  m_Name: MonneyBagCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1440313985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440313984}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1440313986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440313984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e67a2a9a91e5664e8ecfc5edad508a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 2
+  animalsDataProperty:
+    name: 
+    content: 
+    animalsName: 0
+    spriteAvatar: {fileID: 0}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 12
+    name: Monney Bag
+    content: '1<sprite name="Coin"> for each empty plot '
+    spriteAvatar: {fileID: 21300000, guid: 62b381f534e741f4bb2f86fb00236b92, type: 3}
+    price: 15
+    objCard: {fileID: 5914667929641030008, guid: d4b8a2596390a7d4f8fd84e07e6a7e66, type: 3}
+--- !u!1 &1442680233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1442680234}
+  - component: {fileID: 1442680235}
+  m_Layer: 0
+  m_Name: EagleCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1442680234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442680233}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1442680235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442680233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca06ea65fd649ed4c8b3e94b29dcd6b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: Eagle
+    content: Hunt 1 adjacent Normal Bird succes +5<sprite name="Coin">
+    animalsName: 20
+    spriteAvatar: {fileID: 21300000, guid: edf291292f1d05745af2d7780e622f04, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+    price: 2
+    coinPlus: 2
+    prefabAnimals: {fileID: 679782707442496976, guid: 3b304571f3d18ad43bf45bc3271fb37d, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1454766125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454766126}
+  - component: {fileID: 1454766127}
+  m_Layer: 0
+  m_Name: GazelleCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1454766126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454766125}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1454766127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454766125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78be7d8bfee4875449c90b7fc79ebb63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: Gazelle
+    content: Swap places with the animal above, +2<sprite name="Coin">
+    animalsName: 26
+    spriteAvatar: {fileID: 21300000, guid: 5025c37e246ce5a4a85722d7e09330cb, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 1
+    coinPlus: 1
+    prefabAnimals: {fileID: 5976686612647600688, guid: 2f2b0f5872243cf47a3632e4bd2a7f6c, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1497915658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1497915659}
+  - component: {fileID: 1497915660}
+  m_Layer: 0
+  m_Name: NestCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1497915659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497915658}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1497915660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497915658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490b7f65df5249048bbf043443040e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Nest
+    content: Animals on the plot +2<sprite name="Coin">, Bird Family Has a 20% probability
+      to leave an Egg
+    animalsName: 0
+    spriteAvatar: {fileID: 21300000, guid: 3d31e6b04109fab4a8222a423950f12f, type: 3}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 0
+    name: Nest
+    content: Animals on the plot +2<sprite name="Coin">, Bird Family Has a 20% probability
+      to leave an Egg
+    spriteAvatar: {fileID: 21300000, guid: 3d31e6b04109fab4a8222a423950f12f, type: 3}
+    price: 5
+    objCard: {fileID: 6104935749705598651, guid: 1267b68815cf57c42918433f007213a4, type: 3}
+--- !u!1 &1543862447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1543862448}
+  m_Layer: 5
+  m_Name: Sliding Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1543862448
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543862447}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 343900809}
+  m_Father: {fileID: 93096813}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1548477458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1548477459}
+  - component: {fileID: 1548477460}
+  m_Layer: 0
+  m_Name: CarnivoreTalentCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1548477459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548477458}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1548477460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548477458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e4e304acfef6142bd837b03a27a483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 2
+  animalsDataProperty:
+    name: 
+    content: 
+    animalsName: 0
+    spriteAvatar: {fileID: 0}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 11
+    name: Carnivore Talent
+    content: When a Carnivore eats 1 animals, Daily Coin +6
+    spriteAvatar: {fileID: 21300000, guid: c4644fa215bdd3c47b2076cd87602aa8, type: 3}
+    price: 15
+    objCard: {fileID: 1324692633126160202, guid: e0bcbfaf2c8c10d488f3b06c98b2e8e0, type: 3}
+--- !u!1 &1557436498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1557436499}
+  - component: {fileID: 1557436500}
+  m_Layer: 0
+  m_Name: SandCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1557436499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557436498}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1557436500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557436498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad54e109004deb447a15bf9c84eccfd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: 
+    content: 
+    animalsName: 0
+    spriteAvatar: {fileID: 0}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 2
+    name: Sand
+    content: Animals on this plot have <sprite name="Time"> -1
+    spriteAvatar: {fileID: 21300000, guid: 9ed12604f6a4618479d28e8f9310522b, type: 3}
+    price: 5
+    objCard: {fileID: 1303855364980904961, guid: 9cd9e1d611726b24487ed5a71d07dbaf, type: 3}
 --- !u!1 &1565891352
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,6 +5667,7 @@ GameObject:
   - component: {fileID: 1565891353}
   - component: {fileID: 1565891355}
   - component: {fileID: 1565891354}
+  - component: {fileID: 1565891356}
   m_Layer: 5
   m_Name: DayBar_2
   m_TagString: Untagged
@@ -2181,7 +5687,9 @@ RectTransform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1134069400}
   - {fileID: 871966575}
+  - {fileID: 1733648340}
   m_Father: {fileID: 1080185418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -2227,6 +5735,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565891352}
   m_CullTransparentMesh: 1
+--- !u!114 &1565891356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565891352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e95b869d9a6dcc4e9e64420474aedbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 871966576}
+  bg: {fileID: 1134069399}
+  iconWork: {fileID: 21300000, guid: 2a16a289400d55749818db6f8c05a7d0, type: 3}
+  iconPay: {fileID: 21300000, guid: 11afe4dd6864d7847afa3e14922b5b3e, type: 3}
+  tvNumb: {fileID: 1733648342}
 --- !u!1 &1572035754
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,6 +5836,359 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1589570254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1589570255}
+  - component: {fileID: 1589570256}
+  m_Layer: 0
+  m_Name: GooseCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1589570255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589570254}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1589570256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589570254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a699a043f163654a85583357dd04b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: Goose
+    content: Adjacent Bird cannot  be eaten
+    animalsName: 4
+    spriteAvatar: {fileID: 21300000, guid: 0a75113d0ac342745a1d3ae9944aa1be, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+    price: 3
+    coinPlus: 2
+    prefabAnimals: {fileID: 7045278162958220252, guid: 2703e57d57b5b0b44a86f09d21216f7e, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1592258454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1592258455}
+  - component: {fileID: 1592258456}
+  m_Layer: 0
+  m_Name: FoxCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1592258455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592258454}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1592258456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592258454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6b9bcb070681946b7238f63b1f03a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Fox
+    content: 'Hunt 1 adjacent Chicken, Duck, Turkey or Pigeon. Succes +5<sprite name="Coin"> '
+    animalsName: 17
+    spriteAvatar: {fileID: 21300000, guid: d32417742eb4d6c418e464c8c95ba161, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+    price: 2
+    coinPlus: 1
+    prefabAnimals: {fileID: 4321285287068053325, guid: 03db14b2f76fd3f439098fea848fdca0, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1632883473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1632883474}
+  - component: {fileID: 1632883475}
+  m_Layer: 0
+  m_Name: BadgerCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1632883474
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632883473}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1632883475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632883473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9afd31b53db174a85e4458d2f31f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: Badger
+    content: If there are 2 or more Badger on the field +4<sprite name="Coin">, ortherwise
+      -2<sprite name="Coin">
+    animalsName: 33
+    spriteAvatar: {fileID: 21300000, guid: 3e2dd01a3dbd19f47bc9e357486347fb, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+    price: 1
+    coinPlus: 2
+    prefabAnimals: {fileID: 1036420179037201004, guid: c582164f728603e4ebcd8b5c0a494aa6, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1685215726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1685215727}
+  - component: {fileID: 1685215728}
+  m_Layer: 0
+  m_Name: SheepCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1685215727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685215726}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1685215728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685215726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d25444593cec543970b1885ab73a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Sheep
+    content: Automatically sold after 3 day, +7<sprite name="Coin">
+    animalsName: 8
+    spriteAvatar: {fileID: 21300000, guid: a83c320a890ebad4ea15da9a98f00f69, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 3
+    coinPlus: -1
+    prefabAnimals: {fileID: 1722297517708054, guid: c056a8822fff77046a90d15f453ab4c4, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1691006438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1691006439}
+  - component: {fileID: 1691006442}
+  - component: {fileID: 1691006441}
+  - component: {fileID: 1691006440}
+  m_Layer: 5
+  m_Name: Scroll View
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1691006439
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691006438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 335374135}
+  - {fileID: 93096813}
+  m_Father: {fileID: 1080185418}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000011921, y: -249.2}
+  m_SizeDelta: {x: 848.51, y: 173.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1691006440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691006438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 2080297220}
+  m_Horizontal: 1
+  m_Vertical: 0
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 335374135}
+  m_HorizontalScrollbar: {fileID: 93096814}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 2
+  m_VerticalScrollbarVisibility: 2
+  m_HorizontalScrollbarSpacing: -3
+  m_VerticalScrollbarSpacing: -3
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1691006441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691006438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1691006442
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691006438}
+  m_CullTransparentMesh: 1
 --- !u!1 &1709128797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2376,6 +6254,454 @@ MonoBehaviour:
   - {fileID: 5060978397301070876}
   - {fileID: 5060978397932359404}
   - {fileID: 5060978397401366292}
+--- !u!1 &1721941544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1721941545}
+  - component: {fileID: 1721941546}
+  m_Layer: 0
+  m_Name: MuskOxCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1721941545
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721941544}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1721941546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721941544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 911ed518de89159418d2e85592f604d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 2
+  animalsDataProperty:
+    name: MuskOx
+    content: Orther Hoofed in the same row +1 DailyCoin
+    animalsName: 29
+    spriteAvatar: {fileID: 21300000, guid: a0ef15d1bb68ba845883d515d5c6ae49, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 1
+    coinPlus: 2
+    prefabAnimals: {fileID: 858197211547564017, guid: c205cf960f365ac44b3572dd63731112, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1733648339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1733648340}
+  - component: {fileID: 1733648343}
+  - component: {fileID: 1733648342}
+  - component: {fileID: 1733648341}
+  m_Layer: 5
+  m_Name: tvNumb (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1733648340
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733648339}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1565891353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 3.7999992, y: 0.5}
+  m_SizeDelta: {x: 32.910004, y: 27.88}
+  m_Pivot: {x: 1.2220778, y: 0.15239556}
+--- !u!114 &1733648341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733648339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1733648342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733648339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 31163bd21f29352498642f0c1c5c6b5e, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 150
+--- !u!222 &1733648343
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733648339}
+  m_CullTransparentMesh: 1
+--- !u!1 &1746703427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1746703428}
+  - component: {fileID: 1746703431}
+  - component: {fileID: 1746703430}
+  - component: {fileID: 1746703429}
+  m_Layer: 5
+  m_Name: tvNumb (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1746703428
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746703427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2057317535}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 3.7999992, y: 0.5}
+  m_SizeDelta: {x: 32.910004, y: 27.88}
+  m_Pivot: {x: 1.2220778, y: 0.15239556}
+--- !u!114 &1746703429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746703427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1746703430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746703427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 31163bd21f29352498642f0c1c5c6b5e, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 150
+--- !u!222 &1746703431
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746703427}
+  m_CullTransparentMesh: 1
+--- !u!1 &1770634242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1770634243}
+  - component: {fileID: 1770634245}
+  - component: {fileID: 1770634244}
+  m_Layer: 5
+  m_Name: Bg (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1770634243
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770634242}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1816518169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0000019073, y: -0.000056922}
+  m_SizeDelta: {x: 69, y: 39.79}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1770634244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770634242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d804e15effc909b4483b9f9852e9949a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1770634245
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770634242}
+  m_CullTransparentMesh: 1
+--- !u!1 &1781561189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1781561190}
+  - component: {fileID: 1781561191}
+  m_Layer: 0
+  m_Name: GrowExpressCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1781561190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781561189}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1781561191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781561189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd6d87c30de00a448d4fc82ca56fe61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: 
+    content: 
+    animalsName: 0
+    spriteAvatar: {fileID: 0}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 6
+    name: Grow Express
+    content: 2<sprite name="Coin"> for animals growing up from Calf or Lamb
+    spriteAvatar: {fileID: 21300000, guid: c7aff676d08b23047b1bee738047bda1, type: 3}
+    price: 10
+    objCard: {fileID: 3904271527521036270, guid: 927cc5f8d307a404083520e6b7081bf3, type: 3}
+--- !u!1 &1803333889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1803333890}
+  - component: {fileID: 1803333891}
+  m_Layer: 0
+  m_Name: CowCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1803333890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803333889}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1803333891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803333889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52da7ee9ebe7d2842943ea6cc0cfd0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: Cow
+    content: When adjacent Water Buffalo or Cow are eaten, add 1 Calf
+    animalsName: 12
+    spriteAvatar: {fileID: 21300000, guid: 49752250c256c8340bb4696e8f18c9a5, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 3
+    coinPlus: 3
+    prefabAnimals: {fileID: 4887382305412472880, guid: db0efdd1c73ec5e48a7a48eff25ad8ec, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &1816518168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,6 +6713,7 @@ GameObject:
   - component: {fileID: 1816518169}
   - component: {fileID: 1816518171}
   - component: {fileID: 1816518170}
+  - component: {fileID: 1816518172}
   m_Layer: 5
   m_Name: DayBar_4
   m_TagString: Untagged
@@ -2406,7 +6733,9 @@ RectTransform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1770634243}
   - {fileID: 1375253792}
+  - {fileID: 2021798582}
   m_Father: {fileID: 1080185418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -2452,6 +6781,159 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816518168}
   m_CullTransparentMesh: 1
+--- !u!114 &1816518172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816518168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e95b869d9a6dcc4e9e64420474aedbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 1375253793}
+  bg: {fileID: 1770634242}
+  iconWork: {fileID: 21300000, guid: 2a16a289400d55749818db6f8c05a7d0, type: 3}
+  iconPay: {fileID: 21300000, guid: 11afe4dd6864d7847afa3e14922b5b3e, type: 3}
+  tvNumb: {fileID: 2021798584}
+--- !u!1 &1818723979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1818723980}
+  - component: {fileID: 1818723982}
+  - component: {fileID: 1818723981}
+  m_Layer: 5
+  m_Name: PanelDayNight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1818723980
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818723979}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1307720846}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -31.329956, y: 102.099976}
+  m_SizeDelta: {x: 2369.68, y: 2441.59}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1818723981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818723979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1818723982
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818723979}
+  m_CullTransparentMesh: 1
+--- !u!1 &1832024885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1832024886}
+  - component: {fileID: 1832024887}
+  m_Layer: 0
+  m_Name: LivestockLicenseCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1832024886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832024885}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1832024887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832024885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ea6cacab8543e46b19b14c788c2114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: 
+    content: 
+    animalsName: 0
+    spriteAvatar: {fileID: 0}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 4
+    name: Livestock license
+    content: 2<sprite name="Coin">  for each added animal
+    spriteAvatar: {fileID: 21300000, guid: 5cdd4f0452facdf4b9a27d0e44616d0b, type: 3}
+    price: 10
+    objCard: {fileID: 2309824496019744471, guid: 8e2431c6b8e37a04e9cb2a24ec6f1aaa, type: 3}
 --- !u!1 &1909996555
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,6 +6963,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 985796f6f41b07c4b8c6138f25b4c7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lsCardBase:
+  - {fileID: 868219175}
+  - {fileID: 1918738645}
+  - {fileID: 267810266}
+  - {fileID: 1803333891}
+  - {fileID: 532767346}
+  - {fileID: 1096635405}
+  - {fileID: 1911251343}
+  - {fileID: 1592258456}
+  - {fileID: 711785749}
+  - {fileID: 1589570256}
+  - {fileID: 811384673}
+  - {fileID: 1184314188}
+  - {fileID: 1240971826}
+  - {fileID: 1685215728}
+  - {fileID: 1045837613}
+  - {fileID: 1154385766}
+  - {fileID: 77803468}
+  - {fileID: 1212307354}
+  - {fileID: 697947546}
+  - {fileID: 1442680235}
+  - {fileID: 79871849}
+  - {fileID: 186737931}
+  - {fileID: 1915527155}
+  - {fileID: 17439900}
+  - {fileID: 630542127}
+  - {fileID: 1454766127}
+  - {fileID: 2120328846}
+  - {fileID: 1159476475}
+  - {fileID: 1721941546}
+  - {fileID: 420883778}
+  - {fileID: 790797468}
+  - {fileID: 675376032}
+  - {fileID: 1632883475}
+  - {fileID: 565372442}
+  - {fileID: 30463628}
+  - {fileID: 1130391601}
+  lsCurrentAnimalsData: []
 --- !u!4 &1909996557
 Transform:
   m_ObjectHideFlags: 0
@@ -2493,9 +7013,106 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 868219174}
+  - {fileID: 1918738644}
+  - {fileID: 267810265}
+  - {fileID: 1803333890}
+  - {fileID: 532767345}
+  - {fileID: 1096635404}
+  - {fileID: 1911251342}
+  - {fileID: 1592258455}
+  - {fileID: 711785748}
+  - {fileID: 1589570255}
+  - {fileID: 811384672}
+  - {fileID: 1184314187}
+  - {fileID: 1240971825}
+  - {fileID: 1685215727}
+  - {fileID: 1045837612}
+  - {fileID: 1154385765}
+  - {fileID: 77803467}
+  - {fileID: 1212307353}
+  - {fileID: 697947545}
+  - {fileID: 1442680234}
+  - {fileID: 79871848}
+  - {fileID: 186737930}
+  - {fileID: 1915527154}
+  - {fileID: 17439899}
+  - {fileID: 630542126}
+  - {fileID: 1454766126}
+  - {fileID: 2120328845}
+  - {fileID: 1159476474}
+  - {fileID: 1721941545}
+  - {fileID: 420883777}
+  - {fileID: 790797467}
+  - {fileID: 675376031}
+  - {fileID: 1632883474}
+  - {fileID: 565372441}
+  - {fileID: 30463627}
+  - {fileID: 1130391600}
   m_Father: {fileID: 39208333}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1911251341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1911251342}
+  - component: {fileID: 1911251343}
+  m_Layer: 0
+  m_Name: EggCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1911251342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911251341}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1911251343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911251341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39937926bac242f40a7bdeca3826ef19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Egg
+    content: After 3 day, hatch into Chicken, Duck, Turkey or Pigeon
+    animalsName: 0
+    spriteAvatar: {fileID: 21300000, guid: 7854eb25481d9e34db0bee78cd6d9011, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+    price: 1
+    coinPlus: 0
+    prefabAnimals: {fileID: 9187771814284334767, guid: 432b491ce6ef8bc43b5b8004259c5d54, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &1912730464
 GameObject:
   m_ObjectHideFlags: 0
@@ -2530,8 +7147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -4}
-  m_SizeDelta: {x: 87, y: 95}
+  m_AnchoredPosition: {x: 1.25, y: -1.9}
+  m_SizeDelta: {x: 80.89, y: 77.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1912730466
 MonoBehaviour:
@@ -2571,6 +7188,285 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912730464}
   m_CullTransparentMesh: 1
+--- !u!1 &1915527153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1915527154}
+  - component: {fileID: 1915527155}
+  m_Layer: 0
+  m_Name: MagpieCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1915527154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915527153}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1915527155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915527153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bfad197a7dc69b4b8e9e0e62154ff0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 2
+  animalsDataProperty:
+    name: Magpie
+    content: Foreach type of animals on the field with a number greater than 3, gain
+      +1 Daily Coin
+    animalsName: 23
+    spriteAvatar: {fileID: 21300000, guid: 085cb53170515844a8271dc2b5297c0f, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+    price: 3
+    coinPlus: 3
+    prefabAnimals: {fileID: 989230447703452566, guid: 8cd96d6c60f2d464cb2030b27b841f78, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1918738643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1918738644}
+  - component: {fileID: 1918738645}
+  m_Layer: 0
+  m_Name: CalfCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1918738644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918738643}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1918738645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918738643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e0ec61be0efdec49aab8cfe022e1be9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 0
+  animalsDataProperty:
+    name: Calf
+    content: After 4 day, grow into Cow or WaterBuffalo
+    animalsName: 10
+    spriteAvatar: {fileID: 21300000, guid: 7886d7660fda5a8438dc1a0c0cf0ac60, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 1
+    coinPlus: -1
+    prefabAnimals: {fileID: 377433775854885734, guid: 5db92bea3ccd3ce4ba1f69a88df710d9, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
+--- !u!1 &1919259345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1919259346}
+  - component: {fileID: 1919259347}
+  m_Layer: 0
+  m_Name: TribalTalentCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1919259346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919259345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1919259347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919259345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd40bfb781b2ff498b35fecd4630b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 2
+  animalsDataProperty:
+    name: 
+    content: 
+    animalsName: 0
+    spriteAvatar: {fileID: 0}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 10
+    name: Tribal talent
+    content: Birds Family standing next to each other get +1<sprite name="Coin">
+    spriteAvatar: {fileID: 21300000, guid: fccf555442da0c247a290c7f3124e2a5, type: 3}
+    price: 15
+    objCard: {fileID: 4084414847560268034, guid: 0fd0d1bf994ae6d49bab3b3dfd3a58e9, type: 3}
+--- !u!1 &1952360785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1952360786}
+  - component: {fileID: 1952360789}
+  - component: {fileID: 1952360788}
+  - component: {fileID: 1952360787}
+  m_Layer: 5
+  m_Name: tvNumb (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1952360786
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952360785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1969548510}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -68.9, y: 0.5}
+  m_SizeDelta: {x: 32.910004, y: 27.879997}
+  m_Pivot: {x: 1.2220778, y: 0.15239556}
+--- !u!114 &1952360787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952360785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &1952360788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952360785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 31163bd21f29352498642f0c1c5c6b5e, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 150
+--- !u!222 &1952360789
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952360785}
+  m_CullTransparentMesh: 1
 --- !u!1 &1969548509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2582,6 +7478,7 @@ GameObject:
   - component: {fileID: 1969548510}
   - component: {fileID: 1969548512}
   - component: {fileID: 1969548511}
+  - component: {fileID: 1969548513}
   m_Layer: 5
   m_Name: DayBar_5
   m_TagString: Untagged
@@ -2601,7 +7498,9 @@ RectTransform:
   m_LocalScale: {x: -2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 378407923}
   - {fileID: 1979356728}
+  - {fileID: 1952360786}
   m_Father: {fileID: 1080185418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -2647,6 +7546,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969548509}
   m_CullTransparentMesh: 1
+--- !u!114 &1969548513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969548509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e95b869d9a6dcc4e9e64420474aedbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 1979356729}
+  bg: {fileID: 378407922}
+  iconWork: {fileID: 21300000, guid: 2a16a289400d55749818db6f8c05a7d0, type: 3}
+  iconPay: {fileID: 21300000, guid: 11afe4dd6864d7847afa3e14922b5b3e, type: 3}
+  tvNumb: {fileID: 1952360788}
 --- !u!1 &1979356727
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,7 +7575,7 @@ GameObject:
   - component: {fileID: 1979356730}
   - component: {fileID: 1979356729}
   m_Layer: 5
-  m_Name: Image (4)
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2722,6 +7638,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979356727}
   m_CullTransparentMesh: 1
+--- !u!1 &1993454691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1993454692}
+  - component: {fileID: 1993454693}
+  m_Layer: 0
+  m_Name: DogTranningLeashCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1993454692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993454691}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691290642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1993454693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993454691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee6aef187aa6bc49bdd2e1503887639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: 
+    content: 
+    animalsName: 0
+    spriteAvatar: {fileID: 0}
+    spriteAnimalsType: {fileID: 0}
+    price: 0
+    coinPlus: 0
+    prefabAnimals: {fileID: 0}
+  itemDataProperty:
+    itemName: 5
+    name: Dog Tranning Leash
+    content: Dog can protect all  Lamp, Sheep, Goat, and Acapela on the field when
+      present
+    spriteAvatar: {fileID: 21300000, guid: 7f2921e55cb8afc4599c859fb8b3d2b5, type: 3}
+    price: 10
+    objCard: {fileID: 433727013914475786, guid: 93c3497e3e2e4874fb344d0cf53f577d, type: 3}
 --- !u!1 &2015474445
 GameObject:
   m_ObjectHideFlags: 0
@@ -2816,6 +7794,101 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &2021798581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2021798582}
+  - component: {fileID: 2021798585}
+  - component: {fileID: 2021798584}
+  - component: {fileID: 2021798583}
+  m_Layer: 5
+  m_Name: tvNumb (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2021798582
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021798581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1816518169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 3.7999992, y: 0.5}
+  m_SizeDelta: {x: 32.910004, y: 27.88}
+  m_Pivot: {x: 1.2220778, y: 0.15239556}
+--- !u!114 &2021798583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021798581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &2021798584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021798581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 31163bd21f29352498642f0c1c5c6b5e, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 150
+--- !u!222 &2021798585
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021798581}
+  m_CullTransparentMesh: 1
 --- !u!1 &2057317534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2827,6 +7900,7 @@ GameObject:
   - component: {fileID: 2057317535}
   - component: {fileID: 2057317537}
   - component: {fileID: 2057317536}
+  - component: {fileID: 2057317538}
   m_Layer: 5
   m_Name: DayBar_3
   m_TagString: Untagged
@@ -2846,7 +7920,9 @@ RectTransform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 246141738}
   - {fileID: 811752195}
+  - {fileID: 1746703428}
   m_Father: {fileID: 1080185418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -2892,6 +7968,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057317534}
   m_CullTransparentMesh: 1
+--- !u!114 &2057317538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057317534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e95b869d9a6dcc4e9e64420474aedbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 811752196}
+  bg: {fileID: 246141737}
+  iconWork: {fileID: 21300000, guid: 2a16a289400d55749818db6f8c05a7d0, type: 3}
+  iconPay: {fileID: 21300000, guid: 11afe4dd6864d7847afa3e14922b5b3e, type: 3}
+  tvNumb: {fileID: 1746703430}
 --- !u!1 &2060631279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3022,6 +8115,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072872188}
   m_CullTransparentMesh: 1
+--- !u!1 &2080297219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2080297220}
+  - component: {fileID: 2080297221}
+  - component: {fileID: 2080297222}
+  m_Layer: 5
+  m_Name: Content
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2080297220
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080297219}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 335374135}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &2080297221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080297219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 24
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 150, y: 150}
+  m_Spacing: {x: 20, y: 0}
+  m_Constraint: 2
+  m_ConstraintCount: 1
+--- !u!114 &2080297222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080297219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
 --- !u!1 &2080647558
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,7 +8247,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10/25
+  m_text: 10/100<sprite name="Coin">
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90675dc45089d54498a259047563a699, type: 2}
   m_sharedMaterial: {fileID: -6525112419790217624, guid: 90675dc45089d54498a259047563a699, type: 2}
@@ -3191,6 +8359,68 @@ Transform:
   - {fileID: 3672699671320449351}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2120328844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2120328845}
+  - component: {fileID: 2120328846}
+  m_Layer: 0
+  m_Name: SikaDeerCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2120328845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120328844}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1909996557}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2120328846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120328844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe01919c47724c45ace5132eca4b4f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardRank: 1
+  animalsDataProperty:
+    name: SikaDeer
+    content: When an adjacent animal is remove or be eaten, move to that animal's
+      location and +2<sprite name="Coin">
+    animalsName: 27
+    spriteAvatar: {fileID: 21300000, guid: 33c16b10d6a25ef48953e140a373ce3e, type: 3}
+    spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+    price: 3
+    coinPlus: 3
+    prefabAnimals: {fileID: 2299654318339862238, guid: cf6bcbe054aae7b4cad6e35a37857f6f, type: 3}
+  itemDataProperty:
+    itemName: 0
+    name: 
+    content: 
+    spriteAvatar: {fileID: 0}
+    price: 0
+    objCard: {fileID: 0}
 --- !u!1 &2123593772
 GameObject:
   m_ObjectHideFlags: 0
@@ -3259,6 +8489,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &31194257796240139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709758241094412778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 40f2a32e6a6f9a24e8099781489b190b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!4 &413788649557891188
 Transform:
   m_ObjectHideFlags: 0
@@ -3615,6 +8875,43 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1709758241094412778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1918027698582862297}
+  - component: {fileID: 5879455961679665926}
+  - component: {fileID: 31194257796240139}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1918027698582862297
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709758241094412778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7623916670721915444}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2136390242338617548
 GameObject:
   m_ObjectHideFlags: 0
@@ -4620,6 +9917,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2927099232653983342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7625453443296474942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &3502782891553621927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4633,12 +9960,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978396953952965}
   - {fileID: 5060978396997220595}
   - {fileID: 5060978397302900802}
   post: {fileID: 4924786894931880436}
   outLine: {fileID: 2136390242338617548}
+  animalsBase: {fileID: 0}
 --- !u!4 &3672699669729422486
 Transform:
   m_ObjectHideFlags: 0
@@ -5672,12 +11001,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 16
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978397301070876}
   - {fileID: 5060978396286193111}
   - {fileID: 5060978397420015656}
   post: {fileID: 3672699670155625685}
   outLine: {fileID: 7711760055893218797}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978396286193111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5691,12 +11022,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 12
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978397420015656}
   - {fileID: 5060978396360653401}
   - {fileID: 5060978396258200198}
   post: {fileID: 3672699670119310212}
   outLine: {fileID: 7711760055933743804}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978396307329840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5710,11 +11043,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 3
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978397543317881}
   - {fileID: 5060978396500161745}
   post: {fileID: 3672699670140058979}
   outLine: {fileID: 7711760055946292315}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978396360653401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5728,6 +11063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978396953952965}
   - {fileID: 5060978396286193111}
@@ -5736,6 +11072,7 @@ MonoBehaviour:
   - {fileID: 5060978397420015656}
   post: {fileID: 3672699670212629514}
   outLine: {fileID: 7711760056008181042}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978396500161745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5749,6 +11086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978396997220595}
   - {fileID: 5060978396307329840}
@@ -5756,6 +11094,7 @@ MonoBehaviour:
   - {fileID: 5060978397543317881}
   post: {fileID: 3672699670349879938}
   outLine: {fileID: 7711760056139369402}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978396584034021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5769,6 +11108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 14
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978397301070876}
   - {fileID: 5060978397982927478}
@@ -5778,6 +11118,7 @@ MonoBehaviour:
   - {fileID: 5060978397420015656}
   post: {fileID: 3672699670500888758}
   outLine: {fileID: 7711760056223236494}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978396639811854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5791,12 +11132,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 11
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978397982927478}
   - {fileID: 5060978397543317881}
   - {fileID: 5060978397941384686}
   post: {fileID: 3672699670470276957}
   outLine: {fileID: 7711760056283227749}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978396669757034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5810,6 +11153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 6
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978396953952965}
   - {fileID: 5060978396997220595}
@@ -5819,6 +11163,7 @@ MonoBehaviour:
   - {fileID: 5060978397960160150}
   post: {fileID: 3672699670583978041}
   outLine: {fileID: 7711760056303745281}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978396953952965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5832,6 +11177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 5
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978396997220595}
   - {fileID: 3502782891553621927}
@@ -5841,6 +11187,7 @@ MonoBehaviour:
   - {fileID: 5060978396360653401}
   post: {fileID: 3672699669729422486}
   outLine: {fileID: 7711760056592072110}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978396997220595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5854,6 +11201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978396953952965}
   - {fileID: 3502782891553621927}
@@ -5861,6 +11209,7 @@ MonoBehaviour:
   - {fileID: 5060978396500161745}
   post: {fileID: 3672699669819332256}
   outLine: {fileID: 7711760056632166296}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978397301070876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5874,6 +11223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 17
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978397932359404}
   - {fileID: 5060978396584034021}
@@ -5881,6 +11231,7 @@ MonoBehaviour:
   - {fileID: 5060978396258200198}
   post: {fileID: 3672699671152243279}
   outLine: {fileID: 7711760056947368823}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978397302900802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5894,12 +11245,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 4
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978396953952965}
   - {fileID: 3502782891553621927}
   - {fileID: 5060978396360653401}
   post: {fileID: 3672699671150405137}
   outLine: {fileID: 7711760056945014569}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978397401366292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5913,11 +11266,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 19
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978397982927478}
   - {fileID: 5060978397932359404}
   post: {fileID: 3672699671320449351}
   outLine: {fileID: 7711760057047842943}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978397420015656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5931,6 +11286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 13
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978397301070876}
   - {fileID: 5060978396286193111}
@@ -5940,6 +11296,7 @@ MonoBehaviour:
   - {fileID: 5060978396258200198}
   post: {fileID: 3672699671267131003}
   outLine: {fileID: 7711760057063436099}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978397543317881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5953,6 +11310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 7
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978396639811854}
   - {fileID: 5060978396307329840}
@@ -5961,6 +11319,7 @@ MonoBehaviour:
   - {fileID: 5060978397941384686}
   post: {fileID: 3672699671455313706}
   outLine: {fileID: 7711760057176981010}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978397932359404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5974,6 +11333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 18
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978397301070876}
   - {fileID: 5060978397982927478}
@@ -5981,6 +11341,7 @@ MonoBehaviour:
   - {fileID: 5060978396584034021}
   post: {fileID: 3672699670755827903}
   outLine: {fileID: 7711760057574470023}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978397941384686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5994,6 +11355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 10
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978396639811854}
   - {fileID: 5060978396669757034}
@@ -6003,6 +11365,7 @@ MonoBehaviour:
   - {fileID: 5060978396584034021}
   post: {fileID: 3672699670780423101}
   outLine: {fileID: 7711760057583696517}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978397960160150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6016,6 +11379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 9
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978396953952965}
   - {fileID: 5060978396669757034}
@@ -6025,6 +11389,7 @@ MonoBehaviour:
   - {fileID: 5060978396360653401}
   post: {fileID: 3672699670735367621}
   outLine: {fileID: 7711760057599130877}
+  animalsBase: {fileID: 0}
 --- !u!114 &5060978397982927478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6038,6 +11403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 15
+  postYardType: 0
   lsNearYard:
   - {fileID: 5060978396639811854}
   - {fileID: 5060978397401366292}
@@ -6046,6 +11412,15 @@ MonoBehaviour:
   - {fileID: 5060978396584034021}
   post: {fileID: 3672699670737830949}
   outLine: {fileID: 7711760057626006813}
+  animalsBase: {fileID: 0}
+--- !u!222 &5879455961679665926
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709758241094412778}
+  m_CullTransparentMesh: 1
 --- !u!212 &7063355893514128817
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7395,6 +12770,53 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!222 &7278860709816609588
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7625453443296474942}
+  m_CullTransparentMesh: 1
+--- !u!224 &7623916670721915444
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7625453443296474942}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10133.332}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1353404035}
+  - {fileID: 1918027698582862297}
+  m_Father: {fileID: 445098681}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 370, y: -557}
+  m_SizeDelta: {x: 111.8328, y: 110.6174}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &7625453443296474942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7623916670721915444}
+  - component: {fileID: 7278860709816609588}
+  - component: {fileID: 2927099232653983342}
+  m_Layer: 5
+  m_Name: BtnSeeThrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!212 &7635658637878824833
 SpriteRenderer:
   m_ObjectHideFlags: 0

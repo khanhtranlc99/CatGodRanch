@@ -18,6 +18,8 @@ TagManager:
   - Barrial
   - Slime
   - Boom
+  - DeathZone
+  - SafeZone
   layers:
   - Default
   - TransparentFX

@@ -8,14 +8,14 @@ using UnityEngine.SceneManagement;
 public class Winbox : BaseBox
 {
     public static Winbox _instance;
-    public static Winbox Setup()
+    public static Winbox Setup( )
     {
         if (_instance == null)
         {
             _instance = Instantiate(Resources.Load<Winbox>(PathPrefabs.WIN_BOX));
             _instance.Init();
         }
-        _instance.InitState();
+        _instance.InitState( );
         return _instance;
     }
 
@@ -23,29 +23,26 @@ public class Winbox : BaseBox
     public Button rewardButton;
     public CoinHeartBar coinHeartBar;
     public Text tvCoin;
-    public Text tvCoin_2;
-    public CanvasGroup canvasGroup;
+    public int coinGift;
     public void Init()
     {
         nextButton.onClick.AddListener(delegate { HandleNext();    });
         rewardButton.onClick.AddListener(delegate { HandleReward(); });
  
-        coinHeartBar.Init();
+     //   coinHeartBar.Init();s
         UseProfile.CurrentLevel += 1;
-        if(UseProfile.CurrentLevel >= 84)
-        {
-            UseProfile.CurrentLevel = 84;
-        }    
-        UseProfile.WinStreak += 1;
+    
   
         GameController.Instance.musicManager.PlayWinSound();
     }   
-    public void InitState()
+    public void InitState( )
     {
 
         GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
+        coinGift = GamePlayController.Instance.playerContain.dayController.GetAllBill;
+        tvCoin.text = "" + coinGift;
 
-     
+
     }    
     private void HandleNext()
     {
@@ -69,10 +66,11 @@ public class Winbox : BaseBox
                    actionReward: () =>
                    {
                        Close();
-                       //GameController.Instance.admobAds.HandleHideMerec();
-                    
+                       var temp = coinGift * 2;
+
+
                        List<GiftRewardShow> giftRewardShows = new List<GiftRewardShow>();
-                       giftRewardShows.Add(new GiftRewardShow() { amount = 1, type = GiftType.Coin });
+                       giftRewardShows.Add(new GiftRewardShow() { amount = temp, type = GiftType.Coin });
                        PopupRewardBase.Setup(false).Show(giftRewardShows, delegate {
                            PopupRewardBase.Setup(false).Close();
                            Initiate.Fade("GamePlay", Color.black, 2f);

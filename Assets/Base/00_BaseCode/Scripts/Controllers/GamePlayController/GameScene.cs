@@ -14,13 +14,21 @@ public class GameScene : BaseScene
     [SerializeField] private Text tvLevel;
     [SerializeField] private Button settinBtn;
     [SerializeField] private Transform canvas;
-    [SerializeField] private DayController dayController;
-    [SerializeField] private CoinController coinController;
+    [SerializeField] private Button resetBtn;
 
-    public void Init(LevelData levelData)
+
+    public void Init(PlayerContain playerContainParam )
     {
-    
-     
+        tvLevel.text = "Level " + UseProfile.CurrentLevel;
+        resetBtn.onClick.AddListener(HandleReset);
+
+
+    }
+    private void HandleReset()
+    {
+
+
+        Initiate.Fade("GamePlay", Color.black, 2f);
     }
 
     public override void OnEscapeWhenStackBoxEmpty()

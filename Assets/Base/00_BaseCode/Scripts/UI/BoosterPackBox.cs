@@ -28,7 +28,7 @@ public class BoosterPackBox : BaseBox
         btnClose.onClick.AddListener(Close);
         iapPack.Init();
         Invoke(nameof(ShowButtonClose), 2);
-        EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.SHOP_CHECK, HandleOff);
+       
     }
     public void InitState()
     {
@@ -45,6 +45,6 @@ public class BoosterPackBox : BaseBox
 
     private void OnDestroy()
     {
-        EventDispatcher.EventDispatcher.Instance.RemoveListener(EventID.SHOP_CHECK, HandleOff);
+    
     }
 }

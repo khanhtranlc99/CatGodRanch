@@ -1,0 +1,76 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+ 
+
+public class Hyena : AnimalsBase
+{
+    bool isListen = false;
+    public List<AnimalsBase> lsHunt;
+     AnimalsBase tempHunt;
+    public override void Init()
+    {
+        AnimScale();
+        if (!isListen)
+        {
+            EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.HUNT_SUGGET, HandleEffectHunt);
+            isListen = true;
+        }
+        if(lsHunt.Count > 0)
+        {
+            lsHunt.Clear();
+        }    
+        foreach (var item in postYardBase.lsNearYard)
+        {
+            if (item.animalsBase != null)
+            {
+                if (item.animalsBase.animalsName == AnimalsName.Tiger)
+                {
+                    lsHunt.Add( item.animalsBase);
+                }
+                if (item.animalsBase.animalsName == AnimalsName.Wolf)
+                {
+                    lsHunt.Add(item.animalsBase);
+                }
+                if (item.animalsBase.animalsName == AnimalsName.Fox)
+                {
+                    lsHunt.Add(item.animalsBase);
+                }
+            }
+
+        }
+    }
+
+    public override void InitState()
+    {
+      
+    }
+
+
+    public override void HandleActionDie()
+    {
+        base.HandleActionDie();
+        EventDispatcher.EventDispatcher.Instance.RemoveListener(EventID.HUNT_SUGGET, HandleEffectHunt);
+        isListen = false;
+    }
+
+
+    public override IEnumerator HandleEffect()
+    {
+        yield return null;
+    }
+
+    private void HandleEffectHunt(object param)
+    {
+        tempHunt = (AnimalsBase)param;
+        if (lsHunt.Contains(tempHunt))
+        {
+            tempHunt.HandleActionDie();
+        }    
+    }
+
+    private void OnDestroy()
+    {
+        EventDispatcher.EventDispatcher.Instance.RemoveListener(EventID.HUNT_SUGGET, HandleEffectHunt);
+    }
+}

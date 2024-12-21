@@ -28,7 +28,7 @@ public class PremiumPackBox : BaseBox
         btnClose.onClick.AddListener(Close);
         iapPack.Init();
         Invoke(nameof(ShowButtonClose), 2);
-        EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.SHOP_CHECK, HandleOff);
+    
     }
     public void InitState()
     {
@@ -46,6 +46,6 @@ public class PremiumPackBox : BaseBox
 
     private void OnDestroy()
     {
-        EventDispatcher.EventDispatcher.Instance.RemoveListener(EventID.SHOP_CHECK, HandleOff);
+     
     }
 }

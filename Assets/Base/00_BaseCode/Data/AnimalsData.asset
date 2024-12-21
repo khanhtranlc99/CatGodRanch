@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 397e1f5f0e21e7b4d8b5a7b501f6df05, type: 3}
+  m_Name: AnimalsData
+  m_EditorClassIdentifier: 
+  lsAnimalsData:
+  - animalsRank: 0
+    animalsDataProperty:
+    - name: Calf
+      content: After 4 day, grow into Cow or WaterBuffalo
+      animalsName: 10
+      spriteAvatar: {fileID: 21300000, guid: 7886d7660fda5a8438dc1a0c0cf0ac60, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+      price: 1
+      coinPlus: -1
+      prefabAnimals: {fileID: 377433775854885734, guid: 5db92bea3ccd3ce4ba1f69a88df710d9, type: 3}
+    - name: Chicken
+      content: After 3 day, 50% probability to Breeding 1 Egg
+      animalsName: 1
+      spriteAvatar: {fileID: 21300000, guid: db21ed64e5fb9e04887812c7d194e80d, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+      price: 2
+      coinPlus: 1
+      prefabAnimals: {fileID: 274297737607697692, guid: 8c07bf1eb5612ae4f853ede87e693916, type: 3}
+    - name: Dog
+      content: Protect adjacent Lamp, Sheep, Goat, and Acapela
+      animalsName: 14
+      spriteAvatar: {fileID: 21300000, guid: 9d99cda2094893a489d9f56d703eb744, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+      price: 2
+      coinPlus: 1
+      prefabAnimals: {fileID: 4641220579974034981, guid: 398e1dc53331ae6468b53a9d9b4aaf14, type: 3}
+    - name: Duck
+      content: When there are 3 or more Duck on the field +1<sprite name="Coin">,
+        and +2<sprite name="Coin"> when adjacent to Puddle
+      animalsName: 3
+      spriteAvatar: {fileID: 21300000, guid: c13f569dba3c0634687b90c4b0ea4129, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+      price: 2
+      coinPlus: 2
+      prefabAnimals: {fileID: 99400945898884003, guid: cd6ca47843fed1f4392d0dd96b9ce2d9, type: 3}
+    - name: Egg
+      content: After 3 day, hatch into Chicken, Duck, Turkey or Pigeon
+      animalsName: 0
+      spriteAvatar: {fileID: 21300000, guid: 7854eb25481d9e34db0bee78cd6d9011, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+      price: 1
+      coinPlus: 0
+      prefabAnimals: {fileID: 9187771814284334767, guid: 432b491ce6ef8bc43b5b8004259c5d54, type: 3}
+    - name: Fox
+      content: 'Hunt 1 adjacent Chicken, Duck, Turkey or Pigeon. Succes +5<sprite
+        name="Coin"> '
+      animalsName: 17
+      spriteAvatar: {fileID: 21300000, guid: d32417742eb4d6c418e464c8c95ba161, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+      price: 2
+      coinPlus: 1
+      prefabAnimals: {fileID: 4321285287068053325, guid: 03db14b2f76fd3f439098fea848fdca0, type: 3}
+    - name: Lamp
+      content: After 3 day, grow into Sheep, Goat, or Acapela
+      animalsName: 6
+      spriteAvatar: {fileID: 21300000, guid: 7faeca919f1749d4ab1a9ffc26ad9efd, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+      price: 1
+      coinPlus: -1
+      prefabAnimals: {fileID: 9060786830282739334, guid: 2086c974385bd9a44a29305e273bd65f, type: 3}
+    - name: Pig
+      content: Automatically sold after 4 day, +12<sprite name="Coin">
+      animalsName: 13
+      spriteAvatar: {fileID: 21300000, guid: 8a4fef9265d2f6445ae4f46be84e4d7d, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+      price: 3
+      coinPlus: -1
+      prefabAnimals: {fileID: 6597746934910106839, guid: 7935d78bf27405341b8e56d4628fc11f, type: 3}
+    - name: Sheep
+      content: Automatically sold after 3 day, +7<sprite name="Coin">
+      animalsName: 8
+      spriteAvatar: {fileID: 21300000, guid: a83c320a890ebad4ea15da9a98f00f69, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+      price: 3
+      coinPlus: -1
+      prefabAnimals: {fileID: 1722297517708054, guid: c056a8822fff77046a90d15f453ab4c4, type: 3}
+    - name: Turkey
+      content: +5<sprite name="Coin"> when eaten
+      animalsName: 2
+      spriteAvatar: {fileID: 21300000, guid: 9abbd83548c89104988083ea6fd9619e, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+      price: 2
+      coinPlus: 2
+      prefabAnimals: {fileID: 6670804836121204970, guid: 86f344cdb6309a5409bd093b8b2a432b, type: 3}
+    - name: Wolf
+      content: Hunt 1 adjacent Lamp, Calf, Sheep, Acapela or Goat Succes +5<sprite
+        name="Coin">
+      animalsName: 15
+      spriteAvatar: {fileID: 21300000, guid: 7d492ba4e9fdc874e8a1730ab5f0bc26, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+      price: 1
+      coinPlus: 1
+      prefabAnimals: {fileID: 7129943512840412722, guid: fb7feb6defaf2a948b7b5ddc78dfdd63, type: 3}
+  - animalsRank: 1
+    animalsDataProperty:
+    - name: Acapela
+      content: Increases the extra <sprite name="Coin"> gained by adjacent animals
+        by 1 times
+      animalsName: 9
+      spriteAvatar: {fileID: 21300000, guid: 4fb385af0097268479845148a295e943, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+      price: 3
+      coinPlus: 2
+      prefabAnimals: {fileID: 4615804035571882315, guid: 9f683f3a639932d458982de89350c84c, type: 3}
+    - name: Cow
+      content: When adjacent Water Buffalo or Cow are eaten, add 1 Calf
+      animalsName: 12
+      spriteAvatar: {fileID: 21300000, guid: 49752250c256c8340bb4696e8f18c9a5, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+      price: 3
+      coinPlus: 3
+      prefabAnimals: {fileID: 4887382305412472880, guid: db0efdd1c73ec5e48a7a48eff25ad8ec, type: 3}
+    - name: Goat
+      content: Add 1 Lamp when eaten
+      animalsName: 7
+      spriteAvatar: {fileID: 21300000, guid: 4071bd351beb1834daa6e629ca4bb5ea, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+      price: 3
+      coinPlus: 3
+      prefabAnimals: {fileID: 7214779199474979420, guid: 7f6a3427ddfb0d04c884fae85a37c28d, type: 3}
+    - name: Goose
+      content: Adjacent Bird cannot  be eaten
+      animalsName: 4
+      spriteAvatar: {fileID: 21300000, guid: 0a75113d0ac342745a1d3ae9944aa1be, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+      price: 3
+      coinPlus: 2
+      prefabAnimals: {fileID: 7045278162958220252, guid: 2703e57d57b5b0b44a86f09d21216f7e, type: 3}
+    - name: Hyena
+      content: +3<sprite name="Coin"> when adjacent  animals are  eaten. If exactly
+        one square behind Carnivore, 50% Probability to eat and +20<sprite name="Coin">
+      animalsName: 16
+      spriteAvatar: {fileID: 21300000, guid: 7bc0553fb2bed6045baa6460e9ac8a5f, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+      price: 3
+      coinPlus: 2
+      prefabAnimals: {fileID: 3885773974964815361, guid: 677a6a99583254743a796e0470736b53, type: 3}
+    - name: WaterBuffalo
+      content: Survive on a Grassland +3<sprite name="Coin">, on a Puddle +5<sprite
+        name="Coin">
+      animalsName: 11
+      spriteAvatar: {fileID: 21300000, guid: 11c0f417ef3f68e4cbefa2cf6cc2df92, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
+      price: 3
+      coinPlus: 3
+      prefabAnimals: {fileID: 2599561179293894768, guid: 134452b951391f34fa26170ec97452b0, type: 3}
+  - animalsRank: 2
+    animalsDataProperty:
+    - name: Tiger
+      content: Hunt all adjacent Carnivore , Sugget +5<sprite name="Coin"> foreach
+      animalsName: 18
+      spriteAvatar: {fileID: 21300000, guid: dd407c55bbca9334e910bd632b31d3f8, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
+      price: 5
+      coinPlus: 3
+      prefabAnimals: {fileID: 4619693253205957194, guid: 54c3086217738be40aca71f1864f76fc, type: 3}
+  - animalsRank: 3
+    animalsDataProperty: []
+  - animalsRank: 4
+    animalsDataProperty: []
+  lsAnimalsBases:
+  - {fileID: 2430640531346007099, guid: 9f683f3a639932d458982de89350c84c, type: 3}
+  - {fileID: 307963586679060811, guid: 5db92bea3ccd3ce4ba1f69a88df710d9, type: 3}
+  - {fileID: 7838524542934611118, guid: 8c07bf1eb5612ae4f853ede87e693916, type: 3}
+  - {fileID: 6618285223994206199, guid: db0efdd1c73ec5e48a7a48eff25ad8ec, type: 3}
+  - {fileID: 8776624849756413466, guid: 398e1dc53331ae6468b53a9d9b4aaf14, type: 3}
+  - {fileID: 8093694605011734741, guid: cd6ca47843fed1f4392d0dd96b9ce2d9, type: 3}
+  - {fileID: 5948609140609001071, guid: 432b491ce6ef8bc43b5b8004259c5d54, type: 3}
+  - {fileID: 4375491995855188663, guid: 03db14b2f76fd3f439098fea848fdca0, type: 3}
+  - {fileID: 4390359538881202036, guid: 7f6a3427ddfb0d04c884fae85a37c28d, type: 3}
+  - {fileID: 316959273602353551, guid: 2703e57d57b5b0b44a86f09d21216f7e, type: 3}
+  - {fileID: 3361603888351922007, guid: 677a6a99583254743a796e0470736b53, type: 3}
+  - {fileID: 6455332545607615594, guid: 2086c974385bd9a44a29305e273bd65f, type: 3}
+  - {fileID: 7420841477925072337, guid: 7935d78bf27405341b8e56d4628fc11f, type: 3}
+  - {fileID: 8553884798064867418, guid: cd7ae6e12e31e9c4eb42bb45f3d3f3e7, type: 3}
+  - {fileID: 2909139358822565225, guid: c056a8822fff77046a90d15f453ab4c4, type: 3}
+  - {fileID: 6541188677307994632, guid: 54c3086217738be40aca71f1864f76fc, type: 3}
+  - {fileID: 1479675594035744526, guid: 86f344cdb6309a5409bd093b8b2a432b, type: 3}
+  - {fileID: 4727237957222405624, guid: 134452b951391f34fa26170ec97452b0, type: 3}
+  - {fileID: 7429517413614050180, guid: fb7feb6defaf2a948b7b5ddc78dfdd63, type: 3}
