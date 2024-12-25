@@ -41,7 +41,7 @@ public class Winbox : BaseBox
         GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
         coinGift = GamePlayController.Instance.playerContain.dayController.GetAllBill;
         tvCoin.text = "" + coinGift;
-
+        GamePlayController.Instance.playerContain.cardController.SaveDataHome();
 
     }    
     private void HandleNext()
@@ -55,7 +55,7 @@ public class Winbox : BaseBox
         {
    
             Close();
-            Initiate.Fade("GamePlay", Color.black, 2f);
+            Initiate.Fade(SceneName.HOME_SCENE, Color.black, 2f);
 
         }
     }

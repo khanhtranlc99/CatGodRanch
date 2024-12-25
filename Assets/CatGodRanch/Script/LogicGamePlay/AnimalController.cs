@@ -63,6 +63,10 @@ public class AnimalController : MonoBehaviour
             item.lsAnimalsProtect.Clear();
             runningCoroutines.Add(StartCoroutine(item.HandleActionMove(postHome.position)));
         }
+        foreach(var item in playerContain.postYardController.lsPostYardBases)
+        {
+            item.animalsBase = null;
+        }    
         foreach (var coroutine in runningCoroutines)
         {
             yield return coroutine;
@@ -145,7 +149,7 @@ public class AnimalController : MonoBehaviour
 
         if (playerContain.dayController.currentDayType == DayType.Work)
         {
-            CardAnimalsBox.Setup(playerContain, playerContain.cardController).Show();
+            CardAnimalsBox.Setup().Show();
         }
         if (playerContain.dayController.currentDayType == DayType.Pay)
         {

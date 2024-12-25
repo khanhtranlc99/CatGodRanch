@@ -29,7 +29,7 @@ public class DayController : MonoBehaviour
     {
         get
         {
-            foreach(var item in lsCurrentData)
+            foreach(var item in playerContain.levelConfig.lsDataLevel)
             {
                 if(item.dayType.dayType == DayType.Pay && !lsTempBill.Contains(item))
                 {

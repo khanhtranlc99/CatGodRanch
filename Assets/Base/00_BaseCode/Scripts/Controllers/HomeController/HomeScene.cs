@@ -11,86 +11,42 @@ public class HomeScene : BaseScene
 {
 
     public Button btnSetting;
- 
-
     public Button btnPlay;
-    public Button btnShop;
-
-   
-    public CoinHeartBar coinHeartBar;
- 
- 
+    public Button btnCard;
     public Text tvLevel;
-    public Text tvDifficut;
-    public Image imgLevelType;
-    public Sprite easySprite;
-    public Sprite hardSprite;
-    public Sprite veryHardSprite;
-    public void ShowGift()
-    {
-        
+    public CoinBar coinBar;
 
-    }
-    public int NumberPage(ButtonType buttonType)
-    {
-        switch (buttonType)
-        {
-            case ButtonType.ShopButton:
-                return 0;
-                break;
 
-            case ButtonType.HomeButton:
-                return 1;
-                break;
 
-            case ButtonType.RankButton:
-                return 2;
-                break;
-
-        }
-        return 0;
-    }
 
 
     public void Init()
     {
-        coinHeartBar.Init();
-   
-      
-    
         btnSetting.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); OnSettingClick(); });
-
-        btnPlay.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound();   });
-
-        btnShop.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); ShopBox.Setup().Show(); });
-
+        btnPlay.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); HandlePlay(); });
         tvLevel.text = "LEVEL " + UseProfile.CurrentLevel.ToString();
-       
-   
+        btnCard.onClick.AddListener(HandleShowCardBox);
+        coinBar.Init();
     }
-    //private void Update()
-    //{
-
-    //       // OnScreenChange();
-
-
-    //}
-
-
-
-
 
     public override void OnEscapeWhenStackBoxEmpty()
     {
-        //Hiển thị popup bạn có muốn thoát game ko?
+
     }
     private void OnSettingClick()
     {
         SettingBox.Setup(false).Show();
-        //MMVibrationManager.Haptic(HapticTypes.MediumImpact);
+    }
+    private void HandlePlay()
+    {
+        Initiate.Fade("GamePlay", Color.black, 2f);
     }
 
-    
+    private void HandleShowCardBox()
+    {
+        RandomCardBox.Setup(HomeController.Instance.animalsHomeController.animalsData).Show();
+    }
 
-
+ 
+  
 }

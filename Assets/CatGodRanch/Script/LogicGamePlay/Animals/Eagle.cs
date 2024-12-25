@@ -65,12 +65,7 @@ public class Eagle : AnimalsBase
                     item.animalsBase.huntAnimal = this;
                     break;
                 }
-                if (item.animalsBase.animalsName == AnimalsName.Egg && item.animalsBase.huntAnimal == null)
-                {
-                    animalsTarget = item.animalsBase;
-                    item.animalsBase.huntAnimal = this;
-                    break;
-                }
+            
                 if (item.animalsBase.animalsName == AnimalsName.Pigeon && item.animalsBase.huntAnimal == null)
                 {
                     animalsTarget = item.animalsBase;

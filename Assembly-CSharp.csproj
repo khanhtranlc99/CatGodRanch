@@ -201,7 +201,6 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\Accordion\Tweening\ITweenValue.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\ItemCard\LogicItem\GoatHorn.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Effects\ShaderEffects\UIImageCrop.cs" />
-    <Compile Include="Assets\Base\LableMission.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsKeyExchange.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\DesEdeParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\date\DateTimeUtilities.cs" />
@@ -318,6 +317,7 @@
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\AnimalsCard\DogCard.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\paddings\X923Padding.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\Old\MultiTouchScrollRect.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\CardBar.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\DSAParameter.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\AsymmetricKeyParameter.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\Animals\Pig.cs" />
@@ -581,6 +581,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Caching\HTTPCacheService.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\BERGenerator.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Decompression\DeflateStream.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\RandomCardController.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\Transports\ITransport.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\X509DefaultEntryConverter.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x9\DHValidationParms.cs" />
@@ -606,6 +607,7 @@
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\UI\UILocalize.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\sec\SECObjectIdentifiers.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsEncryptionCredentials.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\CoinBar.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\signers\GOST3410Signer.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Primitives\UIPolygon.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\ServerSentEvents\Message.cs" />
@@ -621,8 +623,8 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalR\Connection.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT409R1Point.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\AnimalsCard\FoxCard.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\OpenCardBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerApplicationSpecific.cs" />
-    <Compile Include="Assets\TestCalf.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\AnimalsCard\AcapelaCard.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalRCore\Transports\WebsocketTransport.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\ScrollSnap.cs" />
@@ -703,7 +705,6 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\SelectionBox\ExampleSelectable.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\HTTPRequest.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP128R1Field.cs" />
-    <Compile Include="Assets\SpawnController.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\AesWrapEngine.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecP192K1Curve.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\SocketIO\SocketIO Json Encoders\JsonDotNetEncoder.cs" />
@@ -733,6 +734,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerGeneralizedTime.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\DHKeyParameters.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ReorderableList\ReorderableList.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\AnimalsHomeController.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\PlatformSupport\IO\FileEnums.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT163R2Curve.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\ItemCard\GrassCard.cs" />
@@ -844,6 +846,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\IDigest.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\Asn1Exception.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\MyReviewManager.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\AnimalsHome.cs" />
     <Compile Include="Assets\Base\3Party\Joker2X\Localize\Scripts\Internal\BetterList.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SocketIO\JsonEncoders\IJSonEncoder.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\teletrust\TeleTrusTNamedCurves.cs" />
@@ -910,6 +913,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\UIParticleSystem.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Analytic\RemoteConfigController.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\TiltWindow.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\OpenCard.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\InputFieldEnterSubmit.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\Accordion\Tweening\FloatTween.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\BasicConstraints.cs" />
@@ -994,6 +998,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\Tile.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\AEADParameters.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\ocsp\OCSPResponse.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\CardRandomHome.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\WebSocket\WebSocket.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\ClientCertificateType.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\security\cert\CertificateNotYetValidException.cs" />
@@ -1016,7 +1021,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\ChaCha7539Engine.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\oiw\ElGamalParameter.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\parameters\MqvPublicParameters.cs" />
-    <Compile Include="Assets\Base\ShopController23.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Cookies\Cookie.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\Animals\Goose.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\HC128Engine.cs" />
@@ -1104,6 +1108,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\PlatformSupport\IO\Infos.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ReorderableList\ReorderableListContent.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Extensions\Extensions.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\RandomCardBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\AlgorithmIdentifier.cs" />
     <Compile Include="Assets\PremiumPackBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\IAsn1ApplicationSpecificParser.cs" />

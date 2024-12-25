@@ -63,6 +63,7 @@ public class PayBillBox : BaseBox
         }    
         else
         {
+            playerContain.coinController.InitState(playerContain.dayController.GetBill);
             CardItemBox.Setup(playerContain, playerContain.itemController).Show();
     
         }    
@@ -97,6 +98,7 @@ public class PayBillBox : BaseBox
 
     private void HandleHome()
     {
-        Initiate.Fade("GamePlay", Color.black, 2f);
+        GamePlayController.Instance.playerContain.cardController.SaveDataHome();
+        Initiate.Fade(SceneName.HOME_SCENE, Color.black, 2f);
     }    
 }

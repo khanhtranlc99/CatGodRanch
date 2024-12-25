@@ -52,10 +52,15 @@ public class ReinDeer : AnimalsBase
     {
         if (CanHandleEffect)
         {
-            var temp = animalsTarget.coinPlus;
-            animalsTarget.HandleActionDie();
-            temp *= Random.Range(3, 7);
-            yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
+            if(animalsTarget != null)
+            {
+                var temp = animalsTarget.coinPlus; 
+                animalsTarget.HandleActionDie();
+                animalsTarget = null;
+                temp *= Random.Range(3, 7);
+                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
+            }    
+         
         }
         yield return null;
     }

@@ -35,15 +35,9 @@ public class StartLoading : MonoBehaviour
         {
             name = SceneName.HOME_SCENE;
         }
-        var _asyncOperation = SceneManager.LoadSceneAsync(name, LoadSceneMode.Single);
-       
-        while (!_asyncOperation.isDone)
-        {
-            progressBar.fillAmount = Mathf.Clamp01(_asyncOperation.progress / 0.9f);
-            yield return null;
-
-        
-        }
+        Initiate.Fade(name, Color.black, 2f);
+        progressBar.fillAmount = 1;
+      
     }
 
     private IEnumerator LoadAdsToChangeScene()

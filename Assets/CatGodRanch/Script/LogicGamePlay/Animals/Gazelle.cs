@@ -8,6 +8,7 @@ public class Gazelle : AnimalsBase
 {
     public PostYardBase postSwitch;
     public PostYardBase tempPostSwitch;
+    public AnimalsBase tempAnimals;
     public bool CanHandleEffect
     {
         get
@@ -56,14 +57,16 @@ public class Gazelle : AnimalsBase
             if(postSwitch != null)
             {
                 tempPostSwitch = postYardBase;
+                tempAnimals = postYardBase.animalsBase;
                 yield return this.transform.DOMove(postSwitch.transform.position, 0.35f).WaitForCompletion();
                 yield return postSwitch.animalsBase.transform.DOMove(postYardBase.transform.position, 0.35f).WaitForCompletion();
 
-                postYardBase = postSwitch;
                 postYardBase.animalsBase = postSwitch.animalsBase;
-                postSwitch = tempPostSwitch;
-                postSwitch.animalsBase = tempPostSwitch.animalsBase;
-                postSwitch.Init();
+                postYardBase.animalsBase.postYardBase = postSwitch;
+
+                postSwitch.animalsBase = tempAnimals;
+                postSwitch.animalsBase.postYardBase = tempPostSwitch;
+            
             }
          
        

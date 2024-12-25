@@ -84,6 +84,8 @@ public static class StringHelper
     public const string NUMB_WATCH_ADS_COIN = "numb_watch_ads_coin";
     public const string WAS_BOUGHT_UNLIMIT_TIME = "was_bought_unlimit_time";
     public const string NEED_CHECK_SHOP = "need_check_shop";
+    public const string DATA_ANIMALS_HOME = "data_animals_home";
+    public const string PERCENT_CARD_BAR = "percent_card_bar";
 }
 
 public class PathPrefabs
@@ -138,6 +140,8 @@ public class PathPrefabs
     public const string PAY_BILL_BOX = "UI/Popups/PayBillBox";
 
     public const string CARD_ITEM_BOX = "UI/Popups/CardItemBox";
+    public const string RANDOM_CARD_BOX = "UI/Popups/RandomCardBox";
+    public const string OPEN_CARD_BOX = "UI/Popups/OpenCardBox"; 
 }
 
 public class SceneName

@@ -37,7 +37,7 @@ public class ShopBox : BaseBox
     public Text tvCountTime;
     public Text tvCountTime_2;
  
-    public CoinHeartBar coinHeartBar;
+    public CoinBar coinHeartBar;
     public Button btnClose;
     public  GameObject paramPost;
     private void Init(ButtonShopType buttonShopType)

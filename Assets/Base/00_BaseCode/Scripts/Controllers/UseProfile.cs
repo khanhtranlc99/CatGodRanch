@@ -338,7 +338,19 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
+    public static float PercentCardBar
+    {
+        get
+        {
+            return PlayerPrefs.GetFloat(StringHelper.PERCENT_CARD_BAR, 0);
+        }
+        set
+        {
+            PlayerPrefs.SetFloat(StringHelper.PERCENT_CARD_BAR, value);
+            PlayerPrefs.Save();
 
+        }
+    }
 
     public static int NumberOfDisplayedInterstitialD0_D1
     {
@@ -367,46 +379,22 @@ public class UseProfile : MonoBehaviour
 
         }
     }
-
-    public static int NumberRewardShowed
+    public static string DataAnimalsHome
     {
         get
         {
-            return PlayerPrefs.GetInt(StringHelper.NUMBER_REWARD_SHOWED, 0);
+            return PlayerPrefs.GetString(StringHelper.DATA_ANIMALS_HOME);
         }
         set
         {
-            PlayerPrefs.SetInt(StringHelper.NUMBER_REWARD_SHOWED, value);
+            PlayerPrefs.SetString(StringHelper.DATA_ANIMALS_HOME, value);
             PlayerPrefs.Save();
 
         }
     }
-    public static int NumberInterShowed
-    {
-        get
-        {
-            return PlayerPrefs.GetInt(StringHelper.NUMBER_INTER_SHOWED, 0);
-        }
-        set
-        {
-            PlayerPrefs.SetInt(StringHelper.NUMBER_INTER_SHOWED, value);
-            PlayerPrefs.Save();
+   
 
-        }
-    }
-
-    public int LevelUnlock
-    {
-        get
-        {
-            return PlayerPrefs.GetInt(StringHelper.CURRENT_LEVEL_PLAY, 1);
-        }
-        set
-        {
-            PlayerPrefs.SetInt(StringHelper.CURRENT_LEVEL_PLAY, value);
-            PlayerPrefs.Save();
-        }
-    }
+     
     public bool IsRemoveAds
     {
         get

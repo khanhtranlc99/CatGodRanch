@@ -49,7 +49,7 @@ public class Penguin : AnimalsBase
             tvDay.text = day.ToString() + "<sprite name=\"Time\">";
             if (day <= 0)
             {
-                Debug.LogError("LayItem");
+                Debug.Log("LayItem");
             }
         }
         if (CheckBirdAround)

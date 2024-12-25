@@ -67,9 +67,9 @@ public class ItemController : MonoBehaviour
             }
             itemActive.GetComponent<ItemBase>().Init();
             lsCurrentItem.Add(itemActive.GetComponent<ItemBase>());
-            GamePlayController.Instance.playerContain.animalController.btnNextDay.gameObject.SetActive(true);
+         
         }
-   
+        GamePlayController.Instance.playerContain.animalController.btnNextDay.gameObject.SetActive(true);
 
     }
 

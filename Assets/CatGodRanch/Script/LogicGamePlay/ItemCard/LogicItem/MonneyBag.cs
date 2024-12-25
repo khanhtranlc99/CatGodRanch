@@ -7,7 +7,10 @@ public class MonneyBag : ItemBase
     public override void Init()
     {
         count += 1;
-        tvNum.text = count.ToString();
+        if (count > 1)
+        {
+            tvNum.text = count.ToString();
+        }
     }
     public override IEnumerator HandleEffectItemIEnumrator()
     {

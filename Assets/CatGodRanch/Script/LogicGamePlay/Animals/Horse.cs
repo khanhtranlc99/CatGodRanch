@@ -15,7 +15,7 @@ public class Horse : AnimalsBase
 
             foreach (var item in postYardBase.lsNearYard)
             {
-                if(item.id == postYardBase.id +1 && item.animalsBase == null)
+                if(item.id == postYardBase.id +1 && item.animalsBase == null && !item.wasStay)
                 {
                  
                     return item;
@@ -59,13 +59,14 @@ public class Horse : AnimalsBase
         var temp = HandleFindRightPost;
         if (temp != null)
         {
-            Debug.LogError("name_" + temp.gameObject.name);
+          
             yield return this.transform.DOMove(temp.transform.position, 0.5f).WaitForCompletion();
             yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
             postYardBase.animalsBase = null;
             postYardBase = null;
             postYardBase = temp;
             postYardBase.animalsBase = this;
+            EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.ANIMALS_MOVE, this.gameObject);
             if (HandleFindRightPost != null)
             {
                 yield return StartCoroutine(HandleMove());
@@ -77,7 +78,7 @@ public class Horse : AnimalsBase
         }
         else
         {
-            Debug.LogError("NOOO_"  );
+             
             yield return null;
         }
     }    

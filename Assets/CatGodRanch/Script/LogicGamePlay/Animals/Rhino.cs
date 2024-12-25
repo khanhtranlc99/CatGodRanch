@@ -55,6 +55,9 @@ public class Rhino : AnimalsBase
         {
             var rand = Random.Range(0, lsCardRandom.Count);
             var tempAnimals = GamePlayController.Instance.playerContain.cardController.GetCardName(lsCardRandom[rand]);
+            Debug.LogError("id_Post_" + temp.id);
+            Debug.LogError("tempAnimals" + lsCardRandom[rand].ToString());
+            Debug.LogError("Rhino_name_" + tempAnimals.prefabAnimals.gameObject.name);
             SpwanAnimals(tempAnimals.prefabAnimals, temp);
         }
         yield return null;

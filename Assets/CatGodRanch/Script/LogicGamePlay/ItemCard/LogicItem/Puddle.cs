@@ -18,6 +18,10 @@ public class Puddle : ItemBase
         {
             newYard.lsNearYard.Add(item);
         }
+        foreach (var item in GamePlayController.Instance.playerContain.postYardController.lsPostYardBases)
+        {
+            item.SwitchPostYard(tempPostYardBase, newYard);
+        }
         tempPostYardBase.gameObject.SetActive(false);
         GamePlayController.Instance.playerContain.postYardController.lsPostYardBases.Remove(tempPostYardBase);
         GamePlayController.Instance.playerContain.postYardController.lsPostYardBases.Add(newYard);

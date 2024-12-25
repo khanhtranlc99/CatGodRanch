@@ -25,22 +25,11 @@ public class SikaDeer : AnimalsBase
         AnimScale();
         if (!isListen)
         {
-            EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.HUNT_SUGGET, HandleEffectSikaDeer);
+            EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.ANIMALS_MOVE, HandleEffectSikaDeer);
             isListen = true;
         }
       
-            if (lsAnimalsPostAround.Count > 0)
-            {
-                lsAnimalsPostAround.Clear();
-            }
-
-            foreach (var item in postYardBase.lsNearYard)
-            {
-                if (item.animalsBase != null)
-                {
-                    lsAnimalsPostAround.Add(item);
-                }
-            }
+       
      
       
     }
@@ -56,46 +45,21 @@ public class SikaDeer : AnimalsBase
     {
         if (CanHandleEffect)
         {
-            tempPostYardBase = null;
-            foreach (var item in lsAnimalsPostAround)
+            this.transform.DOJump(this.transform.position, 1.5f , 1 , 0.5f).OnComplete(delegate
             {
-                if (item.animalsBase != null)
-                {
-                    tempPostYardBase = item;
-                    break;
-                }
-            }
-            if (tempPostYardBase != null)
-            {
-                this.transform.DOMove(tempPostYardBase.transform.position, 0.15f).OnComplete(delegate {
-                    postYardBase.animalsBase = null;
-                    postYardBase = null;
-                    postYardBase = tempPostYardBase;
-                    postYardBase.animalsBase = tempPostYardBase.animalsBase;
-                    if (lsAnimalsPostAround.Count > 0)
-                    {
-                        lsAnimalsPostAround.Clear();
-                    }
-                    foreach (var item in postYardBase.lsNearYard)
-                    {
-                        if (item.animalsBase != null)
-                        {
-                            lsAnimalsPostAround.Add(item);
-                        }
-                    }
-                });
-            }
+                StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
+            });
         }
      
     }
     public override void HandleActionDie()
     {
         base.HandleActionDie();
-        EventDispatcher.EventDispatcher.Instance.RemoveListener(EventID.HUNT_SUGGET, HandleEffectSikaDeer);
+        EventDispatcher.EventDispatcher.Instance.RemoveListener(EventID.ANIMALS_MOVE, HandleEffectSikaDeer);
         isListen = false;
     }
     private void OnDestroy()
     {
-        EventDispatcher.EventDispatcher.Instance.RemoveListener(EventID.HUNT_SUGGET, HandleEffectSikaDeer);
+        EventDispatcher.EventDispatcher.Instance.RemoveListener(EventID.ANIMALS_MOVE, HandleEffectSikaDeer);
     }
 }

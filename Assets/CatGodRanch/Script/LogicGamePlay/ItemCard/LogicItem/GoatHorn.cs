@@ -8,7 +8,10 @@ public class GoatHorn : ItemBase
     bool isListener = false;
     public override void Init()
     {
-        count += 1;
+        if (count > 1)
+        {
+            tvNum.text = count.ToString();
+        }
         tvNum.text = count.ToString();
         if (!isListener)
         {

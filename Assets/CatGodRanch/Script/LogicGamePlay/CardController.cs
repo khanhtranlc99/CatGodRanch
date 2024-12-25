@@ -1,26 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 public class CardController : MonoBehaviour
 {
     
     public List<CardBase> lsCardBase;
     PlayerContain playerContain;
-    public CardBase GetRandomLsCardRank(CardRank param)
+    public List<AnimalsDataProperty> lsCurrentAnimalData;
+    public CardBase GetRandomLsCardRank 
     {
-        var lsRankCard = new List<CardBase>();
-        foreach (var item in lsCardBase)
+        get
         {
-            if (item.cardRank == param)
+            var lsRankCard = new List<CardBase>();
+            foreach (var item in lsCardBase)
             {
-                lsRankCard.Add(item);
+                if (item.CanShow())
+                {
+                    lsRankCard.Add(item);
+                }
             }
+
+            return lsRankCard[Random.Range(0, lsRankCard.Count)];
         }
-       
-        return lsRankCard[Random.Range(0, lsRankCard.Count)];
+  
 
     }
+
+    public void HandleRemoveCurrentAnimals(AnimalsName animalsName)
+    {
+        for(int i = lsCurrentAnimalData.Count - 1; i >= 0; i--)
+        {
+            if (lsCurrentAnimalData[i].animalsName == animalsName)
+            {
+                lsCurrentAnimalData.Remove(lsCurrentAnimalData[i]);
+            }
+        }    
+   
+
+    }    
+
+
+
     public AnimalsDataProperty GetCardName(AnimalsName param)
     {
        
@@ -30,49 +53,60 @@ public class CardController : MonoBehaviour
             {
                 return item.animalsDataProperty;
             }
-        }
-      
+        }   
         return null;
-
     }
 
 
     public void Init(PlayerContain playerContainParam)
     {
         playerContain = playerContainParam;
-        Roll();
+        LoadFromHome();
     }
    
  
 
-    public List<CardBase> lsCurrentAnimalsData;
-    private void Roll()
+    
+    private void LoadFromHome()
     {
-      
-            lsCurrentAnimalsData = new List<CardBase>();
-            while (lsCurrentAnimalsData.Count < 3)
-            {
-                var rand = UnityEngine.Random.Range(0, 100);
-                if (rand < 70)
-                {
-                 
-                    lsCurrentAnimalsData.Add(GetRandomLsCardRank(CardRank.Normal));
-                }
-                if (rand > 70)
-                {
-               
-                    lsCurrentAnimalsData.Add(GetRandomLsCardRank(CardRank.Rare));
-                }
-            }
-     
-     
+        lsCurrentAnimalData = new List<AnimalsDataProperty>();
+        var data = JsonConvert.DeserializeObject<List<AnimalsName>>(UseProfile.DataAnimalsHome);
 
-        for (int i = 0; i < lsCurrentAnimalsData.Count; i++)
+        if (data != null && data.Count > 0)
         {
-             playerContain.animalController.SpwanAnimals(lsCurrentAnimalsData[i].animalsDataProperty.prefabAnimals);
+            foreach (var item in data)
+            {
+                lsCurrentAnimalData.Add(GetCardName(item));
+            }
+            for (int i = 0; i < lsCurrentAnimalData.Count; i++)
+            {
+                playerContain.animalController.SpwanAnimals(lsCurrentAnimalData[i].prefabAnimals);
+            }
         }
+        else
+        {
 
-
-
+            StartCoroutine(ShowBox());
+            GamePlayController.Instance.playerContain.animalController.btnNextDay.gameObject.SetActive(false);
+        }
+        IEnumerator ShowBox()
+        {
+            yield return new WaitForSeconds(1);
+            CardAnimalsBox.Setup().Show();
+        }
     }
+
+    public void SaveDataHome()
+    {
+        if (lsCurrentAnimalData.Count > 0)
+        {
+            var lsName = new List<AnimalsName>();
+            foreach (var item in lsCurrentAnimalData)
+            {
+                lsName.Add(item.animalsName);
+            }
+            var data = JsonConvert.SerializeObject(lsName);
+            UseProfile.DataAnimalsHome = data;
+        }
+    }    
 }

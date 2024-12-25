@@ -40,6 +40,7 @@ public class Ostrich : AnimalsBase
             if(item.animalsBase == null)
             {
                 postYardJump = item;
+                postYardJump.wasStay = true;
                 break;
             }
         }
@@ -62,12 +63,14 @@ public class Ostrich : AnimalsBase
                     postYardBase.animalsBase = this;
                     StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
                 }).WaitForCompletion();
+
             }
         }
         if (CheckBirdAround)
         {
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.TRIBAL_TALENT, this.gameObject);
         }
+        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.ANIMALS_MOVE, this.gameObject);
         yield return null;
     }
 }

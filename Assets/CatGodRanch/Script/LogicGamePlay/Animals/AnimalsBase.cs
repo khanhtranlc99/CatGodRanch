@@ -109,6 +109,7 @@ public abstract class AnimalsBase : MonoBehaviour
   
     public virtual void HandleActionDie()
     {
+        GamePlayController.Instance.playerContain.cardController.HandleRemoveCurrentAnimals(animalsName);
         postYardBase.animalsBase = null;
         postYardBase = null;
         huntAnimal = null;
@@ -141,7 +142,12 @@ public abstract class AnimalsBase : MonoBehaviour
     public virtual IEnumerator HandleActionProtect()
     {      
         yield return null;
-    }    
+    }
 
-
+    public void OnDestroy()
+    {
+        spriteRender.transform.DOKill();
+        transform.DOKill();
+       
+    }
 }

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class AcapelaCard : CardBase
 {
-    public override bool CanShow()
-{
+  public override bool CanShow()
+  {
     return true;
-}
+  }
 public override void Init()
 {
 

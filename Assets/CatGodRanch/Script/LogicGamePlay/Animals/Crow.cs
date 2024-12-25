@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class Crow : AnimalsBase
@@ -19,6 +20,7 @@ public class Crow : AnimalsBase
         }
     }    
     public AnimalsBase animalsTarget;
+    public PostYardBase TempPostYardBase;
     bool huntSuccess;
     public bool CanHandleEffect
     {
@@ -69,6 +71,7 @@ public class Crow : AnimalsBase
                 }
                 else
                 {
+                    TempPostYardBase = animalsTarget.postYardBase;
                     huntSuccess = true;
                     yield return transform.DOMove(animalsTarget.gameObject.transform.position, 0.5f).WaitForCompletion();
                     animalsTarget.HandleActionDie();
@@ -76,8 +79,8 @@ public class Crow : AnimalsBase
                     yield return transform.DOMove(postYardBase.gameObject.transform.position, 0.5f).WaitForCompletion();
                     var temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Crow);
 
-                    yield return StartCoroutine(SpwanAnimals(temp.prefabAnimals));
-
+                    yield return StartCoroutine(SpwanAnimals(temp.prefabAnimals, TempPostYardBase));
+                
                 }
             }
         }
@@ -91,21 +94,19 @@ public class Crow : AnimalsBase
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.HUNT_SUGGET, this);
         }
     }
-    public IEnumerator SpwanAnimals(GameObject animalsBase)
+    public IEnumerator SpwanAnimals(GameObject animalsBase, PostYardBase paramPost)
     {
 
-        var tempPost = postYardBase;
+        var tempPost = paramPost;
         if (tempPost != null)
         {
-            postYardBase.animalsBase = null;
-            postYardBase = null;
+       
             var temp = SimplePool2.Spawn(animalsBase);
             temp.transform.position = tempPost.post.position;
             tempPost.animalsBase = temp.GetComponent<AnimalsBase>();
             temp.GetComponent<AnimalsBase>().postYardBase = tempPost;
             GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
-            GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);
-            SimplePool2.Despawn(this.gameObject);
+      
             Debug.LogError("SpawnCrow");
         }
         yield return null;
