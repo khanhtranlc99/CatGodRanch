@@ -36,7 +36,7 @@ public class Crow : AnimalsBase
 
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         huntSuccess = false;
         animalsTarget = null;
         foreach (var item in postYardBase.lsNearYard)

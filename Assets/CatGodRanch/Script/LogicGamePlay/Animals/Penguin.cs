@@ -34,7 +34,7 @@ public class Penguin : AnimalsBase
 
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         tvDay.text = day.ToString() + "<sprite name=\"Time\">";
     }
     public override void InitState()
@@ -46,11 +46,16 @@ public class Penguin : AnimalsBase
         if (CanHandleEffect)
         {
             day -= 1;
-            tvDay.text = day.ToString() + "<sprite name=\"Time\">";
+          
             if (day <= 0)
             {
-                Debug.Log("LayItem");
+
+                day = 3;
+                var Ran = Random.Range(0, GamePlayController.Instance.playerContain.itemController.lsCardBase.Count);
+                var name = GamePlayController.Instance.playerContain.itemController.lsCardBase[Ran];
+                GamePlayController.Instance.playerContain.itemController.SpawnItem(name.itemDataProperty.itemName);
             }
+            tvDay.text = day.ToString() + "<sprite name=\"Time\">";
         }
         if (CheckBirdAround)
         {

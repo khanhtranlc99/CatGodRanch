@@ -37,7 +37,7 @@ public class Cow : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         if (!isListen)
         {
             EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.HUNT_SUGGET, HandleEffectAddCalf);

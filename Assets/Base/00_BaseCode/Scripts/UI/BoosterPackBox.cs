@@ -28,6 +28,7 @@ public class BoosterPackBox : BaseBox
         btnClose.onClick.AddListener(Close);
         iapPack.Init();
         Invoke(nameof(ShowButtonClose), 2);
+
        
     }
     public void InitState()

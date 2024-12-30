@@ -100,9 +100,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  postYardType: 0
   lsNearYard: []
   post: {fileID: 3672699670007443005}
   outLine: {fileID: 7711760056884215557}
+  animalsBase: {fileID: 0}
+  wasStay: 0
 --- !u!58 &3885222825762329765
 CircleCollider2D:
   m_ObjectHideFlags: 0

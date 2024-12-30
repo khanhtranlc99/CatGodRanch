@@ -20,7 +20,7 @@ public class Sheep : AnimalsBase
     int day = 3;
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         tvDay.text = day.ToString() + "<sprite name=\"Time\">";
     }
 

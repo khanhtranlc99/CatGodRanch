@@ -60,7 +60,7 @@ public class OpenCardBox : BaseBox
         }
         
         cardBar.InitState(ShowbuttnOk);
-
+        HomeController.Instance.animalsHomeController.SpawnAnimalRandomPost(animalsDataProperty);
         void ShowbuttnOk()
         {
             btnOk.gameObject.SetActive(true);
@@ -70,7 +70,7 @@ public class OpenCardBox : BaseBox
     } 
     public void HandleOk()
     {
-        HomeController.Instance.animalsHomeController.SpawnAnimalRandomPost(animalsDataProperty);
+      
         Close();
     }
         

@@ -516,7 +516,7 @@ public class ConfigBuild
     [MenuItem("Open Scene/Creat Level")]
     public static void OpenSceneCreatLevel()
     {
-        string localPath = "Assets/Scenes/ToolsCovertFigma.unity";
+        string localPath = "Assets/Scenes/EditLevel.unity";
         EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
         EditorSceneManager.OpenScene(localPath);
     }

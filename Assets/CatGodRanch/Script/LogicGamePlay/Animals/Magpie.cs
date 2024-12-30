@@ -32,7 +32,7 @@ public class Magpie : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         if (lsPlusDailyCoin.Count > 0)
         {
             lsPlusDailyCoin.Clear();

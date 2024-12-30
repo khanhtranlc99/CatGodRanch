@@ -65,14 +65,19 @@ public abstract class AnimalsBase : MonoBehaviour
     public GameObject canvas;
     public List<AnimalsBase> lsAnimalsProtect;
     public AnimalsBase huntAnimal;
+    public List<PostYardBase> lsPostRange;
 
 
-
+    public void SetUpPlus()
+    {
+        AnimScale();
+        InitRange();
+    }
     public void AnimScale()
     {
         spriteRender.transform.DOKill();
         spriteRender.transform.localEulerAngles = Vector3.zero;
-        var ranScaleOut = Random.RandomRange(0.3f,0.35f);
+        var ranScaleOut = Random.RandomRange(0.3f, 0.35f);
         var ranScaleIn = Random.RandomRange(0.3f, 0.35f);
         spriteRender.transform.DOScale(new Vector3(1.1f, 1, 1), ranScaleOut).OnComplete(delegate
         {
@@ -81,7 +86,8 @@ public abstract class AnimalsBase : MonoBehaviour
                 AnimScale();
             });
         });
-    }
+
+    }    
 
     public void AnimRotateInMove()
     {
@@ -142,6 +148,18 @@ public abstract class AnimalsBase : MonoBehaviour
     public virtual IEnumerator HandleActionProtect()
     {      
         yield return null;
+    }
+
+    public virtual void InitRange()
+    {
+        if(lsPostRange.Count > 0)
+        {
+            lsPostRange.Clear();
+        }
+        foreach(var item in postYardBase.lsNearYard)
+        {
+            lsPostRange.Add(item);
+        }
     }
 
     public void OnDestroy()

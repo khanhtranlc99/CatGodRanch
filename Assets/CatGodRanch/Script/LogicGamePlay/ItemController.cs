@@ -44,6 +44,7 @@ public class ItemController : MonoBehaviour
         if(tempCard != null)
         {
             tempCard.Init();
+         
         }
         else
         {

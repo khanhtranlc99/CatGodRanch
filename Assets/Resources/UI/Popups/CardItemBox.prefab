@@ -2254,16 +2254,16 @@ RectTransform:
   m_GameObject: {fileID: 5388907090909057084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8945337440078892055}
   m_Father: {fileID: 3269117158403535113}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -398, y: -619}
-  m_SizeDelta: {x: 111.8328, y: 110.6174}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 40.581055, y: -109}
+  m_SizeDelta: {x: 321.13, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2728283238715186577
 CanvasRenderer:
@@ -2293,8 +2293,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 249d2c81faddb87419d76c217884523c, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1e7207d99b584714c8776594e5f0bd34, type: 3}
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2444,6 +2444,7 @@ MonoBehaviour:
   btnSeeThrow: {fileID: 1017304620222237590}
   playerContain: {fileID: 0}
   lsCurrentAnimalsData: []
+  tmpCoin: {fileID: 7575846425792507432}
 --- !u!1 &5835094553482612112
 GameObject:
   m_ObjectHideFlags: 0
@@ -4372,8 +4373,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00080109, y: -17.1221}
-  m_SizeDelta: {x: 111.83, y: 76.3755}
+  m_AnchoredPosition: {x: 56.132973, y: 0}
+  m_SizeDelta: {x: 180.4178, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &959845554254449549
 CanvasRenderer:
@@ -4412,8 +4413,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4430,10 +4431,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 71.05
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0

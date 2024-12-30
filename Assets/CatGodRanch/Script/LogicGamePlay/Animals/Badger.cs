@@ -18,7 +18,7 @@ public class Badger : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
     }
     public override void InitState()
     {

@@ -33,7 +33,7 @@ public class Ostrich : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         postYardJump = null;
         foreach (var item in postYardBase.lsNearYard)
         {

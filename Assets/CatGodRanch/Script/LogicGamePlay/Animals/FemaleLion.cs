@@ -20,7 +20,7 @@ public class FemaleLion : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         huntSuccess = false;
         animalsTarget = null;
 

@@ -31,6 +31,7 @@ public class DataDifficulty
 {
     public DifficultyType difficultyType;
     public int numb;
+    public int rewardCoin;
 }
 
 [System.Serializable]
@@ -62,12 +63,18 @@ public class PlayerContain : MonoBehaviour
     public ItemController itemController;
     public DayController dayController;
     public CoinController coinController;
+    public InputController inputController;
     public void Init()
     {
+        var pathLevel = "Levels/Level_{0}";
+        TextAsset lvJson = Resources.Load<TextAsset>(string.Format(pathLevel, UseProfile.CurrentLevel));
+        levelConfig = JsonUtility.FromJson<LevelConfig>(lvJson.ToString());
+
+
         dayController.Init(this);
-   
         animalController.Init(this);
         cardController.Init(this);
+        inputController.Init();
     }
 
    

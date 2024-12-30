@@ -19,7 +19,7 @@ public class MuskOx : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         if (lsPlusCoinAnimals.Count > 0)
         {
             lsPlusCoinAnimals.Clear();

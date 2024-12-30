@@ -19,7 +19,7 @@ public class Tiger : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         huntSuccess = false;
         if (lsAnimalsTarget.Count > 0)
         {

@@ -6,7 +6,11 @@ public class FemaleLionCard : CardBase
 {
     public override bool CanShow()
     {
-        return true;
+        if(CheckItem && Condition)
+        {
+            return true;
+        }
+        return false;
     }
     public override void Init()
     {
@@ -16,7 +20,51 @@ public class FemaleLionCard : CardBase
     {
 
     }
+    private bool CheckItem
+    {
+        get
+        {
+            if (GamePlayController.Instance.playerContain.itemController.lsCurrentItem.Count >= 1)
+            {
 
+                return true;
+
+            }
+            return false;
+        }
+    }
+    private bool Condition
+    {
+        get
+        {
+            int CountHorse = 0;
+            int CountGazzle = 0;
+            foreach(var item in GamePlayController.Instance.playerContain.animalController.lsAnimalsBases)
+            {
+                if(item.animalsName == AnimalsName.Horse)
+                {
+                    CountHorse += 1;
+                }
+                if (item.animalsName == AnimalsName.Gazelle)
+                {
+                    CountGazzle += 1;
+                }
+            }    
+            if(CountHorse >= 2)
+            {
+                return true;
+            }
+            if(CountGazzle >= 2)
+            {
+                return true;
+            }
+            if(CountHorse >= 1 && CountGazzle >= 1)
+            {
+                return true;
+            }
+            return false ;
+        }
+    }    
 
 }
 

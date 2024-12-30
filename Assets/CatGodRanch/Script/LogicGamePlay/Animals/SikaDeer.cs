@@ -22,7 +22,7 @@ public class SikaDeer : AnimalsBase
     bool isListen = false;
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         if (!isListen)
         {
             EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.ANIMALS_MOVE, HandleEffectSikaDeer);

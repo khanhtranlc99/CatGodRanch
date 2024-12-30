@@ -32,7 +32,7 @@ public class Pigeon : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         countInt = 0;
         foreach (var animal in GamePlayController.Instance.playerContain.animalController.lsAnimalsBases)
         {

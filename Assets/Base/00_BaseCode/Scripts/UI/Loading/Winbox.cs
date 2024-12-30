@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Winbox : BaseBox
 {
@@ -21,7 +22,7 @@ public class Winbox : BaseBox
 
     public Button nextButton;
     public Button rewardButton;
-    public CoinHeartBar coinHeartBar;
+  
     public Text tvCoin;
     public int coinGift;
     public void Init()
@@ -39,8 +40,9 @@ public class Winbox : BaseBox
     {
 
         GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
-        coinGift = GamePlayController.Instance.playerContain.dayController.GetAllBill;
+        coinGift = GamePlayController.Instance.playerContain.levelConfig.dataDifficulty.rewardCoin;
         tvCoin.text = "" + coinGift;
+        UseProfile.Coin += coinGift;
         GamePlayController.Instance.playerContain.cardController.SaveDataHome();
 
     }    

@@ -7,7 +7,11 @@ public class ReinDeerCard : CardBase
  
     public override bool CanShow()
     {
-        return true;
+        if(GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Count >= 18)
+        {
+            return true;
+        }
+        return false;
     }
     public override void Init()
     {

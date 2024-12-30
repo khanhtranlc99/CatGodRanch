@@ -20,7 +20,7 @@ public class Goose : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         foreach (var item in postYardBase.lsNearYard)
         {
             if (item.animalsBase != null && item.animalsBase.animalsType == AnimalsType.Bird)

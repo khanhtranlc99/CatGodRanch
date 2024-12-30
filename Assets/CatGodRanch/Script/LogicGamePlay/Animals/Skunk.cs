@@ -17,7 +17,7 @@ public class Skunk : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
     }
     public override void InitState()
     {

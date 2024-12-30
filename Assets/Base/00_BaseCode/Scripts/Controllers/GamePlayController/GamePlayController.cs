@@ -45,6 +45,8 @@ public class GamePlayController : Singleton<GamePlayController>
         temp.transform.position = new Vector3(post.x, post.y+1, post.z);
         yield return StartCoroutine(temp.Init(paramCoin));
         playerContain.coinController.HandlePlusCoin (paramCoin);
+
+     
     }
    
 }

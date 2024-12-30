@@ -32,7 +32,7 @@ public class Turkey : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
     }
 
     public override void InitState()

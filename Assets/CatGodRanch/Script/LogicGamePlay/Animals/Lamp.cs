@@ -22,7 +22,7 @@ public class Lamp : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         tvDay.text = day.ToString() + "<sprite name=\"Time\">";
     }
     public override void InitState()

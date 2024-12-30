@@ -19,7 +19,7 @@ public class Acapela : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         lsAnimalsPlusCoin = new List<AnimalsBase>();
        foreach (var item in postYardBase.lsNearYard)
         {

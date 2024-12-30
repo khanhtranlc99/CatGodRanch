@@ -39,7 +39,7 @@ public class Horse : AnimalsBase
 
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
     }
     public override void InitState()
     {
@@ -82,4 +82,8 @@ public class Horse : AnimalsBase
             yield return null;
         }
     }    
+    public override void InitRange()
+    {  
+    
+    }
 }

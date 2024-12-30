@@ -19,7 +19,7 @@ public class Cheetah : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         if (!isListen)
         {
             EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.MOVE_SUGGET, HandleEffectCheetah);

@@ -66,9 +66,9 @@ public class CardAnimalsBox : BaseBox
     }
     private void btnRoll()
     {
-        if (GamePlayController.Instance.playerContain.coinController.coin >= 5)
+        if (GamePlayController.Instance.playerContain.coinController.coin >= 2)
         {
-            playerContain.coinController.HandlePlusCoin(-5);
+            playerContain.coinController.HandlePlusCoin(-2);
             tmpCoin.text = playerContain.coinController.coin + "<sprite name=\"Coin\">";
             Roll();
         }

@@ -6,7 +6,7 @@ public class AcapelaCard : CardBase
 {
   public override bool CanShow()
   {
-    return true;
+    return false;
   }
 public override void Init()
 {

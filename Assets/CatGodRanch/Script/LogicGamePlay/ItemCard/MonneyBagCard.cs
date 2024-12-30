@@ -6,7 +6,7 @@ public class MonneyBagCard : CardBase
 {
     public override bool CanShow()
     {
-        var temp = Random.RandomRange(0, 2);
+        var temp = Random.RandomRange(0, 5);
         if (temp == 1)
         {
             return false;

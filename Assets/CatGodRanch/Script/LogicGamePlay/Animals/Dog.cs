@@ -6,7 +6,7 @@ public class Dog : AnimalsBase
 {
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         if (GamePlayController.Instance.playerContain.itemController.GetItemBase(ItemName.DogTrainningLeash) == null)
         {
             foreach (var item in postYardBase.lsNearYard)

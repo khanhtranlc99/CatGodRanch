@@ -6,6 +6,7 @@ using MoreMountains.NiceVibrations;
 
 public class UseProfile : MonoBehaviour
 {
+  
     public static bool NeedCheckShop
     {
         get
@@ -342,7 +343,7 @@ public class UseProfile : MonoBehaviour
     {
         get
         {
-            return PlayerPrefs.GetFloat(StringHelper.PERCENT_CARD_BAR, 0);
+            return PlayerPrefs.GetFloat(StringHelper.PERCENT_CARD_BAR, 90);
         }
         set
         {

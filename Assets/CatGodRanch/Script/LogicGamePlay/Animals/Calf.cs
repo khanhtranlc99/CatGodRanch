@@ -38,7 +38,7 @@ public class Calf : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         tvDay.text = day.ToString() + "<sprite name=\"Time\">";
     }
 

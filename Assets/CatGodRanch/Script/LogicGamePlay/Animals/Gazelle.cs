@@ -22,7 +22,7 @@ public class Gazelle : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
     }
     public override void InitState()
     {

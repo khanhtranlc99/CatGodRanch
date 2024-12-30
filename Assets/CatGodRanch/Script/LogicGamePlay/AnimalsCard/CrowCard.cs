@@ -5,8 +5,12 @@ using UnityEngine;
 public class CrowCard : CardBase
 {
     public override bool CanShow()
-    {
-        return true;
+    {          
+       if (CheckItem && CheckNumbOfAnimals)
+        {
+         return true;
+        }       
+        return false;
     }
     public override void Init()
     {
@@ -16,7 +20,41 @@ public class CrowCard : CardBase
     {
 
     }
+    private bool CheckNumbOfAnimals
+    {
+        get
+        {
+            int coutYard = 0;
+            foreach (var item in GamePlayController.Instance.playerContain.postYardController.lsPostYardBases)
+            {
+                if (item.animalsBase != null)
+                {
+                    coutYard += 1;
+                }
+            }
+            if (coutYard > 14)
+            {
+                return true;
+            }
+            return false;
+        }
 
+    }
+
+    private bool CheckItem
+    {
+        get
+        {
+
+            if (GamePlayController.Instance.playerContain.itemController.lsCurrentItem.Count >= 2)
+            {
+
+                return true;
+
+            }
+            return false;
+        }
+    }
 
 }
 

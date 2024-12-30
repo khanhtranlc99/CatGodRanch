@@ -19,7 +19,7 @@ public class MaleLion : AnimalsBase
     }
     public override void Init()
     {
-        AnimScale();
+        SetUpPlus();
         if (!isListen)
         {
             EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.FEMALE_LION_HUNT_SUGGET, HandleEffectMaleLion);
