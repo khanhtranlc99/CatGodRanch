@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
+ 
 
 public class Pigeon : AnimalsBase
 {
+    public List<AnimalsBase> lsPigeon;
     public bool CheckBirdAround
     {
         get
@@ -34,11 +37,15 @@ public class Pigeon : AnimalsBase
     {
         SetUpPlus();
         countInt = 0;
+        if(lsPigeon.Count > 0)
+        {
+            lsPigeon.Clear();   
+        }
         foreach (var animal in GamePlayController.Instance.playerContain.animalController.lsAnimalsBases)
         {
-            if(animal.animalsName == AnimalsName.Pigeon)
+            if(animal.animalsName == AnimalsName.Pigeon && animal != this)
             {
-                countInt += 1;
+                lsPigeon.Add(animal);
             }    
         }    
        
@@ -48,20 +55,22 @@ public class Pigeon : AnimalsBase
     {
    
     }
-
-
-
-
-
-
     public override IEnumerator HandleEffect()
     {
         if (CanHandleEffect)
         {
-            if (countInt >= 3)
+           foreach(var item in lsPigeon)
             {
-                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
+                if(item.gameObject.activeSelf)
+                {
+                    yield return this.transform.DOMove(item.postYardBase.transform.position, 0.3f).WaitForCompletion();
+                    yield return this.transform.DOJump(this.transform.position, 1.5f, 1, 0.3f).WaitForCompletion();
+                    yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
+                 
+                }
             }
+            yield return this.transform.DOMove(postYardBase.transform.position, 0.3f).WaitForCompletion();
+
         }
  
         yield return null;

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using TMPro;
+using Unity.Android.Types;
 public class CardAnimalsBox : BaseBox
 {
     public static CardAnimalsBox instance;
@@ -30,10 +31,10 @@ public class CardAnimalsBox : BaseBox
     {
         playerContain = GamePlayController.Instance.playerContain;
         animalsData = playerContain.cardController;
-      
-        btnSeeThrow.onClick.AddListener(Close);
+
+        btnSeeThrow.onClick.AddListener(delegate { HandleSeeThrowBtn(); });
         btnRetry.onClick.AddListener(btnRoll);
-        btnSkip.onClick.AddListener(Roll);
+        btnSkip.onClick.AddListener(HandleSkip);
     }
     private void InitState()
     {
@@ -73,6 +74,20 @@ public class CardAnimalsBox : BaseBox
             Roll();
         }
     }
-
+    public void HandleOn()
+    {
+      
+        mainPanel.gameObject.SetActive(true);
+    }
+    public void HandleSkip()
+    {
+        GamePlayController.Instance.playerContain.animalController.btnNextDay.gameObject.SetActive(true);
+        Close();
+    }
+    private void HandleSeeThrowBtn()
+    {
+        mainPanel.gameObject.SetActive(false);
+        GamePlayController.Instance.gameScene.seeThrowBtn.gameObject.SetActive(true);
+    }
 
 }

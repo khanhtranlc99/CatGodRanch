@@ -39,6 +39,7 @@ public class ItemInGameVfx : MonoBehaviour
             });
         });
     }
+   
     private void OnDisable()
     {
         this.transform.DOKill();

@@ -8,7 +8,8 @@ public class AnimalController : MonoBehaviour
     PlayerContain playerContain;
     public List<AnimalsBase> lsAnimalsBases;
     public List<AnimalsBase> lsTempAnimalsBases;
-
+    public DuckController duckController;
+    public PenguinController penguinController;
     public Transform postHome;
     public Button btnNextDay;
     public void Init(PlayerContain playerContainParam)
@@ -86,7 +87,7 @@ public class AnimalController : MonoBehaviour
     {
         lsAnimalsBases.Shuffle();
         lsTempAnimalsBases.Clear();
-
+        duckController.InitState();
         List<Coroutine> runningCoroutines = new List<Coroutine>();
         if (lsAnimalsBases.Count <= playerContain.postYardController.lsPostYardBases.Count)
         {    

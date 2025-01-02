@@ -149,7 +149,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1  <sprite name="Time">
+  m_text: 4<sprite name="Time">
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90675dc45089d54498a259047563a699, type: 2}
   m_sharedMaterial: {fileID: -6525112419790217624, guid: 90675dc45089d54498a259047563a699, type: 2}
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.5
+  m_fontSize: 0.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -274,6 +274,7 @@ MonoBehaviour:
   canvas: {fileID: 6949976457933218550}
   lsAnimalsProtect: []
   huntAnimal: {fileID: 0}
+  lsPostRange: []
   tvDay: {fileID: 1740221561890284423}
 --- !u!1 &6949976457933218550
 GameObject:

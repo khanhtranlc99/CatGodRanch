@@ -150,14 +150,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalsRank: 0
   animalsType: 1
-  animalsName: 4
+  animalsName: 19
   spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
   spriteRender: {fileID: 6347429578732945619}
-  coinPlus: 0
+  coinPlus: 1
   postYardBase: {fileID: 0}
   canvas: {fileID: 0}
   lsAnimalsProtect: []
   huntAnimal: {fileID: 0}
+  lsPostRange: []
+  lsPigeon: []
   countInt: 0
 --- !u!1 &3823024514160753514
 GameObject:

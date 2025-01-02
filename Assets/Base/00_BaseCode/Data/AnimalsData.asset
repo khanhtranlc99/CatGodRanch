@@ -24,6 +24,15 @@ MonoBehaviour:
       price: 1
       coinPlus: -1
       prefabAnimals: {fileID: 377433775854885734, guid: dceef8e18a2c41d49aa39923403191a1, type: 3}
+    - name: Rooster
+      content: When adjacent to orther roosters, DailyCoin becomes 0
+      animalsName: 38
+      cardRank: 0
+      spriteAvatar: {fileID: 21300000, guid: 7d9282a994517714788f2ad9376f72fc, type: 3}
+      spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
+      price: 1
+      coinPlus: -1
+      prefabAnimals: {fileID: 2384198879925928544, guid: ef0dcde56dca69d448b569e141459cfd, type: 3}
     - name: Chicken
       content: After 3 day, 50% probability to Breeding 1 Egg
       animalsName: 1

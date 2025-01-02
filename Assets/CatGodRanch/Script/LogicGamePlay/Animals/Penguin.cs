@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
 public class Penguin : AnimalsBase
 {
     public bool CheckBirdAround
@@ -31,6 +32,8 @@ public class Penguin : AnimalsBase
             return true;
         }
     }
+    public GameObject boxChat;
+    public SpriteRenderer spriteRenderer;
 
     public override void Init()
     {
@@ -49,18 +52,38 @@ public class Penguin : AnimalsBase
           
             if (day <= 0)
             {
+                tvDay.text = "";
+                AnimRotateInMove();
+                yield return this.transform.DOMove(GamePlayController.Instance.playerContain.animalController.penguinController.post.position, 1).WaitForCompletion();
+                yield return this.transform.DOMove(postYardBase.transform.position, 1).WaitForCompletion();
+                AnimScale();
 
-                day = 3;
                 var Ran = Random.Range(0, GamePlayController.Instance.playerContain.itemController.lsCardBase.Count);
                 var name = GamePlayController.Instance.playerContain.itemController.lsCardBase[Ran];
+                spriteRenderer.sprite = name.itemDataProperty.spriteAvatar;
+                boxChat.gameObject.SetActive(true);
+                yield return new WaitForSeconds(1);
+                boxChat.gameObject.SetActive(false);
+
                 GamePlayController.Instance.playerContain.itemController.SpawnItem(name.itemDataProperty.itemName);
+                day = 3;
+                tvDay.text = day.ToString() + "<sprite name=\"Time\">";
             }
-            tvDay.text = day.ToString() + "<sprite name=\"Time\">";
+            else
+            {
+                yield return this.transform.DOJump(this.transform.position, 1.5f, 1, 0.5f).WaitForCompletion();
+                tvDay.text = day.ToString() + "<sprite name=\"Time\">";
+            }
+          
         }
         if (CheckBirdAround)
         {
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.TRIBAL_TALENT, this.gameObject);
         }
+        yield return null;
+    }
+    public override IEnumerator HandleClaimCoin()
+    {
         yield return null;
     }
 }

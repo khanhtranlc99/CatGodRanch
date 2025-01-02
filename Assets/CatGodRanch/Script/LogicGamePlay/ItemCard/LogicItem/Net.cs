@@ -12,6 +12,7 @@ public class Net : ItemBase
         var newYard = SimplePool2.Spawn(postYardNest);
         newYard.transform.parent = tempPostYardBase.transform.parent;
         newYard.transform.position = tempPostYardBase.transform.position;
+        newYard.vectorWordPost = tempPostYardBase.vectorWordPost;
         newYard.id = tempPostYardBase.id;
         foreach (var item in tempPostYardBase.lsNearYard)
         {

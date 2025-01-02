@@ -6,6 +6,8 @@ using UnityEngine;
 public class InputController : MonoBehaviour
 {
     public bool lockInput = false;
+    public WordCanvasController wordCanvasController;
+ 
     public void Init()
     {
         lockInput = true;
@@ -29,30 +31,26 @@ public class InputController : MonoBehaviour
                 // Kiểm tra nếu Raycast chạm vào một Collider2D
                 if (hit.collider != null)
                 {
-                   if(hit.collider.gameObject.GetComponent<PostYardBase>() != null  && hit.collider.gameObject.GetComponent<PostYardBase>().animalsBase != null)
+                    if (hit.collider.gameObject.name == "btnRemove")
+                    {              
+                        return;
+                    }
+                    if (hit.collider.gameObject.GetComponent<PostYardBase>() != null  && hit.collider.gameObject.GetComponent<PostYardBase>().animalsBase != null)
                     {
-                        foreach (var item in GamePlayController.Instance.playerContain.postYardController.lsPostYardBases)
-                        {
-                            item.HandleOffOutline();
-                        }
+                        GamePlayController.Instance.playerContain.postYardController.HandleOffOutLine();
                         hit.collider.gameObject.GetComponent<PostYardBase>().HandleCheckOutLine();
-
+                        wordCanvasController.HandleShow(hit.collider.gameObject.GetComponent<PostYardBase>());
                     }    
                    else
                     {
-                        foreach (var item in GamePlayController.Instance.playerContain.postYardController.lsPostYardBases)
-                        {
-                            item.HandleOffOutline();
-                        }
+                        GamePlayController.Instance.playerContain.postYardController.HandleOffOutLine();
+                        wordCanvasController.HandleOff();
                     }
                 }
                 else
                 {
-                    foreach(var item in GamePlayController.Instance.playerContain.postYardController.lsPostYardBases)
-                    {
-                        item.HandleOffOutline();
-                    }    
-                   
+                    GamePlayController.Instance.playerContain.postYardController.HandleOffOutLine();
+                    wordCanvasController.HandleOff();
                 }
             }
         }

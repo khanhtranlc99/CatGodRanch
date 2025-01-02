@@ -2,8 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
 public class Chicken : AnimalsBase
 {
+    public AnimalsBase rooster;
+    public GameObject effectSmoke;
+    public GameObject boxChat;
     public bool CheckBirdAround
     {
         get 
@@ -18,6 +22,7 @@ public class Chicken : AnimalsBase
             return false;
         }
     }    
+   
     public bool CanHandleEffect
     {
         get
@@ -30,12 +35,21 @@ public class Chicken : AnimalsBase
         }
     }
 
-    public TMP_Text tvDay;
-    int day = 3;
+     
+   
     public override void Init()
     {
         SetUpPlus();
-        tvDay.text = day.ToString() + "<sprite name=\"Time\">";
+        rooster = null;
+        foreach (var item in postYardBase.lsNearYard)
+        {
+           if(item.animalsBase != null && item.animalsBase.animalsName == AnimalsName.Rooster)
+            {
+                rooster = item.animalsBase;
+                break;
+            }
+        }
+    
     }
 
     public override void InitState()
@@ -45,22 +59,26 @@ public class Chicken : AnimalsBase
 
     public override IEnumerator HandleEffect()
     {  
-        if(CanHandleEffect)
+        if(CanHandleEffect  )
         {
-            day -= 1;
-            tvDay.text = day.ToString() + "<sprite name=\"Time\">";
-            if (day <= 0)
+            if(rooster != null && rooster.gameObject.activeSelf)
             {
+                yield return rooster.gameObject.transform.DOMove(postYardBase.transform.position, 0.5f).WaitForCompletion();
+                var tempEffect = SimplePool2.Spawn(effectSmoke, new Vector2(postYardBase.transform.position.x, postYardBase.transform.position.y + 0.5f), Quaternion.identity);
+                yield return new WaitForSeconds(1);
+                yield return rooster.gameObject.transform.DOMove(rooster.postYardBase.transform.position, 0.5f).WaitForCompletion();
                 var ran = Random.RandomRange(0, 100);
                 if (ran <= 50)
                 {
-                    day = 3;
-                    tvDay.text = day.ToString() + "<sprite name=\"Time\">";
+                    yield return this.transform.DOJump(this.transform.position, 1.5f, 1, 0.5f).WaitForCompletion();
+                    var temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Egg);
+                    yield return StartCoroutine(SpwanAnimals(temp.prefabAnimals));
                 }
                 else
                 {
-                    var temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Egg);
-                    SpwanAnimals(temp.prefabAnimals);
+                    boxChat.gameObject.SetActive(true);
+                    yield return new WaitForSeconds(1);
+                    boxChat.gameObject.SetActive(false);
                 }
             }
         }   
@@ -72,7 +90,7 @@ public class Chicken : AnimalsBase
         
         yield return null;
     }
-    public void SpwanAnimals(GameObject animalsBase)
+    public IEnumerator SpwanAnimals(GameObject animalsBase)
     {
 
         var tempPost = GetEmptyPost;
@@ -91,12 +109,15 @@ public class Chicken : AnimalsBase
         else
         {
             var temp = SimplePool2.Spawn(animalsBase);
-            temp.transform.position = postYardBase.post.position;
-            postYardBase.animalsBase = temp.GetComponent<AnimalsBase>();
-            temp.GetComponent<AnimalsBase>().postYardBase = postYardBase;
+            temp.transform.position = this.transform.position;
             GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
-        }    
-
+            yield return temp.transform.DOMove(GamePlayController.Instance.playerContain.animalController.postHome.position, 0.5f).WaitForCompletion();
+            //temp.transform.position = postYardBase.post.position;
+            //postYardBase.animalsBase = temp.GetComponent<AnimalsBase>();
+            //temp.GetComponent<AnimalsBase>().postYardBase = postYardBase;
+            //GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
+        }
+        yield return null;
     }
 
     PostYardBase GetEmptyPost

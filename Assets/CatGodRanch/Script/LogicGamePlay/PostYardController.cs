@@ -66,10 +66,18 @@ public class PostYardController : MonoBehaviour
     {
         Instance = this;
     }
+
     public void Init()
     {
 
     }    
+    public void HandleOffOutLine()
+    {
+        foreach (var item in lsPostYardBases)
+        {
+            item.HandleOffOutline();
+        }
+    }
    // [Button]
     private void SetId()
     {

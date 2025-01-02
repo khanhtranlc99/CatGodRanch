@@ -158,7 +158,9 @@ MonoBehaviour:
   canvas: {fileID: 0}
   lsAnimalsProtect: []
   huntAnimal: {fileID: 0}
+  lsPostRange: []
   lsPlusDailyCoin: []
+  dailyCoin: {fileID: 3539437544756692362, guid: 53434ef4cd9970843bec58c10ae7f0fd, type: 3}
 --- !u!1 &3487702591108743206
 GameObject:
   m_ObjectHideFlags: 0

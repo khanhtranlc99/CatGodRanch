@@ -41,7 +41,7 @@ public class Crow : AnimalsBase
         animalsTarget = null;
         foreach (var item in postYardBase.lsNearYard)
         {
-            if (item.animalsBase != null && item.animalsBase.animalsType == AnimalsType.Bird && item.animalsBase.animalsRank == CardRank.Normal)
+            if (item.animalsBase != null  && item.animalsBase.animalsRank == CardRank.Normal)
             {
                 animalsTarget = item.animalsBase;
                 break;

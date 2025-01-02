@@ -21,6 +21,7 @@ public abstract class PostYardBase : MonoBehaviour
     public GameObject outLine;
     public AnimalsBase animalsBase;
     public bool wasStay = false;
+    public Vector3 vectorWordPost;
    
 
     public void SwitchPostYard(PostYardBase paramPost, PostYardBase postYardNew)
@@ -48,6 +49,7 @@ public abstract class PostYardBase : MonoBehaviour
                 }
             }
             gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
+
         }
 
     }

@@ -7,6 +7,7 @@ public class Card : MonoBehaviour
 {
     public Image bgCard;
     public Image iconAnimals;
+    public Image iconType;
     public Text tvName;
     public TMP_Text tvContent;
     public TMP_Text tvNumbDaily;
@@ -18,6 +19,7 @@ public class Card : MonoBehaviour
     {
         animalsData = dataParam.animalsDataProperty;
         iconAnimals.sprite = animalsData.spriteAvatar;
+        iconType.sprite = animalsData.spriteAnimalsType;
         tvName.text = animalsData.name;
         tvContent.text = animalsData.content;
         tvNumbDaily.text = "" + animalsData.coinPlus;

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class Magpie : AnimalsBase
@@ -30,6 +31,8 @@ public class Magpie : AnimalsBase
             return true;
         }
     }
+    public GameObject dailyCoin;
+    public List<GameObject> lsDailyCoin;
     public override void Init()
     {
         SetUpPlus();
@@ -57,6 +60,10 @@ public class Magpie : AnimalsBase
                 lsPlusDailyCoin.Add(animal);
             }
         }
+        if(lsDailyCoin.Count > 0)
+        {
+            lsDailyCoin.Clear();
+        }
 
     }
     public override void InitState()
@@ -69,12 +76,30 @@ public class Magpie : AnimalsBase
         {
             if(lsPlusDailyCoin.Count > 0)
             {
-                foreach(var item in lsAnimalsProtect)
+                spriteRender.transform.DOKill();
+                Sequence sequence = DOTween.Sequence();
+                sequence.Append(spriteRender.transform.DOScale(new Vector3(1.4f, 1, 1), 0.15f));
+                sequence.Append(spriteRender.transform.DOScale(new Vector3(0.8f, 1, 1), 0.15f));
+                sequence.Append(spriteRender.transform.DOScale(new Vector3(1, 1, 1), 0.15f));
+                yield return sequence.WaitForCompletion();
+
+                Sequence sequence2 = DOTween.Sequence();
+                foreach (var item in lsPlusDailyCoin)
                 {
+                    var temp = SimplePool2.Spawn(dailyCoin);
+                    temp.transform.position = this.transform.position;
+                    lsDailyCoin.Add(temp);
+                    sequence2.Join(temp.transform.DOJump(item.transform.position, 1.2f,1,0.5f));
                     item.coinPlus += 1;
-                    Debug.LogError("Magpie_" + item.animalsName);
                 }
-                Debug.LogError("HandleEffect_Magpie");
+               
+                yield return sequence2.WaitForCompletion();
+                foreach (var item in lsDailyCoin)
+                {
+                    SimplePool2.Despawn(item);
+                }
+                AnimScale();
+                Debug.LogError("Magpie");
             }    
 
         }
@@ -82,6 +107,7 @@ public class Magpie : AnimalsBase
         {
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.TRIBAL_TALENT, this.gameObject);
         }
+  
         yield return null;
     }
 }

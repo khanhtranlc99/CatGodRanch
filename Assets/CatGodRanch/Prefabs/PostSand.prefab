@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2412435087997194736}
   - component: {fileID: 155471773158167368}
-  - component: {fileID: 8590737304982420566}
   - component: {fileID: 7963145906426016393}
+  - component: {fileID: 7935014444559492562}
   m_Layer: 0
   m_Name: PostSand
   m_TagString: Untagged
@@ -87,14 +87,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &8590737304982420566
-CircleCollider2D:
+--- !u!114 &7963145906426016393
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087715990038539103}
-  m_Enabled: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e09e839c6064824298fac9fcb5047ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  postYardType: 3
+  lsNearYard: []
+  post: {fileID: 2412435087997194736}
+  outLine: {fileID: 6042784596731314290}
+  animalsBase: {fileID: 0}
+  wasStay: 0
+  vectorWordPost: {x: 0, y: 0, z: 0}
+--- !u!60 &7935014444559492562
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087715990038539103}
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -120,26 +140,37 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.37
---- !u!114 &7963145906426016393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087715990038539103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e09e839c6064824298fac9fcb5047ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  postYardType: 3
-  lsNearYard: []
-  post: {fileID: 2412435087997194736}
-  outLine: {fileID: 6042784596731314290}
-  animalsBase: {fileID: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.2642857, y: 1.2642857}
+    newSize: {x: 1.62, y: 1.15}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.78, y: -0.074999996}
+      - {x: 0.8039025, y: 0.0430488}
+      - {x: 0.8034974, y: 0.47703457}
+      - {x: 0.7136828, y: 0.6491037}
+      - {x: 0.58772683, y: 0.7425774}
+      - {x: 0.36270702, y: 0.84259313}
+      - {x: -0.13523957, y: 0.8760747}
+      - {x: -0.5350039, y: 0.76455224}
+      - {x: -0.7629348, y: 0.5225853}
+      - {x: -0.78, y: 0.105}
+      - {x: -0.78, y: -0.205}
+      - {x: -0.59999996, y: -0.435}
+      - {x: -0.47, y: -0.475}
+      - {x: -0.14, y: -0.48499998}
+      - {x: 0.28, y: -0.545}
+      - {x: 0.47, y: -0.545}
+      - {x: 0.65, y: -0.445}
+      - {x: 0.74, y: -0.36499998}
+      - {x: 0.78, y: -0.225}
+  m_UseDelaunayMesh: 0
 --- !u!1 &6042784596731314290
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,7 +244,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 581d4afa45046704fb9f323730c5ca8e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ed12604f6a4618479d28e8f9310522b, type: 3}
   m_Color: {r: 1, g: 0.9110264, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0

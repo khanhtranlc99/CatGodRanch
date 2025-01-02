@@ -48,7 +48,8 @@ public enum AnimalsName
     MaleLion,
     FemaleLion,
     Cheetah,
-    Crocodile
+    Crocodile,
+    Rooster,
 
 }
 
@@ -101,14 +102,7 @@ public abstract class AnimalsBase : MonoBehaviour
         });
     }
 
-    string paramTvCoin
-    {
-        get
-        {
-        
-            return coinPlus.ToString() + "<sprite name='Coin'>" ;
-        }    
-    }    
+      
     public abstract void Init();
     public abstract void InitState();
     public abstract IEnumerator HandleEffect();
@@ -142,6 +136,13 @@ public abstract class AnimalsBase : MonoBehaviour
     }
     public virtual IEnumerator  HandleClaimCoin()
     {
+        spriteRender.transform.DOKill();
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(spriteRender.transform.DOScale(new Vector3(1.4f, 1, 1), 0.15f));
+        sequence.Append(spriteRender.transform.DOScale(new Vector3(0.8f, 1, 1), 0.15f));
+        sequence.Append(spriteRender.transform.DOScale(new Vector3(1, 1, 1), 0.15f));
+        yield return sequence.WaitForCompletion();
+        AnimScale();
         yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(coinPlus, transform.position));
     }
 

@@ -15,13 +15,13 @@ public class GameScene : BaseScene
     [SerializeField] private Button settinBtn;
     [SerializeField] private Transform canvas;
     [SerializeField] private Button resetBtn;
-
+    public Button seeThrowBtn;
 
     public void Init(PlayerContain playerContainParam )
     {
         tvLevel.text = "Level " + UseProfile.CurrentLevel;
         resetBtn.onClick.AddListener(HandleReset);
-
+        seeThrowBtn.onClick.AddListener(delegate { HandleSeeThrowBtn(); });
 
     }
     private void HandleReset()
@@ -34,5 +34,10 @@ public class GameScene : BaseScene
     public override void OnEscapeWhenStackBoxEmpty()
     {
      
+    }
+    private void HandleSeeThrowBtn()
+    {
+        CardAnimalsBox.instance.HandleOn();
+        seeThrowBtn.gameObject.SetActive(false);
     }
 }
