@@ -55,7 +55,9 @@ public class Penguin : AnimalsBase
                 tvDay.text = "";
                 AnimRotateInMove();
                 yield return this.transform.DOMove(GamePlayController.Instance.playerContain.animalController.penguinController.post.position, 1).WaitForCompletion();
+                this.transform.localScale = new Vector3(-this.transform.localScale.x, this.transform.localScale.y, this.transform.localScale.z);
                 yield return this.transform.DOMove(postYardBase.transform.position, 1).WaitForCompletion();
+                this.transform.localScale = new Vector3(Mathf.Abs(this.transform.localScale.x), this.transform.localScale.y, this.transform.localScale.z);
                 AnimScale();
 
                 var Ran = Random.Range(0, GamePlayController.Instance.playerContain.itemController.lsCardBase.Count);
@@ -65,7 +67,7 @@ public class Penguin : AnimalsBase
                 yield return new WaitForSeconds(1);
                 boxChat.gameObject.SetActive(false);
 
-                GamePlayController.Instance.playerContain.itemController.SpawnItem(name.itemDataProperty.itemName);
+                GamePlayController.Instance.playerContain.itemController.SpawnItem(name.itemDataProperty.itemName, true);
                 day = 3;
                 tvDay.text = day.ToString() + "<sprite name=\"Time\">";
             }

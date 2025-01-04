@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class ReinDeer : AnimalsBase
 {
@@ -44,7 +46,7 @@ public class ReinDeer : AnimalsBase
             }
         }
     }
-    public override void InitState()
+    public override void InitState()   
     {
 
     }
@@ -54,11 +56,16 @@ public class ReinDeer : AnimalsBase
         {
             if(animalsTarget != null)
             {
-                var temp = animalsTarget.coinPlus; 
+                var temp = animalsTarget.coinPlus;
+                temp *= Random.Range(3, 7);
+                var tempPost = GamePlayController.Instance.playerContain.animalController.reinDeerController.GetPost(this.transform.position, animalsTarget.transform.position);
+                yield return this.transform.DOMove(animalsTarget.transform.position, 0.5f).SetEase(Ease.InBack).WaitForCompletion();
+                yield return animalsTarget.transform.DOJump(tempPost.position, 1.5f, 1, 0.5f).WaitForCompletion();
+
                 animalsTarget.HandleActionDie();
                 animalsTarget = null;
-                temp *= Random.Range(3, 7);
-                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
+                yield return transform.DOMove(postYardBase.gameObject.transform.position, 0.5f).WaitForCompletion();
+                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(temp, transform.position));
             }    
          
         }

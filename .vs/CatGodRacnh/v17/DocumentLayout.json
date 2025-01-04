@@ -7,24 +7,88 @@
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\penguin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\rhino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\rhino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\animalsbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\animalsbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\magpie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\magpie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|d:\\projectuniy\\catgodracnh\\catgodracnh\\assets\\catgodranch\\script\\logicgameplay\\penguincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\penguincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\duckcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\duckcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\goose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\goose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|d:\\projectuniy\\catgodracnh\\catgodracnh\\assets\\catgodranch\\script\\logicgameplay\\reindeercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\reindeercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\reindeer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\reindeer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\wolf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\wolf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\cow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\cow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|d:\\projectuniy\\catgodracnh\\catgodracnh\\assets\\catgodranch\\script\\logicgameplay\\animalshomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animalshomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\pig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\pig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\calf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\calf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\sikadeer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\sikadeer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\rooster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\rooster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\ostrich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\ostrich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\egg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\egg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\rooster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\rooster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\base\\00_basecode\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\goose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\goose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,16 +99,8 @@
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animalscard\\cardbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\chicken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\chicken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\animalsbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\animalsbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\crow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,30 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\eagle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\eagle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\ostrich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\ostrich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|d:\\projectuniy\\catgodracnh\\catgodracnh\\assets\\catgodranch\\script\\logicgameplay\\duckcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\duckcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|d:\\projectuniy\\catgodracnh\\catgodracnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\duck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\duck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\magpie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\magpie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\reindeer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\reindeer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gameplaycontroller\\gameplaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\itemingamevfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -177,10 +209,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\yard\\postyardnormal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\yard\\postyardnormal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\acapela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\acapela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\ui\\carditembox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -335,10 +363,6 @@
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\boxcontroller\\boxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\base\\00_basecode\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\base\\00_basecode\\scripts\\datas\\giftdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\datas\\giftdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -383,10 +407,6 @@
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\randomcardbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animalshomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animalshomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\opencard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\opencard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -401,10 +421,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\base\\00_basecode\\scripts\\ui\\loading\\losebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\ui\\loading\\losebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\cow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\cow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\crocodile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -423,20 +439,12 @@
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\turkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\wolf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\wolf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\tiger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\tiger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\sheep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\sheep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\pig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\pig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ProjectUniy\\BalloonAndThorns\\BalloonAndThorns\\Assets\\Base\\00_BaseCode\\Scripts\\Utility\\StringHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -455,10 +463,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\base\\00_basecode\\scripts\\utility\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\base\\00_basecode\\scripts\\utility\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\rhino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\rhino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animalscard\\turkeycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -509,10 +513,6 @@
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\goat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\calf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\calf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\yard\\postyardpuddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\yard\\postyardpuddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -531,14 +531,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\coyote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\coyote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\lamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\lamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\muskox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|solutionrelative:assets\\catgodranch\\script\\logicgameplay\\animals\\muskox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90517A8C-F11A-273A-38C6-7B18DFE9A227}|Assembly-CSharp.csproj|D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\assets\\catgodranch\\script\\logicgameplay\\animals\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -643,11 +635,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 25,
               "Title": "Crow.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Crow.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Crow.cs",
@@ -656,12 +648,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T11:00:45.132Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 27,
               "Title": "Eagle.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Eagle.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Eagle.cs",
@@ -670,36 +661,20 @@
               "ViewState": "AgIAACMAAAAAAAAAAAAwwDEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T05:23:46.636Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Magpie.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Magpie.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Magpie.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Magpie.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Magpie.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAmwEAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T11:00:39.002Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Ostrich.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Ostrich.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Ostrich.cs",
               "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Ostrich.cs",
               "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Ostrich.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwD8AAABRAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDkAAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T11:00:14.221Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -709,7 +684,7 @@
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Penguin.cs",
               "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Penguin.cs",
               "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Penguin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAA0wDwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T11:00:24.439Z",
               "IsPinned": true,
@@ -717,98 +692,211 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Magpie.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Magpie.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Magpie.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Magpie.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Magpie.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwFMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T11:00:39.002Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PenguinController.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\PenguinController.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\PenguinController.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\PenguinController.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\PenguinController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T16:49:44.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReinDeerController.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ReinDeerController.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ReinDeerController.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ReinDeerController.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ReinDeerController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T16:48:54.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnimalsBase.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\AnimalsBase.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\AnimalsBase.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\AnimalsBase.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\AnimalsBase.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAmwFwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T07:58:32.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReinDeer.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\ReinDeer.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\ReinDeer.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\ReinDeer.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\ReinDeer.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T04:48:37.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AnimalController.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalController.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalController.cs",
               "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalController.cs",
               "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAIwFUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T09:29:32.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Goose.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Goose.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Goose.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Goose.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Goose.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwCUAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "DuckController.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\DuckController.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\DuckController.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\DuckController.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\DuckController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T17:37:18.232Z",
+              "WhenOpened": "2025-01-02T18:10:23.652Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Rhino.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Rhino.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Rhino.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Rhino.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Rhino.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAuwFoAAACSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T06:58:32.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Wolf.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Wolf.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Wolf.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Wolf.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Wolf.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAGAAAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T06:24:10.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Cow.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Cow.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Cow.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Cow.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Cow.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAvwG0AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T02:48:40.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Pig.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Pig.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Pig.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Pig.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Pig.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvyMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T06:53:14.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Calf.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Calf.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Calf.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Calf.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Calf.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAUwGMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T03:54:00.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AnimalsHomeController.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsHomeController.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsHomeController.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsHomeController.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsHomeController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwDMAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:55:18.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "SikaDeer.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\SikaDeer.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\SikaDeer.cs",
               "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\SikaDeer.cs",
               "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\SikaDeer.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowDIAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowC8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T04:10:28.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T04:10:28.576Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
+              "Title": "GamePlayController.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAmwCkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T13:57:04.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Egg.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Egg.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Egg.cs",
               "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Egg.cs",
               "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Egg.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwDEAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwEEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T17:37:34.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-15T17:37:34.011Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ItemController.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemController.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemController.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemController.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T17:36:35.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CardBase.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CardBase.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CardBase.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CardBase.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CardBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T07:08:49.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ItemData.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemData.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemData.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemData.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T07:12:49.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 18,
               "Title": "Rooster.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Rooster.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Rooster.cs",
@@ -816,38 +904,23 @@
               "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Rooster.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAwwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T17:47:50.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-01T17:47:50.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Chicken.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Chicken.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Chicken.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Chicken.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Chicken.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAcwEcAAABeAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemController.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemController.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemController.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAcwFkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T00:50:19.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-22T17:36:35.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AnimalsBase.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\AnimalsBase.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\AnimalsBase.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\AnimalsBase.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\AnimalsBase.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAqwGgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T07:58:32.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 26,
               "Title": "Fox.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Fox.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Fox.cs",
@@ -855,38 +928,71 @@
               "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Fox.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAUwCUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T10:32:54.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T10:32:54.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DuckController.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\DuckController.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\DuckController.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\DuckController.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\DuckController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAUwCsAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 22,
+              "Title": "ItemData.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemData.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemData.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemData.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T18:10:23.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T07:12:49.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Duck.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Duck.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Duck.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Duck.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Duck.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAnwDUAAACCAAAAAAAAAA==",
+              "DocumentIndex": 24,
+              "Title": "Chicken.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Chicken.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Chicken.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Chicken.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Chicken.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwEcAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T17:38:32.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T00:50:19.67Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 20,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
+              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAtwBEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T04:24:01.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CardBase.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CardBase.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CardBase.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CardBase.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CardBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T07:08:49.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Goose.cs",
+              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Goose.cs",
+              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Goose.cs",
+              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Goose.cs",
+              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Goose.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwCUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T17:37:18.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 112,
               "Title": "PlayerContain.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\BalloonAndThorns\\BalloonAndThorns\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\PlayerContain.cs",
               "RelativeDocumentMoniker": "..\\..\\BalloonAndThorns\\BalloonAndThorns\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\PlayerContain.cs",
@@ -899,7 +1005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 111,
               "Title": "StringHelper.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\BalloonAndThorns\\BalloonAndThorns\\Assets\\Base\\00_BaseCode\\Scripts\\Utility\\StringHelper.cs",
               "RelativeDocumentMoniker": "..\\..\\BalloonAndThorns\\BalloonAndThorns\\Assets\\Base\\00_BaseCode\\Scripts\\Utility\\StringHelper.cs",
@@ -912,19 +1018,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "GamePlayController.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
-              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
-              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GamePlayController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAnwB8AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T13:57:04.957Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "ItemInGameVfx.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemInGameVfx.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemInGameVfx.cs",
@@ -936,7 +1030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "CoinController.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\CoinController.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\CoinController.cs",
@@ -948,19 +1042,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ReinDeer.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\ReinDeer.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\ReinDeer.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\ReinDeer.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\ReinDeer.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAUwDsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T04:48:37.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "WordCanvas.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\WordCanvas.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\WordCanvas.cs",
@@ -972,7 +1054,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "PlayerContain.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\PlayerContain.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\PlayerContain.cs",
@@ -984,7 +1066,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "CardController.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\CardController.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\CardController.cs",
@@ -996,7 +1078,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 33,
               "Title": "DayController.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\DayController.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\DayController.cs",
@@ -1008,7 +1090,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 34,
               "Title": "Gazelle.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Gazelle.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Gazelle.cs",
@@ -1020,7 +1102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 40,
               "Title": "InputController.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\InputController.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\InputController.cs",
@@ -1032,7 +1114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 37,
               "Title": "Pigeon.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Pigeon.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Pigeon.cs",
@@ -1044,7 +1126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 38,
               "Title": "WordCanvasController.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\WordCanvasController.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\WordCanvasController.cs",
@@ -1056,7 +1138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 39,
               "Title": "CardAnimalsBox.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\UI\\CardAnimalsBox.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\UI\\CardAnimalsBox.cs",
@@ -1068,7 +1150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 36,
               "Title": "RoosterCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\RoosterCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\RoosterCard.cs",
@@ -1080,7 +1162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 35,
               "Title": "ChickenCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\ChickenCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\ChickenCard.cs",
@@ -1092,7 +1174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 41,
               "Title": "Winbox.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\Winbox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\Winbox.cs",
@@ -1104,7 +1186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 42,
               "Title": "PostYardController.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\PostYardController.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\PostYardController.cs",
@@ -1116,7 +1198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 43,
               "Title": "Card.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\UI\\Card.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\UI\\Card.cs",
@@ -1128,7 +1210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 44,
               "Title": "GameScene.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GameScene.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GamePlayController\\GameScene.cs",
@@ -1140,7 +1222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 45,
               "Title": "PostYardBase.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Yard\\PostYardBase.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Yard\\PostYardBase.cs",
@@ -1152,7 +1234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 46,
               "Title": "Net.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\Net.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\Net.cs",
@@ -1164,7 +1246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 47,
               "Title": "Sand.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\Sand.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\Sand.cs",
@@ -1176,7 +1258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 48,
               "Title": "Puddle.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\Puddle.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\Puddle.cs",
@@ -1188,7 +1270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 49,
               "Title": "Grass.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\Grass.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\Grass.cs",
@@ -1200,7 +1282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 50,
               "Title": "NetCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\NetCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\NetCard.cs",
@@ -1212,7 +1294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 51,
               "Title": "PostYardNormal.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Yard\\PostYardNormal.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Yard\\PostYardNormal.cs",
@@ -1224,19 +1306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "Acapela.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Acapela.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Acapela.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Acapela.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Acapela.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T09:35:25.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 52,
               "Title": "CardItemBox.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\UI\\CardItemBox.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\UI\\CardItemBox.cs",
@@ -1248,7 +1318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 53,
               "Title": "PenguinCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\PenguinCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\PenguinCard.cs",
@@ -1260,7 +1330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 54,
               "Title": "GrowTalentCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\GrowTalentCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\GrowTalentCard.cs",
@@ -1272,7 +1342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 55,
               "Title": "TribalTalentCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\TribalTalentCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\TribalTalentCard.cs",
@@ -1284,7 +1354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 56,
               "Title": "SheepPenCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\SheepPenCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\SheepPenCard.cs",
@@ -1296,7 +1366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 57,
               "Title": "MonneyBagCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\MonneyBagCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\MonneyBagCard.cs",
@@ -1308,7 +1378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 58,
               "Title": "GoatHornCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\GoatHornCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\GoatHornCard.cs",
@@ -1320,7 +1390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 59,
               "Title": "WaterBuffaloCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\WaterBuffaloCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\WaterBuffaloCard.cs",
@@ -1332,7 +1402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 60,
               "Title": "GoatCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\GoatCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\GoatCard.cs",
@@ -1344,7 +1414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 61,
               "Title": "CowCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CowCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CowCard.cs",
@@ -1356,7 +1426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 64,
               "Title": "MuskOxCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\MuskOxCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\MuskOxCard.cs",
@@ -1368,7 +1438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 65,
               "Title": "RhinoCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\RhinoCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\RhinoCard.cs",
@@ -1380,7 +1450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 66,
               "Title": "MagpieCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\MagpieCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\MagpieCard.cs",
@@ -1392,7 +1462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 67,
               "Title": "SikaDeerCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\SikaDeerCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\SikaDeerCard.cs",
@@ -1404,7 +1474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 63,
               "Title": "CrocodileCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CrocodileCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CrocodileCard.cs",
@@ -1416,7 +1486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 62,
               "Title": "AcapelaCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\AcapelaCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\AcapelaCard.cs",
@@ -1428,7 +1498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 69,
               "Title": "TigerCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\TigerCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\TigerCard.cs",
@@ -1440,7 +1510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 70,
               "Title": "MaleLionCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\MaleLionCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\MaleLionCard.cs",
@@ -1452,7 +1522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 68,
               "Title": "ItemBase.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\ItemBase.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\ItemBase.cs",
@@ -1464,7 +1534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 71,
               "Title": "FemaleLionCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\FemaleLionCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\FemaleLionCard.cs",
@@ -1476,7 +1546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 73,
               "Title": "CrowCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CrowCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CrowCard.cs",
@@ -1488,7 +1558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 72,
               "Title": "ReinDeerCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\ReinDeerCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\ReinDeerCard.cs",
@@ -1500,7 +1570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 74,
               "Title": "EagleCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\EagleCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\EagleCard.cs",
@@ -1512,7 +1582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 75,
               "Title": "OstrichCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\OstrichCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\OstrichCard.cs",
@@ -1524,7 +1594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 76,
               "Title": "DogTranningLeashCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\DogTranningLeashCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\DogTranningLeashCard.cs",
@@ -1536,7 +1606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 77,
               "Title": "WolfCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\WolfCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\WolfCard.cs",
@@ -1548,7 +1618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 79,
               "Title": "BadgerCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\BadgerCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\BadgerCard.cs",
@@ -1560,7 +1630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 78,
               "Title": "Badger.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Badger.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Badger.cs",
@@ -1572,7 +1642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 89,
               "Title": "BoxController.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\BoxController\\BoxController.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\BoxController\\BoxController.cs",
@@ -1584,7 +1654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 80,
               "Title": "Horse.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Horse.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Horse.cs",
@@ -1596,7 +1666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 87,
               "Title": "StringHelper.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Utility\\StringHelper.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Utility\\StringHelper.cs",
@@ -1608,7 +1678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 88,
               "Title": "BoosterPackBox.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\BoosterPackBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\BoosterPackBox.cs",
@@ -1620,7 +1690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 82,
               "Title": "UnitBase.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\UnitBase.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\UnitBase.cs",
@@ -1632,7 +1702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 84,
               "Title": "Gaint.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\Gaint.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\Gaint.cs",
@@ -1644,7 +1714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 81,
               "Title": "UnitData.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\UnitData.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\UnitData.cs",
@@ -1656,7 +1726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 85,
               "Title": "LevelChestData.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Datas\\LevelChestData.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Datas\\LevelChestData.cs",
@@ -1668,7 +1738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 83,
               "Title": "UpgradeData.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\UpgradeData.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\UpgradeData.cs",
@@ -1680,7 +1750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 86,
               "Title": "UseProfile.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\UseProfile.cs",
@@ -1692,19 +1762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
-              "RelativeToolTip": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\GameController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAtwBEAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T04:24:01.453Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 95,
               "Title": "Level_1.txt",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Resources\\Levels\\Level_1.txt",
               "RelativeDocumentMoniker": "Assets\\Resources\\Levels\\Level_1.txt",
@@ -1716,7 +1774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 94,
               "Title": "DogTutBox.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\DogTutBox.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\DogTutBox.cs",
@@ -1728,7 +1786,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 91,
               "Title": "OpenCardBox.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\OpenCardBox.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\OpenCardBox.cs",
@@ -1740,7 +1798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 93,
               "Title": "HomeScene.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HomeScene.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HomeScene.cs",
@@ -1752,7 +1810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 92,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HomeController.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HomeController.cs",
@@ -1764,7 +1822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 90,
               "Title": "GiftDatabase.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Datas\\GiftDatabase.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Datas\\GiftDatabase.cs",
@@ -1776,7 +1834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 96,
               "Title": "HeartGame.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HeartGame.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\HeartGame.cs",
@@ -1788,7 +1846,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 97,
               "Title": "HandDogTutHome.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\HandDogTutHome.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\HandDogTutHome.cs",
@@ -1800,7 +1858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 99,
               "Title": "ConfigBuild.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\3Party\\Joker2X\\Editor\\ConfigBuild.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\3Party\\Joker2X\\Editor\\ConfigBuild.cs",
@@ -1812,7 +1870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 98,
               "Title": "ToolsGendata.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ToolsGendata.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ToolsGendata.cs",
@@ -1824,7 +1882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 105,
               "Title": "Crocodile.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Crocodile.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Crocodile.cs",
@@ -1836,7 +1894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 106,
               "Title": "Hyena.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Hyena.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Hyena.cs",
@@ -1848,7 +1906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 103,
               "Title": "PayBillBox.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\UI\\PayBillBox.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\UI\\PayBillBox.cs",
@@ -1860,31 +1918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
-              "Title": "Cow.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Cow.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Cow.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Cow.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Cow.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAqwFMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T02:48:40.343Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 95,
-              "Title": "AnimalsHomeController.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsHomeController.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsHomeController.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsHomeController.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsHomeController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAArwBAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T07:55:18.499Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 101,
               "Title": "OpenCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\OpenCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\OpenCard.cs",
@@ -1896,7 +1930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 100,
               "Title": "RandomCardBox.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\RandomCardBox.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\RandomCardBox.cs",
@@ -1908,7 +1942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 102,
               "Title": "CardRandomHome.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\CardRandomHome.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\CardRandomHome.cs",
@@ -1920,7 +1954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 104,
               "Title": "LoseBox.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\LoseBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\UI\\Loading\\LoseBox.cs",
@@ -1932,7 +1966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 107,
               "Title": "FemaleLion.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\FemaleLion.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\FemaleLion.cs",
@@ -1944,7 +1978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 108,
               "Title": "Turkey.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Turkey.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Turkey.cs",
@@ -1956,19 +1990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
-              "Title": "Wolf.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Wolf.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Wolf.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Wolf.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Wolf.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAF4AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T06:24:10.351Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 109,
               "Title": "Tiger.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Tiger.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Tiger.cs",
@@ -1980,7 +2002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 110,
               "Title": "Sheep.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Sheep.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Sheep.cs",
@@ -1992,19 +2014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
-              "Title": "Pig.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Pig.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Pig.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Pig.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Pig.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAqwCAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T06:53:14.105Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 114,
               "Title": "EventID.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\EventDispatcher\\EventID.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\EventDispatcher\\EventID.cs",
@@ -2016,7 +2026,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 113,
               "Title": "Cheetah.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Cheetah.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Cheetah.cs",
@@ -2028,7 +2038,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 115,
               "Title": "Singleton.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Utility\\Singleton.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Utility\\Singleton.cs",
@@ -2040,19 +2050,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
-              "Title": "Rhino.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Rhino.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Rhino.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Rhino.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Rhino.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwDgAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T06:58:32.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 116,
               "Title": "TurkeyCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\TurkeyCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\TurkeyCard.cs",
@@ -2064,7 +2062,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 118,
               "Title": "GoatHorn.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\GoatHorn.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\GoatHorn.cs",
@@ -2076,7 +2074,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 119,
               "Title": "SheepPen.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\SheepPen.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\SheepPen.cs",
@@ -2088,7 +2086,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 117,
               "Title": "GrowTalent.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\GrowTalent.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\GrowTalent.cs",
@@ -2100,7 +2098,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 120,
               "Title": "TribalTalent.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\TribalTalent.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\TribalTalent.cs",
@@ -2112,7 +2110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 121,
               "Title": "NutritionalSupplement.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\NutritionalSupplement.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\NutritionalSupplement.cs",
@@ -2124,7 +2122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 122,
               "Title": "MonneyBag.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\MonneyBag.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\MonneyBag.cs",
@@ -2136,7 +2134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 123,
               "Title": "LivestockLicense.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\LivestockLicense.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\LivestockLicense.cs",
@@ -2148,7 +2146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 124,
               "Title": "GrowExpress.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\GrowExpress.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\GrowExpress.cs",
@@ -2160,7 +2158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 125,
               "Title": "DogTranningLeash.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\DogTranningLeash.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\DogTranningLeash.cs",
@@ -2172,7 +2170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 127,
               "Title": "Goat.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Goat.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Goat.cs",
@@ -2184,19 +2182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
-              "Title": "Calf.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Calf.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Calf.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Calf.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Calf.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAWwEgAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T03:54:00.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 126,
               "Title": "CarnivoreTalent.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\CarnivoreTalent.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LogicItem\\CarnivoreTalent.cs",
@@ -2244,7 +2230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 159,
+              "DocumentIndex": 157,
               "Title": "ShopController23.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\ShopController23.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\ShopController23.cs",
@@ -2256,7 +2242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 156,
               "Title": "LableMission.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\LableMission.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\LableMission.cs",
@@ -2280,18 +2266,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
-              "Title": "Lamp.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Lamp.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Lamp.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Lamp.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Lamp.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAuwBgAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T17:38:17.827Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 132,
               "Title": "Coyote.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Coyote.cs",
@@ -2304,19 +2278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
-              "Title": "MuskOx.cs",
-              "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\MuskOx.cs",
-              "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\MuskOx.cs",
-              "ToolTip": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\MuskOx.cs",
-              "RelativeToolTip": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\MuskOx.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAuwBUAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T05:34:56.424Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 133,
               "Title": "Dog.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Dog.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Dog.cs",
@@ -2328,7 +2290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 134,
               "Title": "Skunk.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Skunk.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\Skunk.cs",
@@ -2340,7 +2302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
+              "DocumentIndex": 155,
               "Title": "WaterBuffalo.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\WaterBuffalo.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\Animals\\WaterBuffalo.cs",
@@ -2352,7 +2314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 135,
               "Title": "NutritionalSupplementCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\NutritionalSupplementCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\NutritionalSupplementCard.cs",
@@ -2364,7 +2326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 136,
               "Title": "PuddleCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\PuddleCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\PuddleCard.cs",
@@ -2376,7 +2338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 137,
               "Title": "CalfCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CalfCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\AnimalsCard\\CalfCard.cs",
@@ -2388,7 +2350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 139,
               "Title": "LivestockLicenseCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LivestockLicenseCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\LivestockLicenseCard.cs",
@@ -2400,7 +2362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 138,
               "Title": "GrassCard.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\GrassCard.cs",
               "RelativeDocumentMoniker": "Assets\\CatGodRanch\\Script\\LogicGamePlay\\ItemCard\\GrassCard.cs",
@@ -2412,7 +2374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 146,
               "Title": "CoyoteCard.cs",
               "DocumentMoniker": "D:\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\CoyoteCard.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\CoyoteCard.cs",
@@ -2424,7 +2386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 147,
               "Title": "BadgerCard.cs",
               "DocumentMoniker": "D:\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\BadgerCard.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\BadgerCard.cs",
@@ -2436,7 +2398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 148,
               "Title": "WolfCard.cs",
               "DocumentMoniker": "D:\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\WolfCard.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\WolfCard.cs",
@@ -2448,7 +2410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 149,
               "Title": "RhinoCard.cs",
               "DocumentMoniker": "D:\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\RhinoCard.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\RhinoCard.cs",
@@ -2460,7 +2422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 141,
               "Title": "AnalyticsController.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Analytic\\AnalyticsController.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Analytic\\AnalyticsController.cs",
@@ -2472,7 +2434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 140,
               "Title": "SlimeController.cs",
               "DocumentMoniker": "D:\\MyTeam\\CatGodRacnh\\Assets\\Base\\LearnDay2\\SlimeController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MyTeam\\CatGodRacnh\\Assets\\Base\\LearnDay2\\SlimeController.cs",
@@ -2483,7 +2445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 160,
+              "DocumentIndex": 158,
               "Title": "SpawnController.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\SpawnController.cs",
               "RelativeDocumentMoniker": "Assets\\SpawnController.cs",
@@ -2495,7 +2457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 161,
+              "DocumentIndex": 159,
               "Title": "TestCalf.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\TestCalf.cs",
               "RelativeDocumentMoniker": "Assets\\TestCalf.cs",
@@ -2507,7 +2469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 145,
               "Title": "BirdController.cs",
               "DocumentMoniker": "D:\\MyTeam\\CatGodRacnh\\Assets\\FlapBird\\Script\\BirdController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MyTeam\\CatGodRacnh\\Assets\\FlapBird\\Script\\BirdController.cs",
@@ -2519,7 +2481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 144,
               "Title": "Pile.cs",
               "DocumentMoniker": "D:\\MyTeam\\CatGodRacnh\\Assets\\FlapBird\\Script\\Pile.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MyTeam\\CatGodRacnh\\Assets\\FlapBird\\Script\\Pile.cs",
@@ -2531,7 +2493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 142,
               "Title": "PileController.cs",
               "DocumentMoniker": "D:\\MyTeam\\CatGodRacnh\\Assets\\FlapBird\\Script\\PileController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MyTeam\\CatGodRacnh\\Assets\\FlapBird\\Script\\PileController.cs",
@@ -2542,7 +2504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 150,
               "Title": "OstrichCard.cs",
               "DocumentMoniker": "D:\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\OstrichCard.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\OstrichCard.cs",
@@ -2554,7 +2516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 151,
               "Title": "EagleCard.cs",
               "DocumentMoniker": "D:\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\EagleCard.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\EagleCard.cs",
@@ -2566,7 +2528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 152,
               "Title": "PenguinCard.cs",
               "DocumentMoniker": "D:\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\PenguinCard.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\PenguinCard.cs",
@@ -2578,7 +2540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 153,
               "Title": "PigeonCard.cs",
               "DocumentMoniker": "D:\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\PigeonCard.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\Card\\PigeonCard.cs",
@@ -2590,7 +2552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 154,
               "Title": "InterfaceTest.cs",
               "DocumentMoniker": "D:\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\InterfaceTest.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\MyTeam\\CatGodRacnh\\Assets\\CatGodRanch\\Script\\LogicGamePlay\\InterfaceTest.cs",
@@ -2602,7 +2564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 143,
               "Title": "ShopBox.cs",
               "DocumentMoniker": "D:\\ProjectUniy\\CatGodRacnh\\CatGodRacnh\\Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\ShopBox.cs",
               "RelativeDocumentMoniker": "Assets\\Base\\00_BaseCode\\Scripts\\Controllers\\HomeController\\ShopBox.cs",

@@ -73,5 +73,40 @@ public class ItemController : MonoBehaviour
         GamePlayController.Instance.playerContain.animalController.btnNextDay.gameObject.SetActive(true);
 
     }
+    public void SpawnItem(ItemName itemName, bool noShowButton)
+    {
+        var tempCard = GetItemBase(itemName);
+        if (tempCard != null)
+        {
+            tempCard.Init();
+
+        }
+        else
+        {
+            var temp = new ItemDataProperty();
+            foreach (var item in lsCardBase)
+            {
+                if (item.itemDataProperty.itemName == itemName)
+                {
+                    temp = item.itemDataProperty;
+                }
+            }
+            var itemActive = SimplePool2.Spawn(temp.objCard);
+            if (!lsItemNamesPostYard.Contains(itemName))
+            {
+                itemActive.transform.parent = cardParent;
+                itemActive.transform.localScale = new Vector3(1, 1, 1);
+            }
+            else
+            {
+                itemActive.transform.parent = postYardParent;
+            }
+            itemActive.GetComponent<ItemBase>().Init();
+            lsCurrentItem.Add(itemActive.GetComponent<ItemBase>());
+
+        }
+         
+
+    }
 
 }

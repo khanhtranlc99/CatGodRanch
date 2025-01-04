@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class Cow : AnimalsBase
@@ -94,8 +95,10 @@ public class Cow : AnimalsBase
     }
     public void HandleSpawnCalf(PostYardBase postYardBase)
     {
+
         var temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Calf);
         SpwanAnimals(temp.prefabAnimals, postYardBase);
+
     }
 
     public void SpwanAnimals(GameObject animalsBase, PostYardBase postYardBase)
@@ -104,6 +107,7 @@ public class Cow : AnimalsBase
         var tempPost = postYardBase;
         if (tempPost != null)
         {
+            this.transform.DOJump(this.transform.position, 1.5f, 1, 0.2f);
             var temp = SimplePool2.Spawn(animalsBase);
             temp.transform.position = tempPost.post.position;
             tempPost.animalsBase = temp.GetComponent<AnimalsBase>();

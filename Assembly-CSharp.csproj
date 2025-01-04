@@ -379,6 +379,7 @@
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\AnimalsCard\SikaDeerCard.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\signers\PssSigner.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\ItemCard\CarnivoreTalentCard.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\ReinDeerController.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\CertificateStatusType.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\collections\CollectionUtilities.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\engines\RFC3394WrapEngine.cs" />

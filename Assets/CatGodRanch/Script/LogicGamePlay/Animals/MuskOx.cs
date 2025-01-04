@@ -6,6 +6,8 @@ using UnityEngine;
 public class MuskOx : AnimalsBase
 {
     public List<AnimalsBase> lsPlusCoinAnimals;
+    public List<GameObject> lsDailyCoin;
+    public GameObject dailyCoin;
     public bool CanHandleEffect
     {
         get
@@ -39,15 +41,39 @@ public class MuskOx : AnimalsBase
     }
     public override IEnumerator HandleEffect()
     {
-        if(CanHandleEffect)
+        if (CanHandleEffect)
         {
-            yield return this.transform.DOJump(this.transform.position, 0.5f, 1, 0.5f).WaitForCompletion();
-            foreach (var item in lsPlusCoinAnimals)
+            if (lsPlusCoinAnimals.Count > 0)
             {
-                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(1, item.transform.position));
+                spriteRender.transform.DOKill();
+                Sequence sequence = DOTween.Sequence();
+                sequence.Append(spriteRender.transform.DOScale(new Vector3(1.4f, 1, 1), 0.15f));
+                sequence.Append(spriteRender.transform.DOScale(new Vector3(0.8f, 1, 1), 0.15f));
+                sequence.Append(spriteRender.transform.DOScale(new Vector3(1, 1, 1), 0.15f));
+                yield return sequence.WaitForCompletion();
+
+                Sequence sequence2 = DOTween.Sequence();
+                foreach (var item in lsPlusCoinAnimals)
+                {
+                    var temp = SimplePool2.Spawn(dailyCoin);
+                    temp.transform.position = this.transform.position;
+                    lsDailyCoin.Add(temp);
+                    sequence2.Join(temp.transform.DOJump(item.transform.position, 1.2f, 1, 0.5f));
+                    item.coinPlus += 1;
+                }
+
+                yield return sequence2.WaitForCompletion();
+                foreach (var item in lsDailyCoin)
+                {
+                    SimplePool2.Despawn(item);
+                }
+                AnimScale();
+         
             }
+
         }
-       
+     
+
         yield return null;
     }
 }

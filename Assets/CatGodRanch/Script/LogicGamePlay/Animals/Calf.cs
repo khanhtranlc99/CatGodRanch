@@ -1,7 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
 public class Calf : AnimalsBase
 {
    
@@ -63,19 +64,39 @@ public class Calf : AnimalsBase
             if (day <= 0)
             {
                 var ran = Random.RandomRange(0, 100);
+                var temp = new AnimalsDataProperty();
                 if (ran <= 50)
                 {
-                    var temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.WaterBuffalo);
-                    SpwanAnimals(temp.prefabAnimals);
+                     temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.WaterBuffalo);
+                 
                 }
                 else
                 {
-                    var temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Cow);
-                    SpwanAnimals(temp.prefabAnimals);
+                     temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Cow);
+                
                 }
+                yield return StartCoroutine(HandleTranform());
+                SpwanAnimals(temp.prefabAnimals);
                 EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.GROW_EXPRESS_SUCCEST);
                 GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);
+                day = 5;
+                tvDay.text = day.ToString() + "<sprite name=\"Time\">";
                 SimplePool2.Despawn(this.gameObject);
+            }
+            else
+            {
+                spriteRender.transform.DOKill();
+                Sequence sequence = DOTween.Sequence();
+                sequence.Append(spriteRender.transform.DOLocalRotate(new Vector3(0, 0, 10f), 0.2f));
+                sequence.Join(this.transform.DOJump(this.transform.position, 1.5f, 1, 0.5f));
+                sequence.Append(spriteRender.transform.DOLocalRotate(new Vector3(0, 0, -10), 0.2f));
+                sequence.Append(spriteRender.transform.DOLocalRotate(new Vector3(0, 0, 10f), 0.2f));
+                sequence.Append(spriteRender.transform.DOLocalRotate(new Vector3(0, 0, -10), 0.2f));
+                sequence.Append(spriteRender.transform.DOLocalRotate(new Vector3(0, 0, 0), 0.2f));
+                yield return sequence.WaitForCompletion();
+                AnimScale();
+                tvDay.text = day.ToString() + "<sprite name=\"Time\">";
+
             }
         }
         yield return null;
@@ -94,7 +115,30 @@ public class Calf : AnimalsBase
             GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
         }
     }
+    public IEnumerator HandleTranform()
+    {
+        spriteRender.transform.DOKill();
 
-   
+        // Tạo một Sequence để kết hợp tween
+        Sequence sequence = DOTween.Sequence();
+
+        // Tween thay đổi màu sắc (fade)
+        sequence.Append(spriteRender.DOColor(new Color32(255, 255, 255, 50), 0.3f))
+         .Join(spriteRender.transform.DOScale(new Vector3(1.2f, 1.2f, 0), 0.3f))
+
+         .Append(spriteRender.DOColor(new Color32(255, 255, 255, 255), 0.3f))
+         .Join(spriteRender.transform.DOScale(new Vector3(1, 1, 0), 0.3f))
+
+         .Append(spriteRender.DOColor(new Color32(255, 255, 255, 50), 0.3f))
+         .Join(spriteRender.transform.DOScale(new Vector3(1.2f, 1.2f, 0), 0.3f))
+
+         .Append(spriteRender.DOColor(new Color32(255, 255, 255, 255), 0.3f))
+         .Join(spriteRender.transform.DOScale(new Vector3(1, 1, 0), 0.3f));
+
+        yield return sequence.WaitForCompletion();
+
+        yield return null;
+    }
+
 
 }

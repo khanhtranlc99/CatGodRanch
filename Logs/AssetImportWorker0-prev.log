@@ -15,7 +15,7 @@ D:/ProjectUniy/CatGodRacnh/CatGodRacnh
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57419
+52990
 Successfully changed project path to: D:/ProjectUniy/CatGodRacnh/CatGodRacnh
 D:/ProjectUniy/CatGodRacnh/CatGodRacnh
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ D:/ProjectUniy/CatGodRacnh/CatGodRacnh
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [25500] Host "[IP] 172.31.98.35 [Port] 0 [Flags] 2 [Guid] 3368502249 [EditorId] 3368502249 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SATPE72) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8988] Host "[IP] 172.31.98.35 [Port] 0 [Flags] 2 [Guid] 2625562255 [EditorId] 2625562255 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SATPE72) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [25500] Host "[IP] 172.31.98.35 [Port] 0 [Flags] 2 [Guid] 3368502249 [EditorId] 3368502249 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SATPE72) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8988] Host "[IP] 172.31.98.35 [Port] 0 [Flags] 2 [Guid] 2625562255 [EditorId] 2625562255 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SATPE72) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
-Refreshing native plugins compatible for Editor in 906.30 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 33.01 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.20f1 (61c2feb0970d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/Resources/UnitySubsystems
@@ -70,51 +70,51 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56956
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010310 seconds.
-- Loaded All Assemblies, in  0.953 seconds
+Registered in 0.008294 seconds.
+- Loaded All Assemblies, in  0.356 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 326 ms
+Android Extension - Scanning For ADB Devices 201 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.710 seconds
-Domain Reload Profiling: 1663ms
-	BeginReloadAssembly (130ms)
+- Finished resetting the current domain, in  0.547 seconds
+Domain Reload Profiling: 901ms
+	BeginReloadAssembly (101ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (191ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (34ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (62ms)
-	LoadAllAssembliesAndSetupDomain (558ms)
-		LoadAssemblies (129ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (150ms)
+		LoadAssemblies (101ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (555ms)
-			TypeCache.Refresh (553ms)
-				TypeCache.ScanAssembly (379ms)
+		AnalyzeDomain (148ms)
+			TypeCache.Refresh (146ms)
+				TypeCache.ScanAssembly (133ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (711ms)
+	FinalizeReload (547ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (653ms)
+		SetupLoadedEditorAssemblies (488ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (477ms)
+			InitializePlatformSupportModulesInManaged (321ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (117ms)
-			ProcessInitializeOnLoadMethodAttributes (54ms)
+			ProcessInitializeOnLoadAttributes (116ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -123,15 +123,15 @@ Domain Reload Profiling: 1663ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  2.844 seconds
-Refreshing native plugins compatible for Editor in 16.51 ms, found 10 plugins.
+- Loaded All Assemblies, in  0.902 seconds
+Refreshing native plugins compatible for Editor in 17.04 ms, found 10 plugins.
 OnLevelWasLoaded was found on Reporter
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on BoxController
+OnLevelWasLoaded was found on AdmobAds
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on AdmobAds
+OnLevelWasLoaded was found on BoxController
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 Native extension for WindowsStandalone target not found
@@ -141,1002 +141,73 @@ Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-System.IO.IOException: Sharing violation on path D:\ProjectUniy\CatGodRacnh\CatGodRacnh\ProjectSettings\GvhProjectSettings.xml
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.StreamReader..ctor (System.String path, System.Boolean detectEncodingFromByteOrderMarks) [0x00007] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.StreamReader..ctor (System.String path) [0x00000] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string)
-  at Google.XmlUtilities.ParseXmlTextFileElements (System.String filename, Google.Logger logger, Google.XmlUtilities+ParseElement parseElement) [0x00018] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/XmlUtilities.cs:104 
-  at Google.ProjectSettings.Load () [0x00016] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:777 
-  at Google.ProjectSettings.LoadIfEmpty () [0x00023] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:558 
-  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue, Google.SettingsLocation location) [0x00035] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:606 
-  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue) [0x00001] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:619 
-  at Google.IOSResolver.get_VerboseLoggingEnabled () [0x00001] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:1039 
-  at Google.IOSResolver..cctor () [0x00223] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:727 
+Debug [AppLovin MAX] Deleting obsolete network AdColony from path Assets\MaxSdk/Mediation/AdColony...
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
+UnityEngine.Debug:Log (object)
+MaxSdkLogger:UserDebug (string) (at Assets/MaxSdk/Scripts/MaxSdkLogger.cs:13)
+AppLovinMax.Scripts.IntegrationManager.Editor.AppLovinInitialize:.cctor () (at Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinInitialize.cs:118)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+(Filename: Assets/MaxSdk/Scripts/MaxSdkLogger.cs Line: 13)
+
+Debug [AppLovin MAX] AppLovin MAX Migration completed
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MaxSdkLogger:UserDebug (string) (at Assets/MaxSdk/Scripts/MaxSdkLogger.cs:13)
+AppLovinMax.Scripts.IntegrationManager.Editor.AppLovinInitialize:.cctor () (at Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinInitialize.cs:128)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/MaxSdk/Scripts/MaxSdkLogger.cs Line: 13)
+
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.559 seconds
-Domain Reload Profiling: 4401ms
-	BeginReloadAssembly (144ms)
+- Finished resetting the current domain, in  1.460 seconds
+Domain Reload Profiling: 2360ms
+	BeginReloadAssembly (132ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (2603ms)
-		LoadAssemblies (2265ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (422ms)
-			TypeCache.Refresh (360ms)
-				TypeCache.ScanAssembly (334ms)
-			ScanForSourceGeneratedMonoScriptInfo (41ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1559ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1335ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (36ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (89ms)
-			ProcessInitializeOnLoadAttributes (583ms)
-			ProcessInitializeOnLoadMethodAttributes (617ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 19.09 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7315 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 261 unused Assets / (1.8 MB). Loaded Objects now: 7735.
-Memory consumption went from 290.9 MB to 289.1 MB.
-Total: 21.535500 ms (FindLiveObjects: 0.827400 ms CreateObjectMapping: 0.299700 ms MarkObjects: 19.196100 ms  DeleteObjects: 1.211000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 133758.945123 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Pigeon.prefab
-  artifactKey: Guid(cd7ae6e12e31e9c4eb42bb45f3d3f3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Pigeon.prefab using Guid(cd7ae6e12e31e9c4eb42bb45f3d3f3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '027986d20adef503af0e3e510461ab82') in 0.123886 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 25.905742 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Chicken.prefab
-  artifactKey: Guid(8c07bf1eb5612ae4f853ede87e693916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Chicken.prefab using Guid(8c07bf1eb5612ae4f853ede87e693916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9eb9c6682f5c0e8dafad552dcf23f4') in 0.035418 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.551756 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Chicken.prefab
-  artifactKey: Guid(8c07bf1eb5612ae4f853ede87e693916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Chicken.prefab using Guid(8c07bf1eb5612ae4f853ede87e693916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb8ccca7826f33a2e7bee15b5ee67d4') in 0.020794 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 3.213653 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Chicken.prefab
-  artifactKey: Guid(8c07bf1eb5612ae4f853ede87e693916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Chicken.prefab using Guid(8c07bf1eb5612ae4f853ede87e693916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d71ea9a42a771ae01cc214cd15331e2') in 0.019778 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 57.256873 seconds.
-  path: Assets/CatGodRanch/Texture2D/Gameplay/Animals/Bird/Rooster.png
-  artifactKey: Guid(7d9282a994517714788f2ad9376f72fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Texture2D/Gameplay/Animals/Bird/Rooster.png using Guid(7d9282a994517714788f2ad9376f72fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae31b99a4f2f73860c11dce8f2166ee9') in 0.049601 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.263656 seconds.
-  path: Assets/CatGodRanch/Texture2D/Gameplay/Animals/Bird/Rooster.png
-  artifactKey: Guid(7d9282a994517714788f2ad9376f72fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Texture2D/Gameplay/Animals/Bird/Rooster.png using Guid(7d9282a994517714788f2ad9376f72fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174a90e6bcdf8e24bb67c7c7d40642f0') in 0.024224 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 3.668401 seconds.
-  path: Assets/CatGodRanch/Texture2D/Gameplay/Animals/Bird/Rooster.png
-  artifactKey: Guid(7d9282a994517714788f2ad9376f72fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Texture2D/Gameplay/Animals/Bird/Rooster.png using Guid(7d9282a994517714788f2ad9376f72fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecbe12d934f000b7682c32767336564a') in 0.021045 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.680 seconds
-Refreshing native plugins compatible for Editor in 16.47 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Debug [AppLovin MAX] Deleting obsolete network AdColony from path Assets\MaxSdk/Mediation/AdColony...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-MaxSdkLogger:UserDebug (string) (at Assets/MaxSdk/Scripts/MaxSdkLogger.cs:13)
-AppLovinMax.Scripts.IntegrationManager.Editor.AppLovinInitialize:.cctor () (at Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinInitialize.cs:118)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Assets/MaxSdk/Scripts/MaxSdkLogger.cs Line: 13)
-
-Debug [AppLovin MAX] AppLovin MAX Migration completed
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-MaxSdkLogger:UserDebug (string) (at Assets/MaxSdk/Scripts/MaxSdkLogger.cs:13)
-AppLovinMax.Scripts.IntegrationManager.Editor.AppLovinInitialize:.cctor () (at Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinInitialize.cs:128)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Assets/MaxSdk/Scripts/MaxSdkLogger.cs Line: 13)
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.445 seconds
-Domain Reload Profiling: 3122ms
-	BeginReloadAssembly (180ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (55ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (415ms)
-		LoadAssemblies (416ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (81ms)
-			TypeCache.Refresh (31ms)
-				TypeCache.ScanAssembly (16ms)
-			ScanForSourceGeneratedMonoScriptInfo (29ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (2445ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1238ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (34ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (83ms)
-			ProcessInitializeOnLoadAttributes (585ms)
-			ProcessInitializeOnLoadMethodAttributes (526ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-OnLevelWasLoaded was found on Reporter
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Refreshing native plugins compatible for Editor in 17.92 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7165 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 336 unused Assets / (1.9 MB). Loaded Objects now: 7785.
-Memory consumption went from 256.4 MB to 254.4 MB.
-Total: 20.078100 ms (FindLiveObjects: 0.807600 ms CreateObjectMapping: 0.280600 ms MarkObjects: 17.668300 ms  DeleteObjects: 1.320100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 69.176410 seconds.
-  path: Assets/CatGodRanch/Script/LogicGamePlay/Animals/Rooster.cs
-  artifactKey: Guid(06cb1ebcc43319c488a92bea7e73ce8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Script/LogicGamePlay/Animals/Rooster.cs using Guid(06cb1ebcc43319c488a92bea7e73ce8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55a398cdd21e89fc6909868e7f20fe07') in 0.004416 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.840 seconds
-Refreshing native plugins compatible for Editor in 22.29 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.338 seconds
-Domain Reload Profiling: 3176ms
-	BeginReloadAssembly (203ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (54ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (550ms)
-		LoadAssemblies (576ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (83ms)
-			TypeCache.Refresh (34ms)
-				TypeCache.ScanAssembly (16ms)
-			ScanForSourceGeneratedMonoScriptInfo (28ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (2339ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1214ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (37ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (87ms)
-			ProcessInitializeOnLoadAttributes (549ms)
-			ProcessInitializeOnLoadMethodAttributes (532ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-OnLevelWasLoaded was found on Reporter
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Refreshing native plugins compatible for Editor in 17.79 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7164 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 335 unused Assets / (1.9 MB). Loaded Objects now: 7822.
-Memory consumption went from 257.9 MB to 256.0 MB.
-Total: 22.057900 ms (FindLiveObjects: 0.876400 ms CreateObjectMapping: 0.331600 ms MarkObjects: 19.432700 ms  DeleteObjects: 1.415700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.716 seconds
-Refreshing native plugins compatible for Editor in 17.79 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Unable to write to 'ProjectSettings\GvhProjectSettings.xml' (System.IO.IOException: Sharing violation on path D:\ProjectUniy\CatGodRacnh\CatGodRacnh\ProjectSettings\GvhProjectSettings.xml
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean useAsync) [0x00000] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,bool)
-  at System.Xml.XmlWriterSettings.CreateWriter (System.String outputFileName) [0x00051] in <ae5badc4ec594809bfbe24220ad62e9b>:0 
-  at System.Xml.XmlWriter.Create (System.String outputFileName, System.Xml.XmlWriterSettings settings) [0x0000a] in <ae5badc4ec594809bfbe24220ad62e9b>:0 
-  at Google.ProjectSettings.Save () [0x00079] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:821 , Project settings were not saved!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-Google.Logger:Log (string,Google.LogLevel) (at /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/Logger.cs:136)
-Google.ProjectSettings:Save () (at /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:844)
-Google.ProjectSettings:SetBool (string,bool,Google.SettingsLocation) (at /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:485)
-Google.ProjectSettings:SetBool (string,bool) (at /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:497)
-Google.IOSResolver:set_VerboseLoggingEnabled (bool) (at /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:1041)
-Google.IOSResolver:.cctor () (at /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:727)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs Line: 844)
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.410 seconds
-Domain Reload Profiling: 3124ms
-	BeginReloadAssembly (185ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (56ms)
 	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (443ms)
-		LoadAssemblies (456ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (669ms)
+		LoadAssemblies (406ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (77ms)
-			TypeCache.Refresh (30ms)
-				TypeCache.ScanAssembly (16ms)
-			ScanForSourceGeneratedMonoScriptInfo (26ms)
+		AnalyzeDomain (334ms)
+			TypeCache.Refresh (271ms)
+				TypeCache.ScanAssembly (245ms)
+			ScanForSourceGeneratedMonoScriptInfo (42ms)
 			ResolveRequiredComponents (20ms)
-	FinalizeReload (2411ms)
+	FinalizeReload (1460ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1290ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (37ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (93ms)
-			ProcessInitializeOnLoadAttributes (616ms)
-			ProcessInitializeOnLoadMethodAttributes (534ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-OnLevelWasLoaded was found on Reporter
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Refreshing native plugins compatible for Editor in 17.87 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7165 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 336 unused Assets / (1.9 MB). Loaded Objects now: 7858.
-Memory consumption went from 259.9 MB to 258.0 MB.
-Total: 21.331600 ms (FindLiveObjects: 0.832100 ms CreateObjectMapping: 0.285800 ms MarkObjects: 18.792200 ms  DeleteObjects: 1.420200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.701 seconds
-Refreshing native plugins compatible for Editor in 17.13 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.IO.IOException: Sharing violation on path D:\ProjectUniy\CatGodRacnh\CatGodRacnh\ProjectSettings\GvhProjectSettings.xml
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.StreamReader..ctor (System.String path, System.Boolean detectEncodingFromByteOrderMarks) [0x00007] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.StreamReader..ctor (System.String path) [0x00000] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string)
-  at Google.XmlUtilities.ParseXmlTextFileElements (System.String filename, Google.Logger logger, Google.XmlUtilities+ParseElement parseElement) [0x00018] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/XmlUtilities.cs:104 
-  at Google.ProjectSettings.Load () [0x00016] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:777 
-  at Google.ProjectSettings.LoadIfEmpty () [0x00023] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:558 
-  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue, Google.SettingsLocation location) [0x00035] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:606 
-  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue) [0x00001] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:619 
-  at Google.IOSResolver.get_VerboseLoggingEnabled () [0x00001] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:1039 
-  at Google.IOSResolver..cctor () [0x00223] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:727 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.282 seconds
-Domain Reload Profiling: 2980ms
-	BeginReloadAssembly (178ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (53ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (437ms)
-		LoadAssemblies (445ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (77ms)
-			TypeCache.Refresh (30ms)
-				TypeCache.ScanAssembly (15ms)
-			ScanForSourceGeneratedMonoScriptInfo (26ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (2282ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1244ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (34ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (80ms)
-			ProcessInitializeOnLoadAttributes (581ms)
-			ProcessInitializeOnLoadMethodAttributes (538ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-OnLevelWasLoaded was found on Reporter
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Refreshing native plugins compatible for Editor in 17.57 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7165 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 336 unused Assets / (2.0 MB). Loaded Objects now: 7894.
-Memory consumption went from 262.0 MB to 259.9 MB.
-Total: 21.070800 ms (FindLiveObjects: 0.840200 ms CreateObjectMapping: 0.277200 ms MarkObjects: 18.261700 ms  DeleteObjects: 1.690500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.702 seconds
-Refreshing native plugins compatible for Editor in 22.24 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Debug [AppLovin MAX] Deleting obsolete network AdColony from path Assets\MaxSdk/Mediation/AdColony...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-MaxSdkLogger:UserDebug (string) (at Assets/MaxSdk/Scripts/MaxSdkLogger.cs:13)
-AppLovinMax.Scripts.IntegrationManager.Editor.AppLovinInitialize:.cctor () (at Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinInitialize.cs:118)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Assets/MaxSdk/Scripts/MaxSdkLogger.cs Line: 13)
-
-Debug [AppLovin MAX] AppLovin MAX Migration completed
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-MaxSdkLogger:UserDebug (string) (at Assets/MaxSdk/Scripts/MaxSdkLogger.cs:13)
-AppLovinMax.Scripts.IntegrationManager.Editor.AppLovinInitialize:.cctor () (at Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinInitialize.cs:128)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Assets/MaxSdk/Scripts/MaxSdkLogger.cs Line: 13)
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.331 seconds
-Domain Reload Profiling: 3030ms
-	BeginReloadAssembly (177ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (56ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (440ms)
-		LoadAssemblies (408ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (113ms)
-			TypeCache.Refresh (44ms)
-				TypeCache.ScanAssembly (26ms)
-			ScanForSourceGeneratedMonoScriptInfo (48ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (2331ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1224ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (36ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (84ms)
-			ProcessInitializeOnLoadAttributes (593ms)
-			ProcessInitializeOnLoadMethodAttributes (502ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-OnLevelWasLoaded was found on Reporter
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Refreshing native plugins compatible for Editor in 19.22 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7165 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 336 unused Assets / (2.0 MB). Loaded Objects now: 7930.
-Memory consumption went from 263.9 MB to 262.0 MB.
-Total: 20.035700 ms (FindLiveObjects: 0.794300 ms CreateObjectMapping: 0.238400 ms MarkObjects: 17.559000 ms  DeleteObjects: 1.442400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 2464.256426 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Acapela.prefab
-  artifactKey: Guid(9f683f3a639932d458982de89350c84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Acapela.prefab using Guid(9f683f3a639932d458982de89350c84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02edb39bf33c8a8a47509c905cfc9f79') in 0.121617 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Duck.prefab
-  artifactKey: Guid(cd6ca47843fed1f4392d0dd96b9ce2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Duck.prefab using Guid(cd6ca47843fed1f4392d0dd96b9ce2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ecf6dd78b7b7c4a6bebca3216b67fa0') in 0.030622 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Rhino.prefab
-  artifactKey: Guid(1ad588bbb90e89d428657b189548b0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Rhino.prefab using Guid(1ad588bbb90e89d428657b189548b0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd11947501db95f71edd562091ace1d2') in 0.031399 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Magpie.prefab
-  artifactKey: Guid(8cd96d6c60f2d464cb2030b27b841f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Magpie.prefab using Guid(8cd96d6c60f2d464cb2030b27b841f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c437db97598fd53b32f22ff081aa4918') in 0.032489 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Penguin.prefab
-  artifactKey: Guid(55c15df9ab799974cb0452402ef96d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Penguin.prefab using Guid(55c15df9ab799974cb0452402ef96d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a96c8e142e9eeb45089c8e6d76feacb') in 0.026664 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Goat.prefab
-  artifactKey: Guid(7f6a3427ddfb0d04c884fae85a37c28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Goat.prefab using Guid(7f6a3427ddfb0d04c884fae85a37c28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '133e89ca5d0c22239ea6075e261c3c7f') in 0.031127 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/MaleLion.prefab
-  artifactKey: Guid(abf86971d4efa0349b557c71303c0756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/MaleLion.prefab using Guid(abf86971d4efa0349b557c71303c0756) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7c179dea573acd9106b458d3bf7a01b') in 0.029462 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Dog.prefab
-  artifactKey: Guid(398e1dc53331ae6468b53a9d9b4aaf14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Dog.prefab using Guid(398e1dc53331ae6468b53a9d9b4aaf14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b7530b454f3b9654f8daf72ce42f091') in 0.029633 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Coyote.prefab
-  artifactKey: Guid(6da91711223e8a84aad6f5c1e455da79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Coyote.prefab using Guid(6da91711223e8a84aad6f5c1e455da79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb1aa031dd4b7b2417798f8cc8ae9b3') in 0.029905 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Crocodile.prefab
-  artifactKey: Guid(4b573dfc6c6426a4199e04c15da5ffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Crocodile.prefab using Guid(4b573dfc6c6426a4199e04c15da5ffda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bc3d24cedd794f5b11505ba3012da5b') in 0.028270 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Ostrich.prefab
-  artifactKey: Guid(9d5192f6b12322b4daddf4e9abc4da3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Ostrich.prefab using Guid(9d5192f6b12322b4daddf4e9abc4da3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb754452558ec2744606079b3b4c9dfb') in 0.025057 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/MuskOx.prefab
-  artifactKey: Guid(c205cf960f365ac44b3572dd63731112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/MuskOx.prefab using Guid(c205cf960f365ac44b3572dd63731112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7500c55625a20bd0e979d7f9177b88b1') in 0.029188 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Skunk.prefab
-  artifactKey: Guid(f22d5648b5533374ebd28e0275ef53a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Skunk.prefab using Guid(f22d5648b5533374ebd28e0275ef53a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52eff6bef386dd9978c3cc9bbe7beba1') in 0.028499 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Calf.prefab
-  artifactKey: Guid(5db92bea3ccd3ce4ba1f69a88df710d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Calf.prefab using Guid(5db92bea3ccd3ce4ba1f69a88df710d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcff9ec0e143ab9b6524ceccc09687a1') in 0.029050 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Pigeon.prefab
-  artifactKey: Guid(cd7ae6e12e31e9c4eb42bb45f3d3f3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Pigeon.prefab using Guid(cd7ae6e12e31e9c4eb42bb45f3d3f3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df4e800a24025d6a44dbc8a68a9b02c') in 0.020580 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Egg.prefab
-  artifactKey: Guid(432b491ce6ef8bc43b5b8004259c5d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Egg.prefab using Guid(432b491ce6ef8bc43b5b8004259c5d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cbc3513b9419189353080c839fe01d0') in 0.028806 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/SikaDeer.prefab
-  artifactKey: Guid(cf6bcbe054aae7b4cad6e35a37857f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/SikaDeer.prefab using Guid(cf6bcbe054aae7b4cad6e35a37857f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a2bca1abc59aa3ef3fdadfa22d3c0ec') in 0.028957 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Tiger.prefab
-  artifactKey: Guid(54c3086217738be40aca71f1864f76fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Tiger.prefab using Guid(54c3086217738be40aca71f1864f76fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30cb569a1fa842f0053ac38745b6dd13') in 0.029026 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 5.321594 seconds.
-  path: Assets/CatGodRanch/Prefabs/Animals/Rooster.prefab
-  artifactKey: Guid(d2689c7e3a8103d41ac604f3fb9df5a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Prefabs/Animals/Rooster.prefab using Guid(d2689c7e3a8103d41ac604f3fb9df5a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d6d12a07d0f8b3121f62b31bfb638c') in 0.024311 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
-========================================================================
-Received Import Request.
-  Time since last request: 2010.493977 seconds.
-  path: Assets/CatGodRanch/Script/LogicGamePlay/AnimalsCard
-  artifactKey: Guid(3f9f9828a7a9a804ea1ad3b565ccb5eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Script/LogicGamePlay/AnimalsCard using Guid(3f9f9828a7a9a804ea1ad3b565ccb5eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349a0a48106afcb28ad421ac41a53126') in 0.000659 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 6.424510 seconds.
-  path: Assets/CatGodRanch/Script/LogicGamePlay/AnimalsCard/RoosterCard.cs
-  artifactKey: Guid(1a8b38d2434453c46887ed29dae27273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Script/LogicGamePlay/AnimalsCard/RoosterCard.cs using Guid(1a8b38d2434453c46887ed29dae27273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a620ea366f131f7c52fdccd20b936b7') in 0.000517 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.721 seconds
-Refreshing native plugins compatible for Editor in 18.43 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.IO.IOException: Sharing violation on path D:\ProjectUniy\CatGodRacnh\CatGodRacnh\ProjectSettings\GvhProjectSettings.xml
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.StreamReader..ctor (System.String path, System.Boolean detectEncodingFromByteOrderMarks) [0x00007] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at System.IO.StreamReader..ctor (System.String path) [0x00000] in <dc753a1061284f8e971ee88ee4826eee>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string)
-  at Google.XmlUtilities.ParseXmlTextFileElements (System.String filename, Google.Logger logger, Google.XmlUtilities+ParseElement parseElement) [0x00018] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/XmlUtilities.cs:104 
-  at Google.ProjectSettings.Load () [0x00016] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:777 
-  at Google.ProjectSettings.LoadIfEmpty () [0x00023] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:558 
-  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue, Google.SettingsLocation location) [0x00035] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:606 
-  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue) [0x00001] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:619 
-  at Google.IOSResolver.get_VerboseLoggingEnabled () [0x00001] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:1039 
-  at Google.IOSResolver..cctor () [0x00223] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:727 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.575 seconds
-Domain Reload Profiling: 3294ms
-	BeginReloadAssembly (183ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (57ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (450ms)
-		LoadAssemblies (454ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (81ms)
-			TypeCache.Refresh (31ms)
-				TypeCache.ScanAssembly (16ms)
-			ScanForSourceGeneratedMonoScriptInfo (27ms)
-			ResolveRequiredComponents (21ms)
-	FinalizeReload (2576ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1279ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (37ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (85ms)
-			ProcessInitializeOnLoadAttributes (597ms)
-			ProcessInitializeOnLoadMethodAttributes (551ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-OnLevelWasLoaded was found on Reporter
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Refreshing native plugins compatible for Editor in 17.46 ms, found 10 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7165 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 335 unused Assets / (2.0 MB). Loaded Objects now: 7967.
-Memory consumption went from 266.0 MB to 264.0 MB.
-Total: 20.290400 ms (FindLiveObjects: 0.830700 ms CreateObjectMapping: 0.233400 ms MarkObjects: 17.682000 ms  DeleteObjects: 1.543200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 13.554262 seconds.
-  path: Assets/CatGodRanch/Script/LogicGamePlay/AnimalsCard/RoosterCard.cs
-  artifactKey: Guid(1a8b38d2434453c46887ed29dae27273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Script/LogicGamePlay/AnimalsCard/RoosterCard.cs using Guid(1a8b38d2434453c46887ed29dae27273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf109d849be71706dcfae447c237f059') in 0.004583 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 17.730363 seconds.
-  path: Assets/CatGodRanch/Script/LogicGamePlay/AnimalsCard/SikaDeerCard.cs
-  artifactKey: Guid(bfe01919c47724c45ace5132eca4b4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Script/LogicGamePlay/AnimalsCard/SikaDeerCard.cs using Guid(bfe01919c47724c45ace5132eca4b4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b79ba15c4baf889c892e9adc960cadef') in 0.000600 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4.396597 seconds.
-  path: Assets/CatGodRanch/Script/LogicGamePlay/AnimalsCard/TurkeyCard.cs
-  artifactKey: Guid(66459337b6f332a41963a6c3ae69970a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CatGodRanch/Script/LogicGamePlay/AnimalsCard/TurkeyCard.cs using Guid(66459337b6f332a41963a6c3ae69970a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f2cf7dab89be781b15991fc53096c0') in 0.000630 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.674 seconds
-Refreshing native plugins compatible for Editor in 17.27 ms, found 10 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Debug [AppLovin MAX] Deleting obsolete network AdColony from path Assets\MaxSdk/Mediation/AdColony...
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-MaxSdkLogger:UserDebug (string) (at Assets/MaxSdk/Scripts/MaxSdkLogger.cs:13)
-AppLovinMax.Scripts.IntegrationManager.Editor.AppLovinInitialize:.cctor () (at Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinInitialize.cs:118)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Assets/MaxSdk/Scripts/MaxSdkLogger.cs Line: 13)
-
-Debug [AppLovin MAX] AppLovin MAX Migration completed
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-MaxSdkLogger:UserDebug (string) (at Assets/MaxSdk/Scripts/MaxSdkLogger.cs:13)
-AppLovinMax.Scripts.IntegrationManager.Editor.AppLovinInitialize:.cctor () (at Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinInitialize.cs:128)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Assets/MaxSdk/Scripts/MaxSdkLogger.cs Line: 13)
-
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.847 seconds
-Domain Reload Profiling: 2519ms
-	BeginReloadAssembly (178ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (53ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (409ms)
-		LoadAssemblies (415ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (77ms)
-			TypeCache.Refresh (30ms)
-				TypeCache.ScanAssembly (16ms)
-			ScanForSourceGeneratedMonoScriptInfo (26ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (1848ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1267ms)
+		SetupLoadedEditorAssemblies (1247ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (35ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (84ms)
-			ProcessInitializeOnLoadAttributes (574ms)
-			ProcessInitializeOnLoadMethodAttributes (564ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (610ms)
+			ProcessInitializeOnLoadMethodAttributes (505ms)
 			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (1ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-OnLevelWasLoaded was found on Reporter
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on BoxController
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-OnLevelWasLoaded was found on AdmobAds
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Refreshing native plugins compatible for Editor in 17.36 ms, found 10 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 20.09 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7166 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 336 unused Assets / (2.0 MB). Loaded Objects now: 8003.
-Memory consumption went from 268.0 MB to 266.0 MB.
-Total: 19.820900 ms (FindLiveObjects: 0.770800 ms CreateObjectMapping: 0.245900 ms MarkObjects: 17.423900 ms  DeleteObjects: 1.378400 ms)
+Unloading 7320 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 261 unused Assets / (1.8 MB). Loaded Objects now: 7742.
+Memory consumption went from 290.9 MB to 289.1 MB.
+Total: 20.490900 ms (FindLiveObjects: 0.818800 ms CreateObjectMapping: 0.266300 ms MarkObjects: 18.228200 ms  DeleteObjects: 1.175600 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

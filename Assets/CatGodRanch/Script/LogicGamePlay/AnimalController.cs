@@ -10,6 +10,7 @@ public class AnimalController : MonoBehaviour
     public List<AnimalsBase> lsTempAnimalsBases;
     public DuckController duckController;
     public PenguinController penguinController;
+    public ReinDeerController reinDeerController;
     public Transform postHome;
     public Button btnNextDay;
     public void Init(PlayerContain playerContainParam)
