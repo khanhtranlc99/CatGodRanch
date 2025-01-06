@@ -75,6 +75,7 @@ public class Tiger : AnimalsBase
 
     public override void HandleActionDie()
     {
+       
         base.HandleActionDie();
         StopAllCoroutines();
     }

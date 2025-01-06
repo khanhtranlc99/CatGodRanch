@@ -110,8 +110,14 @@ public abstract class AnimalsBase : MonoBehaviour
     public virtual void HandleActionDie()
     {
         GamePlayController.Instance.playerContain.cardController.HandleRemoveCurrentAnimals(animalsName);
-        postYardBase.animalsBase = null;
-        postYardBase = null;
+        if(postYardBase != null)
+        {
+            postYardBase = null;
+        }
+        if (postYardBase.animalsBase != null)
+        {
+            postYardBase.animalsBase = null;
+        }
         huntAnimal = null;
         lsAnimalsProtect.Clear();
         GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);

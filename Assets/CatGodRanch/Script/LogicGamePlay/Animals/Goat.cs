@@ -20,6 +20,10 @@ public class Goat : AnimalsBase
     {
         SetUpPlus();
     }
+    public override void InitRange()
+    {
+        
+    }
 
     public override void InitState()
     {

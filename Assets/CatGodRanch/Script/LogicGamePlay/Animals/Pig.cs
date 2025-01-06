@@ -18,8 +18,11 @@ public class Pig : AnimalsBase
     
     }
 
-  
 
+    public override void InitRange()
+    {
+        
+    }
 
 
 

@@ -5,6 +5,8 @@ using UnityEngine.UIElements;
 
 public class Badger : AnimalsBase
 {
+    public GameObject boxChat_OK;
+    public GameObject boxChat_NoOk;
     public bool CanHandleEffect
     {
         get
@@ -37,10 +39,16 @@ public class Badger : AnimalsBase
         }
         if (countEmtySpace >= 2)
         {
+            boxChat_OK.gameObject.SetActive(true);
+            yield return new WaitForSeconds(1);
+            boxChat_OK.gameObject.SetActive(false);
             yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(4, transform.position));
         }
         else
         {
+            boxChat_NoOk.gameObject.SetActive(true);
+            yield return new WaitForSeconds(1);
+            boxChat_NoOk.gameObject.SetActive(false);
             yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(-2, transform.position));
         }
         yield return null;

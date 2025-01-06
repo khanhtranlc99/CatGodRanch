@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
- 
 
+using DG.Tweening;
 public class Hyena : AnimalsBase
 {
     bool isListen = false;
@@ -63,9 +63,23 @@ public class Hyena : AnimalsBase
     private void HandleEffectHunt(object param)
     {
         tempHunt = (AnimalsBase)param;
+        if(tempHunt == null )
+        {
+            return;
+        }
         if (lsHunt.Contains(tempHunt))
         {
-            tempHunt.HandleActionDie();
+            var ran = Random.Range(0,2);
+            if(ran == 0)
+            {
+                transform.DOMove(tempHunt.gameObject.transform.position, 0.3f).OnComplete(delegate
+                {
+                    transform.DOMove(postYardBase.gameObject.transform.position, 0.3f).OnComplete(delegate
+                    {
+                        tempHunt.HandleActionDie();
+                    });
+                });
+            }    
         }    
     }
 

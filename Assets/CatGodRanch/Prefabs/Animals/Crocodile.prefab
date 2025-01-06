@@ -51,11 +51,12 @@ MonoBehaviour:
   animalsName: 37
   spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
   spriteRender: {fileID: 6570826722375002027}
-  coinPlus: 4
+  coinPlus: 0
   postYardBase: {fileID: 0}
   canvas: {fileID: 0}
   lsAnimalsProtect: []
   huntAnimal: {fileID: 0}
+  lsPostRange: []
   animalsTarget: {fileID: 0}
 --- !u!1 &2775324433096873029
 GameObject:

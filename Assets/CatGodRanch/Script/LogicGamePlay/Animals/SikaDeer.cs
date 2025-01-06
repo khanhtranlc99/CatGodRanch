@@ -27,15 +27,22 @@ public class SikaDeer : AnimalsBase
         {
             EventDispatcher.EventDispatcher.Instance.RegisterListener(EventID.ANIMALS_MOVE, HandleEffectSikaDeer);
             isListen = true;
-        }
-      
-       
-     
-      
+        }   
     }
     public override void InitState()
     {
 
+    }
+    public override void InitRange()
+    {
+        if (lsPostRange.Count > 0)
+        {
+            lsPostRange.Clear();
+        }
+        foreach (var item in GamePlayController.Instance.playerContain.postYardController.lsPostYardBases)
+        {
+            lsPostRange.Add(item);
+        }
     }
     public override IEnumerator HandleEffect()
     {

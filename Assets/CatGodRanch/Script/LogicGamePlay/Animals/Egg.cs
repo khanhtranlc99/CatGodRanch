@@ -19,9 +19,12 @@ public class Egg : AnimalsBase
    
     }
 
-   
+    public override void InitRange()
+    {
 
-  
+    }
+
+
     public override IEnumerator HandleEffect()
     {
         day -= 1;

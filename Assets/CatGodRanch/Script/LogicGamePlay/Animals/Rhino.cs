@@ -40,6 +40,10 @@ public class Rhino : AnimalsBase
     {
 
     }
+    public override void InitRange()
+    {
+        
+    }
     public override IEnumerator HandleEffect()
     {
         if(CanHandleEffect)

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Coyote : AnimalsBase
 {
+    public GameObject boxChat_OK;
+    public GameObject boxChat_NoOk;
     public bool CanHandleEffect
     {
         get
@@ -40,11 +42,17 @@ public class Coyote : AnimalsBase
             }
             if (countCarnivore >= 3)
             {
-                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(1, transform.position));
+                boxChat_OK.gameObject.SetActive(true);
+                yield return new WaitForSeconds(1);
+                boxChat_OK.gameObject.SetActive(false);
+                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
             }
             else
             {
-                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(-1, transform.position));
+                boxChat_NoOk.gameObject.SetActive(true);
+                yield return new WaitForSeconds(1);
+                boxChat_NoOk.gameObject.SetActive(false);
+                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(-2, transform.position));
             }    
          
         }

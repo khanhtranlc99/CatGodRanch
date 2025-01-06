@@ -28,6 +28,17 @@ public class Gazelle : AnimalsBase
     {
 
     }
+    public override void InitRange()
+    {
+      base.InitRange();
+      for(int i = lsPostRange.Count - 1; i >= 0; i--)
+        {
+            if (lsPostRange[i].transform.position.y < postYardBase.transform.position.y)
+            {
+                lsPostRange.Remove(lsPostRange[i]);
+            }
+        }    
+    }
     public bool CheckCanSwitch (AnimalsBase animalsBase)
     {
        if(animalsBase.huntAnimal != null && animalsBase.lsAnimalsProtect.Count <= 0)

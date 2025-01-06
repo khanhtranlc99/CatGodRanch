@@ -35,6 +35,17 @@ public class MuskOx : AnimalsBase
         
         }
     }
+    public override void InitRange()
+    {
+        if (lsPostRange.Count > 0)
+        {
+            lsPostRange.Clear();
+        }
+        foreach (var item in GamePlayController.Instance.playerContain.postYardController.lsPostYardBases)
+        {
+            lsPostRange.Add(item);
+        }
+    }
     public override void InitState()
     {
 

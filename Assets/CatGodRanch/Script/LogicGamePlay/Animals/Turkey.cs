@@ -34,7 +34,10 @@ public class Turkey : AnimalsBase
     {
         SetUpPlus();
     }
+    public override void InitRange()
+    {
 
+    }
     public override void InitState()
     { 
     }
