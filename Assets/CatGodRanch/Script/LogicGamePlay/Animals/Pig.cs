@@ -6,7 +6,7 @@ using DG.Tweening;
 public class Pig : AnimalsBase
 {
     public TMP_Text tvDay;
-    int day = 3;
+    int day = 4;
     public override void Init()
     {
         SetUpPlus();

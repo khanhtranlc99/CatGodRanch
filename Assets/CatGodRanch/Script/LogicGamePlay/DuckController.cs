@@ -93,9 +93,7 @@ public class DuckController : MonoBehaviour
             else
             {
                 yield return null;
-            }
-           
-
+            }         
         }
         else
         {

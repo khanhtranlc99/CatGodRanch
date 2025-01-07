@@ -635,8 +635,7 @@ MonoBehaviour:
   cardRank: 1
   animalsDataProperty:
     name: WaterBuffalo
-    content: Survive on a Grassland +3<sprite name="Coin">, on a Puddle +5<sprite
-      name="Coin">
+    content: If adjacent Grassland +3<sprite name="Coin">, Puddle +5<sprite name="Coin">
     animalsName: 11
     cardRank: 0
     spriteAvatar: {fileID: 21300000, guid: 11c0f417ef3f68e4cbefa2cf6cc2df92, type: 3}

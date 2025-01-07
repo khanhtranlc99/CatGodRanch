@@ -63,7 +63,7 @@ public class Goat : AnimalsBase
             GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
             GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);
             SimplePool2.Despawn(this.gameObject);
-            Debug.LogError("GoatDie");
+             
         }
 
     }

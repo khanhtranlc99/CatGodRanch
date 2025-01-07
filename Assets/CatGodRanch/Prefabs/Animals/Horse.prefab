@@ -56,6 +56,7 @@ MonoBehaviour:
   canvas: {fileID: 0}
   lsAnimalsProtect: []
   huntAnimal: {fileID: 0}
+  lsPostRange: []
 --- !u!1 &2779980053444616606
 GameObject:
   m_ObjectHideFlags: 0

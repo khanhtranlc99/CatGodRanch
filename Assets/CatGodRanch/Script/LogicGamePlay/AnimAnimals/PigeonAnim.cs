@@ -9,10 +9,7 @@ public class PigeonAnim : AnimTutBase
     public Vector3 post_1;
     public Vector3 post_2;
 
-    public void Start()
-    {
-        Init();
-    }
+   
     public override void Init()
     {
         foreach (TutData data in lsPigeon)
