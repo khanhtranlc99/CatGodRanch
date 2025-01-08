@@ -61,7 +61,7 @@ public class Goat : AnimalsBase
             tempPost.animalsBase = temp.GetComponent<AnimalsBase>();
             temp.GetComponent<AnimalsBase>().postYardBase = tempPost;
             GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
-            GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);
+            //GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);
             SimplePool2.Despawn(this.gameObject);
              
         }

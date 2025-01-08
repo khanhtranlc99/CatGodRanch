@@ -14,10 +14,14 @@ public class Card : MonoBehaviour
     public Text tvPrice;
     public Button btnCard;
     AnimalsDataProperty animalsData;
-
+    public Transform decorText;
+    public AnimTutBase tempTut;
+    CardBase card;
+    public RectTransform rectTransformText;
     public void Init(CardBase dataParam)
     {
         animalsData = dataParam.animalsDataProperty;
+        card = dataParam;
         iconAnimals.sprite = animalsData.spriteAvatar;
         iconType.sprite = animalsData.spriteAnimalsType;
         tvName.text = animalsData.name;
@@ -36,12 +40,48 @@ public class Card : MonoBehaviour
                 break;
             case CardRank.SuperRare:
                 bgCard.color = Color.yellow;
-                break;
-        
+                break;    
         }
+
+        if (tempTut != null)
+        {
+            Destroy(tempTut.gameObject);
+            tempTut = null;
+        }
+        tempTut = Instantiate(card.tutBase);   
+        tempTut.transform.SetParent(decorText, false);
+        tempTut.transform.SetAsFirstSibling();
+        tempTut.transform.localScale = new Vector3(1, 1, 1);
+        tempTut.GetComponent<RectTransform>().offsetMin = Vector2.zero;
+        tempTut.GetComponent<RectTransform>().offsetMax = Vector2.zero;
+        HandleTutCard();
+    }
+    private IEnumerator initTemp()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if (tempTut != null)
+        {
+            tempTut.Init();
+        }
+    }    
+
+     
+     public void HandleTutCard()
+    {
+        StartCoroutine(initTemp());
 
     }
 
+    public void HandleOnText()
+    {
+        rectTransformText.gameObject.SetActive(true);
+       
+    }
+    public void HandleOffText()
+    {
+        rectTransformText.gameObject.SetActive(false);
+        
+    }
 
 
     private void OnClick( )

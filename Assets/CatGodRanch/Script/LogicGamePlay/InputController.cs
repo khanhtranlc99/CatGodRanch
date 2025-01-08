@@ -31,7 +31,7 @@ public class InputController : MonoBehaviour
                 // Kiểm tra nếu Raycast chạm vào một Collider2D
                 if (hit.collider != null)
                 {
-                    if (hit.collider.gameObject.name == "btnRemove")
+                    if (hit.collider.gameObject.name == "btnRemove" || hit.collider.gameObject.name == "btnBook")
                     {              
                         return;
                     }

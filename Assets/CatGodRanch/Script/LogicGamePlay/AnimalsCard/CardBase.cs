@@ -14,6 +14,7 @@ public abstract class CardBase : MonoBehaviour
     public CardRank cardRank;
     public AnimalsDataProperty animalsDataProperty;
     public ItemDataProperty itemDataProperty;
+    public AnimTutBase tutBase;
     
 
     public abstract void Init( );

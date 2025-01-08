@@ -32,7 +32,7 @@ public class GamePlayController : Singleton<GamePlayController>
     public void Init()
     {
         SimplePool2.ClearPool();
-        SimplePool2.Preload(itemInGameVfx.gameObject);
+        SimplePool2.Preload(itemInGameVfx.gameObject,10);
         playerContain.Init();
         gameScene.Init(playerContain);
         UseProfile.FirstLoading = true;

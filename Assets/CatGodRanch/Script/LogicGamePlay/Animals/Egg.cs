@@ -47,7 +47,7 @@ public class Egg : AnimalsBase
             }
             yield return StartCoroutine(HandleTranform());
             SpwanAnimals(temp.prefabAnimals);
-            GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);
+        //    GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);
             day = 3;
             tvDay.text = day.ToString() + "<sprite name=\"Time\">";
             SimplePool2.Despawn(this.gameObject);

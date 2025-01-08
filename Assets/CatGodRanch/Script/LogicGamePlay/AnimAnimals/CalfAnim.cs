@@ -21,7 +21,7 @@ public class CalfAnim : AnimTutBase
     }
     public IEnumerator HandleEffect()
     {
-        icon.transform.DOKill();
+        
         Sequence sequence = DOTween.Sequence();
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, 10f), 0.2f));
         sequence.Join(icon.transform.DOJump(icon.transform.position, 1, 1, 0.5f));
@@ -48,25 +48,7 @@ public class CalfAnim : AnimTutBase
     }
     public IEnumerator HandleTranform()
     {
-        icon.transform.DOKill();
-
-        // Tạo một Sequence để kết hợp tween
-        Sequence sequence = DOTween.Sequence();
-
-        // Tween thay đổi màu sắc (fade)
-        sequence.Append(icon.DOColor(new Color32(255, 255, 255, 50), 0.3f))
-         .Join(icon.transform.DOScale(new Vector3(1.2f, 1.2f, 0), 0.3f))
-
-         .Append(icon.DOColor(new Color32(255, 255, 255, 255), 0.3f))
-         .Join(icon.transform.DOScale(new Vector3(1, 1, 0), 0.3f))
-
-         .Append(icon.DOColor(new Color32(255, 255, 255, 50), 0.3f))
-         .Join(icon.transform.DOScale(new Vector3(1.2f, 1.2f, 0), 0.3f))
-
-         .Append(icon.DOColor(new Color32(255, 255, 255, 255), 0.3f))
-         .Join(icon.transform.DOScale(new Vector3(1, 1, 0), 0.3f));
-
-        yield return sequence.WaitForCompletion();
+      
 
         var rand = Random.Range(0, lsSprite.Count);
         icon.sprite = lsSprite[rand];

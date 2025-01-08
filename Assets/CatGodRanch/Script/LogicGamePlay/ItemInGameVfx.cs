@@ -14,31 +14,13 @@ public class ItemInGameVfx : MonoBehaviour
         tvNumb.text =   param + "<sprite name=\"Coin\">";
         spriteRenderer.sprite = null;
         this.transform.localScale = Vector3.zero;
-        yield return this.transform.DOScale(new Vector3(1, 1, 1), 0.4f).OnComplete(delegate {
-
-            this.transform.DOMoveY(this.transform.position.y + 0.3f, 0.4f).OnComplete(delegate {
-
-                tvNumb.DOFade(0, 0.2f).OnComplete(delegate { SimplePool2.Despawn(this.gameObject); }) ;
-              
-            });
-        }).WaitForCompletion();
+        yield return this.transform.DOScale(new Vector3(1, 1, 1), 0.4f).WaitForCompletion();
+        yield return this.transform.DOMoveY(this.transform.position.y + 0.3f, 0.4f).WaitForCompletion();
+        yield return tvNumb.DOFade(0, 0.2f).WaitForCompletion();
+        SimplePool2.Despawn(this.gameObject);
     }
-    public void Init(Sprite param)
-    {
-        tvNumb.text = "";
 
-        spriteRenderer.sprite = param;
-        spriteRenderer.color = Color.white;
-        this.transform.localScale = Vector3.zero;
-        this.transform.DOScale(new Vector3(0.75f, 0.75f, 0.75f), 0.4f).OnComplete(delegate {
-
-            this.transform.DOMoveY(this.transform.position.y + 0.3f, 0.4f).OnComplete(delegate {
-
-                spriteRenderer.DOColor(new Color32(0, 0, 0, 0), 0.2f).OnComplete(delegate { SimplePool2.Despawn(this.gameObject); });
-
-            });
-        });
-    }
+   
    
     private void OnDisable()
     {

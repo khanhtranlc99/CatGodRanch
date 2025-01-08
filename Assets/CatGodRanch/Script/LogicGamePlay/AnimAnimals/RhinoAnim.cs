@@ -20,10 +20,7 @@ public class RhinoAnim : AnimTutBase
 
     public List<Sprite> lsSprite;
 
-    private void Start()
-    {
-        Init();
-    }
+
     public override void Init()
     {
         rhino_post = rhino.transform.position;

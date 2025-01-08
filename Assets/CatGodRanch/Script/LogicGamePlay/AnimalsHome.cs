@@ -145,4 +145,9 @@ public class AnimalsHome : MonoBehaviour
             });
         });
     }
+    private void OnDestroy()
+    {
+        icon.transform.DOKill();
+        StopAllCoroutines();
+    }
 }

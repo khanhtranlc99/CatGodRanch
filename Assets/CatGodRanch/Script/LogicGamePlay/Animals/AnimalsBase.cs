@@ -110,17 +110,18 @@ public abstract class AnimalsBase : MonoBehaviour
     public virtual void HandleActionDie()
     {
         GamePlayController.Instance.playerContain.cardController.HandleRemoveCurrentAnimals(animalsName);
-        if(postYardBase != null)
-        {
-            postYardBase = null;
-        }
         if (postYardBase.animalsBase != null)
         {
             postYardBase.animalsBase = null;
         }
+        if (postYardBase != null)
+        {
+            postYardBase = null;
+        }
+     
         huntAnimal = null;
         lsAnimalsProtect.Clear();
-        GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);
+        //GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);
         SimplePool2.Despawn(this.gameObject);
         spriteRender.transform.DOKill();
     }    
@@ -150,6 +151,7 @@ public abstract class AnimalsBase : MonoBehaviour
         yield return sequence.WaitForCompletion();
         AnimScale();
         yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(coinPlus, transform.position));
+    
     }
 
     public virtual IEnumerator HandleActionProtect()

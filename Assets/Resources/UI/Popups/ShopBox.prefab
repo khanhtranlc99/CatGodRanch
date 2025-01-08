@@ -14999,20 +14999,10 @@ MonoBehaviour:
   lsPackInShops:
   - {fileID: 1043155358675906686}
   - {fileID: 1043155359755681317}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 2512556093294177612}
   - {fileID: 7082128404992468401}
   - {fileID: 5435505766334961734}
   lsPackInShopFree:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1618608410497970512}
   countTime: 0
   wasCountTime: 0

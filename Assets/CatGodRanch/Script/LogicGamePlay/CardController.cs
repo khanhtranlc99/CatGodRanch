@@ -10,6 +10,18 @@ public class CardController : MonoBehaviour
     public List<CardBase> lsCardBase;
     PlayerContain playerContain;
     public List<AnimalsDataProperty> lsCurrentAnimalData;
+
+    public CardBase GetCardBaseByName(AnimalsName animalsName)
+    {
+        foreach (var animal in lsCardBase) 
+        {
+          if(animal.animalsDataProperty.animalsName == animalsName)
+            {
+                return animal;
+            }
+        }
+        return null;
+    }
     public CardBase GetRandomLsCardRank 
     {
         get

@@ -27,6 +27,9 @@ public class CardAnimalsBox : BaseBox
     int percent;
     public List<CardBase> lsCurrentAnimalsData;
     public TMP_Text tmpCoin;
+    public GameObject bg;
+    public Button btnBook;
+    public bool isText;
     private void Init()
     {
         playerContain = GamePlayController.Instance.playerContain;
@@ -35,16 +38,20 @@ public class CardAnimalsBox : BaseBox
         btnSeeThrow.onClick.AddListener(delegate { HandleSeeThrowBtn(); });
         btnRetry.onClick.AddListener(btnRoll);
         btnSkip.onClick.AddListener(HandleSkip);
+        btnBook.onClick.AddListener(HandleBook);
+
     }
     private void InitState()
     {
-        Roll();
+        GamePlayController.Instance.playerContain.inputController.lockInput = false;
+        Invoke(nameof(Roll), 0.2f);
         tmpCoin.text = playerContain.coinController.coin + "<sprite name=\"Coin\">";
-    }
-    private void Roll()
-    {
     
-            lsCurrentAnimalsData = new List<CardBase>();
+    }
+    private void  Roll()
+    {
+        isText = false;
+        lsCurrentAnimalsData = new List<CardBase>();
 
             while (lsCurrentAnimalsData.Count < 3)
             {
@@ -76,8 +83,13 @@ public class CardAnimalsBox : BaseBox
     }
     public void HandleOn()
     {
-      
+        bg.SetActive(true);
         mainPanel.gameObject.SetActive(true);
+        GamePlayController.Instance.playerContain.inputController.lockInput = false;
+        foreach (var item in lsCard)
+        {
+            item.HandleTutCard();
+        }
     }
     public void HandleSkip()
     {
@@ -87,7 +99,31 @@ public class CardAnimalsBox : BaseBox
     private void HandleSeeThrowBtn()
     {
         mainPanel.gameObject.SetActive(false);
+        bg.SetActive(false);
         GamePlayController.Instance.gameScene.seeThrowBtn.gameObject.SetActive(true);
+        GamePlayController.Instance.playerContain.inputController.lockInput = true;
     }
-
+    private void OnDisable()
+    {
+        GamePlayController.Instance.playerContain.inputController.lockInput = true;
+    }
+    private void HandleBook()
+    {
+        if(!isText)
+        {
+            isText = true;
+            foreach (var item in lsCard)
+            {
+                item.HandleOnText();
+            }
+        }
+        else
+        {
+            isText = false;
+            foreach (var item in lsCard)
+            {
+                item.HandleOffText();
+            }
+        }
+    }    
 }

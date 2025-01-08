@@ -46,7 +46,7 @@ public abstract class BaseBox : MonoBehaviour
         popupCanvas = this.GetComponent<Canvas>();
         if (popupCanvas != null && isPopup)
         {
-            popupCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            popupCanvas.renderMode = RenderMode.ScreenSpaceCamera;
             popupCanvas.worldCamera = Camera.main;
             popupCanvas.sortingLayerID = SortingLayer.NameToID("Popup");
         }

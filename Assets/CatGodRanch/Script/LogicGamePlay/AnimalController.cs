@@ -86,6 +86,7 @@ public class AnimalController : MonoBehaviour
 
     public IEnumerator HandleMoveOut()
     {
+        GamePlayController.Instance.playerContain.inputController.lockInput = false;
         lsAnimalsBases.Shuffle();
         lsTempAnimalsBases.Clear();
         duckController.InitState();
@@ -129,19 +130,30 @@ public class AnimalController : MonoBehaviour
         }
         for (int i = lsAnimalsBases.Count - 1; i >= 0; i--)
         {
-            if (lsAnimalsBases[i] != null)
+            int index = i;
+            if (lsAnimalsBases[index] != null && lsAnimalsBases[index].gameObject.activeSelf)
             {
-                yield return StartCoroutine(lsAnimalsBases[i].HandleEffect());
+                yield return StartCoroutine(lsAnimalsBases[index].HandleEffect());
             }
         }
+     
+
         for (int i = lsAnimalsBases.Count - 1; i >= 0; i--)
         {
-            if (lsAnimalsBases[i] != null)
+            if (lsAnimalsBases[i] != null && lsAnimalsBases[i].gameObject.activeSelf)
             {
                 yield return StartCoroutine(lsAnimalsBases[i].HandleClaimCoin());
             }
         }
-         if(playerContain.itemController.lsCurrentItem.Count > 0)
+        for (int i = lsAnimalsBases.Count - 1; i >= 0; i--)
+        {
+
+            if (!lsAnimalsBases[i].gameObject.activeSelf)
+            {
+                lsAnimalsBases.Remove(lsAnimalsBases[i]);
+            }
+        }
+        if (playerContain.itemController.lsCurrentItem.Count > 0)
         {
             foreach(var item in playerContain.itemController.lsCurrentItem)
             {

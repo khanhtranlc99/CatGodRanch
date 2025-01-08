@@ -76,7 +76,11 @@ public class Hyena : AnimalsBase
                 {
                     transform.DOMove(postYardBase.gameObject.transform.position, 0.3f).OnComplete(delegate
                     {
-                        tempHunt.HandleActionDie();
+                        if (tempHunt != null)
+                        {
+                            tempHunt.HandleActionDie();
+                        }     
+                        StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(3, transform.position));
                     });
                 });
             }    

@@ -34,8 +34,6 @@ public class ShopBox : BaseBox
     
     public float countTime;
     public bool wasCountTime;
-    public Text tvCountTime;
-    public Text tvCountTime_2;
  
     public CoinBar coinHeartBar;
     public Button btnClose;
@@ -80,25 +78,7 @@ public class ShopBox : BaseBox
         }
         wasCountTime = true; 
     }
-    private void Update()
-    {
-        if(wasCountTime)
-        {
-           if(countTime > 0)
-            {
-                countTime -=  1*Time.deltaTime;
-                tvCountTime.text = "REFRESH IN : " + TimeManager.ShowTime2((long)countTime);
-                tvCountTime_2.text = "REFRESH IN : " + TimeManager.ShowTime2((long)countTime);
-           
-
-            }
-           else
-            {
-                tvCountTime.text = " "  ;
-                tvCountTime_2.text = " "  ;
-            }    
-        }
-    }
+ 
 
     public void CheckOffPack()
     {
