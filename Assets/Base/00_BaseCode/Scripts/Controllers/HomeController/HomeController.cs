@@ -12,10 +12,21 @@ public class HomeController : Singleton<HomeController>
     {
         homeScene.Init();
         animalsHomeController.Init();
-        if(!UseProfile.WasBoughtUnlimitTime)
+        if( UseProfile.CurrentLevel == 2 )
         {
-            UseProfile.WasBoughtUnlimitTime = true;
-            tutHome.SetActive(true);
+            if (UseProfile.CurrentLevel >= 0)
+            {
+                tutHome.SetActive(true);
+            }
+         
+        }
+        if (UseProfile.CurrentLevel == 3)
+        {
+            if(UseProfile.CurrentLevel >= 800)
+            {
+                tutHome.SetActive(true);
+            }
+  
         }
     }
 

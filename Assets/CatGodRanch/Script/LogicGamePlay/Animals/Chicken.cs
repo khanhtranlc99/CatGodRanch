@@ -68,6 +68,10 @@ public class Chicken : AnimalsBase
                 yield return new WaitForSeconds(1);
                 yield return rooster.gameObject.transform.DOMove(rooster.postYardBase.transform.position, 0.5f).WaitForCompletion();
                 var ran = Random.RandomRange(0, 100);
+                if (!UseProfile.TutGamePlayCard_Step_1)
+                {
+                    ran = 50;
+                }
                 if (ran <= 50)
                 {
                     yield return this.transform.DOJump(this.transform.position, 1.5f, 1, 0.5f).WaitForCompletion();
@@ -103,7 +107,14 @@ public class Chicken : AnimalsBase
             tempPost.animalsBase = temp.GetComponent<AnimalsBase>();
             temp.GetComponent<AnimalsBase>().postYardBase = tempPost;
             GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
-     
+            if(!UseProfile.TutGamePlayCard_Step_1)
+            {
+                temp.GetComponent<Egg>().day = 1;
+                temp.GetComponent<Egg>().Init();
+                temp.GetComponent<Egg>().tvDay.text =  "";
+                yield return new WaitForSeconds(0.7f);
+                yield return temp.GetComponent<AnimalsBase>().HandleEffect();
+            }
             
         }
         else

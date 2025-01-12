@@ -37,7 +37,7 @@ public class Ostrich : AnimalsBase
         postYardJump = null;
         foreach (var item in postYardBase.lsNearYard)
         {
-            if(item.animalsBase == null)
+            if(item.animalsBase == null && !item.wasStay)
             {
                 postYardJump = item;
                 postYardJump.wasStay = true;

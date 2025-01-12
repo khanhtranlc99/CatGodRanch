@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using UnityEngine;
-using static UnityEditor.Progress;
+
 public enum PostYardType
 {
     Normal,

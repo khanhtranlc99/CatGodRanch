@@ -127,7 +127,7 @@ MonoBehaviour:
       coinPlus: 1
       prefabAnimals: {fileID: 7129943512840412722, guid: bc41725987f09fe44b14ff359c0e4bc6, type: 3}
     - name: Coyote
-      content: When there are 3 or more Carnivore on the field +1 , ortherwise -1
+      content: When there are 3 or more Carnivore on the field -1 , ortherwise +1
       animalsName: 31
       cardRank: 0
       spriteAvatar: {fileID: 21300000, guid: 4763a8316928e984693680b8e8d1edd1, type: 3}

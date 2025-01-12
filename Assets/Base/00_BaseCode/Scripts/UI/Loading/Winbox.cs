@@ -44,7 +44,7 @@ public class Winbox : BaseBox
         tvCoin.text = "" + coinGift;
         UseProfile.Coin += coinGift;
         GamePlayController.Instance.playerContain.cardController.SaveDataHome();
-
+        UseProfile.FirstLoading = true;
     }    
     private void HandleNext()
     {

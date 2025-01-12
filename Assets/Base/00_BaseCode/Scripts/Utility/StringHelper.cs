@@ -86,6 +86,10 @@ public static class StringHelper
     public const string NEED_CHECK_SHOP = "need_check_shop";
     public const string DATA_ANIMALS_HOME = "data_animals_home";
     public const string PERCENT_CARD_BAR = "percent_card_bar";
+    public const string TUTGAMEPLAY_STEP_3 = "tutgameplay_step_3";
+    public const string TUTGAMEPLAYCARD_STEP_1 = "tutgameplaycard_step_1";
+    public const string TUTGAMEPLAYCARD_STEP_2 = "tutgameplaycard_step_2";
+    public const string TUTGAMEPLAYCARD_STEP_3 = "tutgameplaycard_step_3";
 }
 
 public class PathPrefabs

@@ -56,6 +56,56 @@ public class UseProfile : MonoBehaviour
         }
     }
 
+    public static bool TutGamePlay_Step_3
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.TUTGAMEPLAY_STEP_3, 0) == 1;
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.TUTGAMEPLAY_STEP_3, value ? 1 : 0);
+            PlayerPrefs.Save();
+        }
+    }
+
+    public static bool TutGamePlayCard_Step_1
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.TUTGAMEPLAYCARD_STEP_1, 0) == 1;
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.TUTGAMEPLAYCARD_STEP_1, value ? 1 : 0);
+            PlayerPrefs.Save();
+        }
+    }
+    public static bool TutGamePlayCard_Step_2
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.TUTGAMEPLAYCARD_STEP_2, 0) == 1;
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.TUTGAMEPLAYCARD_STEP_2, value ? 1 : 0);
+            PlayerPrefs.Save();
+        }
+    }
+    public static bool TutGamePlayCard_Step_3
+    {
+        get
+        {
+            return PlayerPrefs.GetInt(StringHelper.TUTGAMEPLAYCARD_STEP_3, 0) == 1;
+        }
+        set
+        {
+            PlayerPrefs.SetInt(StringHelper.TUTGAMEPLAYCARD_STEP_3, value ? 1 : 0);
+            PlayerPrefs.Save();
+        }
+    }
+
     public static int CurrentLevel
     {
         get

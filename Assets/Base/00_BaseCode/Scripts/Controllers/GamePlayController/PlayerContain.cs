@@ -64,6 +64,7 @@ public class PlayerContain : MonoBehaviour
     public DayController dayController;
     public CoinController coinController;
     public InputController inputController;
+    public FreeRoll freeRoll;
     public void Init()
     {
         var pathLevel = "Levels/Level_{0}";

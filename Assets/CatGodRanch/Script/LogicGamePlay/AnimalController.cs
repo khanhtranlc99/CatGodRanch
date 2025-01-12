@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using DG.Tweening;
 public class AnimalController : MonoBehaviour
 {
     PlayerContain playerContain;
@@ -13,6 +14,7 @@ public class AnimalController : MonoBehaviour
     public ReinDeerController reinDeerController;
     public Transform postHome;
     public Button btnNextDay;
+  
     public void Init(PlayerContain playerContainParam)
     {
         playerContain = playerContainParam;
@@ -22,6 +24,8 @@ public class AnimalController : MonoBehaviour
             btnNextDay.gameObject.SetActive(false);
         });
         lsTempAnimalsBases = new List<AnimalsBase>();
+        btnNextDay.transform.localScale = Vector3.zero;
+        btnNextDay.transform.DOScale(Vector3.one, 1);
     }
     public void SpwanAnimals(GameObject animalsBase)
     {
@@ -46,10 +50,43 @@ public class AnimalController : MonoBehaviour
         }
         btnNextDay.gameObject.SetActive(true);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.BUY_ANIMALS_SUCCEST);
-    }    
+    }
+    public void SpwanAnimals(GameObject animalsBase, bool tut)
+    {
+
+        var tempPost = playerContain.postYardController.postTut_Chicken_first;
+        if (tempPost != null)
+        {
+            var temp = SimplePool2.Spawn(animalsBase);
+            temp.transform.position = tempPost.post.position;
+            tempPost.animalsBase = temp.GetComponent<AnimalsBase>();
+            temp.GetComponent<AnimalsBase>().postYardBase = tempPost;
+            lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
+            temp.GetComponent<AnimalsBase>().Init();
+
+        }
+        else
+        {
+            var temp = SimplePool2.Spawn(animalsBase);
+            temp.transform.position = postHome.position;
+            lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
+
+        }
+        btnNextDay.gameObject.SetActive(true);
+        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.BUY_ANIMALS_SUCCEST);
+    }
+
+
+
     public void HandleActionPassDay()
     {
-       StartCoroutine(HandleMoveIn());
+       GamePlayController.Instance.tutGamePlay.NextTut();
+        TutGamePlayCard_Step_1_5.Instance.HandleOffHand();
+        if (GamePlayController.Instance.tutCard.isStart && UseProfile.TutGamePlayCard_Step_1 == true)
+        {
+            GamePlayController.Instance.tutCard.NextTut();
+        }
+        StartCoroutine(HandleMoveIn());
     }
     public IEnumerator HandleMoveIn( )
     {
@@ -161,14 +198,25 @@ public class AnimalController : MonoBehaviour
             }
         }
 
-        if (playerContain.dayController.currentDayType == DayType.Work)
+        if (GamePlayController.Instance.tutCard.isStart && !UseProfile.TutGamePlayCard_Step_1)
         {
-            CardAnimalsBox.Setup().Show();
+         
+            UseProfile.TutGamePlayCard_Step_1 = true;
+            GamePlayController.Instance.tutCard.NextTut();
         }
-        if (playerContain.dayController.currentDayType == DayType.Pay)
+        else
         {
-            PayBillBox.Setup(playerContain.coinController.targetCoin, playerContain).Show();
+            if (playerContain.dayController.currentDayType == DayType.Work)
+            {
+                CardAnimalsBox.Setup().Show();
+            }
+            if (playerContain.dayController.currentDayType == DayType.Pay)
+            {
+                PayBillBox.Setup(playerContain.coinController.targetCoin, playerContain).Show();
+            }
         }
+
+       
    
     }
 

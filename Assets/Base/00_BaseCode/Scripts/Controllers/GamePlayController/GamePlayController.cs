@@ -19,7 +19,9 @@ public class GamePlayController : Singleton<GamePlayController>
     public StateGame stateGame;
     public PlayerContain playerContain;
     public GameScene gameScene;
-    public ItemInGameVfx itemInGameVfx;  
+    public ItemInGameVfx itemInGameVfx;
+    public TutorialFunController tutGamePlay;
+    public TutorialFunController tutCard;
     protected override void OnAwake()
     {
         //  GameController.Instance.currentScene = SceneType.GamePlay;
@@ -34,8 +36,17 @@ public class GamePlayController : Singleton<GamePlayController>
         SimplePool2.ClearPool();
         SimplePool2.Preload(itemInGameVfx.gameObject,10);
         playerContain.Init();
-        gameScene.Init(playerContain);
-        UseProfile.FirstLoading = true;
+        gameScene.Init(playerContain);   
+        tutGamePlay.Init();
+        tutGamePlay.StartTut();
+        tutCard.Init();
+        if(!UseProfile.FirstLoading)
+        {
+            UseProfile.TutGamePlayCard_Step_1 = false;
+            UseProfile.TutGamePlayCard_Step_2 = false;
+            UseProfile.TutGamePlayCard_Step_3 = false;
+            UseProfile.TutGamePlay_Step_3 = false;
+        }
     }
 
 

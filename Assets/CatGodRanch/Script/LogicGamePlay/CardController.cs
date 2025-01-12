@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
+
 public class CardController : MonoBehaviour
 {
     
@@ -34,12 +34,12 @@ public class CardController : MonoBehaviour
                     lsRankCard.Add(item);
                 }
             }
-
             return lsRankCard[Random.Range(0, lsRankCard.Count)];
         }
-  
-
     }
+   
+
+
 
     public void HandleRemoveCurrentAnimals(AnimalsName animalsName)
     {
@@ -104,9 +104,14 @@ public class CardController : MonoBehaviour
         IEnumerator ShowBox()
         {
             yield return new WaitForSeconds(1);
-            CardAnimalsBox.Setup().Show();
+            if(UseProfile.CurrentLevel != 1)
+            {
+                CardAnimalsBox.Setup().Show();
+            }
+
         }
     }
+   
 
     public void SaveDataHome()
     {
@@ -121,4 +126,8 @@ public class CardController : MonoBehaviour
             UseProfile.DataAnimalsHome = data;
         }
     }    
+    public void HandleSpawnChicken()
+    {
+        playerContain.animalController.SpwanAnimals(GetCardName(AnimalsName.Chicken).prefabAnimals, true);
+    }
 }

@@ -13,11 +13,12 @@ public class Card : MonoBehaviour
     public TMP_Text tvNumbDaily;
     public Text tvPrice;
     public Button btnCard;
-    AnimalsDataProperty animalsData;
+    public AnimalsDataProperty animalsData;
     public Transform decorText;
     public AnimTutBase tempTut;
     CardBase card;
     public RectTransform rectTransformText;
+    public GameObject blindPanel;
     public void Init(CardBase dataParam)
     {
         animalsData = dataParam.animalsDataProperty;
@@ -82,11 +83,26 @@ public class Card : MonoBehaviour
         rectTransformText.gameObject.SetActive(false);
         
     }
+    public void HandleShowBlindPanel()
+    {
+        blindPanel.SetActive(true);
+        iconType.color = new Color32(0,0,0,159);
 
+    }
+    public void HandleOffBlindPanel()
+    {
+        blindPanel.SetActive(false);
+        iconType.color = Color.white;
+    }
 
     private void OnClick( )
     {
+    
         GamePlayController.Instance.playerContain.animalController.SpwanAnimals(animalsData.prefabAnimals);
         CardAnimalsBox.instance.Close();
+        if (GamePlayController.Instance.tutCard.isStart && UseProfile.TutGamePlayCard_Step_1 == false)
+        {
+          TutGamePlayCard_Step_1_5.Instance.HandleShowHand();
+        }
     }
 }

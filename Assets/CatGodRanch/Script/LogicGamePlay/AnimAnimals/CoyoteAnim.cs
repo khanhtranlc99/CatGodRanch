@@ -26,7 +26,7 @@ public class CoyoteAnim : AnimTutBase
         boxChat.gameObject.SetActive(false);
 
         yield return icon.transform.DOJump(icon.transform.position, 1, 1, 0.5f).WaitForCompletion();
-        coin.GetComponent<TMP_Text>().text = "+1" + "<sprite name=\"Coin\">";
+        coin.GetComponent<TMP_Text>().text = "-2" + "<sprite name=\"Coin\">";
         coin.gameObject.SetActive(true);
         yield return coin.transform.DOMove(new Vector3(post_Coin.x, post_Coin.y + 0.5f, post_Coin.z), 1).WaitForCompletion();
         coin.gameObject.SetActive(false);
@@ -38,7 +38,7 @@ public class CoyoteAnim : AnimTutBase
         yield return new WaitForSeconds(1);
         boxChat.gameObject.SetActive(false);
         yield return icon.transform.DOJump(icon.transform.position, 1, 1, 0.5f).WaitForCompletion();
-        coin.GetComponent<TMP_Text>().text = "-2" + "<sprite name=\"Coin\">";
+        coin.GetComponent<TMP_Text>().text = "+2" + "<sprite name=\"Coin\">";
         coin.gameObject.SetActive(true);
         yield return coin.transform.DOMove(new Vector3(post_Coin.x, post_Coin.y + 0.5f, post_Coin.z), 1).WaitForCompletion();
         coin.gameObject.SetActive(false);

@@ -21,12 +21,12 @@ public class ToolsGendata : MonoBehaviour
             levelConfig.lsDataLevel[i].day = i + 1;
             sum += levelConfig.lsDataLevel[i].dayType.numb;
         }    
-        if(sum != levelConfig.dataDifficulty.rewardCoin)
-        {
-            Debug.LogError("ErorrSum");
-        }    
-        else
-        {
+        //if(sum != levelConfig.dataDifficulty.rewardCoin)
+        //{
+        //    Debug.LogError("ErorrSum");
+        //}    
+        //else
+        //{
      
             var jsonData = JsonConvert.SerializeObject(levelConfig);
             TextAsset textAsset = new TextAsset(jsonData);
@@ -42,7 +42,7 @@ public class ToolsGendata : MonoBehaviour
             // Lưu file
             File.WriteAllText(path, jsonData);
             Debug.LogError("save");
-        }
+        //}
    
     }    
 }

@@ -6,6 +6,10 @@ public class PostYardController : MonoBehaviour
 {
     public static PostYardController Instance;
     public List<PostYardBase> lsPostYardBases;
+    public PostYardBase postTut_Chicken_first;
+    public PostYardBase postTut_Chicken_Second;
+    public PostYardBase postTut_Rooster_Second;
+    
     public  PostYardBase GetPostYardBase(int id)
     {
         for (int i = 0; i < lsPostYardBases.Count; i++)
@@ -36,11 +40,24 @@ public class PostYardController : MonoBehaviour
         }
     }
 
-
+    bool getPostChicken= false;
     public PostYardBase GetRandomEmptyPost
     {
         get
         {
+            if(GamePlayController.Instance.tutCard.isStart && !UseProfile.TutGamePlayCard_Step_1)
+            {
+                 if(!getPostChicken)
+                {
+                    getPostChicken = true;
+                    return postTut_Chicken_Second;
+                }
+                 else
+                {
+                    return postTut_Rooster_Second;
+                }
+            }
+
             var boolNull = false;
             var lsTemp = new List<PostYardBase>();
            foreach (var item in lsPostYardBases)

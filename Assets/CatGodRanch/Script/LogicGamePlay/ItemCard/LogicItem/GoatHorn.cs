@@ -12,6 +12,10 @@ public class GoatHorn : ItemBase
         {
             tvNum.text = count.ToString();
         }
+        else
+        {
+            tvNum.text = "";
+        }
         tvNum.text = count.ToString();
         if (!isListener)
         {

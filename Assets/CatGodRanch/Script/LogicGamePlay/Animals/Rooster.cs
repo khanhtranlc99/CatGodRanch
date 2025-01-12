@@ -50,6 +50,11 @@ public class Rooster : AnimalsBase
     public override void Init()
     {
         SetUpPlus();
+        if(!UseProfile.TutGamePlayCard_Step_1)
+        {
+            GamePlayController.Instance.tutCard.StartTut();
+        }
+  
     }
 
     public override void InitState()

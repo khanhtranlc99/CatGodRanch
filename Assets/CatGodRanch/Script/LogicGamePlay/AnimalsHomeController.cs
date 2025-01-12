@@ -4,7 +4,24 @@ using UnityEngine;
 using Newtonsoft.Json;
 public class AnimalsHomeController : MonoBehaviour
 {
-    public AnimalsData animalsData;
+    public AnimalsData animalsData
+    {
+        get
+        {
+            if(UseProfile.CurrentLevel < 8)
+            {
+                return firstNormalsData;
+            }
+            else
+            {
+                return animalsDataNormal;
+            }
+        }
+    }
+
+    public AnimalsData firstNormalsData;
+    public AnimalsData animalsDataNormal;
+
     public Transform postUp;
     public Transform postDown;
     public Transform postLeft;

@@ -7,9 +7,10 @@ using DG.Tweening;
 public class Egg : AnimalsBase
 {
     public TMP_Text tvDay;
-    int day = 3;
+    public int day = 3;
     public override void Init()
     {
+        
         SetUpPlus();
         tvDay.text = day.ToString() + "<sprite name=\"Time\">";
     }
@@ -33,17 +34,29 @@ public class Egg : AnimalsBase
         {
             var ran = Random.RandomRange(0,100);
             var temp = new AnimalsDataProperty();
-            if (ran <= 33)
+            if (GamePlayController.Instance.tutCard.isStart && !UseProfile.TutGamePlayCard_Step_1)
+            {
+                ran = 81;
+            }
+                if (ran <= 20)
             {
                  temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Chicken);    
             }
-            if (ran > 33 && ran <= 66)
+            if (ran > 20 && ran <= 40)
             {
-                 temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Duck);      
+                 temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Rooster);      
             }
-            if (ran > 66 && ran <= 100)
+            if (ran > 40 && ran <= 60)
             {
                  temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Turkey);          
+            }
+            if (ran > 60 && ran <= 80)
+            {
+                temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Duck);
+            }
+            if (ran > 80 && ran <= 100)
+            {
+                temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Pigeon);
             }
             yield return StartCoroutine(HandleTranform());
             SpwanAnimals(temp.prefabAnimals);

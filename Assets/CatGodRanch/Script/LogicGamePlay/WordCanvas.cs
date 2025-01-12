@@ -25,6 +25,7 @@ public class WordCanvas : MonoBehaviour
     // Start is called before the first frame update
     public void InitState(AnimalsBase param)
     {
+        parentText.SetActive(false);
         isShow = false;
         animals = param;
         animalsDataProperty = GamePlayController.Instance.playerContain.cardController.GetCardName(param.animalsName);
@@ -98,6 +99,7 @@ public class WordCanvas : MonoBehaviour
             isShow = false;
             parentText.SetActive(false);
         }
-     
+        GamePlayController.Instance.tutGamePlay.NextTut();
+    
     }
 }

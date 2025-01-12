@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build;
+
 using UnityEngine;
 
 public class InputController : MonoBehaviour
@@ -40,17 +40,30 @@ public class InputController : MonoBehaviour
                         GamePlayController.Instance.playerContain.postYardController.HandleOffOutLine();
                         hit.collider.gameObject.GetComponent<PostYardBase>().HandleCheckOutLine();
                         wordCanvasController.HandleShow(hit.collider.gameObject.GetComponent<PostYardBase>());
+                        GamePlayController.Instance.tutGamePlay.NextTut();
+                        if (GamePlayController.Instance.tutCard.isStart && UseProfile.TutGamePlayCard_Step_1 == true)
+                        {
+                            GamePlayController.Instance.tutCard.NextTut();
+                        }
                     }    
                    else
                     {
-                        GamePlayController.Instance.playerContain.postYardController.HandleOffOutLine();
-                        wordCanvasController.HandleOff();
+                        if(UseProfile.TutGamePlay_Step_3)
+                        {
+                            GamePlayController.Instance.playerContain.postYardController.HandleOffOutLine();
+                            wordCanvasController.HandleOff();
+                        }
+                  
                     }
                 }
                 else
                 {
-                    GamePlayController.Instance.playerContain.postYardController.HandleOffOutLine();
-                    wordCanvasController.HandleOff();
+                    if (UseProfile.TutGamePlay_Step_3)
+                    {
+                        GamePlayController.Instance.playerContain.postYardController.HandleOffOutLine();
+                        wordCanvasController.HandleOff();
+                    }
+                
                 }
             }
         }

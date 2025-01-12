@@ -45,14 +45,14 @@ public class Coyote : AnimalsBase
                 boxChat_OK.gameObject.SetActive(true);
                 yield return new WaitForSeconds(1);
                 boxChat_OK.gameObject.SetActive(false);
-                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
+                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(-2, transform.position));
             }
             else
             {
                 boxChat_NoOk.gameObject.SetActive(true);
                 yield return new WaitForSeconds(1);
                 boxChat_NoOk.gameObject.SetActive(false);
-                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(-2, transform.position));
+                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(+2, transform.position));
             }    
          
         }
