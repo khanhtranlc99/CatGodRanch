@@ -19,6 +19,14 @@ public class Card : MonoBehaviour
     CardBase card;
     public RectTransform rectTransformText;
     public GameObject blindPanel;
+    public Sprite normalBg;
+    public Sprite rageBg;
+    public Sprite superBg;
+    public Image decoreText;
+    public Color32 normalColor/* = new Color32(110,157,244,255)*/;
+    public Color rageColor /*= new Color32(199, 232, 247, 255)*/;
+    public Color superColor /*= new Color32(254, 208, 122, 255)*/;
+
     public void Init(CardBase dataParam)
     {
         animalsData = dataParam.animalsDataProperty;
@@ -34,13 +42,16 @@ public class Card : MonoBehaviour
         switch (dataParam.cardRank)
         {
             case CardRank.Normal:
-                bgCard.color = Color.gray;
+                bgCard.sprite = normalBg;
+                decoreText.color = normalColor;
                 break;
             case CardRank.Rare:
-                bgCard.color = Color.blue;
+                bgCard.sprite = rageBg;
+                decoreText.color = rageColor;
                 break;
             case CardRank.SuperRare:
-                bgCard.color = Color.yellow;
+                bgCard.sprite = superBg;
+                decoreText.color = superColor;
                 break;    
         }
 

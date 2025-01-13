@@ -4,7 +4,8 @@ using UnityEngine;
  
 using UnityEngine.UI;
 using DG.Tweening;
- 
+using System.Collections.Generic;
+
 
 public class GameScene : BaseScene
 {
@@ -16,6 +17,9 @@ public class GameScene : BaseScene
     public Button seeThrowBtn;
     public GameObject topParent;
     public Transform postTop;
+    public Transform postRight;
+    public List<GameObject> lsbutton;
+
     public void Init(PlayerContain playerContainParam )
     {
         tvLevel.text = "Level " + UseProfile.CurrentLevel;
@@ -24,6 +28,7 @@ public class GameScene : BaseScene
         if(UseProfile.CurrentLevel != 1)
         {
             StartCoroutine(HandleShowTop());
+            StartCoroutine(HandleRight());
         }
     }
     private void HandleReset()
@@ -35,9 +40,20 @@ public class GameScene : BaseScene
 
     public IEnumerator HandleShowTop()
     {
+
         yield return topParent.transform.DOMove(postTop.transform.position, 1).WaitForCompletion();
 
     }    
+    private IEnumerator HandleRight()
+    {
+        yield return new WaitForEndOfFrame();
+        for (int i = 0; i < lsbutton.Count; i ++)
+        {
+             yield return lsbutton[i].transform.DOMoveX(postRight.transform.position.x, 0.5f).WaitForCompletion();
+        }
+    }    
+
+
     public void HandleOffButton()
     {
         resetBtn.gameObject.SetActive(false);
