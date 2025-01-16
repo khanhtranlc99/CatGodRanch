@@ -173,12 +173,14 @@ MonoBehaviour:
     content: Hunt 1 adjacent normal animal succes +1 Crow
     animalsName: 24
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: ce85d4ea312dfe3449a397d179079c20, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
     price: 1
     coinPlus: 3
     prefabAnimals: {fileID: 7360503255695831552, guid: 537a153fa58bc1b49aa08e0c79c25fb6, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -271,12 +273,14 @@ MonoBehaviour:
     content: 'Hunt 1 adjacent Hoofed, Succes : +3<sprite name="Coin">'
     animalsName: 35
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: afeca496f19f92e438f13e6323cf25ac, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
     price: 1
     coinPlus: 2
     prefabAnimals: {fileID: 839695976463938174, guid: cae12aba1722d784e9914e1806e3dca2, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -318,7 +322,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.3, y: 2.3}
+  m_AnchoredPosition: {x: -97, y: 2.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &35124220
@@ -385,8 +389,8 @@ Transform:
   m_GameObject: {fileID: 37748785}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00031, y: 0.2825, z: 0}
-  m_LocalScale: {x: 0.4079786, y: 0.13063335, z: 1}
+  m_LocalPosition: {x: 0.0001091827, y: 0.11424677, z: 0}
+  m_LocalScale: {x: 0.14369115, y: 0.05282987, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256801167}
@@ -695,12 +699,14 @@ MonoBehaviour:
     content: If adjacent Grassland +3<sprite name="Coin">, Puddle +5<sprite name="Coin">
     animalsName: 11
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 11c0f417ef3f68e4cbefa2cf6cc2df92, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 3
     coinPlus: 3
     prefabAnimals: {fileID: 2599561179293894768, guid: 134452b951391f34fa26170ec97452b0, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -758,12 +764,14 @@ MonoBehaviour:
     content: Move to an adjacent emty spot and +1 Daily Coin when adjacent Carnivore
     animalsName: 21
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: c8db0d5157e1498479a8cf10d3438d41, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
     price: 1
     coinPlus: 1
     prefabAnimals: {fileID: 6568869119595730781, guid: 9d5192f6b12322b4daddf4e9abc4da3c, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -933,6 +941,8 @@ Transform:
   - {fileID: 1730703912}
   - {fileID: 429972574}
   - {fileID: 910332296}
+  - {fileID: 1355745185}
+  - {fileID: 1357938297}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &119011508
@@ -1023,6 +1033,7 @@ GameObject:
   - component: {fileID: 133367828}
   - component: {fileID: 133367827}
   - component: {fileID: 133367829}
+  - component: {fileID: 133367830}
   m_Layer: 5
   m_Name: NextDayBtn
   m_TagString: Untagged
@@ -1132,6 +1143,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &133367830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133367825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1889b4db68d3ad7499a2a0a948f2e9a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleIn: {x: 1, y: 1, z: 1}
+  scaleOut: {x: 1.1, y: 1.1, z: 1.1}
+  speed: 0.7
+  delayStart: 1.1
 --- !u!1 &135465534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,12 +1418,14 @@ MonoBehaviour:
     content: After 3 days take 1 item
     animalsName: 22
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: a73f308ce03b7d84e80cc1cf05e23bd2, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
     price: 5
     coinPlus: 0
     prefabAnimals: {fileID: 7684717052104629309, guid: 55c15df9ab799974cb0452402ef96d93, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -1713,7 +1742,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.22, y: 2.6, z: 0}
-  m_LocalScale: {x: 19.371147, y: 22.242735, z: 1}
+  m_LocalScale: {x: 55, y: 55, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 602299575}
@@ -1771,12 +1800,14 @@ MonoBehaviour:
     content: With Rooster around, 50% probability to Breeding 1 Egg
     animalsName: 1
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: db21ed64e5fb9e04887812c7d194e80d, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
     price: 2
     coinPlus: 1
     prefabAnimals: {fileID: 274297737607697692, guid: 8c07bf1eb5612ae4f853ede87e693916, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -2643,12 +2674,14 @@ MonoBehaviour:
     content: Random add 1 Hoofed and make them +2 DailyCoin
     animalsName: 30
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 312a8f1e7d257de4483059bdf2ae35a5, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 1
     coinPlus: 1
     prefabAnimals: {fileID: 1276581206445478464, guid: 1ad588bbb90e89d428657b189548b0a7, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -2945,12 +2978,14 @@ MonoBehaviour:
     content: When adjacent to orther roosters, DailyCoin becomes 0
     animalsName: 38
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 7d9282a994517714788f2ad9376f72fc, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
     price: 2
     coinPlus: 1
     prefabAnimals: {fileID: 2384198879925928544, guid: d2689c7e3a8103d41ac604f3fb9df5a9, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -3008,12 +3043,14 @@ MonoBehaviour:
     content: Protect adjacent Lamp, Sheep, Goat, and Acapela
     animalsName: 14
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 9d99cda2094893a489d9f56d703eb744, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
     price: 2
     coinPlus: 1
     prefabAnimals: {fileID: 4641220579974034981, guid: 398e1dc53331ae6468b53a9d9b4aaf14, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -3146,12 +3183,14 @@ MonoBehaviour:
     content: When Female Lion is on the field and hunt succes +2<sprite name="Coin">
     animalsName: 34
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: acc211425e04dca458439b01a7a363af, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
     price: 1
     coinPlus: 2
     prefabAnimals: {fileID: 808138249478664284, guid: abf86971d4efa0349b557c71303c0756, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -3239,7 +3278,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -57, y: -269}
+  m_AnchoredPosition: {x: 47, y: -269}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &602299574
@@ -3268,8 +3307,8 @@ Transform:
   m_GameObject: {fileID: 602299574}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.009, y: -0.12, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalPosition: {x: 0.0031698241, y: -0.048529603, z: 0}
+  m_LocalScale: {x: 0.017610133, y: 0.020220667, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256801167}
@@ -3466,12 +3505,14 @@ MonoBehaviour:
     content: Move to an adjacent emty spot ahead, +2<sprite name="Coin"> each time
     animalsName: 25
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 9d1284d28adb5814da6e20c199e639ee, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 1
     coinPlus: 1
     prefabAnimals: {fileID: 2049143034296793722, guid: 9a3a6016fbac0614fa69faf6c5ead0a2, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -3564,12 +3605,14 @@ MonoBehaviour:
     content: 
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 0}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 1
     name: Puddle
     content: Animals on the plot +2<sprite name="Coin"> when Hunting successfully
@@ -3628,12 +3671,14 @@ MonoBehaviour:
       name="Coin">
     animalsName: 32
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 7fd0e074e998aae4dbb6cec3566d7bfa, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
     price: 1
     coinPlus: 1
     prefabAnimals: {fileID: 5663886227436397316, guid: f22d5648b5533374ebd28e0275ef53a6, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -3852,12 +3897,14 @@ MonoBehaviour:
     content: For every 1 Pigeon around +2<sprite name="Coin">
     animalsName: 19
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 119ed72aec3a3a74092ed1ebc80f2bc4, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
     price: 2
     coinPlus: 1
     prefabAnimals: {fileID: 3145998522282484757, guid: cd7ae6e12e31e9c4eb42bb45f3d3f3e7, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -4082,12 +4129,14 @@ MonoBehaviour:
     content: 
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 0}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 9
     name: Grow talent
     content: Hoofed grows every 6 day, Daily Coin +1
@@ -4145,12 +4194,14 @@ MonoBehaviour:
     content: Add 1 Lamp when eaten
     animalsName: 7
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 4071bd351beb1834daa6e629ca4bb5ea, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 3
     coinPlus: 3
     prefabAnimals: {fileID: 7214779199474979420, guid: 7f6a3427ddfb0d04c884fae85a37c28d, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -4498,12 +4549,14 @@ MonoBehaviour:
     content: When there are 3 or more Carnivore on the field -2 , ortherwise +2
     animalsName: 31
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 4763a8316928e984693680b8e8d1edd1, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
     price: 1
     coinPlus: 1
     prefabAnimals: {fileID: 6554456267142829804, guid: 6da91711223e8a84aad6f5c1e455da79, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -4562,12 +4615,14 @@ MonoBehaviour:
       one square behind Carnivore, 50% Probability to eat and +20<sprite name="Coin">
     animalsName: 16
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 7bc0553fb2bed6045baa6460e9ac8a5f, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
     price: 3
     coinPlus: 2
     prefabAnimals: {fileID: 3885773974964815361, guid: 677a6a99583254743a796e0470736b53, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -4732,12 +4787,14 @@ MonoBehaviour:
       by 1 times
     animalsName: 9
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 4fb385af0097268479845148a295e943, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 3
     coinPlus: 2
     prefabAnimals: {fileID: 4615804035571882315, guid: 9f683f3a639932d458982de89350c84c, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -4870,12 +4927,14 @@ MonoBehaviour:
     content: 
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 0}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 7
     name: Goat Horn
     content: Lamp can only grow into Goat, and after Goat is removed +2<sprite name="Coin">
@@ -4933,12 +4992,14 @@ MonoBehaviour:
     content: 
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 0}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 3
     name: Grass
     content: Animals on this Plot will not be eaten, +1<sprite name="Coin">
@@ -5027,12 +5088,14 @@ MonoBehaviour:
     content: 
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 0}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 8
     name: Nutritional Supplement
     content: Carnivore hunt successfully +2<sprite name="Coin">
@@ -5177,7 +5240,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1436679133}
+  - {fileID: 1054461483}
   - {fileID: 2080647559}
   m_Father: {fileID: 1080185418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5287,12 +5350,14 @@ MonoBehaviour:
     content: Hunt all adjacent animals , Sugget +5<sprite name="Coin"> foreach
     animalsName: 18
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: dd407c55bbca9334e910bd632b31d3f8, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
     price: 5
     coinPlus: 3
     prefabAnimals: {fileID: 4619693253205957194, guid: 54c3086217738be40aca71f1864f76fc, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -5300,6 +5365,96 @@ MonoBehaviour:
     price: 0
     objCard: {fileID: 0}
   tutBase: {fileID: 2961276508591377651, guid: 92aba968ac8080c47ae763f041227058, type: 3}
+--- !u!1 &1054461482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1054461483}
+  - component: {fileID: 1054461486}
+  - component: {fileID: 1054461485}
+  - component: {fileID: 1054461484}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1054461483
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054461482}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1436679133}
+  m_Father: {fileID: 977971342}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.096357524, y: 0.5}
+  m_AnchorMax: {x: 0.5188601, y: 0.5}
+  m_AnchoredPosition: {x: 59.70587, y: 0.000022888184}
+  m_SizeDelta: {x: 179.21808, y: 67.67}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1054461484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054461482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
+--- !u!114 &1054461485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054461482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.7254902, g: 0.46274513, b: 0.21960786, a: 0.003921569}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1e7207d99b584714c8776594e5f0bd34, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 3.22
+--- !u!222 &1054461486
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054461482}
+  m_CullTransparentMesh: 1
 --- !u!1 &1079808412
 GameObject:
   m_ObjectHideFlags: 0
@@ -5332,7 +5487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -24.97995, y: -260}
+  m_AnchoredPosition: {x: 0, y: -169}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1080185417
@@ -5373,13 +5528,12 @@ RectTransform:
   - {fileID: 291621851}
   - {fileID: 1419310092}
   - {fileID: 977971342}
-  - {fileID: 1691006439}
   m_Father: {fileID: 1307720846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.09637038, y: 0.47300002}
-  m_AnchorMax: {x: 0.8777408, y: 0.5}
-  m_AnchoredPosition: {x: -11, y: 1231}
-  m_SizeDelta: {x: 4.51001, y: 273.79004}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 204}
+  m_SizeDelta: {x: 753.505, y: 325.79004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1080185419
 MonoBehaviour:
@@ -5402,7 +5556,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: f1a422fe5f2a0a44db31023aed224176, type: 3}
-  m_Type: 1
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5470,12 +5624,14 @@ MonoBehaviour:
       +2<sprite name="Coin"> when adjacent to Puddle
     animalsName: 3
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: c13f569dba3c0634687b90c4b0ea4129, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
     price: 2
     coinPlus: 2
     prefabAnimals: {fileID: 99400945898884003, guid: cd6ca47843fed1f4392d0dd96b9ce2d9, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -5533,12 +5689,14 @@ MonoBehaviour:
     content: Hunt 1 adjacent  animals, Succes +5 Daily Coin
     animalsName: 37
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 825c7c3958a88234cb8623a3697a9179, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
     price: 1
     coinPlus: 0
     prefabAnimals: {fileID: 119012246445378915, guid: 4b573dfc6c6426a4199e04c15da5ffda, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -5701,7 +5859,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 15
+  m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!224 &1137774576
 RectTransform:
@@ -5774,12 +5932,14 @@ MonoBehaviour:
     content: +5<sprite name="Coin"> when eaten
     animalsName: 2
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 9abbd83548c89104988083ea6fd9619e, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
     price: 2
     coinPlus: 2
     prefabAnimals: {fileID: 6670804836121204970, guid: 86f344cdb6309a5409bd093b8b2a432b, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -5838,12 +5998,14 @@ MonoBehaviour:
       their Daily coin '
     animalsName: 28
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: b54a062edd9b73d43a0c80ce93eb2e6d, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 1
     coinPlus: 3
     prefabAnimals: {fileID: 6495256812154342828, guid: 16055289d1614a6498e53a40f1bd3bc3, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -5901,12 +6063,14 @@ MonoBehaviour:
     content: After 3 day, grow into Sheep, Goat, or Acapela
     animalsName: 6
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 7faeca919f1749d4ab1a9ffc26ad9efd, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 1
     coinPlus: -1
     prefabAnimals: {fileID: 9060786830282739334, guid: 2086c974385bd9a44a29305e273bd65f, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -5931,7 +6095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1185965420
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6094,12 +6258,14 @@ MonoBehaviour:
       name="Coin">
     animalsName: 15
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 7d492ba4e9fdc874e8a1730ab5f0bc26, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
     price: 1
     coinPlus: 1
     prefabAnimals: {fileID: 7129943512840412722, guid: fb7feb6defaf2a948b7b5ddc78dfdd63, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -6211,12 +6377,14 @@ MonoBehaviour:
     content: Automatically sold after 4 day, +12<sprite name="Coin">
     animalsName: 13
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 8a4fef9265d2f6445ae4f46be84e4d7d, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 3
     coinPlus: -1
     prefabAnimals: {fileID: 6597746934910106839, guid: 7935d78bf27405341b8e56d4628fc11f, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -6305,6 +6473,7 @@ RectTransform:
   - {fileID: 1629782080}
   - {fileID: 1818723980}
   - {fileID: 590277945}
+  - {fileID: 1691006439}
   - {fileID: 1080185418}
   - {fileID: 1079808413}
   m_Father: {fileID: 1374725408}
@@ -6364,12 +6533,14 @@ MonoBehaviour:
     content: 
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 0}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 13
     name: Sheep Pen
     content: Add 1 Lamp on empty plots every 3 days
@@ -6606,6 +6777,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336589355}
   m_CullTransparentMesh: 1
+--- !u!1 &1355745184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1355745185}
+  m_Layer: 0
+  m_Name: Post_Scale_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1355745185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355745184}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.34, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 101463743}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1357938296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1357938297}
+  m_Layer: 0
+  m_Name: Post_Scale_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1357938297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357938296}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.96, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 101463743}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1374725407
 GameObject:
   m_ObjectHideFlags: 0
@@ -6767,7 +7000,7 @@ MonoBehaviour:
   tvLevel: {fileID: 291621853}
   settinBtn: {fileID: 5347812616287485650}
   canvas: {fileID: 1137774576}
-  resetBtn: {fileID: 1398444223}
+  houseBtn: {fileID: 1398444223}
   seeThrowBtn: {fileID: 6148474281636819585}
   topParent: {fileID: 1080185417}
   postTop: {fileID: 1079808413}
@@ -6775,7 +7008,9 @@ MonoBehaviour:
   lsbutton:
   - {fileID: 1398444221}
   - {fileID: 5041856730837325724}
-  - {fileID: 1629782079}
+  cameraScale: {fileID: 1886524496}
+  post_1: {fileID: 1355745185}
+  post_2: {fileID: 1357938297}
 --- !u!4 &1395710099
 Transform:
   m_ObjectHideFlags: 0
@@ -6788,7 +7023,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1886524495}
   m_Father: {fileID: 274261229}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1398444221
@@ -6804,7 +7040,7 @@ GameObject:
   - component: {fileID: 1398444224}
   - component: {fileID: 1398444223}
   m_Layer: 5
-  m_Name: ResetBtn
+  m_Name: HouseBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6827,8 +7063,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 116, y: -269}
-  m_SizeDelta: {x: 106.49, y: 107.160034}
+  m_AnchoredPosition: {x: 167, y: -563}
+  m_SizeDelta: {x: 300, y: 107.160034}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1398444223
 MonoBehaviour:
@@ -7116,12 +7352,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 977971342}
+  m_Father: {fileID: 1054461483}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.3825}
-  m_SizeDelta: {x: 0.070007324, y: 64.9}
+  m_AnchoredPosition: {x: 6.5899963, y: -1.08}
+  m_SizeDelta: {x: 17.46, y: 73.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1436679134
 MonoBehaviour:
@@ -7211,12 +7447,14 @@ MonoBehaviour:
     content: 
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 0}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 12
     name: Monney Bag
     content: '1<sprite name="Coin"> for each empty plot '
@@ -7322,12 +7560,14 @@ MonoBehaviour:
     content: Hunt 1 adjacent Normal Bird succes +5<sprite name="Coin">
     animalsName: 20
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: edf291292f1d05745af2d7780e622f04, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
     price: 2
     coinPlus: 2
     prefabAnimals: {fileID: 679782707442496976, guid: 3b304571f3d18ad43bf45bc3271fb37d, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -7429,12 +7669,14 @@ MonoBehaviour:
     content: Swap places with the animal above, +2<sprite name="Coin">
     animalsName: 26
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 5025c37e246ce5a4a85722d7e09330cb, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 1
     coinPlus: 1
     prefabAnimals: {fileID: 5976686612647600688, guid: 2f2b0f5872243cf47a3632e4bd2a7f6c, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -7675,12 +7917,14 @@ MonoBehaviour:
       to leave an Egg
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 3d31e6b04109fab4a8222a423950f12f, type: 3}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: Nest
     content: Animals on the plot +2<sprite name="Coin">, Bird Family Has a 20% probability
@@ -7775,12 +8019,14 @@ MonoBehaviour:
     content: 
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 0}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 11
     name: Carnivore Talent
     content: When a Carnivore eats 1 animals, Daily Coin +6
@@ -7838,12 +8084,14 @@ MonoBehaviour:
     content: 
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 0}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 2
     name: Sand
     content: Animals on this plot have <sprite name="Time"> -1
@@ -8005,8 +8253,8 @@ Transform:
   m_GameObject: {fileID: 1572035754}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00605, y: 0.26, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0021308262, y: 0.10514747, z: 0}
+  m_LocalScale: {x: 0.35220265, y: 0.40441334, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256801167}
@@ -8113,12 +8361,14 @@ MonoBehaviour:
     content: Adjacent Bird cannot  be eaten
     animalsName: 4
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 0a75113d0ac342745a1d3ae9944aa1be, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
     price: 3
     coinPlus: 2
     prefabAnimals: {fileID: 7045278162958220252, guid: 2703e57d57b5b0b44a86f09d21216f7e, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -8176,12 +8426,14 @@ MonoBehaviour:
     content: 'Hunt 1 adjacent Chicken, Duck, Turkey or Pigeon. Succes +5<sprite name="Coin"> '
     animalsName: 17
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: d32417742eb4d6c418e464c8c95ba161, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
     price: 2
     coinPlus: 1
     prefabAnimals: {fileID: 4321285287068053325, guid: 03db14b2f76fd3f439098fea848fdca0, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -8207,7 +8459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1629782080
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8361,12 +8613,14 @@ MonoBehaviour:
       -2<sprite name="Coin">
     animalsName: 33
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 3e2dd01a3dbd19f47bc9e357486347fb, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 62721dcc83cf33a4aa372432379411b1, type: 3}
     price: 1
     coinPlus: 0
     prefabAnimals: {fileID: 1036420179037201004, guid: c582164f728603e4ebcd8b5c0a494aa6, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -8424,12 +8678,14 @@ MonoBehaviour:
     content: Automatically sold after 3 day, +7<sprite name="Coin">
     animalsName: 8
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: a83c320a890ebad4ea15da9a98f00f69, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 3
     coinPlus: -1
     prefabAnimals: {fileID: 1722297517708054, guid: c056a8822fff77046a90d15f453ab4c4, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -8463,19 +8719,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691006438}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 335374135}
   - {fileID: 93096813}
-  m_Father: {fileID: 1080185418}
+  m_Father: {fileID: 1307720846}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000011921, y: -249.2}
-  m_SizeDelta: {x: 848.51, y: 173.6}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 541.8}
+  m_SizeDelta: {x: -231.48999, y: 173.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1691006440
 MonoBehaviour:
@@ -8710,12 +8966,14 @@ MonoBehaviour:
     content: Orther Hoofed in the same row +1 DailyCoin
     animalsName: 29
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: a0ef15d1bb68ba845883d515d5c6ae49, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 1
     coinPlus: 2
     prefabAnimals: {fileID: 858197211547564017, guid: c205cf960f365ac44b3572dd63731112, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -9117,12 +9375,14 @@ MonoBehaviour:
     content: 
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 0}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 6
     name: Grow Express
     content: 2<sprite name="Coin"> for animals growing up from Calf or Lamb
@@ -9255,12 +9515,14 @@ MonoBehaviour:
     content: When adjacent Water Buffalo or Cow are eaten, add 1 Calf
     animalsName: 12
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 49752250c256c8340bb4696e8f18c9a5, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 3
     coinPlus: 3
     prefabAnimals: {fileID: 4887382305412472880, guid: db0efdd1c73ec5e48a7a48eff25ad8ec, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -9381,7 +9643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1818723980
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9414,7 +9676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.4117647}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9489,12 +9751,14 @@ MonoBehaviour:
     content: 
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 0}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 4
     name: Livestock license
     content: 2<sprite name="Coin">  for each added animal
@@ -9636,6 +9900,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882573791}
   m_CullTransparentMesh: 1
+--- !u!1 &1886524494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1886524495}
+  - component: {fileID: 1886524496}
+  m_Layer: 0
+  m_Name: CameraScale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1886524495
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886524494}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1395710099}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1886524496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886524494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ff9e4316e370948bf8fbb7ae0de6fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 0.2
 --- !u!1 &1909996555
 GameObject:
   m_ObjectHideFlags: 0
@@ -9772,12 +10081,14 @@ MonoBehaviour:
     content: After 3 day, hatch into Chicken, Duck, Turkey or Pigeon
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 7854eb25481d9e34db0bee78cd6d9011, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
     price: 1
     coinPlus: 0
     prefabAnimals: {fileID: 9187771814284334767, guid: 432b491ce6ef8bc43b5b8004259c5d54, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -9836,12 +10147,14 @@ MonoBehaviour:
       +1 Daily Coin
     animalsName: 23
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 085cb53170515844a8271dc2b5297c0f, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 8e8e2d8741955754f9b8c5403aad777c, type: 3}
     price: 3
     coinPlus: 3
     prefabAnimals: {fileID: 989230447703452566, guid: 8cd96d6c60f2d464cb2030b27b841f78, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -9899,12 +10212,14 @@ MonoBehaviour:
     content: After 4 day, grow into Cow or WaterBuffalo
     animalsName: 10
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 7886d7660fda5a8438dc1a0c0cf0ac60, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 1
     coinPlus: -1
     prefabAnimals: {fileID: 377433775854885734, guid: 5db92bea3ccd3ce4ba1f69a88df710d9, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -9962,12 +10277,14 @@ MonoBehaviour:
     content: 
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 0}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 10
     name: Tribal talent
     content: Birds Family standing next to each other get +1<sprite name="Coin">
@@ -10489,12 +10806,14 @@ MonoBehaviour:
     content: 
     animalsName: 0
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 0}
     spriteAnimalsType: {fileID: 0}
     price: 0
     coinPlus: 0
     prefabAnimals: {fileID: 0}
   itemDataProperty:
+    cardRank: 0
     itemName: 5
     name: Dog Tranning Leash
     content: Dog can protect all  Lamp, Sheep, Goat, and Acapela on the field when
@@ -11519,7 +11838,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 16
+  m_SortingOrder: 22
   m_TargetDisplay: 0
 --- !u!224 &2094173341
 RectTransform:
@@ -11681,12 +12000,14 @@ MonoBehaviour:
     content: When an animal on the field  moving, +2<sprite name="Coin">
     animalsName: 27
     cardRank: 0
+    animalsType: 0
     spriteAvatar: {fileID: 21300000, guid: 33c16b10d6a25ef48953e140a373ce3e, type: 3}
     spriteAnimalsType: {fileID: 21300000, guid: 13745e9a31af72e46b476646a7f018b3, type: 3}
     price: 3
     coinPlus: 3
     prefabAnimals: {fileID: 2299654318339862238, guid: cf6bcbe054aae7b4cad6e35a37857f6f, type: 3}
   itemDataProperty:
+    cardRank: 0
     itemName: 0
     name: 
     content: 
@@ -12064,8 +12385,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 116, y: -129}
-  m_SizeDelta: {x: 106.49, y: 107.160034}
+  m_AnchoredPosition: {x: 167.31, y: -425}
+  m_SizeDelta: {x: 300, y: 107.16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &696497793883325376
 MonoBehaviour:
@@ -13189,7 +13510,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.25, y: 7}
+  m_AnchoredPosition: {x: -100.8, y: 2.7}
   m_SizeDelta: {x: 80.89, y: 77.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2894653686993575460

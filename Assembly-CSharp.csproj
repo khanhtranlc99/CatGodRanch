@@ -63,6 +63,7 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\Scroller\MovementDirection.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsCipher.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Utility\MzU.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\UI\PremiumPackBox.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\Floor.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\JSON\JSON.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\IBasicAgreement.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Utilities\UILineConnector.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\ICertificateVerifyer.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\IapController\ShopBox\IAPItem.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\UI\StorehouseBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\pkcs\RSASSAPSSparams.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\BuildPostProcessorInfo.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\encodings\Pkcs1Encoding.cs" />
@@ -390,6 +392,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\AsymmetricCipherKeyPair.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\HSVUtil.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\ItemCard\LivestockLicenseCard.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\UI\DictionaryBox.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\AnimalsCard\SikaDeerCard.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\signers\PssSigner.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\ItemCard\CarnivoreTalentCard.cs" />
@@ -1138,6 +1141,7 @@
     <Compile Include="Assets\CatGodRanch\Script\TutGameplay\TutGamePlay_Step_3.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\RSAPublicKeyStructure.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Datas\GiftDatabase.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\UI\LaybaleDic.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\Animals\Acapela.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Layout\FancyScrollView\Scroller\EasingCore.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\HomeController\ShopSceneController.cs" />
@@ -1166,7 +1170,6 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\Extensions\Extensions.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\RandomCardBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x509\AlgorithmIdentifier.cs" />
-    <Compile Include="Assets\PremiumPackBox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\IAsn1ApplicationSpecificParser.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsCipherFactory.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\AbstractTlsSigner.cs" />
@@ -1184,6 +1187,7 @@
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Datas\StarChestData.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\DerTaggedObject.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\multiplier\WNafUtilities.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\UI\BtnCardInGame.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R1Point.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\UI\Loading\Winbox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\multiplier\AbstractECMultiplier.cs" />

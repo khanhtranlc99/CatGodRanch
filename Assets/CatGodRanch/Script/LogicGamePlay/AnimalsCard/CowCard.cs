@@ -6,7 +6,7 @@ public class CowCard : CardBase
 {
     public override bool CanShow()
     {
-        return false;
+        return true;
     }
     public override void Init()
     {

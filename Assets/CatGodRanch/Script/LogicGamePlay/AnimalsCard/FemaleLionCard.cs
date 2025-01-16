@@ -24,13 +24,7 @@ public class FemaleLionCard : CardBase
     {
         get
         {
-            if (GamePlayController.Instance.playerContain.itemController.lsCurrentItem.Count >= 1)
-            {
-
-                return true;
-
-            }
-            return false;
+            return true;
         }
     }
     private bool Condition

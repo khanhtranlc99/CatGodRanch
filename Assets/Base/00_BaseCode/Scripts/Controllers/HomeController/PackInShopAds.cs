@@ -37,22 +37,22 @@ public class PackInShopAds : PackInShop
             case GiftType.TNT_Booster:
 
                 tvBuy.text = UseProfile.NumbWatchAdsTNT.ToString() + "/3";
-                tvBuy_2.text = UseProfile.NumbWatchAdsTNT.ToString() + "/3";
+          
                 break;
             case GiftType.Rocket_Booster:
                 tvBuy.text = UseProfile.NumbWatchAdsRocket.ToString() + "/3";
-                tvBuy_2.text = UseProfile.NumbWatchAdsRocket.ToString() + "/3";
+                
 
                 break;
             case GiftType.Heart:
                 tvBuy.text = UseProfile.NumbWatchAdsHeart.ToString() + "/3";
-                tvBuy_2.text = UseProfile.NumbWatchAdsHeart.ToString() + "/3";
+             
 
                 break;
             case GiftType.Coin:
 
                 tvBuy.text = UseProfile.NumbWatchAdsCoin.ToString() + "/3";
-                tvBuy_2.text = UseProfile.NumbWatchAdsCoin.ToString() + "/3";
+           
                 break;
         }
     }    

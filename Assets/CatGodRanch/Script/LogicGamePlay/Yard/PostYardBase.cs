@@ -66,4 +66,13 @@ public abstract class PostYardBase : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().color = Color.white;
 
     }
+    public int GetOrderInLayer
+    {
+        get
+        {
+            return gameObject.GetComponent<SpriteRenderer>().sortingOrder;
+
+        }
+     
+    }
 }

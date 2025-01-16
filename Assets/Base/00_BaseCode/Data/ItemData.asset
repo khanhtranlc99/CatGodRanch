@@ -19,3 +19,104 @@ MonoBehaviour:
     itemDataPropertySand: []
   - cardRank: 2
     itemDataPropertySand: []
+  lsItemProperties:
+  - cardRank: 0
+    itemName: 0
+    name: Nest
+    content: Animals on the plot +2<sprite name="Coin">, Bird Family Has a 20% probability
+      to leave an Egg
+    spriteAvatar: {fileID: 21300000, guid: 3d31e6b04109fab4a8222a423950f12f, type: 3}
+    price: 5
+    objCard: {fileID: 6104935749705598651, guid: 1267b68815cf57c42918433f007213a4, type: 3}
+  - cardRank: 0
+    itemName: 1
+    name: Puddle
+    content: Animals on the plot +2<sprite name="Coin"> when Hunting successfully
+    spriteAvatar: {fileID: 21300000, guid: d8ea5482b28fddf40b274f70f12fc6ee, type: 3}
+    price: 5
+    objCard: {fileID: 299457070835289469, guid: 2e2bf5d56ff2c334c8b64106caf73440, type: 3}
+  - cardRank: 0
+    itemName: 2
+    name: Sand
+    content: Animals on this plot have <sprite name="Time"> -1
+    spriteAvatar: {fileID: 21300000, guid: 9ed12604f6a4618479d28e8f9310522b, type: 3}
+    price: 5
+    objCard: {fileID: 1303855364980904961, guid: 9cd9e1d611726b24487ed5a71d07dbaf, type: 3}
+  - cardRank: 0
+    itemName: 3
+    name: Grass
+    content: Animals on this Plot will not be eaten, +1<sprite name="Coin">
+    spriteAvatar: {fileID: 21300000, guid: c2892d9de5d7bd34ea1db6bba5a477cd, type: 3}
+    price: 5
+    objCard: {fileID: 6245197404863927180, guid: 5bbeb8b371afd254c99c672e3c0ee593, type: 3}
+  - cardRank: 1
+    itemName: 4
+    name: Livestock license
+    content: 2<sprite name="Coin">  for each added animal
+    spriteAvatar: {fileID: 21300000, guid: 5cdd4f0452facdf4b9a27d0e44616d0b, type: 3}
+    price: 10
+    objCard: {fileID: 2309824496019744471, guid: 8e2431c6b8e37a04e9cb2a24ec6f1aaa, type: 3}
+  - cardRank: 1
+    itemName: 5
+    name: Dog Tranning Leash
+    content: Dog can protect all  Lamp, Sheep, Goat, and Acapela on the field when
+      present
+    spriteAvatar: {fileID: 21300000, guid: 7f2921e55cb8afc4599c859fb8b3d2b5, type: 3}
+    price: 10
+    objCard: {fileID: 433727013914475786, guid: 93c3497e3e2e4874fb344d0cf53f577d, type: 3}
+  - cardRank: 1
+    itemName: 6
+    name: Grow Express
+    content: 2<sprite name="Coin"> for animals growing up from Calf or Lamb
+    spriteAvatar: {fileID: 21300000, guid: c7aff676d08b23047b1bee738047bda1, type: 3}
+    price: 10
+    objCard: {fileID: 3904271527521036270, guid: 927cc5f8d307a404083520e6b7081bf3, type: 3}
+  - cardRank: 1
+    itemName: 7
+    name: Goat Horn
+    content: Lamp can only grow into Goat, and after Goat is removed +2<sprite name="Coin">
+    spriteAvatar: {fileID: 21300000, guid: 57fd931f8b4626b4385268dde2932fa8, type: 3}
+    price: 10
+    objCard: {fileID: 6294436193077084, guid: 269304ffd6f976e40892bac0515828dc, type: 3}
+  - cardRank: 1
+    itemName: 8
+    name: Nutritional Supplement
+    content: Carnivore hunt successfully +2<sprite name="Coin">
+    spriteAvatar: {fileID: 21300000, guid: 98a59789466bf68429942bfcfc195a0c, type: 3}
+    price: 10
+    objCard: {fileID: 784553231198790439, guid: ba58ccd4eb8e5ba49a8d674994e9e794, type: 3}
+  - cardRank: 2
+    itemName: 9
+    name: Grow talent
+    content: Hoofed grows every 6 day, Daily Coin +1
+    spriteAvatar: {fileID: 21300000, guid: 5e094c2cb56cd0043a79608020e58346, type: 3}
+    price: 15
+    objCard: {fileID: 7308340019459638219, guid: 5a9005c4b7b367947bac55a7a760d508, type: 3}
+  - cardRank: 2
+    itemName: 10
+    name: Tribal talent
+    content: Birds Family standing next to each other get +1<sprite name="Coin">
+    spriteAvatar: {fileID: 21300000, guid: fccf555442da0c247a290c7f3124e2a5, type: 3}
+    price: 15
+    objCard: {fileID: 4084414847560268034, guid: 0fd0d1bf994ae6d49bab3b3dfd3a58e9, type: 3}
+  - cardRank: 2
+    itemName: 11
+    name: Carnivore Talent
+    content: When a Carnivore eats 1 animals, Daily Coin +6
+    spriteAvatar: {fileID: 21300000, guid: c4644fa215bdd3c47b2076cd87602aa8, type: 3}
+    price: 15
+    objCard: {fileID: 1324692633126160202, guid: e0bcbfaf2c8c10d488f3b06c98b2e8e0, type: 3}
+  - cardRank: 2
+    itemName: 12
+    name: Monney Bag
+    content: '1<sprite name="Coin"> for each empty plot '
+    spriteAvatar: {fileID: 21300000, guid: 62b381f534e741f4bb2f86fb00236b92, type: 3}
+    price: 15
+    objCard: {fileID: 5914667929641030008, guid: d4b8a2596390a7d4f8fd84e07e6a7e66, type: 3}
+  - cardRank: 2
+    itemName: 13
+    name: Sheep Pen
+    content: Add 1 Lamp on empty plots every 3 days
+    spriteAvatar: {fileID: 21300000, guid: c03a634705e92294b87c16918f984ccd, type: 3}
+    price: 15
+    objCard: {fileID: 6638466171806534472, guid: 079709c47632e5a42876f150fce23899, type: 3}

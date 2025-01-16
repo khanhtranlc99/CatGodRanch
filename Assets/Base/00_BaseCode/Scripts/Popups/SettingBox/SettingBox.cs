@@ -6,6 +6,8 @@ using System;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using Sirenix.OdinInspector;
+using UniRx;
+using UnityEngine.U2D;
 public class SettingBox : BaseBox
 {
     #region instance
@@ -31,17 +33,27 @@ public class SettingBox : BaseBox
     [SerializeField] private Button btnMusic;
     [SerializeField] private Button btnSound;
 
-    public RectTransform objMusic;
-    public RectTransform objVibra;
-    public RectTransform objSound;
+  
     public Image imgMusic;
     public Image imgVibration;
     public Image imgSound;
 
-    public Sprite spriteOn;
-    public Sprite spriteOff;
+    public Sprite musicOn;
+    public Sprite musicOff;
+    public Sprite soundOn;
+    public Sprite soundOff;
+    public Sprite vibraOn;
+    public Sprite vibraOff;
 
- 
+    public GameObject musicOnObj;
+    public GameObject musicOffObj;
+    public GameObject soundOnObj;
+    public GameObject soundOffObj;
+    public GameObject vibraOnObj;
+    public GameObject vibraOffObj;
+
+
+
     public Button btnHome;
     public Button btnRestart;
 
@@ -95,35 +107,41 @@ public class SettingBox : BaseBox
     {
         if (GameController.Instance.useProfile.OnVibration)
         {
-            imgVibration.sprite = spriteOn;
-            objVibra.anchoredPosition = postOn;
+            imgVibration.sprite = vibraOn;
+            vibraOnObj.SetActive(true);
+            vibraOffObj.SetActive(false);
         }
         else
         {
-            imgVibration.sprite = spriteOff;
-            objVibra.anchoredPosition = postOff;
+            imgVibration.sprite = vibraOff;
+            vibraOnObj.SetActive(false);
+            vibraOffObj.SetActive(true);
         }
 
         if (GameController.Instance.useProfile.OnMusic)
         {
-            imgMusic.sprite = spriteOn;
-            objMusic.anchoredPosition = postOn;
+            imgMusic.sprite = musicOn;
+            musicOnObj.SetActive(true);
+            musicOffObj.SetActive(false);
         }
         else
         {
-            imgMusic.sprite = spriteOff;
-            objMusic.anchoredPosition = postOff;
+            imgMusic.sprite = musicOff;
+            musicOnObj.SetActive(false);
+            musicOffObj.SetActive(true);
         }
 
         if (GameController.Instance.useProfile.OnSound)
         {
-            objSound.anchoredPosition = postOn;
-            imgSound.sprite = spriteOn;
+            imgSound.sprite = soundOn;
+            soundOnObj.SetActive(true);
+            soundOffObj.SetActive(false);
         }
         else
         {
-            objSound.anchoredPosition = postOff;
-            imgSound.sprite = spriteOff;
+            imgSound.sprite = soundOff;
+            soundOnObj.SetActive(false);
+            soundOffObj.SetActive(true);
         }
       
     }
@@ -194,32 +212,33 @@ public class SettingBox : BaseBox
     public void HandleBtnHome()
     {
 
-        //GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () => { Next(); }, actionWatchLog: "BtnBackHomeSettingBox");
+        GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () => { Next(); }, actionWatchLog: "BtnBackHomeSettingBox");
 
-        //void Next()
-        //{
+        void Next()
+        {
 
-        //    Close();
-        //    Initiate.Fade("HomeScene", Color.black, 1.5f);
+            Close();
+            Initiate.Fade("HomeScene", Color.black, 1.5f);
 
-        //}
+        }
         GameController.Instance.musicManager.PlayClickSound();
-        BackHomeBox.Setup(TypeBackHOme.BackHome).Show();
+        //BackHomeBox.Setup(TypeBackHOme.BackHome).Show();
 
 
 
     }
     public void HandleBtnRestart()
     {
-        //GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () => { Next(); }, actionWatchLog: "Restart");
-        //void Next()
-        //{
-        //    Close();
-        //    Initiate.Fade("GamePlay", Color.black, 1.5f);
-        //}
-        //Close();
         GameController.Instance.musicManager.PlayClickSound();
-        BackHomeBox.Setup(TypeBackHOme.ResetLevel).Show();
+        GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () => { Next(); }, actionWatchLog: "Restart");
+        void Next()
+        {
+            Close();
+            Initiate.Fade("GamePlay", Color.black, 1.5f);
+        }
+        //Close();
+        //GameController.Instance.musicManager.PlayClickSound();
+        //BackHomeBox.Setup(TypeBackHOme.ResetLevel).Show();
 
 
     }

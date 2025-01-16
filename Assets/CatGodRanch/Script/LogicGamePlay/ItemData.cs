@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemData : ScriptableObject
 {
     public List<ItemProperty> lsItemDatas;
+    public List<ItemDataProperty> lsItemProperties;
 }
 [System.Serializable] 
 public class ItemProperty
@@ -17,6 +18,7 @@ public class ItemProperty
 [System.Serializable]
 public class ItemDataProperty
 {
+    public CardRank cardRank;
     public ItemName itemName;
     public string name;
     public string content;

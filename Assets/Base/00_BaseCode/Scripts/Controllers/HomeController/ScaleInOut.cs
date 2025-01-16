@@ -7,8 +7,23 @@ public class ScaleInOut : MonoBehaviour
     public Vector3 scaleIn;
     public Vector3 scaleOut;
     public float speed;
+    public float delayStart;
+  
     void OnEnable()
     {
+        if(delayStart != 0)
+        {
+            StartCoroutine(enumerator());
+        }
+        else
+        {
+            HandleScaleInOut();
+        }
+        
+    }
+    IEnumerator enumerator ()
+    {
+        yield return new WaitForSeconds(delayStart);
         HandleScaleInOut();
     }
     private void HandleScaleInOut()

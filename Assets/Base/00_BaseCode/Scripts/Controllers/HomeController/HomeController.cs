@@ -14,7 +14,7 @@ public class HomeController : Singleton<HomeController>
         animalsHomeController.Init();
         if( UseProfile.CurrentLevel == 2 )
         {
-            if (UseProfile.CurrentLevel >= 0)
+            if (UseProfile.Coin > 0)
             {
                 tutHome.SetActive(true);
             }
@@ -22,7 +22,7 @@ public class HomeController : Singleton<HomeController>
         }
         if (UseProfile.CurrentLevel == 3)
         {
-            if(UseProfile.CurrentLevel >= 800)
+            if(UseProfile.Coin >= 800)
             {
                 tutHome.SetActive(true);
             }

@@ -12,6 +12,9 @@ public class ItemCardUI : MonoBehaviour
     public Text tvPrice;
     public Button btnCard;
     ItemDataProperty itemsData;
+    public Sprite normalBg;
+    public Sprite rageBg;
+    public Sprite superBg;
     public void Init(CardBase param)
     {
         itemsData = param.itemDataProperty;
@@ -25,15 +28,17 @@ public class ItemCardUI : MonoBehaviour
         switch (param.cardRank)
         {
             case CardRank.Normal:
-                bgCard.color = Color.gray;
+                bgCard.sprite = normalBg;
+          
                 break;
             case CardRank.Rare:
-                bgCard.color = Color.blue;
+                bgCard.sprite = rageBg;
+         
                 break;
             case CardRank.SuperRare:
-                bgCard.color = Color.yellow;
+                bgCard.sprite = superBg;
+                
                 break;
-
         }
 
     }

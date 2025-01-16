@@ -6,7 +6,7 @@ public class SikaDeerCard : CardBase
 {
     public override bool CanShow()
     {
-        if(CheckItem && Condition)
+        if(Condition)
         {
             return true;
         }    

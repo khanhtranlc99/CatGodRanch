@@ -146,6 +146,9 @@ public class PathPrefabs
     public const string CARD_ITEM_BOX = "UI/Popups/CardItemBox";
     public const string RANDOM_CARD_BOX = "UI/Popups/RandomCardBox";
     public const string OPEN_CARD_BOX = "UI/Popups/OpenCardBox"; 
+
+    public const string DICTIONARY_BOX = "UI/Popups/DictionaryBox";
+    public const string STORE_HOUSE_BOX = "UI/Popups/StorehouseBox";
 }
 
 public class SceneName

@@ -9,11 +9,11 @@ using Newtonsoft.Json;
 
 public enum TypePackIAP
 {
-    PremiumPacks,
-    FirePacks,
-    BoomPacks,
-    SupportPacks,
-    ImmortalPacks,
+    PopulationTeamPack,
+    GrowTeamPack,
+    DanceTeamPack,
+    CardPack,
+    RemoveAdsPack,
     CoinPacks_1,
     CoinPacks_2,
     CoinPacks_3
@@ -118,7 +118,7 @@ public class IAPPack
 
         int value = 0;
         GiftType typeItem = GiftType.Coin;
-        if (type == TypePackIAP.PremiumPacks || type == TypePackIAP.FirePacks  || type == TypePackIAP.BoomPacks)
+        if (type == TypePackIAP.PopulationTeamPack || type == TypePackIAP.GrowTeamPack  || type == TypePackIAP.DanceTeamPack)
         {
          
           

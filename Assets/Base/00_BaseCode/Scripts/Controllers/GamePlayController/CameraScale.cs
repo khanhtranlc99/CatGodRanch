@@ -14,7 +14,7 @@ public class CameraScale : MonoBehaviour
       
     }
 
-    public IEnumerator FixScreen(Vector3 left, Vector3 right)
+    public IEnumerator FixScreen(Vector3 left, Vector3 right, Action action)
     {
         float speed = Speed;
 
@@ -32,6 +32,8 @@ public class CameraScale : MonoBehaviour
             speed += 0.001f; // Điều chỉnh tăng tốc độ nếu cần thiết
             yield return null;
         }
+        action?.Invoke();
+
     }
 
     // Hàm kiểm tra xem một điểm có nằm trong khung nhìn hay không

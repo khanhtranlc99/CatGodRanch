@@ -6,8 +6,10 @@ using Sirenix.OdinInspector;
 public class AnimalsData : ScriptableObject
 {
     public List<AnimalsProperty> lsAnimalsData;
- 
-     
+    public List<AnimalsDataProperty> lsDataBird;
+    public List<AnimalsDataProperty> lsDataHoofed;
+    public List<AnimalsDataProperty> lsDataCarnivore;
+
     public AnimalsDataProperty GetRandomLsCardRank(CardRank param)
     {
         var lsRank = new List<AnimalsDataProperty>();
@@ -40,6 +42,36 @@ public class AnimalsData : ScriptableObject
         return null;
 
     }
+
+    [Button]
+    private void HandleFill()
+    {
+       var tempList = new List<AnimalsDataProperty>();
+        foreach(var item in lsAnimalsData)
+        {
+            foreach (var itemData in item.animalsDataProperty)
+            {
+                tempList.Add(itemData);
+            }
+        }
+        foreach (var item in tempList)
+        {
+            if(item.animalsType == AnimalsType.Carnivore)
+            {
+                lsDataCarnivore.Add(item);
+            }
+            if (item.animalsType == AnimalsType.Hoofed)
+            {
+                lsDataHoofed.Add(item);
+            }
+            if (item.animalsType == AnimalsType.Bird)
+            {
+                lsDataBird.Add(item);
+            }
+        }
+
+
+    }    
 
   
     
@@ -76,6 +108,7 @@ public class AnimalsDataProperty
     public string content;
     public AnimalsName animalsName;
     public CardRank cardRank;
+    public AnimalsType animalsType;
     public Sprite spriteAvatar;
     public Sprite spriteAnimalsType;
     public int price;

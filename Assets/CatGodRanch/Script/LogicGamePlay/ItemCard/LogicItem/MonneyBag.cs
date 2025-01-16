@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class MonneyBag : ItemBase
@@ -14,13 +15,14 @@ public class MonneyBag : ItemBase
     }
     public override IEnumerator HandleEffectItemIEnumrator()
     {
+        
         foreach(var item in GamePlayController.Instance.playerContain.postYardController.lsPostYardBases)
         {
             if(item.animalsBase == null)
             {
-                yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(count, item.transform.position));
+                 StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(count, item.transform.position));
             }    
         }
-        yield return null;
+        yield return new WaitForSeconds(0.7f);
     }
 }

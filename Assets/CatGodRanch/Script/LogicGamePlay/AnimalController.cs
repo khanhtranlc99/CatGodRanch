@@ -90,6 +90,7 @@ public class AnimalController : MonoBehaviour
     }
     public IEnumerator HandleMoveIn( )
     {
+        GamePlayController.Instance.gameScene.HandleOffOnclickButton();
         List<Coroutine> runningCoroutines = new List<Coroutine>();
         foreach (var item in lsAnimalsBases)
         {
@@ -100,6 +101,7 @@ public class AnimalController : MonoBehaviour
             item.postYardBase = null;
             item.huntAnimal = null;
             item.lsAnimalsProtect.Clear();
+            item.SetCurrentInLayer();
             runningCoroutines.Add(StartCoroutine(item.HandleActionMove(postHome.position)));
         }
         foreach(var item in playerContain.postYardController.lsPostYardBases)
@@ -135,6 +137,7 @@ public class AnimalController : MonoBehaviour
                 var randomPost = playerContain.postYardController.GetRandomEmptyPost;
                 randomPost.animalsBase = item.GetComponent<AnimalsBase>() ;
                 item.GetComponent<AnimalsBase>().postYardBase = randomPost;
+                item.GetComponent<AnimalsBase>().SetOrderInLayer(randomPost.id);
                 runningCoroutines.Add(StartCoroutine(item.HandleActionMove(randomPost.post.position)));
             }
         }
@@ -151,6 +154,7 @@ public class AnimalController : MonoBehaviour
                 var randomPost = playerContain.postYardController.GetRandomEmptyPost;
                 randomPost.animalsBase = item.GetComponent<AnimalsBase>() ;
                 item.GetComponent<AnimalsBase>().postYardBase = randomPost;
+                item.GetComponent<AnimalsBase>().SetOrderInLayer(randomPost.id);
                 runningCoroutines.Add(StartCoroutine(item.HandleActionMove(randomPost.post.position)));
             }
         }
@@ -216,8 +220,8 @@ public class AnimalController : MonoBehaviour
             }
         }
 
-       
-   
+        GamePlayController.Instance.gameScene.HandleOnOnclickButton();
+
     }
 
 

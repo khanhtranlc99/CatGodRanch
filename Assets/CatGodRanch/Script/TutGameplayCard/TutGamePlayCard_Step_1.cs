@@ -23,7 +23,7 @@ public class TutGamePlayCard_Step_1 : TutorialBase
     }
     public override void StartTut()
     {
-        Debug.LogError(gameObject.name);
+      
         controller.isStart = true;
     }
 

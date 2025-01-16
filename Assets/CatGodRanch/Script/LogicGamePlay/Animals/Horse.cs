@@ -60,7 +60,7 @@ public class Horse : AnimalsBase
         if (temp != null)
         {
           
-            yield return this.transform.DOMove(temp.transform.position, 0.5f).WaitForCompletion();
+            yield return this.transform.DOMove(temp.transform.position, 0.3f).WaitForCompletion();
             yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
             postYardBase.animalsBase = null;
             postYardBase = null;

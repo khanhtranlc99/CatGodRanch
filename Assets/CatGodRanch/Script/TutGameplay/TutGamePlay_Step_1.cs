@@ -16,12 +16,17 @@ public class TutGamePlay_Step_1 : TutorialBase
      
       if(UseProfile.CurrentLevel == 1)
         {
-            var temp = Instantiate(handTut);
-            temp.transform.SetParent(postCanvas, false);
-            temp.GetComponent<NoticeController>().Init();
-            GamePlayController.Instance.gameScene.HandleOffButton();
+            StartCoroutine(HandleTut());
         }
     }
+    private IEnumerator HandleTut()
+    {
+        yield return new WaitForEndOfFrame();
+        var temp = Instantiate(handTut);
+        temp.transform.SetParent(postCanvas, false);
+        temp.GetComponent<NoticeController>().Init();
+        GamePlayController.Instance.gameScene.HandleOffButton();
+    }    
 
     protected override void SetNameTut()
     {

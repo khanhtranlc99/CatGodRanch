@@ -60,7 +60,7 @@ public class Gazelle : AnimalsBase
                     if (CheckCanSwitch(item.animalsBase))
                     {
                         postSwitch = item;
-                       
+                        break;
 
                     }
                 }
@@ -69,15 +69,25 @@ public class Gazelle : AnimalsBase
             {
                 tempPostSwitch = postYardBase;
                 tempAnimals = postYardBase.animalsBase;
-                yield return this.transform.DOMove(postSwitch.transform.position, 0.35f).WaitForCompletion();
-                yield return postSwitch.animalsBase.transform.DOMove(postYardBase.transform.position, 0.35f).WaitForCompletion();
+
+                Sequence sequence = DOTween.Sequence();
+                sequence.Append(this.transform.DOMove(postSwitch.transform.position, 0.35f));
+                sequence.Append(postSwitch.animalsBase.transform.DOMove(postYardBase.transform.position, 0.35f));
+                yield return sequence.WaitForCompletion();
+            
 
                 postYardBase.animalsBase = postSwitch.animalsBase;
                 postYardBase.animalsBase.postYardBase = postSwitch;
+                postYardBase.animalsBase.SetCurrentInLayer();
+                postYardBase.animalsBase.SetOrderInLayer(postYardBase.id);
+
 
                 postSwitch.animalsBase = tempAnimals;
                 postSwitch.animalsBase.postYardBase = tempPostSwitch;
-            
+                postSwitch.animalsBase.SetCurrentInLayer();
+                postSwitch.animalsBase.SetOrderInLayer(postSwitch.id);
+
+                yield return new WaitForSeconds(0.5f);
             }
          
        

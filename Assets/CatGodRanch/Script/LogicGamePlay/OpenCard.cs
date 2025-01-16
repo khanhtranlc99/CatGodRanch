@@ -12,7 +12,10 @@ public class OpenCard : MonoBehaviour
     public Text tvName;
     public GameObject decor;
     public Transform postMid;
-    
+
+    public Sprite normalCard;
+    public Sprite rareCard;
+    public Sprite superCard;
 
 
     public void InitState(CardRank cardRank, AnimalsDataProperty animalsDataProperty, Action callBack)
@@ -24,13 +27,13 @@ public class OpenCard : MonoBehaviour
         switch (cardRank)
         {
             case CardRank.Normal:
-                bg.color = Color.gray;
+                bg.sprite = normalCard;
                 break;
             case CardRank.Rare:
-                bg.color = Color.blue;
+                bg.sprite = rareCard;
                 break;
             case CardRank.SuperRare:
-                bg.color = Color.yellow;
+                bg.sprite = superCard;
                 break;
         }
        

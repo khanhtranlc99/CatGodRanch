@@ -1,10 +1,8 @@
 using System.Collections;
- 
-using UnityEngine;
- 
-using UnityEngine.UI;
-using DG.Tweening;
 using System.Collections.Generic;
+using DG.Tweening;
+using UnityEngine;
+using UnityEngine.UI;
 
 
 public class GameScene : BaseScene
@@ -13,34 +11,45 @@ public class GameScene : BaseScene
     [SerializeField] private Text tvLevel;
     [SerializeField] private Button settinBtn;
     [SerializeField] private Transform canvas;
-    [SerializeField] private Button resetBtn;
+    [SerializeField] private Button houseBtn;
     public Button seeThrowBtn;
     public GameObject topParent;
     public Transform postTop;
     public Transform postRight;
     public List<GameObject> lsbutton;
+    public CameraScale cameraScale;
+    public Transform post_1;
+    public Transform post_2;
 
-    public void Init(PlayerContain playerContainParam )
+    public void Init(PlayerContain playerContainParam)
     {
         tvLevel.text = "Level " + UseProfile.CurrentLevel;
-        resetBtn.onClick.AddListener(HandleReset);
+        houseBtn.onClick.AddListener(HandleHouse);
         seeThrowBtn.onClick.AddListener(delegate { HandleSeeThrowBtn(); });
-        if(UseProfile.CurrentLevel != 1)
+        settinBtn.onClick.AddListener(delegate { SettingBox.Setup(true).Show(); });
+        cameraScale.Init();
+        StartCoroutine(cameraScale.FixScreen(post_1.position, post_2.position, delegate { HandleUI(); }));
+       
+        void HandleUI()
         {
-            StartCoroutine(HandleShowTop());
-            StartCoroutine(HandleRight());
+            if (UseProfile.CurrentLevel != 1)
+            {
+                StartCoroutine(HandleShowTop());
+                StartCoroutine(HandleRight());
+            }
         }
     }
-    private void HandleReset()
+    private void HandleHouse()
     {
 
+        StorehouseBox.Setup().Show();
 
-        Initiate.Fade("GamePlay", Color.black, 2f);
+
     }
 
     public IEnumerator HandleShowTop()
     {
-
+        yield return new WaitForEndOfFrame();
         yield return topParent.transform.DOMove(postTop.transform.position, 1).WaitForCompletion();
 
     }    
@@ -56,13 +65,24 @@ public class GameScene : BaseScene
 
     public void HandleOffButton()
     {
-        resetBtn.gameObject.SetActive(false);
+        houseBtn.gameObject.SetActive(false);
         settinBtn.gameObject.SetActive(false); 
     }
     public void HandleOnButton()
     {
-        resetBtn.gameObject.SetActive(true);
+        houseBtn.gameObject.SetActive(true);
         settinBtn.gameObject.SetActive(true);
+    }
+
+    public void HandleOnOnclickButton()
+    {
+        houseBtn.interactable = true;
+        settinBtn.interactable = true;
+    }
+    public void HandleOffOnclickButton()
+    {
+        houseBtn.interactable = false;
+        settinBtn.interactable = false;
     }
 
     public override void OnEscapeWhenStackBoxEmpty()

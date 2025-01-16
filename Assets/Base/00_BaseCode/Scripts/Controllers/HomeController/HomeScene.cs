@@ -13,6 +13,7 @@ public class HomeScene : BaseScene
     public Button btnSetting;
     public Button btnPlay;
     public Button btnCard;
+    public Button btnDic;
     public Text tvLevel;
     public CoinBar coinBar;
 
@@ -26,6 +27,7 @@ public class HomeScene : BaseScene
         btnPlay.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); HandlePlay(); });
         tvLevel.text = "LEVEL " + UseProfile.CurrentLevel.ToString();
         btnCard.onClick.AddListener(HandleShowCardBox);
+        btnDic.onClick.AddListener(delegate { DictionaryBox.Setup().Show(); });
         coinBar.Init();
     }
 

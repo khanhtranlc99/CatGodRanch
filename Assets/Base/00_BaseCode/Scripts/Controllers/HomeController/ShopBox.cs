@@ -51,7 +51,7 @@ public class ShopBox : BaseBox
         }
         
         coinHeartBar.Init();
-        btnClose.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); Close(); });
+        btnClose.onClick.AddListener(delegate { Debug.LogError("Close"); GameController.Instance.musicManager.PlayClickSound(); Close(); });
         
     }
     private void InitState()
@@ -82,42 +82,42 @@ public class ShopBox : BaseBox
 
     public void CheckOffPack()
     {
-        if(UseProfile.Boom_Start)
-        {
-            GetPackShop(TypePackIAP.BoomPacks).btnBuy.interactable = false;
+        //if(UseProfile.Boom_Start)
+        //{
+        //    GetPackShop(TypePackIAP.DanceTeamPack).btnBuy.interactable = false;
 
-        }
-        if (UseProfile.Fire_Start)
-        {
-            GetPackShop(TypePackIAP.FirePacks).btnBuy.interactable = false;
-        }
-        if (UseProfile.Fire_Start && UseProfile.Fire_Start)
-        {
-            GetPackShop(TypePackIAP.PremiumPacks).btnBuy.interactable = false;
-        }
-        if (UseProfile.WasBoughtUnlimitTime)
-        {
-            GetPackShop(TypePackIAP.ImmortalPacks).btnBuy.interactable = false;
-        }
+        //}
+        //if (UseProfile.Fire_Start)
+        //{
+        //    GetPackShop(TypePackIAP.GrowTeamPack).btnBuy.interactable = false;
+        //}
+        //if (UseProfile.Fire_Start && UseProfile.Fire_Start)
+        //{
+        //    GetPackShop(TypePackIAP.PopulationTeamPack).btnBuy.interactable = false;
+        //}
+        //if (UseProfile.WasBoughtUnlimitTime)
+        //{
+        //    GetPackShop(TypePackIAP.ImmortalPacks).btnBuy.interactable = false;
+        //}
     }
     public void CheckOffPack(object param)
     {
-        if (UseProfile.Boom_Start)
-        {
-            GetPackShop(TypePackIAP.BoomPacks).btnBuy.interactable = false;
-        }
-        if (UseProfile.Fire_Start)
-        {
-            GetPackShop(TypePackIAP.FirePacks).btnBuy.interactable = false;
-        }
-        if (UseProfile.Fire_Start && UseProfile.Fire_Start)
-        {
-            GetPackShop(TypePackIAP.PremiumPacks).btnBuy.interactable = false;
-        }
-        if (UseProfile.WasBoughtUnlimitTime)
-        {
-            GetPackShop(TypePackIAP.ImmortalPacks).btnBuy.interactable = false;
-        }    
+        //if (UseProfile.Boom_Start)
+        //{
+        //    GetPackShop(TypePackIAP.DanceTeamPack).btnBuy.interactable = false;
+        //}
+        //if (UseProfile.Fire_Start)
+        //{
+        //    GetPackShop(TypePackIAP.GrowTeamPack).btnBuy.interactable = false;
+        //}
+        //if (UseProfile.Fire_Start && UseProfile.Fire_Start)
+        //{
+        //    GetPackShop(TypePackIAP.PopulationTeamPack).btnBuy.interactable = false;
+        //}
+        //if (UseProfile.WasBoughtUnlimitTime)
+        //{
+        //    GetPackShop(TypePackIAP.ImmortalPacks).btnBuy.interactable = false;
+        //}    
     }
     private void OnDestroy()
     {

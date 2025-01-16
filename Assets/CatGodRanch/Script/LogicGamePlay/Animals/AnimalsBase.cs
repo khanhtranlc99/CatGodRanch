@@ -88,7 +88,7 @@ public abstract class AnimalsBase : MonoBehaviour
             });
         });
 
-    }    
+    }
 
     public void AnimRotateInMove()
     {
@@ -102,11 +102,11 @@ public abstract class AnimalsBase : MonoBehaviour
         });
     }
 
-      
+
     public abstract void Init();
     public abstract void InitState();
     public abstract IEnumerator HandleEffect();
-  
+
     public virtual void HandleActionDie()
     {
         GamePlayController.Instance.playerContain.cardController.HandleRemoveCurrentAnimals(animalsName);
@@ -118,59 +118,76 @@ public abstract class AnimalsBase : MonoBehaviour
         {
             postYardBase = null;
         }
-     
+
         huntAnimal = null;
         lsAnimalsProtect.Clear();
         //GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);
         SimplePool2.Despawn(this.gameObject);
         spriteRender.transform.DOKill();
-    }    
+    }
     public virtual IEnumerator HandleActionMove(Vector3 paramPost)
     {
+
         AnimRotateInMove();
         if (canvas != null)
         {
             canvas.SetActive(false);
-        }   
-       yield return transform.DOMove(paramPost, 1.25f).OnComplete(delegate {
+        }
+        yield return transform.DOMove(paramPost, 1).OnComplete(delegate {
 
-           if (canvas != null)
-           {
-               canvas.SetActive(true);
-           }
+            if (canvas != null)
+            {
+                canvas.SetActive(true);
+            }
 
-       }).WaitForCompletion();
+        }).WaitForCompletion();
     }
-    public virtual IEnumerator  HandleClaimCoin()
+    public virtual IEnumerator HandleClaimCoin()
     {
         spriteRender.transform.DOKill();
         Sequence sequence = DOTween.Sequence();
-        sequence.Append(spriteRender.transform.DOScale(new Vector3(1.4f, 1, 1), 0.15f));
-        sequence.Append(spriteRender.transform.DOScale(new Vector3(0.8f, 1, 1), 0.15f));
-        sequence.Append(spriteRender.transform.DOScale(new Vector3(1, 1, 1), 0.15f));
+        sequence.Append(spriteRender.transform.DOScale(new Vector3(1.4f, 1, 1), 0.1f));
+        sequence.Append(spriteRender.transform.DOScale(new Vector3(0.8f, 1, 1), 0.1f));
+        sequence.Append(spriteRender.transform.DOScale(new Vector3(1, 1, 1), 0.1f));
         yield return sequence.WaitForCompletion();
         AnimScale();
         yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(coinPlus, transform.position));
-    
+
     }
 
     public virtual IEnumerator HandleActionProtect()
-    {      
+    {
         yield return null;
     }
 
     public virtual void InitRange()
     {
-        if(lsPostRange.Count > 0)
+        if (lsPostRange.Count > 0)
         {
             lsPostRange.Clear();
         }
-        foreach(var item in postYardBase.lsNearYard)
+        foreach (var item in postYardBase.lsNearYard)
         {
             lsPostRange.Add(item);
         }
     }
 
+    public void SetOrderInLayer(int order)
+    {
+        spriteRender.sortingOrder += order;
+        if (canvas != null)
+        {
+            canvas.GetComponent<Canvas>().sortingOrder += order;
+        }      
+    }
+    public void SetCurrentInLayer()
+    {
+        spriteRender.sortingOrder = 1;
+        if (canvas != null)
+        {
+            canvas.GetComponent<Canvas>().sortingOrder = 2;
+        }
+    }
     public void OnDestroy()
     {
         spriteRender.transform.DOKill();
