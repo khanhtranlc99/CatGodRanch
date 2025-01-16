@@ -126,7 +126,7 @@ public class AnimalController : MonoBehaviour
     public IEnumerator HandleMoveOut()
     {
         GamePlayController.Instance.playerContain.inputController.lockInput = false;
-        lsAnimalsBases.Shuffle();
+        //lsAnimalsBases.Shuffle();
         lsTempAnimalsBases.Clear();
         duckController.InitState();
         List<Coroutine> runningCoroutines = new List<Coroutine>();

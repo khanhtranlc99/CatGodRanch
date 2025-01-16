@@ -31,13 +31,7 @@ public class Gazelle : AnimalsBase
     public override void InitRange()
     {
       base.InitRange();
-      for(int i = lsPostRange.Count - 1; i >= 0; i--)
-        {
-            if (lsPostRange[i].transform.position.y < postYardBase.transform.position.y)
-            {
-                lsPostRange.Remove(lsPostRange[i]);
-            }
-        }    
+    
     }
     public bool CheckCanSwitch (AnimalsBase animalsBase)
     {
@@ -51,11 +45,12 @@ public class Gazelle : AnimalsBase
     {
         if(CanHandleEffect)
         {
+           
             postSwitch = null;
             tempPostSwitch = null;
             foreach (var item in postYardBase.lsNearYard)
             {
-                if (item.animalsBase != null && item.id < postYardBase.id)
+                if (item.animalsBase != null  )
                 {
                     if (CheckCanSwitch(item.animalsBase))
                     {
@@ -74,26 +69,28 @@ public class Gazelle : AnimalsBase
                 sequence.Append(this.transform.DOMove(postSwitch.transform.position, 0.35f));
                 sequence.Append(postSwitch.animalsBase.transform.DOMove(postYardBase.transform.position, 0.35f));
                 yield return sequence.WaitForCompletion();
-            
 
+                postYardBase = postSwitch;
                 postYardBase.animalsBase = postSwitch.animalsBase;
-                postYardBase.animalsBase.postYardBase = postSwitch;
+                postYardBase.animalsBase.InitRange();
                 postYardBase.animalsBase.SetCurrentInLayer();
                 postYardBase.animalsBase.SetOrderInLayer(postYardBase.id);
 
-
-                postSwitch.animalsBase = tempAnimals;
+               
                 postSwitch.animalsBase.postYardBase = tempPostSwitch;
+                postSwitch.animalsBase = tempAnimals;
+                postSwitch.animalsBase.InitRange();
                 postSwitch.animalsBase.SetCurrentInLayer();
                 postSwitch.animalsBase.SetOrderInLayer(postSwitch.id);
 
-                yield return new WaitForSeconds(0.5f);
+
             }
          
        
 
 
-        }    
+        }
+        Debug.LogError(gameObject.name);
         yield return null;
     }
 }
