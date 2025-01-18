@@ -38,7 +38,10 @@ public class MaleLion : AnimalsBase
 
     private void HandleEffectMaleLion(object param)
     {
-
+        if (UseProfile.OnSound)
+        {
+            audioSource.PlayOneShot(sfx);
+        }
         StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
     }
     private void OnDestroy()

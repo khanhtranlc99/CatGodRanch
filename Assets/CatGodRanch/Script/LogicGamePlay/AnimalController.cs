@@ -14,12 +14,17 @@ public class AnimalController : MonoBehaviour
     public ReinDeerController reinDeerController;
     public Transform postHome;
     public Button btnNextDay;
-  
+    public AudioClip closeDoor;
+    public AudioClip openDoor;
+    public GameObject vfxSmoke;
+    public AudioClip owlSfx;
+    public AudioClip birdSfx;
+    public List<Door> lsDoor;
     public void Init(PlayerContain playerContainParam)
     {
         playerContain = playerContainParam;
         btnNextDay.onClick.AddListener(delegate {
-
+            GameController.Instance.musicManager.PlayClickSound();
             HandleActionPassDay();
             btnNextDay.gameObject.SetActive(false);
         });
@@ -39,7 +44,10 @@ public class AnimalController : MonoBehaviour
             temp.GetComponent<AnimalsBase>().postYardBase = tempPost;
             lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
             temp.GetComponent<AnimalsBase>().Init();
-          
+            temp.GetComponent<AnimalsBase>().SetOrderInLayer(tempPost.id);
+            var tempSmoke = SimplePool2.Spawn(vfxSmoke);
+            tempSmoke.transform.position = tempPost.transform.position;
+            tempSmoke.transform.Rotate(new Vector3(-35, 0, 0));
         }
         else
         {
@@ -47,6 +55,34 @@ public class AnimalController : MonoBehaviour
             temp.transform.position = postHome.position;
             lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
  
+        }
+        btnNextDay.gameObject.SetActive(true);
+        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.BUY_ANIMALS_SUCCEST);
+    }
+    public void SpwanAnimals(GameObject animalsBase, int sound)
+    {
+
+        var tempPost = playerContain.postYardController.GetRandomEmptyPost;
+        if (tempPost != null)
+        {
+            var temp = SimplePool2.Spawn(animalsBase);
+            temp.transform.position = tempPost.post.position;
+            tempPost.animalsBase = temp.GetComponent<AnimalsBase>();
+            temp.GetComponent<AnimalsBase>().postYardBase = tempPost;
+            lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
+            temp.GetComponent<AnimalsBase>().Init();
+            temp.GetComponent<AnimalsBase>().SetOrderInLayer(tempPost.id);
+            var tempSmoke = SimplePool2.Spawn(vfxSmoke);
+            tempSmoke.transform.position = tempPost.transform.position;
+            tempSmoke.transform.Rotate(new Vector3(-35, 0, 0));
+            temp.GetComponent<AnimalsBase>().HandleSound();
+        }
+        else
+        {
+            var temp = SimplePool2.Spawn(animalsBase);
+            temp.transform.position = postHome.position;
+            lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
+
         }
         btnNextDay.gameObject.SetActive(true);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.BUY_ANIMALS_SUCCEST);
@@ -63,7 +99,9 @@ public class AnimalController : MonoBehaviour
             temp.GetComponent<AnimalsBase>().postYardBase = tempPost;
             lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
             temp.GetComponent<AnimalsBase>().Init();
-
+            temp.GetComponent<AnimalsBase>().SetOrderInLayer(tempPost.id);
+            var tempSmoke = SimplePool2.Spawn(vfxSmoke);
+            tempSmoke.transform.position = tempPost.transform.position;
         }
         else
         {
@@ -90,6 +128,8 @@ public class AnimalController : MonoBehaviour
     }
     public IEnumerator HandleMoveIn( )
     {
+        GameController.Instance.musicManager.PlayOneShot(owlSfx);
+    
         GamePlayController.Instance.gameScene.HandleOffOnclickButton();
         List<Coroutine> runningCoroutines = new List<Coroutine>();
         foreach (var item in lsAnimalsBases)
@@ -118,13 +158,29 @@ public class AnimalController : MonoBehaviour
             {
                 lsAnimalsBases.Add(item);
             }
-        }    
-
+        }
+        GameController.Instance.musicManager.PlayOneShot(closeDoor);
+        Sequence sequence = DOTween.Sequence();
+        foreach(var item in lsDoor)
+        {
+            sequence.Join(item.closeDoor);
+        }
+        yield return sequence.WaitForCompletion();
         playerContain.dayController.PassDay(delegate { StartCoroutine(HandleMoveOut()); });    
     }
 
     public IEnumerator HandleMoveOut()
     {
+      
+      
+        GameController.Instance.musicManager.PlayOneShot(openDoor);
+        Sequence sequence = DOTween.Sequence();
+        foreach (var item in lsDoor)
+        {
+            sequence.Join(item.openDoor);
+        }
+        yield return sequence.WaitForCompletion();
+        GameController.Instance.musicManager.PlayOneShot(birdSfx);
         GamePlayController.Instance.playerContain.inputController.lockInput = false;
         lsAnimalsBases.Shuffle();
         lsTempAnimalsBases.Clear();
@@ -162,7 +218,8 @@ public class AnimalController : MonoBehaviour
         {
             yield return coroutine;
         }
-        for(int i = lsAnimalsBases.Count -1; i >= 0; i-- )
+   
+        for (int i = lsAnimalsBases.Count -1; i >= 0; i-- )
         {
             if(lsAnimalsBases[i] != null)
             {

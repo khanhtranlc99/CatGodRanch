@@ -8,7 +8,7 @@ public class Card : MonoBehaviour
     public Image bgCard;
     public Image iconAnimals;
     public Image iconType;
-    public Text tvName;
+    public TMP_Text tvName;
     public TMP_Text tvContent;
     public TMP_Text tvNumbDaily;
     public Text tvPrice;
@@ -108,8 +108,8 @@ public class Card : MonoBehaviour
 
     private void OnClick( )
     {
-    
-        GamePlayController.Instance.playerContain.animalController.SpwanAnimals(animalsData.prefabAnimals);
+        GameController.Instance.musicManager.PlayClickSound();
+        GamePlayController.Instance.playerContain.animalController.SpwanAnimals(animalsData.prefabAnimals,1);
         CardAnimalsBox.instance.Close();
         if (GamePlayController.Instance.tutCard.isStart && UseProfile.TutGamePlayCard_Step_1 == false)
         {

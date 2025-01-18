@@ -458,7 +458,7 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
-    public bool OnVibration
+    public  static bool OnVibration
     {
         get
         {
@@ -471,7 +471,7 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
-    public bool OnSound
+    public static bool OnSound
     {
         get
         {
@@ -484,7 +484,7 @@ public class UseProfile : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
-    public bool OnMusic
+    public static bool OnMusic
     {
         get
         {

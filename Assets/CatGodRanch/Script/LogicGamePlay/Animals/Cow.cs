@@ -107,6 +107,10 @@ public class Cow : AnimalsBase
         var tempPost = postYardBase;
         if (tempPost != null)
         {
+            if (UseProfile.OnSound)
+            {
+                audioSource.PlayOneShot(sfx);
+            }
             this.transform.DOJump(this.transform.position, 1.5f, 1, 0.2f);
             var temp = SimplePool2.Spawn(animalsBase);
             temp.transform.position = tempPost.post.position;

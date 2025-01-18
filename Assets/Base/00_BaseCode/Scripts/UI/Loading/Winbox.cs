@@ -27,8 +27,8 @@ public class Winbox : BaseBox
     public int coinGift;
     public void Init()
     {
-        nextButton.onClick.AddListener(delegate { HandleNext();    });
-        rewardButton.onClick.AddListener(delegate { HandleReward(); });
+        nextButton.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); HandleNext();    });
+        rewardButton.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); HandleReward(); });
  
      //   coinHeartBar.Init();s
         UseProfile.CurrentLevel += 1;
@@ -42,7 +42,7 @@ public class Winbox : BaseBox
         GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
         coinGift = GamePlayController.Instance.playerContain.levelConfig.dataDifficulty.rewardCoin;
         tvCoin.text = "" + coinGift;
-        UseProfile.Coin += coinGift;
+      
         GamePlayController.Instance.playerContain.cardController.SaveDataHome();
         UseProfile.FirstLoading = true;
     }    
@@ -55,7 +55,7 @@ public class Winbox : BaseBox
         GameController.Instance.admobAds.ShowInterstitial(false, actionIniterClose: () => { Next(); }, actionWatchLog: "InterWinBox");
         void Next()
         {
-   
+            UseProfile.Coin += coinGift;
             Close();
             Initiate.Fade(SceneName.HOME_SCENE, Color.black, 2f);
 
@@ -70,7 +70,7 @@ public class Winbox : BaseBox
                        Close();
                        var temp = coinGift * 2;
 
-
+                       UseProfile.Coin += coinGift;
                        List<GiftRewardShow> giftRewardShows = new List<GiftRewardShow>();
                        giftRewardShows.Add(new GiftRewardShow() { amount = temp, type = GiftType.Coin });
                        PopupRewardBase.Setup(false).Show(giftRewardShows, delegate {

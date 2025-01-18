@@ -6,6 +6,7 @@ using UnityEngine;
 public class Acapela : AnimalsBase
 {
     public List<AnimalsBase> lsAnimalsPlusCoin;
+    public AudioClip sfxJump;
      
     public bool CanHandleEffect
     {
@@ -42,7 +43,15 @@ public class Acapela : AnimalsBase
     {
         if (CanHandleEffect)
         {
+            if(UseProfile.OnSound)
+            {
+                audioSource.PlayOneShot(sfxJump);
+            }
             yield return this.transform.DOJump(this.transform.position, 1.5f, 1, 0.5f).WaitForCompletion();
+            if (UseProfile.OnSound)
+            {
+                audioSource.PlayOneShot(sfx);
+            }
             foreach (var item in lsAnimalsPlusCoin)
             {
                 yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(1, item.transform.position));

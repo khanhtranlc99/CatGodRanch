@@ -54,6 +54,7 @@ public class DuckController : MonoBehaviour
                 {
                     if (duck.gameObject.activeSelf)
                     {
+                        duck.gameObject.GetComponent<Duck>().ShowVoice();
                         sequence.Join(duck.transform.DOMove(postB.position, 1.5f));
                     }
                 }

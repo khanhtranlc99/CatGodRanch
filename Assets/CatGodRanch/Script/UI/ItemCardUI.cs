@@ -44,6 +44,7 @@ public class ItemCardUI : MonoBehaviour
     }
     private void OnClick()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         GamePlayController.Instance.playerContain.itemController.SpawnItem(itemsData.itemName);
         CardItemBox._instance.Close();
     }

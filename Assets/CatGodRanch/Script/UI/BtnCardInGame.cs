@@ -48,7 +48,7 @@ public class BtnCardInGame : MonoBehaviour
     }
     private void HandleRemove()
     {
-        
+        GameController.Instance.musicManager.PlayClickSound();
         GamePlayController.Instance.playerContain.coinController.HandlePlusCoin(-coinRemove);
         animalsBase1.HandleActionDie();
         GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(animalsBase1);
@@ -56,7 +56,7 @@ public class BtnCardInGame : MonoBehaviour
     }    
     public void HandleOnRemove()
     {
-        
+        GameController.Instance.musicManager.PlayClickSound();
         storehouseBox.HandleOffAll();
         objBlindCard.SetActive(true);
     }

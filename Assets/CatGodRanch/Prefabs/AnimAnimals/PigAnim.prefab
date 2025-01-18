@@ -200,7 +200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8a4fef9265d2f6445ae4f46be84e4d7d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f2c7c6858361e54788d24d1d4d2d7e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'After 4 day
+  m_text: 'After 3 day
 
 '
   m_isRightToLeft: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 57.4
+  m_fontSize: 57.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -401,6 +401,9 @@ MonoBehaviour:
   icon: {fileID: 8575625162931090299}
   coin: {fileID: 1576567534333575444}
   post_Coin: {x: 0, y: 0, z: 0}
+  path_1: {fileID: 21300000, guid: 5f2c7c6858361e54788d24d1d4d2d7e8, type: 3}
+  path_2: {fileID: 21300000, guid: d4955625515887947974a1b5e1b4ca9c, type: 3}
+  path_3: {fileID: 21300000, guid: 8a4fef9265d2f6445ae4f46be84e4d7d, type: 3}
 --- !u!1 &6529958817521576725
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,7 +469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 4<sprite name="Time">
+  m_text: 3<sprite name="Time">
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90675dc45089d54498a259047563a699, type: 2}
   m_sharedMaterial: {fileID: -6525112419790217624, guid: 90675dc45089d54498a259047563a699, type: 2}

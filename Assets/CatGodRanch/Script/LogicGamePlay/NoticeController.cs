@@ -13,11 +13,12 @@ public class NoticeController : MonoBehaviour
     public Transform postDog;
     public GameObject boxChat;
     public HandDogTutHome hand;
- 
-   
+    public AudioClip bubblesfx;
+    public AudioClip dogsfx;
+
     public void Init()
     {
-
+        GameController.Instance.musicManager.PlayOneShot(dogsfx);
         dog.transform.DOMove(postDog.position, 1).OnComplete(delegate
         {
             boxChat.SetActive(true);
@@ -28,6 +29,7 @@ public class NoticeController : MonoBehaviour
     private IEnumerator ShowText()
     {
         yield return boxChat.transform.DOScale(new Vector3(1, 1, 1), 0.7f);
+        GameController.Instance.musicManager.PlayOneShot(bubblesfx);
         string fullText = "The farm is looking dangerous, we need to pay 10"  + "<sprite name=\"Coin\">" + " in 5 days";
         Tween tween = DOTween.To(() => 0, x =>
         {
@@ -50,6 +52,7 @@ public class NoticeController : MonoBehaviour
 
     private void HandleClick()
     {
+        GameController.Instance.musicManager.PlayClickSound();
        this.gameObject.SetActive(false);   
        GamePlayController.Instance.playerContain.cardController.HandleSpawnChicken();
         GamePlayController.Instance.playerContain.animalController.btnNextDay.gameObject.SetActive(false);

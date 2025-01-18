@@ -78,6 +78,10 @@ public class Hyena : AnimalsBase
                     {
                         if (tempHunt != null)
                         {
+                            if (UseProfile.OnSound)
+                            {
+                                audioSource.PlayOneShot(sfx);
+                            }
                             tempHunt.HandleActionDie();
                         }     
                         StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(3, transform.position));

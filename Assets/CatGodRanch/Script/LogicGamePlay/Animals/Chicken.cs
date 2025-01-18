@@ -8,6 +8,8 @@ public class Chicken : AnimalsBase
     public AnimalsBase rooster;
     public GameObject effectSmoke;
     public GameObject boxChat;
+    public AudioClip jumpSfx;
+ 
     public bool CheckBirdAround
     {
         get 
@@ -64,8 +66,15 @@ public class Chicken : AnimalsBase
             if(rooster != null && rooster.gameObject.activeSelf)
             {
                 yield return rooster.gameObject.transform.DOMove(postYardBase.transform.position, 0.5f).WaitForCompletion();
+                if(UseProfile.OnSound)
+                {
+                    audioSource.PlayOneShot(sfx);
+                }
+            
                 var tempEffect = SimplePool2.Spawn(effectSmoke, new Vector2(postYardBase.transform.position.x, postYardBase.transform.position.y + 0.5f), Quaternion.identity);
                 yield return new WaitForSeconds(1);
+                 
+             
                 yield return rooster.gameObject.transform.DOMove(rooster.postYardBase.transform.position, 0.5f).WaitForCompletion();
                 var ran = Random.RandomRange(0, 100);
                 if (!UseProfile.TutGamePlayCard_Step_1)
@@ -74,6 +83,10 @@ public class Chicken : AnimalsBase
                 }
                 if (ran <= 50)
                 {
+                    if (UseProfile.OnSound)
+                    {
+                        audioSource.PlayOneShot(jumpSfx);
+                    }
                     yield return this.transform.DOJump(this.transform.position, 1.5f, 1, 0.5f).WaitForCompletion();
                     var temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Egg);
                     yield return StartCoroutine(SpwanAnimals(temp.prefabAnimals));

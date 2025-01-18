@@ -52,6 +52,10 @@ public class SikaDeer : AnimalsBase
     {
         if (CanHandleEffect)
         {
+            if (UseProfile.OnSound)
+            {
+                audioSource.PlayOneShot(sfx);
+            }
             this.transform.DOJump(this.transform.position, 1.5f , 1 , 0.5f).OnComplete(delegate
             {
                 StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));

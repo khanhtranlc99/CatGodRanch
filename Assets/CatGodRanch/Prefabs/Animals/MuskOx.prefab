@@ -57,6 +57,7 @@ MonoBehaviour:
   lsAnimalsProtect: []
   huntAnimal: {fileID: 0}
   lsPostRange: []
+  sfx: {fileID: 8300000, guid: 39c939aca4b8cfe4bbf0a57d98295efc, type: 3}
   lsPlusCoinAnimals: []
   lsDailyCoin: []
   dailyCoin: {fileID: 3539437544756692362, guid: 53434ef4cd9970843bec58c10ae7f0fd, type: 3}

@@ -202,7 +202,8 @@ public class CardAnimalsBox : BaseBox
 
     private void btnRoll()
     {
-        if(freeRoll > 1)
+        GameController.Instance.musicManager.PlayClickSound();
+        if (freeRoll > 1)
         {
             freeRoll -= 1;
             tmpRoll.text = "Free " + freeRoll;
@@ -250,11 +251,13 @@ public class CardAnimalsBox : BaseBox
     }
     public void HandleSkip()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         GamePlayController.Instance.playerContain.animalController.btnNextDay.gameObject.SetActive(true);
         Close();
     }
     private void HandleSeeThrowBtn()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         mainPanel.gameObject.SetActive(false);
         bg.SetActive(false);
         GamePlayController.Instance.gameScene.seeThrowBtn.gameObject.SetActive(true);
@@ -267,7 +270,8 @@ public class CardAnimalsBox : BaseBox
     }
     private void HandleBook()
     {
-        if(!isText)
+        GameController.Instance.musicManager.PlayClickSound();
+        if (!isText)
         {
             isText = true;
             foreach (var item in lsCard)

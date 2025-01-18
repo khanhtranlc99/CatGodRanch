@@ -8,6 +8,10 @@ public class Egg : AnimalsBase
 {
     public TMP_Text tvDay;
     public int day = 3;
+    public Sprite parth_1;
+    public Sprite parth_2;
+    public Sprite parth_3;
+
     public override void Init()
     {
         
@@ -29,9 +33,13 @@ public class Egg : AnimalsBase
     public override IEnumerator HandleEffect()
     {
         day -= 1;
-     
+        if (UseProfile.OnSound)
+        {
+            audioSource.PlayOneShot(sfx);
+        }
         if (day <= 0)
         {
+            spriteRender.sprite = parth_3;
             var ran = Random.RandomRange(0,100);
             var temp = new AnimalsDataProperty();
             if (GamePlayController.Instance.tutCard.isStart && !UseProfile.TutGamePlayCard_Step_1)
@@ -60,10 +68,13 @@ public class Egg : AnimalsBase
             }
             yield return StartCoroutine(HandleTranform());
             SpwanAnimals(temp.prefabAnimals);
-        //    GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);
+            //    GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);
+          
+          
+            SimplePool2.Despawn(this.gameObject);
+            spriteRender.sprite = parth_1;
             day = 3;
             tvDay.text = day.ToString() + "<sprite name=\"Time\">";
-            SimplePool2.Despawn(this.gameObject);
         }
         else
         {
@@ -76,6 +87,16 @@ public class Egg : AnimalsBase
             sequence.Append(spriteRender.transform.DOLocalRotate(new Vector3(0, 0, -10), 0.2f));
             sequence.Append(spriteRender.transform.DOLocalRotate(new Vector3(0, 0, 0), 0.2f));
             yield return sequence.WaitForCompletion();
+            if(day == 2)
+            {
+                yield return StartCoroutine(HandleTranform());
+                spriteRender.sprite = parth_2;
+            }
+            if (day == 1)
+            {
+                yield return StartCoroutine(HandleTranform());
+                spriteRender.sprite = parth_2;
+            }
             AnimScale();
             tvDay.text = day.ToString() + "<sprite name=\"Time\">";
 

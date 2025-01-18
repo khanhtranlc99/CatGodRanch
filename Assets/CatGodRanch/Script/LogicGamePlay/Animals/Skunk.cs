@@ -38,6 +38,10 @@ public class Skunk : AnimalsBase
         }
         if (countEmtySpace >= 1)
         {
+            if (UseProfile.OnSound)
+            {
+                audioSource.PlayOneShot(sfx);
+            }
             boxChat_OK.gameObject.SetActive(true);
             yield return new WaitForSeconds(1);
             boxChat_OK.gameObject.SetActive(false);

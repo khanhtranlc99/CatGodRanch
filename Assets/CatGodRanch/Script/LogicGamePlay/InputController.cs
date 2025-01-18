@@ -7,7 +7,7 @@ public class InputController : MonoBehaviour
 {
     public bool lockInput = false;
     public WordCanvasController wordCanvasController;
- 
+    public AudioClip sfxClickAnimals;
     public void Init()
     {
         lockInput = true;
@@ -37,6 +37,7 @@ public class InputController : MonoBehaviour
                     }
                     if (hit.collider.gameObject.GetComponent<PostYardBase>() != null  && hit.collider.gameObject.GetComponent<PostYardBase>().animalsBase != null)
                     {
+                        GameController.Instance.musicManager.PlayOneShot(sfxClickAnimals);
                         GamePlayController.Instance.playerContain.postYardController.HandleOffOutLine();
                         hit.collider.gameObject.GetComponent<PostYardBase>().HandleCheckOutLine();
                         wordCanvasController.HandleShow(hit.collider.gameObject.GetComponent<PostYardBase>());

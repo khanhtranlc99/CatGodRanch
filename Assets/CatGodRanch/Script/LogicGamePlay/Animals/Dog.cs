@@ -74,7 +74,11 @@ public class Dog : AnimalsBase
     public override IEnumerator HandleActionProtect()
     {
       Debug.LogError("Protect");
-      yield return  StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(4, transform.position));
+        if (UseProfile.OnSound)
+        {
+            audioSource.PlayOneShot(sfx);
+        }
+        yield return  StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(4, transform.position));
     }
 
 }

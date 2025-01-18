@@ -61,10 +61,12 @@ public class LaybaleDic : MonoBehaviour
 
     private void HandleClickAnimals()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         dictionaryBox.HandleShow(animalsDataProperty);
     }
     private void HandleClickItem()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         dictionaryBox.HandleShow(itemDataProperty);
     }
 

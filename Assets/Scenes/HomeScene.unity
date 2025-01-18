@@ -816,9 +816,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1889b4db68d3ad7499a2a0a948f2e9a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleIn: {x: 1, y: 1, z: 1}
-  scaleOut: {x: 1.1, y: 1.1, z: 1.1}
+  scaleIn: {x: 0.9, y: 0.9, z: 0.9}
+  scaleOut: {x: 1, y: 1, z: 1}
   speed: 0.5
+  delayStart: 0
 --- !u!1 &456771410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,6 +1481,7 @@ MonoBehaviour:
   btnPlay: {fileID: 345061932}
   btnCard: {fileID: 1838669178}
   btnDic: {fileID: 1311054443}
+  btnShop: {fileID: 456771412}
   tvLevel: {fileID: 1541502459}
   coinBar: {fileID: 8683123322759309703}
 --- !u!1 &1120178078
@@ -2604,6 +2606,7 @@ MonoBehaviour:
   homeScene: {fileID: 1061053131}
   animalsHomeController: {fileID: 1755770630}
   tutHome: {fileID: 1980218990110045605}
+  dogCall: {fileID: 8300000, guid: ec01bd02389aaa042bfb521448b0357e, type: 3}
 --- !u!1 &2088097688
 GameObject:
   m_ObjectHideFlags: 0

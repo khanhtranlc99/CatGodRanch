@@ -45,7 +45,11 @@ public class Turkey : AnimalsBase
 
     public override void HandleActionDie()
     {
-       StartCoroutine(  GamePlayController.Instance.SpawnItemInGameVfx(5, transform.position));
+        if (UseProfile.OnSound)
+        {
+            audioSource.PlayOneShot(sfx);
+        }
+        StartCoroutine(  GamePlayController.Instance.SpawnItemInGameVfx(5, transform.position));
       base.HandleActionDie() ;
      
     }

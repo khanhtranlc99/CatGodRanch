@@ -105,6 +105,10 @@ public class Tiger : AnimalsBase
                         {
                             huntSuccess = true;
                             yield return transform.DOMove(lsAnimalsTarget[i].gameObject.transform.position, 0.5f).WaitForCompletion();
+                            if (UseProfile.OnSound)
+                            {
+                                audioSource.PlayOneShot(sfx);
+                            }
                             lsAnimalsTarget[i].HandleActionDie();
                             lsAnimalsTarget.Remove(lsAnimalsTarget[i]);
                             yield return transform.DOMove(postYardBase.gameObject.transform.position, 0.5f).WaitForCompletion();

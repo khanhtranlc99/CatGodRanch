@@ -11,13 +11,16 @@ public class SheepAnim : AnimTutBase
     public GameObject coin;
     int day = 3;
     public Vector3 post_Coin;
+    public Sprite path_1;
+    public Sprite path_2;
+    public Sprite path_3;
 
-   
     public override void Init()
     {
         day = 3;
         tvDay.text = day.ToString() + "<sprite name=\"Time\">";
         post_Coin = coin.transform.position;
+        icon.sprite = path_1;
         StartCoroutine(HandleEffect());
     }
     public IEnumerator HandleEffect()
@@ -43,9 +46,11 @@ public class SheepAnim : AnimTutBase
             coin.SetActive(false);
             coin.transform.position = post_Coin;
             StartCoroutine(HandleEffect());
+            icon.sprite = path_2;
         }
         else
         {
+            icon.sprite = path_3;
             tvDay.text = "";
             coin.SetActive(true);
             coin.GetComponent<TMP_Text>().text = "+7" + "<sprite name=\"Coin\">";

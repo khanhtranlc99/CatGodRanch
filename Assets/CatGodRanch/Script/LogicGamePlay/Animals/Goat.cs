@@ -54,6 +54,10 @@ public class Goat : AnimalsBase
         var tempPost = postYardBase;
         if (tempPost != null)
         {
+            if (UseProfile.OnSound)
+            {
+                audioSource.PlayOneShot(sfx);
+            }
             postYardBase.animalsBase = null;
             postYardBase = null;
             var temp = SimplePool2.Spawn(animalsBase);

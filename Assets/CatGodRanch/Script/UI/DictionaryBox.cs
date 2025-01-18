@@ -47,7 +47,7 @@ public class DictionaryBox : BaseBox
     {
         listDic = new List<LaybaleDic>();
         HandleAnimalsData();
-        btnClose.onClick.AddListener(Close);
+        btnClose.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound();  Close(); });
         btnBird.onClick.AddListener(HandleBirdAnimalsData);
         btnHoofed.onClick.AddListener(HandleHoofedAnimalsData);
         btnCarnivore.onClick.AddListener(HandleCarnivoreAnimalsData);
@@ -88,6 +88,7 @@ public class DictionaryBox : BaseBox
     }
     private void HandleBirdAnimalsData()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         if (listDic.Count > 0)
         {
             foreach (var item in listDic)
@@ -111,6 +112,7 @@ public class DictionaryBox : BaseBox
     }
     private void HandleHoofedAnimalsData()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         if (listDic.Count > 0)
         {
             foreach (var item in listDic)
@@ -134,6 +136,7 @@ public class DictionaryBox : BaseBox
     }
     private void HandleCarnivoreAnimalsData()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         if (listDic.Count > 0)
         {
             foreach (var item in listDic)
@@ -218,6 +221,7 @@ public class DictionaryBox : BaseBox
 
     private void HandleBtnAnimals()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         btnBird.gameObject.SetActive(true);
         btnHoofed.gameObject.SetActive(true);
         btnCarnivore.gameObject.SetActive(true);
@@ -227,6 +231,7 @@ public class DictionaryBox : BaseBox
     }
     private void HandleBtnItem()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         btnBird.gameObject.SetActive(false);
         btnHoofed.gameObject.SetActive(false);
         btnCarnivore.gameObject.SetActive(false);

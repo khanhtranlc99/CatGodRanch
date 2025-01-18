@@ -73,7 +73,7 @@ public class GameController : MonoBehaviour
        // admobAds.Init();
         musicManager.Init();
         iapController.Init();
-        MMVibrationManager.SetHapticsActive(useProfile.OnVibration);
+        MMVibrationManager.SetHapticsActive(UseProfile.OnVibration);
         startLoading.Init();
         heartGame.Init();
  

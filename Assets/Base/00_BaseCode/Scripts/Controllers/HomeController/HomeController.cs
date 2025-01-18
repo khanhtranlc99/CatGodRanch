@@ -7,6 +7,7 @@ public class HomeController : Singleton<HomeController>
     public HomeScene homeScene;
     public AnimalsHomeController animalsHomeController;
     public GameObject tutHome;
+    public AudioClip dogCall;
 
     private void Start()
     {
@@ -17,6 +18,7 @@ public class HomeController : Singleton<HomeController>
             if (UseProfile.Coin > 0)
             {
                 tutHome.SetActive(true);
+                GameController.Instance.musicManager.PlayOneShot(dogCall);
             }
          
         }
@@ -25,6 +27,7 @@ public class HomeController : Singleton<HomeController>
             if(UseProfile.Coin >= 800)
             {
                 tutHome.SetActive(true);
+                GameController.Instance.musicManager.PlayOneShot(dogCall);
             }
   
         }

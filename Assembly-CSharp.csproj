@@ -417,6 +417,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\x9\X9ECParametersHolder.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SignalRCore\Messages\NegotiationResult.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\encoders\Base64.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\Door.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\ItemCard\LogicItem\MonneyBag.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\AnimalsCard\CalfCard.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\util\io\pem\PemHeader.cs" />
@@ -1582,7 +1583,7 @@
     <None Include="Assets\Base\Plugins\Sirenix\Assemblies\Sirenix.Serialization.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\com.unity.uiextensions\Runtime\Resources\Shaders\UIParticleHidden.shader" />
-    <None Include="Assets\CatGodRanch\vfx\CFXM_MobileParticleAdd_Alpha8.shader" />
+    <None Include="Assets\CatGodRanch\vfx\SmokeHen\CFXM_MobileParticleAdd_Alpha8.shader" />
     <None Include="Assets\Resources\Levels\Level_16.txt" />
   </ItemGroup>
   <ItemGroup>

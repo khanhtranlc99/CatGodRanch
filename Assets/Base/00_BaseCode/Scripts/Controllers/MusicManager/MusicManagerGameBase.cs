@@ -68,21 +68,21 @@ public class MusicManagerGameBase : SerializedMonoBehaviour
     {
         get
         {
-            return GameController.Instance.useProfile.OnMusic ? 1 : 0;
+            return UseProfile.OnMusic ? 1 : 0;
         }
     }
     public float SoundVolume
     {
         get
         {
-            return GameController.Instance.useProfile.OnSound ? 1 : 0;
+            return UseProfile.OnSound ? 1 : 0;
         }
     }
 
     public void Init()
     {
-        musicSource.volume = GameController.Instance.useProfile.OnMusic ? 0.15f : 0;
-        effectSource.volume = GameController.Instance.useProfile.OnSound ? 1 : 0;
+        musicSource.volume = UseProfile.OnMusic ? 0.5f : 0;
+        effectSource.volume = UseProfile.OnSound ? 1 : 0;
         PlayBGMusic();
     }
 
@@ -115,7 +115,7 @@ public class MusicManagerGameBase : SerializedMonoBehaviour
     }
     public void PlaySound(AudioClip paramWin)
     {
-        if (!GameController.Instance.useProfile.OnMusic)
+        if (!UseProfile.OnMusic)
             return;
         // musicSource.clip = winMusic;
         //musicSource.Play();
@@ -236,7 +236,7 @@ public class MusicManagerGameBase : SerializedMonoBehaviour
     #region === Play Sound ===
     public void PlayWinSound()
     {
-        if (!GameController.Instance.useProfile.OnMusic)
+        if (!UseProfile.OnMusic)
             return;
         // musicSource.clip = winMusic;
         //musicSource.Play();
@@ -244,7 +244,7 @@ public class MusicManagerGameBase : SerializedMonoBehaviour
     }
     public void PlayLoseSound()
     {
-        if (!GameController.Instance.useProfile.OnMusic)
+        if (!UseProfile.OnMusic)
             return;
         // musicSource.clip = winMusic;
         //musicSource.Play();

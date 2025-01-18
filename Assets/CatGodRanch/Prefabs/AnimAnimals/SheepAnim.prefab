@@ -399,6 +399,9 @@ MonoBehaviour:
   icon: {fileID: 1604284724229821667}
   coin: {fileID: 558917749820819660}
   post_Coin: {x: 0, y: 0, z: 0}
+  path_1: {fileID: 21300000, guid: a83c320a890ebad4ea15da9a98f00f69, type: 3}
+  path_2: {fileID: 21300000, guid: 393cc7c1f8b2f99489c941bf367258b4, type: 3}
+  path_3: {fileID: 21300000, guid: c1fc6ae7d3bee8240a0599ff887536d5, type: 3}
 --- !u!1 &3772688926669268627
 GameObject:
   m_ObjectHideFlags: 0

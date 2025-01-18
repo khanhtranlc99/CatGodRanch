@@ -74,6 +74,10 @@ public class Pigeon : AnimalsBase
                 if(item.gameObject.activeSelf)
                 {
                     yield return this.transform.DOMove(item.postYardBase.transform.position, 0.3f).WaitForCompletion();
+                    if (UseProfile.OnSound)
+                    {
+                        audioSource.PlayOneShot(sfx);
+                    }
                     yield return this.transform.DOJump(this.transform.position, 1.5f, 1, 0.3f).WaitForCompletion();
                     yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
                  

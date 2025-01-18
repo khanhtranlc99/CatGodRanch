@@ -49,6 +49,10 @@ public class Coyote : AnimalsBase
             }
             else
             {
+                if (UseProfile.OnSound)
+                {
+                    audioSource.PlayOneShot(sfx);
+                }
                 boxChat_NoOk.gameObject.SetActive(true);
                 yield return new WaitForSeconds(1);
                 boxChat_NoOk.gameObject.SetActive(false);

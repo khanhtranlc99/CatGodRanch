@@ -105,7 +105,7 @@ public class SettingBox : BaseBox
     }    
     private void SetUpBtn()
     {
-        if (GameController.Instance.useProfile.OnVibration)
+        if (UseProfile.OnVibration)
         {
             imgVibration.sprite = vibraOn;
             vibraOnObj.SetActive(true);
@@ -118,7 +118,7 @@ public class SettingBox : BaseBox
             vibraOffObj.SetActive(true);
         }
 
-        if (GameController.Instance.useProfile.OnMusic)
+        if (UseProfile.OnMusic)
         {
             imgMusic.sprite = musicOn;
             musicOnObj.SetActive(true);
@@ -131,7 +131,7 @@ public class SettingBox : BaseBox
             musicOffObj.SetActive(true);
         }
 
-        if (GameController.Instance.useProfile.OnSound)
+        if (UseProfile.OnSound)
         {
             imgSound.sprite = soundOn;
             soundOnObj.SetActive(true);
@@ -150,13 +150,13 @@ public class SettingBox : BaseBox
     private void OnClickBtnVibration()
     {
         GameController.Instance.musicManager.PlayClickSound();
-        if (GameController.Instance.useProfile.OnVibration)
+        if (UseProfile.OnVibration)
         {
-            GameController.Instance.useProfile.OnVibration = false;
+            UseProfile.OnVibration = false;
         }
         else
         {
-            GameController.Instance.useProfile.OnVibration = true;
+            UseProfile.OnVibration = true;
         }
         SetUpBtn();
     }
@@ -164,26 +164,26 @@ public class SettingBox : BaseBox
     private void OnClickBtnMusic()
     {
         GameController.Instance.musicManager.PlayClickSound();
-        if (GameController.Instance.useProfile.OnMusic)
+        if (UseProfile.OnMusic)
         {
-            GameController.Instance.useProfile.OnMusic = false;
+            UseProfile.OnMusic = false;
         }
         else
         {
-            GameController.Instance.useProfile.OnMusic = true;
+            UseProfile.OnMusic = true;
         }
         SetUpBtn();
     }
     private void OnClickBtnSound()
     {
         GameController.Instance.musicManager.PlayClickSound();
-        if (GameController.Instance.useProfile.OnSound)
+        if (UseProfile.OnSound)
         {
-            GameController.Instance.useProfile.OnSound = false;
+            UseProfile.OnSound = false;
         }
         else
         {
-            GameController.Instance.useProfile.OnSound = true;
+            UseProfile.OnSound = true;
         }
         SetUpBtn();
     }

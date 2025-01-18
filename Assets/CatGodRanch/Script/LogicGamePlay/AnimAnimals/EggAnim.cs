@@ -11,7 +11,9 @@ public class EggAnim : AnimTutBase
     public List<Sprite> lsSprite;
     public Sprite iconEgg;
     int day = 3;
-
+    public Sprite path_1;
+    public Sprite path_2;
+    public Sprite path_3;   
     
     public override void Init()
     {
@@ -30,18 +32,21 @@ public class EggAnim : AnimTutBase
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, -10), 0.2f));
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, 0), 0.2f));
         yield return sequence.WaitForCompletion();
+      
         day -= 1;
         tvDay.text = day.ToString() + "<sprite name=\"Time\">";
         yield return new WaitForSeconds(1);
      
         if (day > 0)
-        {        
+        {
+            icon.sprite = path_2;
+
             StartCoroutine(HandleEffect());
         }
         else
         {
-            tvDay.text = "";
-           StartCoroutine(HandleTranform());
+            icon.sprite = path_3;
+            StartCoroutine(HandleTranform());
         }
        
 

@@ -69,7 +69,10 @@ public class Gazelle : AnimalsBase
             {
                 tempPostSwitch = postYardBase;
                 tempAnimals = postYardBase.animalsBase;
-
+                if (UseProfile.OnSound)
+                {
+                    audioSource.PlayOneShot(sfx);
+                }
                 Sequence sequence = DOTween.Sequence();
                 sequence.Append(this.transform.DOMove(postSwitch.transform.position, 0.35f));
                 sequence.Append(postSwitch.animalsBase.transform.DOMove(postYardBase.transform.position, 0.35f));

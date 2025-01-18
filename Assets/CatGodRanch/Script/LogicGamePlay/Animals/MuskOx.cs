@@ -56,6 +56,10 @@ public class MuskOx : AnimalsBase
         {
             if (lsPlusCoinAnimals.Count > 0)
             {
+                if (UseProfile.OnSound)
+                {
+                    audioSource.PlayOneShot(sfx);
+                }
                 spriteRender.transform.DOKill();
                 Sequence sequence = DOTween.Sequence();
                 sequence.Append(spriteRender.transform.DOScale(new Vector3(1.4f, 1, 1), 0.15f));

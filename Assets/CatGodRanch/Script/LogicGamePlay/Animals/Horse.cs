@@ -59,7 +59,10 @@ public class Horse : AnimalsBase
         var temp = HandleFindRightPost;
         if (temp != null)
         {
-          
+            if (UseProfile.OnSound)
+            {
+                audioSource.PlayOneShot(sfx);
+            }
             yield return this.transform.DOMove(temp.transform.position, 0.3f).WaitForCompletion();
             yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
             postYardBase.animalsBase = null;

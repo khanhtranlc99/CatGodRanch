@@ -67,7 +67,8 @@ public abstract class AnimalsBase : MonoBehaviour
     public List<AnimalsBase> lsAnimalsProtect;
     public AnimalsBase huntAnimal;
     public List<PostYardBase> lsPostRange;
-
+    public AudioClip sfx;
+    public AudioSource audioSource;
 
     public void SetUpPlus()
     {
@@ -89,7 +90,6 @@ public abstract class AnimalsBase : MonoBehaviour
         });
 
     }
-
     public void AnimRotateInMove()
     {
         spriteRender.transform.DOKill();
@@ -101,6 +101,11 @@ public abstract class AnimalsBase : MonoBehaviour
             });
         });
     }
+
+    public virtual void  HandleSound()
+    {
+        audioSource.PlayOneShot(sfx);
+    }    
 
 
     public abstract void Init();

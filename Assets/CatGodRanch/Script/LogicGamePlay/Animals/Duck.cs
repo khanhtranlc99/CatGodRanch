@@ -75,6 +75,13 @@ public class Duck : AnimalsBase
             EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.TRIBAL_TALENT, this.gameObject);
         }
     }
+    public void ShowVoice()
+    {
+        if (UseProfile.OnSound)
+        {
+            audioSource.PlayOneShot(sfx);
+        }
+    }    
 
     //bool CheckAllYard 
     //{

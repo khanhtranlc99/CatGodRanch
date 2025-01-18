@@ -52,10 +52,18 @@ public class WaterBuffalo : AnimalsBase
         {
             if (CheckNearYardGrass)
             {
+                if (UseProfile.OnSound)
+                {
+                    audioSource.PlayOneShot(sfx);
+                }
                 yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(1, transform.position));
             }
             if (CheckNearYardPuddle)
             {
+                if (UseProfile.OnSound)
+                {
+                    audioSource.PlayOneShot(sfx);
+                }
                 yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2, transform.position));
             }
         }

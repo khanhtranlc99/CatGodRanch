@@ -37,6 +37,10 @@ public class Goose : AnimalsBase
     }
     public override IEnumerator HandleActionProtect()
     {
+        if (UseProfile.OnSound)
+        {
+            audioSource.PlayOneShot(sfx);
+        }
         yield return this.transform.DOJump(this.transform.position, 1.5f, 1, 0.5f).WaitForCompletion();
         yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(1, transform.position));
     }

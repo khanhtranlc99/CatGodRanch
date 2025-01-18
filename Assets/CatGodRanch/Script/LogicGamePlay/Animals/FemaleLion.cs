@@ -61,6 +61,10 @@ public class FemaleLion : AnimalsBase
                     huntSuccess = true;
                     yield return transform.DOMove(animalsTarget.gameObject.transform.position, 0.5f).WaitForCompletion();
                     animalsTarget.HandleActionDie();
+                    if (UseProfile.OnSound)
+                    {
+                        audioSource.PlayOneShot(sfx);
+                    }
                     animalsTarget = null;
                     yield return transform.DOMove(postYardBase.gameObject.transform.position, 0.5f).WaitForCompletion();
 

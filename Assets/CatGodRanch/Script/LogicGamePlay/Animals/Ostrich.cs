@@ -55,6 +55,10 @@ public class Ostrich : AnimalsBase
         {
             if (postYardJump != null)
             {
+                if (UseProfile.OnSound)
+                {
+                    audioSource.PlayOneShot(sfx);
+                }
                 yield return this.gameObject.transform.DOJump(postYardJump.transform.position, 0.5f, 1, 0.5f).OnComplete(delegate {
 
                     postYardBase.animalsBase = null;

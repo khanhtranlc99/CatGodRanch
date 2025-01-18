@@ -60,6 +60,10 @@ public class ReinDeer : AnimalsBase
                 temp *= Random.Range(3, 7);
                 var tempPost = GamePlayController.Instance.playerContain.animalController.reinDeerController.GetPost(this.transform.position, animalsTarget.transform.position);
                 yield return this.transform.DOMove(animalsTarget.transform.position, 0.5f).SetEase(Ease.InBack).WaitForCompletion();
+                if (UseProfile.OnSound)
+                {
+                    audioSource.PlayOneShot(sfx);
+                }
                 yield return animalsTarget.transform.DOJump(tempPost.position, 1.5f, 1, 0.5f).WaitForCompletion();
 
                 animalsTarget.HandleActionDie();

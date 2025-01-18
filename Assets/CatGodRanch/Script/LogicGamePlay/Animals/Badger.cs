@@ -42,6 +42,10 @@ public class Badger : AnimalsBase
             boxChat_OK.gameObject.SetActive(true);
             yield return new WaitForSeconds(1);
             boxChat_OK.gameObject.SetActive(false);
+            if (UseProfile.OnSound)
+            {
+                audioSource.PlayOneShot(sfx);
+            }
             yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(4, transform.position));
         }
         else

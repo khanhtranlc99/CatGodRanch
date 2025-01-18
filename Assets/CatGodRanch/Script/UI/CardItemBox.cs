@@ -32,9 +32,9 @@ public class CardItemBox : BaseBox
     {
         itemData = param;
         playerContain = playerContainParam;
-        btnSeeThrow.onClick.AddListener(Close);
+        btnSeeThrow.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); Close(); });
         btnRetry.onClick.AddListener(btnRoll);
-        btnSkip.onClick.AddListener(Close);
+        btnSkip.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); Close(); });
     }
     private void InitState()
     {
@@ -61,6 +61,7 @@ public class CardItemBox : BaseBox
     }
     private void btnRoll()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         if (GamePlayController.Instance.playerContain.coinController.coin >= 5)
         {
             playerContain.coinController.HandlePlusCoin(-5);

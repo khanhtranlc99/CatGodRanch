@@ -106,6 +106,10 @@ public class Eagle : AnimalsBase
                 {
                     huntSuccess = true;
                     yield return transform.DOMove(animalsTarget.gameObject.transform.position, 0.5f).WaitForCompletion();
+                    if (UseProfile.OnSound)
+                    {
+                        audioSource.PlayOneShot(sfx);
+                    }
                     animalsTarget.HandleActionDie();
                     animalsTarget = null;
                     yield return transform.DOMove(postYardBase.gameObject.transform.position, 0.5f).WaitForCompletion();

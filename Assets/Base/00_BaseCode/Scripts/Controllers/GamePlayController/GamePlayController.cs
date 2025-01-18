@@ -22,6 +22,7 @@ public class GamePlayController : Singleton<GamePlayController>
     public ItemInGameVfx itemInGameVfx;
     public TutorialFunController tutGamePlay;
     public TutorialFunController tutCard;
+    public AudioClip coinsfx;
     protected override void OnAwake()
     {
         //  GameController.Instance.currentScene = SceneType.GamePlay;
@@ -54,6 +55,7 @@ public class GamePlayController : Singleton<GamePlayController>
     {
         var temp =  SimplePool2.Spawn(itemInGameVfx);
         temp.transform.position = new Vector3(post.x, post.y+1, post.z);
+        GameController.Instance.musicManager.PlayOneShot(coinsfx);
         yield return StartCoroutine(temp.Init(paramCoin));
         playerContain.coinController.HandlePlusCoin (paramCoin);
 

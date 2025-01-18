@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class Daybar : MonoBehaviour
@@ -10,7 +11,7 @@ public class Daybar : MonoBehaviour
     public GameObject bg;
     public Sprite iconWork;
     public Sprite iconPay;
-    public Text tvNumb;
+    public TMP_Text tvNumb;
     public void Init(DataDay data)
     {
         switch(data.dayType)

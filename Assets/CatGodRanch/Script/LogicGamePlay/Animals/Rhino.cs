@@ -75,6 +75,10 @@ public class Rhino : AnimalsBase
         
         var tranformPost = GamePlayController.Instance.playerContain.animalController.penguinController.post.position;
         AnimRotateInMove();
+        if (UseProfile.OnSound)
+        {
+            audioSource.PlayOneShot(sfx);
+        }
         yield return this.transform.DOMove(tranformPost, 1.5f).WaitForCompletion();
             var temp = SimplePool2.Spawn(animalsBase);
             temp.transform.position = tranformPost;

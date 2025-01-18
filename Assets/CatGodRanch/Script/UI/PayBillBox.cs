@@ -23,6 +23,7 @@ public class PayBillBox : BaseBox
     PlayerContain playerContain;
     public int targetCoin;
     public Button homeBtn;
+    public AudioClip sfxPopup;
     private void Init(PlayerContain paramPlayerContain)
     {
         playerContain = paramPlayerContain;
@@ -33,7 +34,8 @@ public class PayBillBox : BaseBox
 
     private void InitState(int paramPrice)
     {
-        targetCoin = paramPrice;
+        GameController.Instance.musicManager.PlayOneShot(sfxPopup);
+       targetCoin = paramPrice;
         tvPrice.text = "" + targetCoin;
     
         if (playerContain.coinController.coin >= paramPrice)
@@ -55,6 +57,7 @@ public class PayBillBox : BaseBox
 
     private void HandleBtnPay()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         playerContain.coinController.HandlePlusCoin(-targetCoin);
         Close();
         if (playerContain.dayController.isWin)
@@ -72,6 +75,7 @@ public class PayBillBox : BaseBox
 
     private void HandleBtnAds()
     {
+  
         GameController.Instance.musicManager.PlayClickSound();
         GameController.Instance.admobAds.ShowVideoReward(
                    actionReward: () =>
@@ -98,6 +102,7 @@ public class PayBillBox : BaseBox
 
     private void HandleHome()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         GamePlayController.Instance.playerContain.cardController.SaveDataHome();
         Initiate.Fade(SceneName.HOME_SCENE, Color.black, 2f);
     }    

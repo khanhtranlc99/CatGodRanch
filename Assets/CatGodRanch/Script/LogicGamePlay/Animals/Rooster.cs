@@ -74,6 +74,10 @@ public class Rooster : AnimalsBase
     {
         if(nearRooster)
         {
+            if (UseProfile.OnSound)
+            {
+                audioSource.PlayOneShot(sfx);
+            }
             boxChat.gameObject.SetActive(true);
             yield return new WaitForSeconds(1);
             boxChat.gameObject.SetActive(false);

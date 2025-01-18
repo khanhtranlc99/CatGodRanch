@@ -29,7 +29,7 @@ public class StorehouseBox : BaseBox
 
     public void Init()
     {
-        btnReturn.onClick.AddListener(Close);
+        btnReturn.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); Close(); });
     }
     public void InitState()
     {

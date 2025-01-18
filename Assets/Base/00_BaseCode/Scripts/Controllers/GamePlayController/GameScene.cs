@@ -25,8 +25,8 @@ public class GameScene : BaseScene
     {
         tvLevel.text = "Level " + UseProfile.CurrentLevel;
         houseBtn.onClick.AddListener(HandleHouse);
-        seeThrowBtn.onClick.AddListener(delegate { HandleSeeThrowBtn(); });
-        settinBtn.onClick.AddListener(delegate { SettingBox.Setup(true).Show(); });
+        seeThrowBtn.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); HandleSeeThrowBtn(); });
+        settinBtn.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); SettingBox.Setup(true).Show(); });
         cameraScale.Init();
         StartCoroutine(cameraScale.FixScreen(post_1.position, post_2.position, delegate { HandleUI(); }));
        
@@ -41,7 +41,7 @@ public class GameScene : BaseScene
     }
     private void HandleHouse()
     {
-
+        GameController.Instance.musicManager.PlayClickSound();
         StorehouseBox.Setup().Show();
 
 

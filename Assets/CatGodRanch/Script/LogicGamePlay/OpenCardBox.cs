@@ -70,7 +70,8 @@ public class OpenCardBox : BaseBox
     } 
     public void HandleOk()
     {
-      
+        GameController.Instance.musicManager.PlayClickSound();
+
         Close();
     }
         

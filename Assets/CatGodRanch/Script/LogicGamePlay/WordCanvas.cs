@@ -81,6 +81,7 @@ public class WordCanvas : MonoBehaviour
 
     private void HandleOnClick()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         GamePlayController.Instance.playerContain.coinController.HandlePlusCoin( -coinRemove);
         animals.HandleActionDie();
         GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(animals);
@@ -89,6 +90,7 @@ public class WordCanvas : MonoBehaviour
     }
     private void HandlOnClickBook()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         if(!isShow)
         {
             isShow = true;

@@ -8,6 +8,7 @@ public class Calf : AnimalsBase
    
     public TMP_Text tvDay;
     int day = 5;
+    public AudioClip jumpSfx;
     public bool NearEater
     {
         get
@@ -78,6 +79,10 @@ public class Calf : AnimalsBase
                      temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Cow);
                 
                 }
+                if (UseProfile.OnSound)
+                {
+                    audioSource.PlayOneShot(sfx);
+                }
                 yield return StartCoroutine(HandleTranform());
                 SpwanAnimals(temp.prefabAnimals);
                 EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.GROW_EXPRESS_SUCCEST);
@@ -88,6 +93,10 @@ public class Calf : AnimalsBase
             }
             else
             {
+                if (UseProfile.OnSound)
+                {
+                    audioSource.PlayOneShot(jumpSfx);
+                }
                 spriteRender.transform.DOKill();
                 Sequence sequence = DOTween.Sequence();
                 sequence.Append(spriteRender.transform.DOLocalRotate(new Vector3(0, 0, 10f), 0.2f));

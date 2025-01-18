@@ -172,6 +172,8 @@ MonoBehaviour:
   postDog: {fileID: 8669209620973416826}
   boxChat: {fileID: 5867495424397227540}
   hand: {fileID: 4516583725251337937}
+  bubblesfx: {fileID: 8300000, guid: f6e617bb79302a84f9ab6a3ca673e56f, type: 3}
+  dogsfx: {fileID: 8300000, guid: ec01bd02389aaa042bfb521448b0357e, type: 3}
 --- !u!1 &4513437420225568220
 GameObject:
   m_ObjectHideFlags: 0

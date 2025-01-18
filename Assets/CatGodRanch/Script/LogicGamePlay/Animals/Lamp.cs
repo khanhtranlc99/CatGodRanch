@@ -8,7 +8,7 @@ public class Lamp : AnimalsBase
 {
     public TMP_Text tvDay;
     int day = 3;
-
+    public AudioClip jumpSfx;
    
     public bool CanHandleEffect
     {
@@ -43,6 +43,10 @@ public class Lamp : AnimalsBase
             tvDay.text = day.ToString() + "<sprite name=\"Time\">";
             if (day <= 0)
             {
+                if (UseProfile.OnSound)
+                {
+                    audioSource.PlayOneShot(sfx);
+                }
                 var ran = Random.RandomRange(0, 100);
                 var temp = new AnimalsDataProperty();
                 if (ran <= 33)
@@ -70,6 +74,10 @@ public class Lamp : AnimalsBase
             }
             else
             {
+                if (UseProfile.OnSound)
+                {
+                    audioSource.PlayOneShot(jumpSfx);
+                }
                 spriteRender.transform.DOKill();
                 Sequence sequence = DOTween.Sequence();
                 sequence.Append(spriteRender.transform.DOLocalRotate(new Vector3(0, 0, 10f), 0.2f));

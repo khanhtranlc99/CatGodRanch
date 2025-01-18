@@ -58,6 +58,10 @@ public class Penguin : AnimalsBase
             {
                 tvDay.text = "";
                 AnimRotateInMove();
+                if (UseProfile.OnSound)
+                {
+                    audioSource.PlayOneShot(sfx);
+                }
                 yield return this.transform.DOMove(GamePlayController.Instance.playerContain.animalController.penguinController.post.position, 1).WaitForCompletion();
                 this.transform.localScale = new Vector3(-this.transform.localScale.x, this.transform.localScale.y, this.transform.localScale.z);
                 yield return this.transform.DOMove(postYardBase.transform.position, 1).WaitForCompletion();

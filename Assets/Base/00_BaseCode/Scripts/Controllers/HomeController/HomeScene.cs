@@ -14,9 +14,9 @@ public class HomeScene : BaseScene
     public Button btnPlay;
     public Button btnCard;
     public Button btnDic;
+    public Button btnShop;
     public Text tvLevel;
     public CoinBar coinBar;
-
 
 
 
@@ -27,8 +27,9 @@ public class HomeScene : BaseScene
         btnPlay.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); HandlePlay(); });
         tvLevel.text = "LEVEL " + UseProfile.CurrentLevel.ToString();
         btnCard.onClick.AddListener(HandleShowCardBox);
-        btnDic.onClick.AddListener(delegate { DictionaryBox.Setup().Show(); });
+        btnDic.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); DictionaryBox.Setup().Show(); });
         coinBar.Init();
+        btnShop.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); ShopBox.Setup().Show(); });
     }
 
     public override void OnEscapeWhenStackBoxEmpty()
@@ -46,6 +47,7 @@ public class HomeScene : BaseScene
 
     private void HandleShowCardBox()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         RandomCardBox.Setup(HomeController.Instance.animalsHomeController.animalsData).Show();
     }
 
