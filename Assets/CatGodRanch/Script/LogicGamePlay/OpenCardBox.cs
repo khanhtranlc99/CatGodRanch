@@ -27,6 +27,7 @@ public class OpenCardBox : BaseBox
     AnimalsDataProperty animalsDataProperty;
     public CardBar cardBar;
     public CardRank currentCardRank;
+    public AudioClip sfx; 
     private void Init ()
     {
         btnOk.onClick.AddListener(delegate { HandleOk(); });
@@ -40,6 +41,11 @@ public class OpenCardBox : BaseBox
         cardBar.gameObject.SetActive(false);
         openCard.transform.position = postDown.position;
         openCard.InitState(cardRank, animalsDataProperty, delegate { HandleCallBackCardRank(); });
+        if(UseProfile.OnSound)
+        {
+            GameController.Instance.musicManager.PlayOneShot(sfx);
+        }
+    
     }
 
     private void HandleCallBackCardRank()

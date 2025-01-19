@@ -34,13 +34,21 @@ public class CardItemBox : BaseBox
         playerContain = playerContainParam;
         btnSeeThrow.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); Close(); });
         btnRetry.onClick.AddListener(btnRoll);
-        btnSkip.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); Close(); });
+        btnSkip.onClick.AddListener(delegate { HandleSkip(); });
     }
     private void InitState()
     {
         Roll();
         tmpCoin.text = playerContain.coinController.coin + "<sprite name=\"Coin\">";
+        GamePlayController.Instance.playerContain.inputController.lockInput = false;
     }
+    private void HandleSkip()
+    {
+        GameController.Instance.musicManager.PlayClickSound();
+        GamePlayController.Instance.playerContain.animalController.btnNextDay.gameObject.SetActive(true);
+        Close();
+ 
+    }    
     private void Roll()
     {
         lsCurrentAnimalsData = new List<CardBase>();
@@ -68,5 +76,10 @@ public class CardItemBox : BaseBox
             tmpCoin.text = playerContain.coinController.coin + "<sprite name=\"Coin\">";
             Roll();
         }
+    }
+    private void OnDisable()
+    {
+        GamePlayController.Instance.playerContain.inputController.lockInput = true;
+    
     }
 }

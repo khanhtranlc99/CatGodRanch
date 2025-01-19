@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System;
+using TMPro;
 public class PackInShop : MonoBehaviour
 {
     public TypePackIAP typePackIAP;
     public Button btnBuy;
-    public Text tvBuy;
+    public TMP_Text tvBuy;
  
 
     public virtual void Init()

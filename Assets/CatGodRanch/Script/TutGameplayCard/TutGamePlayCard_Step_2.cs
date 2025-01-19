@@ -24,11 +24,12 @@ public class TutGamePlayCard_Step_2 : TutorialBase
     }
     public IEnumerator Show()
     {
-        yield return StartCoroutine(GamePlayController.Instance.playerContain.animalController.lsAnimalsBases[2].HandleClaimCoin());
+        //yield return StartCoroutine(GamePlayController.Instance.playerContain.animalController.lsAnimalsBases[2].HandleClaimCoin());
         hand = Instantiate(handTut);
         hand.transform.position = GamePlayController.Instance.playerContain.animalController.lsAnimalsBases[2].transform.position;
         hand.gameObject.GetComponent<HandTutWorkPost>().Init();
         GamePlayController.Instance.playerContain.inputController.lockInput = true;
+        yield return null;
     }
     protected override void SetNameTut()
     {

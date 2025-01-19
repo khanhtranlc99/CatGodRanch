@@ -9,7 +9,7 @@ public class CardBar : MonoBehaviour
     public Text tvCount;
     public Image fillAmount;
     public Image icon;
-
+    public AudioClip sfxIncreet;
     public void Init()
     {
         var temp = (float)UseProfile.PercentCardBar / 100;
@@ -19,6 +19,7 @@ public class CardBar : MonoBehaviour
 
     public void InitState(Action callBack)
     {
+        GameController.Instance.musicManager.PlayOneShot(sfxIncreet);
         var temp = (float)UseProfile.PercentCardBar/100;
         if(temp < 1)
         {

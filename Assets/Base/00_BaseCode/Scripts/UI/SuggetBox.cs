@@ -39,53 +39,53 @@ public class SuggetBox : BaseBox
     public void InitState(GiftType giftType, bool isTut)
     {
         currentGift = giftType;
-        switch (giftType)
-        {
-            case GiftType.TNT_Booster:
-                tvTitler.text = "TNT BOOM";
-                tvContent.text = "Create a 3x3 wide explosion";
-                price = 150;
-                tvPrive.text = price.ToString();
-                actionWatchVideo = ActionWatchVideo.TNT_Booster;
-                payByAdsBtn.onClick.RemoveAllListeners();
-                payByAdsBtn.onClick.AddListener(delegate { HandlePayByAds(); });
-                iconAds.SetActive(true);
-                tvCountNumbAds.text = UseProfile.NumbWatchAdsTNT.ToString() + "/3";
-                break;
-            case GiftType.Rocket_Booster:
-                tvTitler.text = "Rocket";
-                tvContent.text = "Shoots 1 random slime";
-                price = 200;
-                tvPrive.text = price.ToString();
-                actionWatchVideo = ActionWatchVideo.Rocket_Booster;
-                payByAdsBtn.onClick.RemoveAllListeners();
-                payByAdsBtn.onClick.AddListener(delegate { HandlePayByAds(); });
-                iconAds.SetActive(true);
-                tvCountNumbAds.text = UseProfile.NumbWatchAdsRocket.ToString() + "/3";
-                break;
-            case GiftType.Freeze_Booster:
-                tvTitler.text = "Freeze";
-                tvContent.text = "Freeze all slimes";
-                price = 300;
-                tvPrive.text = price.ToString();
-                actionWatchVideo = ActionWatchVideo.Freeze_Booster;
-                payByAdsBtn.onClick.RemoveAllListeners();
-                payByAdsBtn.onClick.AddListener(delegate { ShopBox.Setup(ButtonShopType.Gold).Show(); });
-                iconAds.SetActive(false);
-                tvCountNumbAds.text =  "Shop";
-                break;
-            case GiftType.Atom_Booster:
-                tvTitler.text = "Atom";
-                tvContent.text = "Create a Big explosion";
-                price = 700;
-                tvPrive.text = price.ToString();
-                actionWatchVideo = ActionWatchVideo.Atom_Booste;
-                payByAdsBtn.onClick.RemoveAllListeners();
-                payByAdsBtn.onClick.AddListener(delegate { ShopBox.Setup(ButtonShopType.Gold).Show(); });
-                iconAds.SetActive(false);
-                tvCountNumbAds.text = "Shop";
-                break;
-        }
+        //switch (giftType)
+        //{
+        //    case GiftType.TNT_Booster:
+        //        tvTitler.text = "TNT BOOM";
+        //        tvContent.text = "Create a 3x3 wide explosion";
+        //        price = 150;
+        //        tvPrive.text = price.ToString();
+        //        actionWatchVideo = ActionWatchVideo.TNT_Booster;
+        //        payByAdsBtn.onClick.RemoveAllListeners();
+        //        payByAdsBtn.onClick.AddListener(delegate { HandlePayByAds(); });
+        //        iconAds.SetActive(true);
+        //        tvCountNumbAds.text = UseProfile.NumbWatchAdsTNT.ToString() + "/3";
+        //        break;
+        //    case GiftType.Rocket_Booster:
+        //        tvTitler.text = "Rocket";
+        //        tvContent.text = "Shoots 1 random slime";
+        //        price = 200;
+        //        tvPrive.text = price.ToString();
+        //        actionWatchVideo = ActionWatchVideo.Rocket_Booster;
+        //        payByAdsBtn.onClick.RemoveAllListeners();
+        //        payByAdsBtn.onClick.AddListener(delegate { HandlePayByAds(); });
+        //        iconAds.SetActive(true);
+        //        tvCountNumbAds.text = UseProfile.NumbWatchAdsRocket.ToString() + "/3";
+        //        break;
+        //    case GiftType.Freeze_Booster:
+        //        tvTitler.text = "Freeze";
+        //        tvContent.text = "Freeze all slimes";
+        //        price = 300;
+        //        tvPrive.text = price.ToString();
+        //        actionWatchVideo = ActionWatchVideo.Freeze_Booster;
+        //        payByAdsBtn.onClick.RemoveAllListeners();
+        //        payByAdsBtn.onClick.AddListener(delegate { ShopBox.Setup(ButtonShopType.Gold).Show(); });
+        //        iconAds.SetActive(false);
+        //        tvCountNumbAds.text =  "Shop";
+        //        break;
+        //    case GiftType.Atom_Booster:
+        //        tvTitler.text = "Atom";
+        //        tvContent.text = "Create a Big explosion";
+        //        price = 700;
+        //        tvPrive.text = price.ToString();
+        //        actionWatchVideo = ActionWatchVideo.Atom_Booste;
+        //        payByAdsBtn.onClick.RemoveAllListeners();
+        //        payByAdsBtn.onClick.AddListener(delegate { ShopBox.Setup(ButtonShopType.Gold).Show(); });
+        //        iconAds.SetActive(false);
+        //        tvCountNumbAds.text = "Shop";
+        //        break;
+        //}
         iconDecor.sprite = GameController.Instance.dataContain.giftDatabase.GetIconItem(giftType);
         iconDecor.SetNativeSize();
         if (isTut)
@@ -111,30 +111,30 @@ public class SuggetBox : BaseBox
         GameController.Instance.admobAds.ShowVideoReward(
                      actionReward: () =>
                      {
-                         switch (currentGift)
-                         {
-                             case GiftType.TNT_Booster:
-                                 UseProfile.NumbWatchAdsTNT -= 1;
-                                 if (UseProfile.NumbWatchAdsTNT <= 0)
-                                 {
-                                     UseProfile.NumbWatchAdsTNT = 3;
-                                     HandleClaimGiftX1();
+                         //switch (currentGift)
+                         //{
+                         //    case GiftType.TNT_Booster:
+                         //        UseProfile.NumbWatchAdsTNT -= 1;
+                         //        if (UseProfile.NumbWatchAdsTNT <= 0)
+                         //        {
+                         //            UseProfile.NumbWatchAdsTNT = 3;
+                         //            HandleClaimGiftX1();
                                    
-                                 }
-                                 tvCountNumbAds.text = UseProfile.NumbWatchAdsTNT.ToString() + "/3";
-                                 break;
-                             case GiftType.Rocket_Booster:
+                         //        }
+                         //        tvCountNumbAds.text = UseProfile.NumbWatchAdsTNT.ToString() + "/3";
+                         //        break;
+                         //    case GiftType.Rocket_Booster:
 
-                                 UseProfile.NumbWatchAdsRocket -= 1;
-                                 if (UseProfile.NumbWatchAdsRocket <= 0)
-                                 {
-                                     UseProfile.NumbWatchAdsRocket = 3;
-                                     HandleClaimGiftX1();
+                         //        UseProfile.NumbWatchAdsRocket -= 1;
+                         //        if (UseProfile.NumbWatchAdsRocket <= 0)
+                         //        {
+                         //            UseProfile.NumbWatchAdsRocket = 3;
+                         //            HandleClaimGiftX1();
 
-                                 }
-                                 tvCountNumbAds.text = UseProfile.NumbWatchAdsRocket.ToString() + "/3";
-                                 break;
-                         }
+                         //        }
+                         //        tvCountNumbAds.text = UseProfile.NumbWatchAdsRocket.ToString() + "/3";
+                         //        break;
+                         //}
                             
 
 

@@ -75,7 +75,7 @@ public class Winbox : BaseBox
                        giftRewardShows.Add(new GiftRewardShow() { amount = temp, type = GiftType.Coin });
                        PopupRewardBase.Setup(false).Show(giftRewardShows, delegate {
                            PopupRewardBase.Setup(false).Close();
-                           Initiate.Fade("GamePlay", Color.black, 2f);
+                           Initiate.Fade(SceneName.HOME_SCENE, Color.black, 2f);
                        });
 
                    },

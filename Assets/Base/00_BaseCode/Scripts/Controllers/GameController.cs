@@ -1,11 +1,9 @@
 using MoreMountains.NiceVibrations;
 using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+
 using UnityEngine;
-using System;
-using System.Security.Cryptography;
-using System.Text;
+
+
 #if UNITY_IOS
 using Unity.Advertisement.IosSupport;
 #endif
@@ -23,12 +21,11 @@ public class GameController : MonoBehaviour
 
     public AnalyticsController AnalyticsController;
     public IapController iapController;
-    public HeartGame heartGame;
+ 
     [HideInInspector] public SceneType currentScene;
  
     public StartLoading startLoading;
-
-  
+    public AnimalsLoading animLoading;
 
     protected void Awake()
     {
@@ -70,13 +67,21 @@ public class GameController : MonoBehaviour
 
     public void SetUp()
     {
-       // admobAds.Init();
+      //  admobAds.Init();
         musicManager.Init();
         iapController.Init();
         MMVibrationManager.SetHapticsActive(UseProfile.OnVibration);
+
+        StartCoroutine(HandleShowAnim());
+
+
+
+    }
+
+    IEnumerator HandleShowAnim()
+    {
+        yield return StartCoroutine(animLoading.Init());
         startLoading.Init();
-        heartGame.Init();
- 
     }
 
     public void LoadScene(string sceneName)

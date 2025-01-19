@@ -11,7 +11,7 @@ public class TutGamePlay_Step_4 : TutorialBase
     {
         if (hand != null)
         {
- 
+            
             Destroy(hand.gameObject);
         }
         return true;

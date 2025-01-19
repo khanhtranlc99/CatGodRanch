@@ -94,6 +94,7 @@ MonoBehaviour:
   tvCount: {fileID: 411034549888578412}
   fillAmount: {fileID: 1209711470722799918}
   icon: {fileID: 518261504886504566}
+  sfxIncreet: {fileID: 8300000, guid: 24e0be9a64eea284e81b4ac4d607ee25, type: 3}
 --- !u!1 &845790656331467838
 GameObject:
   m_ObjectHideFlags: 0
@@ -3910,3 +3911,4 @@ MonoBehaviour:
   btnClose: {fileID: 3145066005476121282}
   coinBar: {fileID: 2534677604388171251}
   price: 0
+  sfx: {fileID: 8300000, guid: b1c45eec7318a204b8414e4058719e4d, type: 3}

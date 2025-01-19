@@ -57,7 +57,7 @@ public class GamePlayController : Singleton<GamePlayController>
         temp.transform.position = new Vector3(post.x, post.y+1, post.z);
         GameController.Instance.musicManager.PlayOneShot(coinsfx);
         yield return StartCoroutine(temp.Init(paramCoin));
-        playerContain.coinController.HandlePlusCoin (paramCoin);
+     
 
      
     }

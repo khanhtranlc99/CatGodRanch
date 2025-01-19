@@ -37,12 +37,12 @@ public class RandomCardBox : BaseBox
     public Button btnClose;
     public CoinBar coinBar;
     public int price;
- 
+    public AudioClip sfx;
     private void Init (AnimalsData animalsDataParam)
     {
         animalsData = animalsDataParam;
         btnRandom.onClick.AddListener(HandleRollClick);
-        btnClose.onClick.AddListener(Close);
+        btnClose.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); Close(); });
         coinBar.Init();
         foreach (var item in lsCardRandomHome)
         {
@@ -54,7 +54,7 @@ public class RandomCardBox : BaseBox
         cardBar.Init();
         animalsDataProperty = null;
 
-
+        GameController.Instance.musicManager.PlayOneShot(sfx);
         ChangePrice();
     }
     
@@ -69,7 +69,8 @@ public class RandomCardBox : BaseBox
 
     private void HandleRollClick()
     {
-        if(UseProfile.Coin >= price)
+        GameController.Instance.musicManager.PlayClickSound();
+        if (UseProfile.Coin >= price)
         {
             UseProfile.Coin -= price;
             var temp = CardRank.Normal;

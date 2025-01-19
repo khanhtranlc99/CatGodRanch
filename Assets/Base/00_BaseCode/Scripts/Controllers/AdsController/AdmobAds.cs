@@ -25,9 +25,9 @@ public class AdmobAds : MonoBehaviour
     public bool showingMREC;
 #if UNITY_ANDROID
     private const string MaxSdkKey = "izbW4oEiJA_cdTh6wc0r6Cqyel80b8VaLe1pL0pAKx7TvV9BoLk4F29V4R3OUqiynDPwowsUIsszEb66mbssOZ";
-    private const string InterstitialAdUnitId = "046ee05ba30fcde2";
-    private const string RewardedAdUnitId = "1e308facd5cc01c1";
-    private const string BanerAdUnitId = "42afee22aa89924a";
+    private const string InterstitialAdUnitId = "ccb8935b56e620b2";
+    private const string RewardedAdUnitId = "0530552a2afaa617";
+    private const string BanerAdUnitId = "59442b29dfb7a570";
     //private string AppOpenId = "45fa180466aff54e";
     //private const string MREC_Id = "9569f2b411b0eddf";
 

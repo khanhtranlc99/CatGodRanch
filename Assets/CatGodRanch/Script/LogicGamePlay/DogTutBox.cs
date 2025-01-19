@@ -18,6 +18,7 @@ public class DogTutBox : MonoBehaviour
     }  
     private void HandleBtnCard()
     {
+        GameController.Instance.musicManager.PlayClickSound();
         this.gameObject.SetActive(false);
         RandomCardBox.Setup(HomeController.Instance.animalsHomeController.animalsData).Show();
     }

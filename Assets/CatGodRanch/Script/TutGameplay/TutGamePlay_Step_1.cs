@@ -7,8 +7,8 @@ public class TutGamePlay_Step_1 : TutorialBase
     public Transform postCanvas;
     public override bool IsCanEndTut()
     {
-
-      return true;
+ 
+        return true;
     }
 
     public override void StartTut()

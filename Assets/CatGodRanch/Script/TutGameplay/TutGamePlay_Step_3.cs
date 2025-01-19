@@ -11,6 +11,7 @@ public class TutGamePlay_Step_3 : TutorialBase
     {
         if (hand != null)
         {
+         
             UseProfile.TutGamePlay_Step_3 = true;
             Destroy(hand.gameObject);
         }

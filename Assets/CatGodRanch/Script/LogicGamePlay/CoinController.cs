@@ -10,6 +10,7 @@ public class CoinController : MonoBehaviour
     public TMP_Text tvCoin;
     public Image coinBar;
     public int targetCoin;
+    public AudioClip sfx;
     public void Init(int paramTargetCoin)
     {
         coin = 0;
@@ -26,10 +27,12 @@ public class CoinController : MonoBehaviour
 
     public void HandlePlusCoin(int coinParam)
     {
+
         coin += coinParam;
         tvCoin.text = coin + "/" + targetCoin + "<sprite name=\"Coin\">";
         if (coinBar.fillAmount < 1)
         {
+            GameController.Instance.musicManager.PlayOneShot(sfx);
             var temp = (float)coin / targetCoin;
             coinBar.DOFillAmount(temp, 0.35f);
         }   

@@ -101,6 +101,7 @@
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\Controls\ColorPicker\Events\HSVChangedEvent.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\DefaultTlsClient.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\GSocket\GSocket.cs" />
+    <Compile Include="Assets\Base\00_BaseCode\Scripts\UI\Loading\AnimLoading.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\x509\X509Crl.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\Examples\SignalR\Authentication Providers\SampleCookieAuthentication.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\NewSessionTicket.cs" />
@@ -833,6 +834,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\util\Pack.cs" />
     <Compile Include="Assets\com.unity.uiextensions\Runtime\Scripts\ToolTips\BoundTooltip\BoundTooltipItem.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R2Curve.cs" />
+    <Compile Include="Assets\Base\00_BaseCode\Scripts\UI\Loading\AnimalsLoading.cs" />
     <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\ItemCard\GrowTalentCard.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Controllers\HomeController\AvatarBar.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\IVerifierFactory.cs" />
@@ -1192,6 +1194,7 @@
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\custom\sec\SecT131R1Point.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\UI\Loading\Winbox.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\math\ec\multiplier\AbstractECMultiplier.cs" />
+    <Compile Include="Assets\CatGodRanch\Script\LogicGamePlay\SumCoinBar.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\crypto\tls\TlsSignerCredentials.cs" />
     <Compile Include="Assets\Base\00_BaseCode\Scripts\Popups\RewardPackBox\RewardPackElement.cs" />
     <Compile Include="Assets\Base\3Party\Best HTTP (Pro)\BestHTTP\SecureProtocol\asn1\BERSequenceGenerator.cs" />

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,8 @@ public class GameScene : BaseScene
     [SerializeField] private Button settinBtn;
     [SerializeField] private Transform canvas;
     [SerializeField] private Button houseBtn;
+    [SerializeField] private Button x2SpeedBtn;
+    [SerializeField] private TMP_Text tvSpeed;
     public Button seeThrowBtn;
     public GameObject topParent;
     public Transform postTop;
@@ -20,11 +23,14 @@ public class GameScene : BaseScene
     public CameraScale cameraScale;
     public Transform post_1;
     public Transform post_2;
+    public bool isSpeed;
 
     public void Init(PlayerContain playerContainParam)
     {
+        isSpeed = false; 
         tvLevel.text = "Level " + UseProfile.CurrentLevel;
         houseBtn.onClick.AddListener(HandleHouse);
+        x2SpeedBtn.onClick.AddListener(delegate { X2SpeedBtn(); });
         seeThrowBtn.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); HandleSeeThrowBtn(); });
         settinBtn.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); SettingBox.Setup(true).Show(); });
         cameraScale.Init();
@@ -39,6 +45,23 @@ public class GameScene : BaseScene
             }
         }
     }
+    private void X2SpeedBtn()
+    {
+        GameController.Instance.musicManager.PlayClickSound();
+        if(!isSpeed)
+        {
+            isSpeed = true;
+            Time.timeScale = 2;
+            tvSpeed.text = "x1";
+        }
+        else
+        {
+            isSpeed = false;
+            Time.timeScale = 1;
+            tvSpeed.text = "x2";
+        }
+    }
+
     private void HandleHouse()
     {
         GameController.Instance.musicManager.PlayClickSound();
@@ -66,12 +89,14 @@ public class GameScene : BaseScene
     public void HandleOffButton()
     {
         houseBtn.gameObject.SetActive(false);
-        settinBtn.gameObject.SetActive(false); 
+        settinBtn.gameObject.SetActive(false);
+        x2SpeedBtn.gameObject.SetActive(false);
     }
     public void HandleOnButton()
     {
         houseBtn.gameObject.SetActive(true);
         settinBtn.gameObject.SetActive(true);
+        x2SpeedBtn.gameObject.SetActive(true);
     }
 
     public void HandleOnOnclickButton()

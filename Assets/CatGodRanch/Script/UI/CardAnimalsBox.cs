@@ -32,6 +32,7 @@ public class CardAnimalsBox : BaseBox
     public Button btnBook;
     public bool isText;
     public int freeRoll;
+    public AudioClip sfx;
     private void Init()
     {
         playerContain = GamePlayController.Instance.playerContain;
@@ -45,6 +46,10 @@ public class CardAnimalsBox : BaseBox
     }
     private void InitState()
     {
+        if (UseProfile.OnSound)
+        {
+            GameController.Instance.musicManager.PlayOneShot(sfx);
+        }
         GamePlayController.Instance.playerContain.inputController.lockInput = false;
         tmpCoin.text = playerContain.coinController.coin + "<sprite name=\"Coin\">";
         freeRoll = GamePlayController.Instance.playerContain.freeRoll.GetfreeRoll;
@@ -92,6 +97,10 @@ public class CardAnimalsBox : BaseBox
 
     private void  Roll()
     {
+        if (UseProfile.OnSound)
+        {
+            GameController.Instance.musicManager.PlayOneShot(sfx);
+        }
         isText = false;
         lsCurrentAnimalsData = new List<CardBase>();
 
@@ -234,6 +243,10 @@ public class CardAnimalsBox : BaseBox
                 playerContain.coinController.HandlePlusCoin(-2);
                 tmpCoin.text = playerContain.coinController.coin + "<sprite name=\"Coin\">";
                 Roll();
+            }
+            else
+            {
+                GameController.Instance.musicManager.PlayClickSound();
             }
         } 
         

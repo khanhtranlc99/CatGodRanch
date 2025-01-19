@@ -34,16 +34,7 @@ public class PackInShopAds : PackInShop
     {
         switch (currentGift)
         {
-            case GiftType.TNT_Booster:
-
-                tvBuy.text = UseProfile.NumbWatchAdsTNT.ToString() + "/3";
-          
-                break;
-            case GiftType.Rocket_Booster:
-                tvBuy.text = UseProfile.NumbWatchAdsRocket.ToString() + "/3";
-                
-
-                break;
+           
             case GiftType.Heart:
                 tvBuy.text = UseProfile.NumbWatchAdsHeart.ToString() + "/3";
              
@@ -60,23 +51,8 @@ public class PackInShopAds : PackInShop
     {
         switch (currentGift)
         {
-            case GiftType.TNT_Booster:
-                UseProfile.NumbWatchAdsTNT -= 1;
-                if (UseProfile.NumbWatchAdsTNT <= 0)
-                {
-                    Claim(delegate { UseProfile.NumbWatchAdsTNT = 3; ShowCount();   });
-                }    
-
-
-                break;
-            case GiftType.Rocket_Booster:
-                UseProfile.NumbWatchAdsRocket -= 1;
-                if (UseProfile.NumbWatchAdsRocket <= 0)
-                {
-                    Claim(delegate { UseProfile.NumbWatchAdsRocket = 3; ShowCount(); });
-                }
-
-                break;
+           
+               
             case GiftType.Heart:
                 UseProfile.NumbWatchAdsHeart -= 1;
                 if (UseProfile.NumbWatchAdsHeart <= 0)
@@ -100,25 +76,25 @@ public class PackInShopAds : PackInShop
 
     private void HandleOnClick()
     {
-        switch (currentGift)
-        {
-            case GiftType.TNT_Booster:
+        //switch (currentGift)
+        //{
+        //    case GiftType.TNT_Booster:
 
-                actionWatchVideo = ActionWatchVideo.TNT_Booster;
-                break;
-            case GiftType.Rocket_Booster:
+        //        actionWatchVideo = ActionWatchVideo.TNT_Booster;
+        //        break;
+        //    case GiftType.Rocket_Booster:
 
-                actionWatchVideo = ActionWatchVideo.Rocket_Booster;
-                break;
-            case GiftType.Freeze_Booster:
+        //        actionWatchVideo = ActionWatchVideo.Rocket_Booster;
+        //        break;
+        //    case GiftType.Freeze_Booster:
 
-                actionWatchVideo = ActionWatchVideo.Freeze_Booster;
-                break;
-            case GiftType.Atom_Booster:
+        //        actionWatchVideo = ActionWatchVideo.Freeze_Booster;
+        //        break;
+        //    case GiftType.Atom_Booster:
 
-                actionWatchVideo = ActionWatchVideo.Atom_Booste;
-                break;
-        }
+        //        actionWatchVideo = ActionWatchVideo.Atom_Booste;
+        //        break;
+        //}
         GameController.Instance.musicManager.PlayClickSound();
 
         GameController.Instance.admobAds.ShowVideoReward(

@@ -20,6 +20,7 @@ public class AnimalController : MonoBehaviour
     public AudioClip owlSfx;
     public AudioClip birdSfx;
     public List<Door> lsDoor;
+    public SumCoinBar sumCoinBar;
     public void Init(PlayerContain playerContainParam)
     {
         playerContain = playerContainParam;
@@ -218,7 +219,7 @@ public class AnimalController : MonoBehaviour
         {
             yield return coroutine;
         }
-   
+        yield return StartCoroutine(sumCoinBar.HandleMoveIn()) ;
         for (int i = lsAnimalsBases.Count -1; i >= 0; i-- )
         {
             if(lsAnimalsBases[i] != null)
@@ -258,6 +259,8 @@ public class AnimalController : MonoBehaviour
                 yield return StartCoroutine(item.HandleEffectItemIEnumrator());
             }
         }
+
+        yield return StartCoroutine(sumCoinBar.SpawnSumCoin());
 
         if (GamePlayController.Instance.tutCard.isStart && !UseProfile.TutGamePlayCard_Step_1)
         {
