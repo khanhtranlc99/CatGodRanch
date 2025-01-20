@@ -9,6 +9,8 @@ public class Gazelle : AnimalsBase
     public PostYardBase postSwitch;
     public PostYardBase tempPostSwitch;
     public AnimalsBase tempAnimals;
+    public AnimalsBase tempAnimalsSwich;
+
     public bool CanHandleEffect
     {
         get
@@ -56,7 +58,6 @@ public class Gazelle : AnimalsBase
                     {
                         postSwitch = item;
                         break;
-
                     }
                 }
             }
@@ -64,33 +65,27 @@ public class Gazelle : AnimalsBase
             {
                 tempPostSwitch = postYardBase;
                 tempAnimals = postYardBase.animalsBase;
-
+                tempAnimalsSwich = postSwitch.animalsBase;
                 Sequence sequence = DOTween.Sequence();
                 sequence.Append(this.transform.DOMove(postSwitch.transform.position, 0.35f));
                 sequence.Append(postSwitch.animalsBase.transform.DOMove(postYardBase.transform.position, 0.35f));
-                yield return sequence.WaitForCompletion();
-
-                postYardBase = postSwitch;
-                postYardBase.animalsBase = postSwitch.animalsBase;
-                postYardBase.animalsBase.InitRange();
-                postYardBase.animalsBase.SetCurrentInLayer();
-                postYardBase.animalsBase.SetOrderInLayer(postYardBase.id);
-
-               
-                postSwitch.animalsBase.postYardBase = tempPostSwitch;
+                yield return sequence.WaitForCompletion();        
                 postSwitch.animalsBase = tempAnimals;
-                postSwitch.animalsBase.InitRange();
-                postSwitch.animalsBase.SetCurrentInLayer();
-                postSwitch.animalsBase.SetOrderInLayer(postSwitch.id);
+                postYardBase.animalsBase = tempAnimalsSwich;
+
+                tempAnimals.postYardBase = postSwitch;
+                tempAnimalsSwich.postYardBase = tempPostSwitch;
+
+                tempAnimals.InitRange();
+                tempAnimals.SetCurrentInLayer();
+                tempAnimals.SetOrderInLayer(tempAnimals.postYardBase.id);
 
 
+                tempAnimalsSwich.InitRange();
+                tempAnimalsSwich.SetCurrentInLayer();
+                tempAnimalsSwich.SetOrderInLayer(tempAnimals.postYardBase.id);
             }
-         
-       
-
-
         }
-        Debug.LogError(gameObject.name);
         yield return null;
     }
 }
