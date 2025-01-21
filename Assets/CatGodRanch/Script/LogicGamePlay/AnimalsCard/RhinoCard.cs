@@ -41,7 +41,7 @@ public class RhinoCard : CardBase
              
 
             }
-            if (countGrass >=2 && countGrowTalent >= 1)
+            if (countGrass >=1 )
             {
                 return true;
             }

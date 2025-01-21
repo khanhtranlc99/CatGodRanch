@@ -46,7 +46,7 @@ public class CrowCard : CardBase
         get
         {
 
-            if (GamePlayController.Instance.playerContain.itemController.lsCurrentItem.Count >= 2)
+            if (GamePlayController.Instance.playerContain.itemController.lsCurrentItem.Count >= 1)
             {
 
                 return true;

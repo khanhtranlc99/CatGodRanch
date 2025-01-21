@@ -28,7 +28,17 @@ public class AnimalsHomeController : MonoBehaviour
     public Transform postRight;
     public List<AnimalsDataProperty> lsCurrentAnimals;
 
-
+    public AnimalsDataProperty GetCard (AnimalsName animalsName)
+    {
+        foreach (var item in animalsDataNormal.lsAll)
+        {
+            if (item.animalsName == animalsName)
+            {
+                return item;
+            }
+        }
+        return null;  
+    }
     public int CounCardRank(CardRank param)
     {
         int cout = 0;
@@ -53,7 +63,7 @@ public class AnimalsHomeController : MonoBehaviour
         float randomY = Random.Range(postDown.position.y, postUp.position.y);
 
         Vector3 randomPosition = new Vector3(randomX, randomY, 0);
-
+        Debug.LogError(animalsDataProperty.prefabAnimals.name);
         var temp = SimplePool2.Spawn(animalsDataProperty.prefabAnimals, randomPosition, Quaternion.identity);
         temp.gameObject.GetComponent<AnimalsHome>().Init(postUp, postDown, postLeft, postRight);
         lsCurrentAnimals.Add(animalsDataProperty);

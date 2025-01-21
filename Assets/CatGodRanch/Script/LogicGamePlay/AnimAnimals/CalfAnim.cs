@@ -24,7 +24,7 @@ public class CalfAnim : AnimTutBase
         
         Sequence sequence = DOTween.Sequence();
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, 10f), 0.2f));
-        sequence.Join(icon.transform.DOJump(icon.transform.position, 1, 1, 0.5f));
+        sequence.Join(icon.transform.DOJump(icon.transform.position, 1, 1, 0.2f));
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, -10), 0.2f));
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, 10f), 0.2f));
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, -10), 0.2f));
@@ -32,7 +32,7 @@ public class CalfAnim : AnimTutBase
         yield return sequence.WaitForCompletion();
         day -= 1;
         tvDay.text = day.ToString() + "<sprite name=\"Time\">";
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.2f);
 
         if (day > 0)
         {

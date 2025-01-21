@@ -67,7 +67,7 @@ public class TigerCard : CardBase
         get
         {
 
-            if (GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Count > 10)
+            if (GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Count > 8)
             {
                 return true;
             }

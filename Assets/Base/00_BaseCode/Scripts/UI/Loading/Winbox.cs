@@ -29,17 +29,21 @@ public class Winbox : BaseBox
     {
         nextButton.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); HandleNext();    });
         rewardButton.onClick.AddListener(delegate { GameController.Instance.musicManager.PlayClickSound(); HandleReward(); });
- 
-     //   coinHeartBar.Init();s
+
+        //   coinHeartBar.Init();s
+        GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
         UseProfile.CurrentLevel += 1;
-    
-  
+        if (UseProfile.CurrentLevel >= 50)
+        {
+            UseProfile.CurrentLevel = 50;
+        }
+
         GameController.Instance.musicManager.PlayWinSound();
     }   
     public void InitState( )
     {
 
-        GameController.Instance.AnalyticsController.WinLevel(UseProfile.CurrentLevel);
+     
         coinGift = GamePlayController.Instance.playerContain.levelConfig.dataDifficulty.rewardCoin;
         tvCoin.text = "" + coinGift;
       

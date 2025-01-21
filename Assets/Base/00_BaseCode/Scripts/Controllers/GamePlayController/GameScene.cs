@@ -61,6 +61,22 @@ public class GameScene : BaseScene
             tvSpeed.text = "x2";
         }
     }
+    public void X2SpeedBtn(bool isPopup)
+    {
+        GameController.Instance.musicManager.PlayClickSound();
+        if (!isSpeed)
+        {
+            isSpeed = true;
+            Time.timeScale = 2;
+            tvSpeed.text = "x1";
+        }
+        else
+        {
+            isSpeed = false;
+            Time.timeScale = 1;
+            tvSpeed.text = "x2";
+        }
+    }
 
     private void HandleHouse()
     {

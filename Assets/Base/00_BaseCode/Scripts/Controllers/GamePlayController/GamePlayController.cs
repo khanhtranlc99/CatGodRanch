@@ -61,5 +61,15 @@ public class GamePlayController : Singleton<GamePlayController>
 
      
     }
-   
+    public IEnumerator SpawnItemInGameVfx(int paramCoin, Vector3 post, bool item)
+    {
+        var temp = SimplePool2.Spawn(itemInGameVfx);
+        temp.transform.position = new Vector3(post.x, post.y + 1, post.z);
+        GameController.Instance.musicManager.PlayOneShot(coinsfx);
+        yield return StartCoroutine(temp.Init(paramCoin, item));
+
+
+
+    }
+
 }

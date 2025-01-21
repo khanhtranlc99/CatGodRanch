@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Purchasing;
 using UnityEngine.Events;
 using Newtonsoft.Json;
+using UnityEditor;
 //using com.adjust.sdk;
 
 public enum TypePackIAP
@@ -118,28 +119,85 @@ public class IAPPack
 
         int value = 0;
         GiftType typeItem = GiftType.Coin;
-        if (type == TypePackIAP.PopulationTeamPack || type == TypePackIAP.GrowTeamPack  || type == TypePackIAP.DanceTeamPack)
-        {
-         
+     
+            if (type == TypePackIAP.PopulationTeamPack)
+            {
+                var temp = new List<AnimalsDataProperty>();
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Magpie));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Rooster));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Chicken));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Chicken));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Penguin));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Pigeon));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Pigeon));
+           
+                foreach (var animal in temp)
+                {
+                    HomeController.Instance.animalsHomeController.SpawnAnimalRandomPost(animal);
+                }
+
+            }
+            if (type == TypePackIAP.GrowTeamPack)
+            {
+                var temp = new List<AnimalsDataProperty>();
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Pig));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.WaterBuffalo));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.WaterBuffalo));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Cow));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Cow));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.MuskOx)); temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Rhino));
+                foreach (var animal in temp)
+                {
+                    HomeController.Instance.animalsHomeController.SpawnAnimalRandomPost(animal);
+                }
+           
+            }
+            if (type == TypePackIAP.DanceTeamPack)
+            {
+                var temp = new List<AnimalsDataProperty>();
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.SikaDeer));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Gazelle));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Alpaca));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Alpaca));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Horse));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Ostrich));
+                temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Ostrich));
+                foreach (var animal in temp)
+                {
+                    HomeController.Instance.animalsHomeController.SpawnAnimalRandomPost(animal);
+                }
           
+            }
+        if (type == TypePackIAP.CardPack)
+        {
+            var temp = new List<AnimalsDataProperty>();
+            temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Pigeon));
+            temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Pigeon));
+            temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Pigeon));
+            temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Pigeon));
+            temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Pigeon));
+            temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Cow));
+            temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Cow));
+            temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.Cow));
+            temp.Add(HomeController.Instance.animalsHomeController.GetCard(AnimalsName.MuskOx));
+            foreach (var animal in temp)
+            {
+                HomeController.Instance.animalsHomeController.SpawnAnimalRandomPost(animal);
+            }
 
         }
+
+
+
         foreach (var item in itemsResult)
         {
 
             List<GiftRewardShow> giftRewardShows = new List<GiftRewardShow>();
             giftRewardShows.Add(new GiftRewardShow() { amount = item.Value, type = item.Key });
             PopupRewardBase.Setup(false).Show(giftRewardShows, delegate { });
-            //if (type != TypePackIAP.PremiumPacks)
-            //{
-            //    PopupRewardBase.Setup(false).Show(giftRewardShows, delegate { });
-            //}
-            //else
-            //{
-            //    PopupRewardBase.Setup(true).Show(giftRewardShows, delegate { });
-            //}
+     
 
-
+          
         }
         //try
         //{

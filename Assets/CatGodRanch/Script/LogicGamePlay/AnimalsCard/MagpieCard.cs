@@ -60,7 +60,7 @@ public class MagpieCard : CardBase
                     coutItem += item.count;
                 }
             }
-            if (coutItem >= 2)
+            if (coutItem >= 1)
             {
                 return true;
             }

@@ -46,6 +46,7 @@ public class PayBillBox : BaseBox
         }
         else
         {
+            GameController.Instance.AnalyticsController.LoseLevel(UseProfile.CurrentLevel);
             btnPay.interactable = false;
             btnAds.gameObject.SetActive(true);
             homeBtn.gameObject.SetActive(true);

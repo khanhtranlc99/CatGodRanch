@@ -42,15 +42,15 @@ public class CardRandomHome : MonoBehaviour
                 break;
 
             case CardRank.Rare:
-                 if(UseProfile.CurrentLevel < 10)
+                 if(UseProfile.CurrentLevel < 5)
                 {
-                    tvName.text = "Unlock at level 10";
+                    tvName.text = "Unlock at level 5";
                 }
                 break;
             case CardRank.SuperRare:
-                if (UseProfile.CurrentLevel < 21)
+                if (UseProfile.CurrentLevel < 10)
                 {
-                    tvName.text = "Unlock at level 21";
+                    tvName.text = "Unlock at level 10";
                 }
                 break;
         }
@@ -66,7 +66,7 @@ public class CardRandomHome : MonoBehaviour
                 break;
 
             case CardRank.Rare:
-                if (UseProfile.CurrentLevel < 10)
+                if (UseProfile.CurrentLevel < 5)
                 {
                     RandomCardBox.instance.btnRandom.gameObject.SetActive(false);
                 }
@@ -76,7 +76,7 @@ public class CardRandomHome : MonoBehaviour
                 }
                 break;
             case CardRank.SuperRare:
-                if (UseProfile.CurrentLevel < 21)
+                if (UseProfile.CurrentLevel < 10)
                 {
                     RandomCardBox.instance.btnRandom.gameObject.SetActive(false);
                 }

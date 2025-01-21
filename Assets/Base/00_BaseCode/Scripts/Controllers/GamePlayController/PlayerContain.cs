@@ -76,6 +76,8 @@ public class PlayerContain : MonoBehaviour
         animalController.Init(this);
         cardController.Init(this);
         inputController.Init();
+
+        GameController.Instance.AnalyticsController.StartLevel(UseProfile.CurrentLevel);
     }
 
    

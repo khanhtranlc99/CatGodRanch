@@ -56,7 +56,7 @@ public class PenguinCard : CardBase
                     coutItem += 1;
                 }
             }
-            if (coutItem >= 2)
+            if (coutItem >= 1)
             {
                 return true;
             }

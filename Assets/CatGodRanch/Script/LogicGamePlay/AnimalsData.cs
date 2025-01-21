@@ -9,6 +9,9 @@ public class AnimalsData : ScriptableObject
     public List<AnimalsDataProperty> lsDataBird;
     public List<AnimalsDataProperty> lsDataHoofed;
     public List<AnimalsDataProperty> lsDataCarnivore;
+    public List<AnimalsDataProperty> lsAll;
+
+ 
 
     public AnimalsDataProperty GetRandomLsCardRank(CardRank param)
     {
@@ -56,18 +59,9 @@ public class AnimalsData : ScriptableObject
         }
         foreach (var item in tempList)
         {
-            if(item.animalsType == AnimalsType.Carnivore)
-            {
-                lsDataCarnivore.Add(item);
-            }
-            if (item.animalsType == AnimalsType.Hoofed)
-            {
-                lsDataHoofed.Add(item);
-            }
-            if (item.animalsType == AnimalsType.Bird)
-            {
-                lsDataBird.Add(item);
-            }
+            
+                lsAll.Add(item);
+           
         }
 
 

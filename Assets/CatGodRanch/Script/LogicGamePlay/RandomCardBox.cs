@@ -56,6 +56,22 @@ public class RandomCardBox : BaseBox
 
         GameController.Instance.musicManager.PlayOneShot(sfx);
         ChangePrice();
+        if (UseProfile.CurrentLevel == 10)
+        {
+            Invoke(nameof(TestUpdate2), 0.5f);
+            return ;
+        }
+        if (UseProfile.CurrentLevel == 5)
+        {
+            Invoke(nameof(TestUpdate), 0.5f);
+            return;
+        }
+        if (UseProfile.CurrentLevel == 1)
+        {
+            btnClose.gameObject.SetActive(false);
+        }
+       
+    
     }
     
     private void Update()
@@ -65,6 +81,14 @@ public class RandomCardBox : BaseBox
             item.HandleScaleOut();
         }
         lsCardRandomHome[horizontalScrollSnap.CurrentPage].HandleScaleIn();
+    }
+    private void TestUpdate()
+    {
+        horizontalScrollSnap.ChangePage(1);
+    }
+    private void TestUpdate2()
+    {
+        horizontalScrollSnap.ChangePage(2);
     }
 
     private void HandleRollClick()

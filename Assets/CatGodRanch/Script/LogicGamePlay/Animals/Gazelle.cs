@@ -1,14 +1,14 @@
 using DG.Tweening;
 using System.Collections;
-using System.Collections.Generic;
-using UniRx.Triggers;
-using UnityEngine;
+
 
 public class Gazelle : AnimalsBase
 {
     public PostYardBase postSwitch;
     public PostYardBase tempPostSwitch;
     public AnimalsBase tempAnimals;
+    public AnimalsBase tempAnimalsSwich;
+
     public bool CanHandleEffect
     {
         get
@@ -30,18 +30,12 @@ public class Gazelle : AnimalsBase
     }
     public override void InitRange()
     {
-      base.InitRange();
-      for(int i = lsPostRange.Count - 1; i >= 0; i--)
-        {
-            if (lsPostRange[i].transform.position.y < postYardBase.transform.position.y)
-            {
-                lsPostRange.Remove(lsPostRange[i]);
-            }
-        }    
+        base.InitRange();
+
     }
-    public bool CheckCanSwitch (AnimalsBase animalsBase)
+    public bool CheckCanSwitch(AnimalsBase animalsBase)
     {
-       if(animalsBase.huntAnimal != null && animalsBase.lsAnimalsProtect.Count <= 0)
+        if (animalsBase.huntAnimal != null && animalsBase.lsAnimalsProtect.Count <= 0)
         {
             return false;
         }
@@ -49,54 +43,51 @@ public class Gazelle : AnimalsBase
     }
     public override IEnumerator HandleEffect()
     {
-        if(CanHandleEffect)
+        if (CanHandleEffect)
         {
+
             postSwitch = null;
             tempPostSwitch = null;
             foreach (var item in postYardBase.lsNearYard)
             {
-                if (item.animalsBase != null && item.id < postYardBase.id)
+                if (item.animalsBase != null)
                 {
                     if (CheckCanSwitch(item.animalsBase))
                     {
                         postSwitch = item;
                         break;
-
                     }
                 }
             }
-            if(postSwitch != null)
-            {
-                tempPostSwitch = postYardBase;
-                tempAnimals = postYardBase.animalsBase;
-                if (UseProfile.OnSound)
+            if (postSwitch != null)
+            { 
+                if(UseProfile.OnSound)
                 {
                     audioSource.PlayOneShot(sfx);
-                }
+                }    
+                tempPostSwitch = postYardBase;
+                tempAnimals = postYardBase.animalsBase;
+                tempAnimalsSwich = postSwitch.animalsBase;
                 Sequence sequence = DOTween.Sequence();
                 sequence.Append(this.transform.DOMove(postSwitch.transform.position, 0.35f));
                 sequence.Append(postSwitch.animalsBase.transform.DOMove(postYardBase.transform.position, 0.35f));
                 yield return sequence.WaitForCompletion();
-            
-
-                postYardBase.animalsBase = postSwitch.animalsBase;
-                postYardBase.animalsBase.postYardBase = postSwitch;
-                postYardBase.animalsBase.SetCurrentInLayer();
-                postYardBase.animalsBase.SetOrderInLayer(postYardBase.id);
-
-
                 postSwitch.animalsBase = tempAnimals;
-                postSwitch.animalsBase.postYardBase = tempPostSwitch;
-                postSwitch.animalsBase.SetCurrentInLayer();
-                postSwitch.animalsBase.SetOrderInLayer(postSwitch.id);
+                postYardBase.animalsBase = tempAnimalsSwich;
 
-                yield return new WaitForSeconds(0.5f);
+                tempAnimals.postYardBase = postSwitch;
+                tempAnimalsSwich.postYardBase = tempPostSwitch;
+
+                tempAnimals.InitRange();
+                tempAnimals.SetCurrentInLayer();
+                tempAnimals.SetOrderInLayer(tempAnimals.postYardBase.id);
+
+
+                tempAnimalsSwich.InitRange();
+                tempAnimalsSwich.SetCurrentInLayer();
+                tempAnimalsSwich.SetOrderInLayer(tempAnimalsSwich.postYardBase.id);
             }
-         
-       
-
-
-        }    
+        }
         yield return null;
     }
 }

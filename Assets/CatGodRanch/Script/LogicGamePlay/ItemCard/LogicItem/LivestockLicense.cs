@@ -31,7 +31,7 @@ public class LivestockLicense : ItemBase
         this.transform.DOScale(new Vector3(1.1f, 1.1f, 1.1f), 0.35f).OnComplete(delegate {
             this.transform.DOScale(new Vector3(1, 1, 1), 0.35f).OnComplete(delegate {
 
-                StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2*count, transform.position));
+                StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(2*count, transform.position, true));
             });
 
         });

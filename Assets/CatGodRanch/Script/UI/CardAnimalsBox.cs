@@ -90,6 +90,11 @@ public class CardAnimalsBox : BaseBox
  
 
         Invoke(nameof(Roll), 0.2f);
+        if(UseProfile.CurrentLevel < 4)
+        {
+            btnSkip.interactable = false;
+        }
+     
     }
    
 
@@ -230,7 +235,7 @@ public class CardAnimalsBox : BaseBox
                 btnRetry.interactable = true;
                 btnSkip.interactable = true;
                 btnSeeThrow.interactable = true;
-                btnBook.interactable = true;
+           //     btnBook.interactable = true;
                 UseProfile.TutGamePlayCard_Step_3 = true;
                 TutGamePlayCard_Step_1.Instance.HandleOffHandle();
             }    

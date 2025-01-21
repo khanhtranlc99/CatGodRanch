@@ -28,7 +28,7 @@ public class PigAnim : AnimTutBase
         icon.transform.DOKill();
         Sequence sequence = DOTween.Sequence();
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, 10f), 0.2f));
-        sequence.Join(icon.transform.DOJump(icon.transform.position, 1, 1, 0.5f));
+        sequence.Join(icon.transform.DOJump(icon.transform.position, 1, 1, 0.2f));
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, -10), 0.2f));
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, 10f), 0.2f));
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, -10), 0.2f));
@@ -42,7 +42,7 @@ public class PigAnim : AnimTutBase
         {
             coin.SetActive(true);
             coin.GetComponent<TMP_Text>().text = "-1" + "<sprite name=\"Coin\">";
-            yield return coin.transform.DOMove(new Vector3(post_Coin.x, post_Coin.y + 0.5f, post_Coin.z), 1).WaitForCompletion();
+            yield return coin.transform.DOMove(new Vector3(post_Coin.x, post_Coin.y + 0.5f, post_Coin.z), 0.2f).WaitForCompletion();
             coin.SetActive(false);
             coin.transform.position = post_Coin;
             StartCoroutine(HandleEffect());
@@ -55,13 +55,13 @@ public class PigAnim : AnimTutBase
             coin.SetActive(true);
             coin.GetComponent<TMP_Text>().text = "+12" + "<sprite name=\"Coin\">";
             icon.gameObject.SetActive(false);
-            yield return coin.transform.DOMove(new Vector3(post_Coin.x, post_Coin.y + 0.5f, post_Coin.z), 1).WaitForCompletion();
+            yield return coin.transform.DOMove(new Vector3(post_Coin.x, post_Coin.y + 0.5f, post_Coin.z), 0.2f).WaitForCompletion();
             coin.SetActive(false);
             coin.transform.position = post_Coin;
             icon.gameObject.SetActive(true);
             day = 3;
             tvDay.text = day.ToString() + "<sprite name=\"Time\">";
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(0.2f);
             Init();
         }
     }

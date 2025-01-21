@@ -626,6 +626,7 @@ GameObject:
   - component: {fileID: 927070830967620418}
   - component: {fileID: 3949228515027860824}
   - component: {fileID: 8636105516778879004}
+  - component: {fileID: 2141700066494417196}
   m_Layer: 5
   m_Name: BtnRoll
   m_TagString: Untagged
@@ -735,6 +736,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2141700066494417196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900459586734954284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1889b4db68d3ad7499a2a0a948f2e9a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleIn: {x: 0.9, y: 0.9, z: 0.9}
+  scaleOut: {x: 1, y: 1, z: 1}
+  speed: 0.7
+  delayStart: 0
 --- !u!1 &2152236345536265237
 GameObject:
   m_ObjectHideFlags: 0

@@ -270,6 +270,10 @@ public class AnimalController : MonoBehaviour
         }
         else
         {
+            if (GamePlayController.Instance.gameScene.isSpeed)
+            {
+                GamePlayController.Instance.gameScene.X2SpeedBtn(true);
+            }
             if (playerContain.dayController.currentDayType == DayType.Work)
             {
                 CardAnimalsBox.Setup().Show();

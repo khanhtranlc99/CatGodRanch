@@ -9,6 +9,7 @@ public class HomeController : Singleton<HomeController>
     public GameObject tutHome;
     public AudioClip dogCall;
 
+
     private void Start()
     {
         homeScene.Init();
@@ -30,6 +31,24 @@ public class HomeController : Singleton<HomeController>
                 GameController.Instance.musicManager.PlayOneShot(dogCall);
             }
   
+        }
+        if (UseProfile.CurrentLevel == 5)
+        {
+            if (UseProfile.Coin >= 800)
+            {
+                tutHome.SetActive(true);
+                GameController.Instance.musicManager.PlayOneShot(dogCall);
+            }
+
+        }
+        if (UseProfile.CurrentLevel == 10)
+        {
+            if (UseProfile.Coin >= 800)
+            {
+                tutHome.SetActive(true);
+                GameController.Instance.musicManager.PlayOneShot(dogCall);
+            }
+
         }
     }
 

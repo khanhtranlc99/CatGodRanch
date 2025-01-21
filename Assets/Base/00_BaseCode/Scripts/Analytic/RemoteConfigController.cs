@@ -322,8 +322,9 @@ public class RemoteConfigController : MonoBehaviour
                 {
 
                     firebaseRemoteKeys.Add(key);
-
+           
                 }
+               
                 AnalyticsController.firebaseInitialized = true;
             }
         });

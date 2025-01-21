@@ -81,7 +81,7 @@ public class Egg : AnimalsBase
             spriteRender.transform.DOKill();
             Sequence sequence = DOTween.Sequence();
             sequence.Append(spriteRender.transform.DOLocalRotate(new Vector3(0, 0, 10f), 0.2f));
-            sequence.Join(this.transform.DOJump(this.transform.position, 1.5f, 1, 0.5f));
+            sequence.Join(this.transform.DOJump(this.transform.position, 1.5f, 1, 0.2f));
             sequence.Append(spriteRender.transform.DOLocalRotate(new Vector3(0, 0, -10), 0.2f));
             sequence.Append(spriteRender.transform.DOLocalRotate(new Vector3(0, 0, 10f), 0.2f));
             sequence.Append(spriteRender.transform.DOLocalRotate(new Vector3(0, 0, -10), 0.2f));

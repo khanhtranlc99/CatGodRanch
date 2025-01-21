@@ -24,7 +24,7 @@ public class LampAnim : AnimTutBase
        
         Sequence sequence = DOTween.Sequence();
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, 10f), 0.2f));
-        sequence.Join(icon.transform.DOJump(icon.transform.position, 1, 1, 0.5f));
+        sequence.Join(icon.transform.DOJump(icon.transform.position, 1, 1, 0.2f));
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, -10), 0.2f));
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, 10f), 0.2f));
         sequence.Append(icon.transform.DOLocalRotate(new Vector3(0, 0, -10), 0.2f));

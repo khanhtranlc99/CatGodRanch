@@ -35,7 +35,7 @@ public class CrocodileCard : CardBase
 
 
             }
-            if (countGrass >= 3)
+            if (countGrass >= 1)
             {
                 return true;
             }
