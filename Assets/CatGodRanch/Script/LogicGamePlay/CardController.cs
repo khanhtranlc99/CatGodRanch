@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using UnityEngine;
-using UnityEngine.UI;
+using DG.Tweening;
 
 public class CardController : MonoBehaviour
 {
@@ -10,7 +10,7 @@ public class CardController : MonoBehaviour
     public List<CardBase> lsCardBase;
     PlayerContain playerContain;
     public List<AnimalsDataProperty> lsCurrentAnimalData;
-
+    
     public CardBase GetCardBaseByName(AnimalsName animalsName)
     {
         foreach (var animal in lsCardBase) 
@@ -126,8 +126,6 @@ public class CardController : MonoBehaviour
             UseProfile.DataAnimalsHome = data;
         }
     }    
-    public void HandleSpawnChicken()
-    {
-        playerContain.animalController.SpwanAnimals(GetCardName(AnimalsName.Chicken).prefabAnimals, true);
-    }
+
+ 
 }

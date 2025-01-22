@@ -109,11 +109,19 @@ public class Card : MonoBehaviour
     private void OnClick( )
     {
         GameController.Instance.musicManager.PlayClickSound();
-        GamePlayController.Instance.playerContain.animalController.SpwanAnimals(animalsData.prefabAnimals,1);
+   
         CardAnimalsBox.instance.Close();
         if (GamePlayController.Instance.tutCard.isStart && UseProfile.TutGamePlayCard_Step_1 == false)
         {
-          TutGamePlayCard_Step_1_5.Instance.HandleShowHand();
+            Debug.LogError("TutGamePlayCard_Step_1");
+            GamePlayController.Instance.playerContain.animalController.SpwanAnimals(animalsData.prefabAnimals, 1);
+            //  TutGamePlayCard_Step_1_5.Instance.HandleShowHand();
+        }
+        else
+        {
+            GamePlayController.Instance.playerContain.animalController.SpwanAnimals(animalsData.prefabAnimals, true, true, true);
+            Debug.LogError("No_Ok");
+        //   
         }
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Eagle : AnimalsBase
 {
+    public GameObject boxChat;
     public bool CheckBirdAround
     {
         get
@@ -113,7 +114,7 @@ public class Eagle : AnimalsBase
                     animalsTarget.HandleActionDie();
                     animalsTarget = null;
                     yield return transform.DOMove(postYardBase.gameObject.transform.position, 0.5f).WaitForCompletion();
-                    yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(5, transform.position));
+              //      yield return StartCoroutine(GamePlayController.Instance.SpawnItemInGameVfx(5, transform.position));
 
                 }
             }
@@ -132,5 +133,9 @@ public class Eagle : AnimalsBase
 
 
     }
+    //public override IEnumerator HandleClaimCoin()
+    //{
+    //    return null;
+    //}    
 }
 

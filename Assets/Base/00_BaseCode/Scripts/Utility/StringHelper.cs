@@ -153,7 +153,7 @@ public class PathPrefabs
 
 public class SceneName
 {
-    public const string LOADING_SCENE = "LoadingScene";
+    public const string LOADING_SCENE = "LoadScene";
     public const string HOME_SCENE = "HomeScene";
     public const string GAME_PLAY = "GamePlay";
 }

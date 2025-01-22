@@ -77,7 +77,7 @@ public class PlayerContain : MonoBehaviour
         cardController.Init(this);
         inputController.Init();
 
-        GameController.Instance.AnalyticsController.StartLevel(UseProfile.CurrentLevel);
+     //   GameController.Instance.AnalyticsController.StartLevel(UseProfile.CurrentLevel);
     }
 
    

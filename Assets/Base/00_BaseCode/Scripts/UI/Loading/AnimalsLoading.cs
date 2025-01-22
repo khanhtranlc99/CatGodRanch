@@ -11,7 +11,10 @@ public class AnimalsLoading : MonoBehaviour
     public SpriteRenderer titler;
     public CanvasGroup canvasGroup;
 
-    
+    private void Start()
+    {
+        StartCoroutine(Init());
+    }
     public IEnumerator Init()
     {
        yield return  titler.transform.DOScale(Vector3.one, 0.5f).WaitForCompletion();
@@ -27,7 +30,7 @@ public class AnimalsLoading : MonoBehaviour
         yield return sequence.WaitForCompletion();
         vfxStar.Play();
         aura.transform.DOScale(Vector3.one, 0.5f);
-        yield return canvasGroup.DOFade(1,0.7f).WaitForCompletion();
+
 
     }
     private void Update()

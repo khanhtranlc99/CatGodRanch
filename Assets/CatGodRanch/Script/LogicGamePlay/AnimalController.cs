@@ -46,9 +46,9 @@ public class AnimalController : MonoBehaviour
             lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
             temp.GetComponent<AnimalsBase>().Init();
             temp.GetComponent<AnimalsBase>().SetOrderInLayer(tempPost.id);
-            var tempSmoke = SimplePool2.Spawn(vfxSmoke);
-            tempSmoke.transform.position = tempPost.transform.position;
-            tempSmoke.transform.Rotate(new Vector3(-35, 0, 0));
+            //var tempSmoke = SimplePool2.Spawn(vfxSmoke);
+            //tempSmoke.transform.position = tempPost.transform.position;
+            //tempSmoke.transform.Rotate(new Vector3(-35, 0, 0));
         }
         else
         {
@@ -57,7 +57,7 @@ public class AnimalController : MonoBehaviour
             lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
  
         }
-        btnNextDay.gameObject.SetActive(true);
+        //btnNextDay.gameObject.SetActive(true);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.BUY_ANIMALS_SUCCEST);
     }
     public void SpwanAnimals(GameObject animalsBase, int sound)
@@ -85,7 +85,7 @@ public class AnimalController : MonoBehaviour
             lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
 
         }
-        btnNextDay.gameObject.SetActive(true);
+      //  btnNextDay.gameObject.SetActive(true);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.BUY_ANIMALS_SUCCEST);
     }
     public void SpwanAnimals(GameObject animalsBase, bool tut)
@@ -111,7 +111,58 @@ public class AnimalController : MonoBehaviour
             lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
 
         }
-        btnNextDay.gameObject.SetActive(true);
+    //    btnNextDay.gameObject.SetActive(true);
+        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.BUY_ANIMALS_SUCCEST);
+    }
+    public void SpwanAnimals(GameObject animalsBase, bool tut, bool tut1)
+    {
+
+        var tempPost = playerContain.postYardController.postTut_Egle_first;
+        if (tempPost != null)
+        {
+            var temp = SimplePool2.Spawn(animalsBase);
+            temp.transform.position = tempPost.post.position;
+            tempPost.animalsBase = temp.GetComponent<AnimalsBase>();
+            temp.GetComponent<AnimalsBase>().postYardBase = tempPost;
+            lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
+            temp.GetComponent<AnimalsBase>().Init();
+            temp.GetComponent<AnimalsBase>().SetOrderInLayer(tempPost.id);
+      
+        }
+        else
+        {
+            var temp = SimplePool2.Spawn(animalsBase);
+            temp.transform.position = postHome.position;
+            lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
+
+        }
+    //    btnNextDay.gameObject.SetActive(true);
+        EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.BUY_ANIMALS_SUCCEST);
+    }
+    public void SpwanAnimals(GameObject animalsBase, bool tut, bool tut1, bool tut2)
+    {
+
+        var tempPost = playerContain.postYardController.postTut_Pigeon_first;
+        if (tempPost != null)
+        {
+            var temp = SimplePool2.Spawn(animalsBase);
+            temp.transform.position = tempPost.post.position;
+            tempPost.animalsBase = temp.GetComponent<AnimalsBase>();
+            temp.GetComponent<AnimalsBase>().postYardBase = tempPost;
+            lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
+            temp.GetComponent<AnimalsBase>().Init();
+            temp.GetComponent<AnimalsBase>().SetOrderInLayer(tempPost.id);
+            var tempSmoke = SimplePool2.Spawn(vfxSmoke);
+            tempSmoke.transform.position = tempPost.transform.position;
+        }
+        else
+        {
+            var temp = SimplePool2.Spawn(animalsBase);
+            temp.transform.position = postHome.position;
+            lsAnimalsBases.Add(temp.GetComponent<AnimalsBase>());
+
+        }
+    //    btnNextDay.gameObject.SetActive(true);
         EventDispatcher.EventDispatcher.Instance.PostEvent(EventID.BUY_ANIMALS_SUCCEST);
     }
 
@@ -126,6 +177,47 @@ public class AnimalController : MonoBehaviour
             GamePlayController.Instance.tutCard.NextTut();
         }
         StartCoroutine(HandleMoveIn());
+    }
+    public IEnumerator HandleMoveIn(bool video)
+    {
+        GameController.Instance.musicManager.PlayOneShot(owlSfx);
+      
+        List<Coroutine> runningCoroutines = new List<Coroutine>();
+        foreach (var item in lsAnimalsBases)
+        {
+            if (item.postYardBase != null)
+            {
+                item.postYardBase.animalsBase = null;
+            }
+            item.postYardBase = null;
+            item.huntAnimal = null;
+            item.lsAnimalsProtect.Clear();
+            item.SetCurrentInLayer();
+            runningCoroutines.Add(StartCoroutine(item.HandleActionMove(postHome.position)));
+        }
+        foreach (var item in playerContain.postYardController.lsPostYardBases)
+        {
+            item.animalsBase = null;
+        }
+        foreach (var coroutine in runningCoroutines)
+        {
+            yield return coroutine;
+        }
+        if (lsTempAnimalsBases.Count > 0)
+        {
+            foreach (var item in lsTempAnimalsBases)
+            {
+                lsAnimalsBases.Add(item);
+            }
+        }
+        GameController.Instance.musicManager.PlayOneShot(closeDoor);
+        Sequence sequence = DOTween.Sequence();
+        foreach (var item in lsDoor)
+        {
+            sequence.Join(item.closeDoor);
+        }
+        yield return sequence.WaitForCompletion();
+      
     }
     public IEnumerator HandleMoveIn( )
     {
@@ -288,5 +380,71 @@ public class AnimalController : MonoBehaviour
 
     }
 
+    public IEnumerator HandleMoveOut(bool tut)
+    {
+
+
+        GameController.Instance.musicManager.PlayOneShot(openDoor);
+        Sequence sequence = DOTween.Sequence();
+        foreach (var item in lsDoor)
+        {
+            sequence.Join(item.openDoor);
+        }
+        yield return sequence.WaitForCompletion();
+        GameController.Instance.musicManager.PlayOneShot(birdSfx);
+        GamePlayController.Instance.playerContain.inputController.lockInput = false;
+        lsAnimalsBases.Shuffle();
+        lsTempAnimalsBases.Clear();
+        duckController.InitState();
+        List<Coroutine> runningCoroutines = new List<Coroutine>();
+        if (lsAnimalsBases.Count <= playerContain.postYardController.lsPostYardBases.Count)
+        {
+            foreach (var item in lsAnimalsBases)
+            {
+                var randomPost = playerContain.postYardController.GetRandomEmptyPost;
+                randomPost.animalsBase = item.GetComponent<AnimalsBase>();
+                item.GetComponent<AnimalsBase>().postYardBase = randomPost;
+                item.GetComponent<AnimalsBase>().SetOrderInLayer(randomPost.id);
+                runningCoroutines.Add(StartCoroutine(item.HandleActionMove(randomPost.post.position)));
+            }
+        }
+        else
+        {
+            var temp = lsAnimalsBases.Count - playerContain.postYardController.lsPostYardBases.Count;
+            for (int i = 0; i < temp; i++)
+            {
+                lsTempAnimalsBases.Add(lsAnimalsBases[i]);
+                lsAnimalsBases.Remove(lsAnimalsBases[i]);
+            }
+            foreach (var item in lsAnimalsBases)
+            {
+                var randomPost = playerContain.postYardController.GetRandomEmptyPost;
+          /*      randomPost.animalsBase = item.GetComponent<AnimalsBase>()*/;
+                //item.GetComponent<AnimalsBase>().postYardBase = randomPost;
+                //item.GetComponent<AnimalsBase>().SetOrderInLayer(randomPost.id);
+                runningCoroutines.Add(StartCoroutine(item.HandleActionMove(randomPost.post.position)));
+            }
+        }
+        foreach (var coroutine in runningCoroutines)
+        {
+            yield return coroutine;
+        }
+ 
+        for (int i = lsAnimalsBases.Count - 1; i >= 0; i--)
+        {
+            if (lsAnimalsBases[i] != null)
+            {
+                lsAnimalsBases[i].AnimScale();
+            }
+        }
+        yield return new WaitForSeconds(1);
+        for (int i = lsAnimalsBases.Count - 1; i >= 0; i--)
+        {
+            if (lsAnimalsBases[i] != null)
+            {
+                lsAnimalsBases[i].AnimRotateInMove();
+            }
+        }
+    }
 
 }

@@ -42,30 +42,20 @@ public class Egg : AnimalsBase
             spriteRender.sprite = parth_3;
             var ran = Random.RandomRange(0,100);
             var temp = new AnimalsDataProperty();
-            if (GamePlayController.Instance.tutCard.isStart && !UseProfile.TutGamePlayCard_Step_1)
+            //if (GamePlayController.Instance.tutCard.isStart && !UseProfile.TutGamePlayCard_Step_1)
+            //{
+            //    ran = 81;
+            //}
+            if(!GamePlayController.Instance.isEgg)
             {
-                ran = 81;
-            }
-                if (ran <= 20)
-            {
-                 temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Chicken);    
-            }
-            if (ran > 20 && ran <= 40)
-            {
-                 temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Rooster);      
-            }
-            if (ran > 40 && ran <= 60)
-            {
-                 temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Turkey);          
-            }
-            if (ran > 60 && ran <= 80)
-            {
+                GamePlayController.Instance.isEgg = true;
                 temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Duck);
-            }
-            if (ran > 80 && ran <= 100)
+            }    
+            else
             {
-                temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Pigeon);
+                temp = GamePlayController.Instance.playerContain.cardController.GetCardName(AnimalsName.Turkey);
             }
+             
             yield return StartCoroutine(HandleTranform());
             SpwanAnimals(temp.prefabAnimals);
             //    GamePlayController.Instance.playerContain.animalController.lsAnimalsBases.Remove(this);

@@ -55,8 +55,7 @@ public class NoticeController : MonoBehaviour
         StartCoroutine(GamePlayController.Instance.playerContain.animalController.sumCoinBar.HandleMoveIn());
         GameController.Instance.musicManager.PlayClickSound();
         this.gameObject.SetActive(false);   
-        GamePlayController.Instance.playerContain.cardController.HandleSpawnChicken();
-        GamePlayController.Instance.playerContain.animalController.btnNextDay.gameObject.SetActive(false);
+
         GamePlayController.Instance.tutGamePlay.NextTut();
         
 

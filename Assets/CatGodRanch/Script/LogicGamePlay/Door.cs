@@ -6,6 +6,7 @@ public class Door : MonoBehaviour
 {
     public Transform post_close;
     public Transform post_open;
+    public SpriteRenderer doorSprite;
 
     public Tween closeDoor
     {

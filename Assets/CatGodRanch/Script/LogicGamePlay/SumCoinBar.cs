@@ -8,9 +8,10 @@ public class SumCoinBar : MonoBehaviour
     public TMP_Text tmp;
     public Transform postIn;
     public Transform postOut;
-    public int sumCoin;
+    public int sumCoin = 50;
     public ItemInGameVfx itemInGameVfx;
 
+   
     public IEnumerator HandleMoveIn()
     {
         sumCoin = 0;
@@ -21,8 +22,13 @@ public class SumCoinBar : MonoBehaviour
 
     public void HandShowCoin(int coin)
     {
-        sumCoin += coin;
+      
+        sumCoin -= coin;
         tmp.text = sumCoin + "<sprite name=\"Coin\">";
+        if (sumCoin <= 0)
+        {
+            tmp.text = "";
+        }
     }
 
     public IEnumerator SpawnSumCoin()

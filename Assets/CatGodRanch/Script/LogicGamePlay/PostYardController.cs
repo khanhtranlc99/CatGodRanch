@@ -7,6 +7,8 @@ public class PostYardController : MonoBehaviour
     public static PostYardController Instance;
     public List<PostYardBase> lsPostYardBases;
     public PostYardBase postTut_Chicken_first;
+    public PostYardBase postTut_Egle_first;
+    public PostYardBase postTut_Pigeon_first;
     public PostYardBase postTut_Chicken_Second;
     public PostYardBase postTut_Rooster_Second;
     
@@ -45,24 +47,13 @@ public class PostYardController : MonoBehaviour
     {
         get
         {
-            if(GamePlayController.Instance.tutCard.isStart && !UseProfile.TutGamePlayCard_Step_1)
-            {
-                 if(!getPostChicken)
-                {
-                    getPostChicken = true;
-                    return postTut_Chicken_Second;
-                }
-                 else
-                {
-                    return postTut_Rooster_Second;
-                }
-            }
+           
 
             var boolNull = false;
             var lsTemp = new List<PostYardBase>();
            foreach (var item in lsPostYardBases)
             {
-                if(item.animalsBase == null)
+                if(item.animalsBase == null && item != postTut_Egle_first)
                 {
                     lsTemp.Add(item);
                     boolNull = true;

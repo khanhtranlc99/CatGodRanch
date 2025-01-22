@@ -15,7 +15,7 @@ public class ItemInGameVfx : MonoBehaviour
         spriteRenderer.sprite = null;
         this.transform.localScale = Vector3.zero;
         yield return this.transform.DOScale(new Vector3(1, 1, 1), 0.2f).WaitForCompletion();
-        yield return this.transform.DOMoveY(this.transform.position.y + 0.3f, 0.2f).WaitForCompletion();
+        yield return this.transform.DOMoveY(this.transform.position.y + 0.3f, 0.5f).WaitForCompletion();
         yield return this.transform.DOMove(GamePlayController.Instance.playerContain.animalController.sumCoinBar.tmp.transform.position, 0.2f).SetDelay(0.3f).SetEase(Ease.InOutQuad).WaitForCompletion();
         GamePlayController.Instance.playerContain.animalController.sumCoinBar.HandShowCoin(param);
         SimplePool2.Despawn(this.gameObject);
